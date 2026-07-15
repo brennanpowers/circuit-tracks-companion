@@ -16,8 +16,8 @@ const { Content } = await render(shortcuts);
     <div>
       <h1 class="text-3xl font-bold tracking-tight">Cheat sheet</h1>
       <p class="mt-2 text-muted max-w-2xl">
-        Every combo and power-on gesture, plus the jam preflight. Phone-friendly; prints to two
-        clean pages.
+        Every combo and power-on gesture, plus the jam preflight and fix-it table.
+        Phone-friendly, and printable for the gig bag.
       </p>
     </div>
     <button
@@ -78,6 +78,22 @@ const { Content } = await render(shortcuts);
     font-size: 0.82rem;
   }
   @media print {
+    :global(section) {
+      background: #fff !important;
+      color: #000 !important;
+      border: 0 !important;
+    }
+    :global(section .text-muted) {
+      color: #444 !important;
+    }
+    :global(section code) {
+      background: #fff !important;
+      border-color: #bbb !important;
+      color: #000 !important;
+    }
+    :global(section th) {
+      background: #eee !important;
+    }
     .cheat-prose :global(a) {
       text-decoration: none;
       color: #000;

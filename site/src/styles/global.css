@@ -96,6 +96,10 @@ kbd {
 .prose table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.92rem; display: block; overflow-x: auto; }
 .prose th, .prose td { border: 1px solid var(--border); padding: 0.45rem 0.6rem; text-align: left; }
 .prose th { background: var(--surface-2); }
+@media (max-width: 640px) {
+  .prose table { font-size: 0.82rem; }
+  .prose th, .prose td { padding: 0.35rem 0.45rem; }
+}
 .prose blockquote { border-left: 3px solid var(--accent); padding-left: 1rem; color: var(--muted); margin: 1rem 0; }
 .prose hr { border: 0; border-top: 1px solid var(--border); margin: 2rem 0; }
 
@@ -105,6 +109,21 @@ kbd {
 }
 
 @media print {
+  html { background: #fff !important; }
   body { background: #fff !important; color: #000 !important; }
   .no-print { display: none !important; }
+  .prose :not(pre) > code,
+  code,
+  kbd {
+    background: #fff !important;
+    color: #000 !important;
+    border: 1px solid #999 !important;
+  }
+  .prose th {
+    background: #eee !important;
+    color: #000 !important;
+  }
+  .prose td, .prose th {
+    border-color: #999 !important;
+  }
 }
