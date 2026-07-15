@@ -19,7 +19,13 @@ const btnClass = (id: string) =>
     .join(' ');
 const hotspotAttrs = (el: { id: string; label: string; control: string }) =>
   interactive
-    ? { 'data-control': el.control, 'data-element': el.id, tabindex: 0, role: 'button', 'aria-label': el.label.replace('\n', ' ') }
+    ? {
+        'data-control': el.control,
+        'data-element': el.id,
+        tabindex: 0,
+        role: 'button' as const,
+        'aria-label': el.label.replace('\n', ' '),
+      }
     : {};
 ---
 
