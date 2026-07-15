@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "@types/mdast": "^4.0.4",
+    "@types/node": "^26.1.1",
     "jsdom": "^29.1.1",
     "pagefind": "^1.5.2",
     "unist-util-visit": "^5.1.0",
