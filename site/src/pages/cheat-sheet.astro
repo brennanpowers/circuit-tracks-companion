@@ -40,8 +40,27 @@ const { Content } = await render(shortcuts);
       <li>Master Volume low → bring up at soundcheck</li>
     </ol>
     <p class="mt-2 text-xs text-muted">
-      Mono PA: use L/Mono alone — it auto-sums. Headphones mirror the mains (no cue bus).
+      Mono PA: use L/Mono alone — it auto-sums. Headphones mirror the mains (no separate cue mix).
     </p>
+  </section>
+
+  <section class="mt-8 rounded-xl border border-border bg-surface p-4 sm:p-6 print:border-0 print:p-0">
+    <h2 class="font-semibold text-lg">When it sounds wrong</h2>
+    <div class="mt-2 overflow-x-auto">
+      <table class="w-full text-sm border-collapse [&_td]:border [&_td]:border-border [&_td]:px-3 [&_td]:py-1.5 [&_th]:border [&_th]:border-border [&_th]:px-3 [&_th]:py-1.5 [&_th]:bg-surface-2 [&_th]:text-left">
+        <thead>
+          <tr><th>Symptom</th><th>Fix</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Muddy</td><td>Dry the low end — pull reverb/delay sends off kick and bass; drop chord roots (the bass owns them); pan mids apart</td></tr>
+          <tr><td>Stiff</td><td>Velocity accents + ghost notes; two clicks of swing (needs notes on even steps); a non-quantised recorded pass</td></tr>
+          <tr><td>Repetitive</td><td>Probability on decorations (25–50%); Mutate a duplicate; play order (ping-pong/random); an odd pattern length to phase</td></tr>
+          <tr><td>Cluttered</td><td>Mute a layer — arrangement is subtraction; leave steps empty; drop a voice from chords; halve a track's sync rate</td></tr>
+          <tr><td>Lifeless section</td><td>Ride the filter or unmute into it; octave-up a line; open the hats' decay; automate one send upward</td></tr>
+          <tr><td>Loud but small</td><td>Balance levels first (Mixer, everything at 100 = nothing leads); pan for width; side-chain the pads under the kick</td></tr>
+        </tbody>
+      </table>
+    </div>
   </section>
 
   <article class="prose cheat-prose mt-8 max-w-none" data-pagefind-body>

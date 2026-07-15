@@ -47,7 +47,7 @@ One global scale + root covers both synths *and* both MIDI tracks:
   substituted, and **revert** when you switch back, so audition fearlessly.
 - Register jumps: `Shift + ▼/▲` transposes the current pattern by octave.
 - Playing lead over the band from the pads: everything you touch is in-scale by
-  construction. Bass-player brain: think scale degrees, not frets.
+  construction. Think scale degrees, not physical positions.
 
 ## The performance surface, ranked
 
