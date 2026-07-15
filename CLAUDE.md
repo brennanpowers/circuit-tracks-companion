@@ -40,3 +40,5 @@ never the other way around.
   (`.contexts/guide-map.md`)
 - **site-architecture** — how site/ works: collections, guide-link plugin, base-path
   rules, progress store, adding lessons (`.contexts/site-architecture.md`)
+- **course-backlog** — reviewed-but-unaddressed coverage gaps and deferred ideas;
+  the menu for future course enhancements (`.contexts/course-backlog.md`)
