@@ -33,4 +33,5 @@ never the other way around.
 
 ## Context Index
 
-(No context files yet — add entries here as `.contexts/*.md` files are created.)
+- **guide-map** — one-line-per-section index of where facts live in `guide/`
+  (`.contexts/guide-map.md`)
