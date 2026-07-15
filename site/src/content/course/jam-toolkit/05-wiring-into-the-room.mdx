@@ -1,0 +1,61 @@
+---
+title: Wiring into the room
+project: jam-toolkit
+order: 5
+minutes: 25
+goal: Get clean sound into any PA, amp, or interface; run the preflight checklist; and (optionally) clock-sync with other electronic gear.
+---
+
+The last skill is the least musical and the most important: sounding good in a room
+that isn't yours. This closes Project 3 — the deliverable is a preflight checklist
+plus the confidence to plug into anything.
+
+## Outputs, translated to venue
+
+- The main outs are **unbalanced 1/4″ TS** at up to +5.3 dBu — line level. Into a
+  PA/mixer: use a **DI box** (or the mixer's line inputs) — long unbalanced runs hum.
+  Into a guitar/bass amp: the FX return (power-amp in) beats the instrument input,
+  which expects a much quieter signal.
+- **Mono PA?** Plug **L/Mono only** — with nothing in the R jack it automatically
+  carries a mono sum. Check your ping-pong delays still make sense in mono (they
+  become plain repeats).
+- Headphones (3.5 mm) always mirror the mains — *no separate cue mix*, so audition
+  changes quietly by pulling the Master Volume down, not by "checking in the phones".
+- **Power:** ~4 h battery, or any USB battery bank — the elegant answer to "is there
+  an outlet near the drummer?" (There never is.)
+
+## The preflight checklist
+
+Run this at home — it's also printed on the site's Cheat Sheet page:
+
+1. Charged (or bank packed) · 2. Jam project loaded, scenes ordered by energy ·
+3. Tempo & key set or ready to tap/follow · 4. Click **off** · 5. Filter centred,
+mutes at home state · 6. **Save Lock on** · 7. DI/cables/adapters packed ·
+8. Master Volume low → soundcheck up.
+
+## Optional: the electronic side of the room
+
+Someone brings a Volca, a drum machine, a modular case? You're the clock now
+(full detail: [MIDI reference](05-midi-tracks.md)):
+
+- **You lead:** Clock Tx on (Setup View) sends MIDI clock out DIN + USB. The analog
+  **Sync Out** drives Volcas/modular — set the ppqn rate to match, and know that
+  **your swing does not reach the analog clock** (their straight vs your shuffle is
+  by design).
+- **You follow:** Clock Rx auto-locks to incoming clock, fractional BPM included. If
+  their clock dies, you stop and the display shows **SYN** — press `Play` and you're
+  back on internal, at your saved tempo.
+- Sequencing their gear from your MIDI tracks is the full Project-4-adjacent rabbit
+  hole; for a first jam, shared clock is plenty.
+
+<JamTip>
+  Soundcheck ritual: L/Mono into the DI, play your loudest scene, set the board gain,
+  *then* pull the Master Filter both directions so the engineer hears the extremes
+  they'll be getting. Engineers remember acts that soundcheck their worst case.
+</JamTip>
+
+<Checkpoint>
+  Say which output goes to a mono PA and why; run the full preflight from memory;
+  explain what SYN on the display means and how to recover. **Project 3 deliverable
+  complete: you are jam-ready.**
+</Checkpoint>
