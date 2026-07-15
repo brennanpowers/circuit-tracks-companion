@@ -1,0 +1,59 @@
+---
+title: Sample flip and drum macros
+project: first-groove
+order: 4
+minutes: 25
+goal: Break the one-sample-per-track ceiling with per-step sample flips, then shape the kit with the four drum macros — and record a macro move as automation.
+---
+
+Four drum tracks sounds limiting until you learn the trick that makes owners stop
+complaining about it: any **step** can fire a different sample than the track's
+default.
+
+## Sample flip
+
+1. On `Drum 4`, program a simple two-hit percussion line. Now the trick:
+   **press and hold a different sample pad** — it turns red.
+2. While holding it, **tap the step pads** that should play this sample instead.
+   Those steps turn **pink** (flipped) instead of bright blue (default sample).
+3. Release. One track, several voices: a clave on the downbeats, a shaker on the
+   upbeats, a tambourine on the turnaround — all on Drum 4.
+4. Flips are per-step and per-track, and they're part of what
+   [Mutate](06-sequencing.md) reshuffles later — pattern-roulette with your own kit.
+
+## The drum macros
+
+On drum tracks only the **even-numbered** macros do anything, and their jobs are
+fixed:
+
+| Macro | Job | Try |
+|---|---|---|
+| 2 | Pitch | Tune your kick down; detune a snare into lo-fi territory |
+| 4 | Decay | Choke the hats short; let the clap ring |
+| 6 | Distortion | Grit on the kick |
+| 8 | EQ | Tilt a sample darker/brighter |
+
+Pitch is a *continuous* control — great for tuning drums, useless for playing
+melodies (there's no note quantisation; that's what synths are for).
+
+## Your first automation
+
+Knob moves can be **recorded into the pattern**:
+
+5. With the pattern playing, press `Record`. Now slowly sweep Macro 4 (decay) on your
+   hat track — open the hats over one bar, close them over the next. The knob LED
+   burns red while it writes.
+6. **Press `Record` off before the pattern loops back around** — if you stay in
+   Record past the loop point, the pass overwrites itself with the knob's resting
+   position. (Everyone makes this mistake exactly once.)
+7. Play back: the movement replays without your hand. To erase it, hold `Clear` and
+   turn Macro 4 at least 20% — that wipes that knob's automation for the whole
+   pattern.
+
+<Checkpoint>
+  Build a percussion line using two flipped samples on one track; tune the kick with
+  Macro 2; record a decay sweep as automation and then delete it.
+</Checkpoint>
+
+Full drum-track detail: [drum tracks reference](04-drum-tracks.md) · automation
+rules: [FX & automation reference](08-fx-mixer-sidechain.md).
