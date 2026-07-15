@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import PanelMap from '../../components/PanelMap.astro';
 import { withBase } from '../../lib/url';
 import { REFERENCE_SECTIONS } from '../../data/reference-sections';
 ---
@@ -17,6 +18,10 @@ import { REFERENCE_SECTIONS } from '../../data/reference-sections';
     <a class="text-accent underline" href={withBase('cheat-sheet/')}>cheat sheet</a> if you just
     need a combo.
   </p>
+
+  <div class="mt-8">
+    <PanelMap />
+  </div>
 
   <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
     {

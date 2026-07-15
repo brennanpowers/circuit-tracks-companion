@@ -1,8 +1,70 @@
 ---
 import Base from '../layouts/Base.astro';
+
+const MANUAL = 'https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf';
+
+const resources = [
+  {
+    heading: 'Official',
+    items: [
+      { name: 'Circuit Tracks User Guide v3 (PDF)', url: MANUAL, note: 'The authoritative manual. This CDN link is stable; Novation’s support-portal links often are not.' },
+      { name: 'Programmer’s Reference Guide v3', url: 'https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_programmer_s_reference_guide_v3.pdf', note: 'Complete MIDI implementation: CC/NRPN maps, channel-16 project control.' },
+      { name: 'Novation Components', url: 'https://components.novationmusic.com', note: 'Samples, patch editor, MIDI templates, backups, firmware. Chrome/Opera or the standalone desktop app; no iOS.' },
+      { name: 'Novation’s official Circuit Tracks introduction', url: 'https://www.youtube.com/watch?v=0To9D9RhlXs', note: 'The vendor-baseline tutorials.' },
+    ],
+  },
+  {
+    heading: 'Community (vetted)',
+    items: [
+      { name: 'loopop — Circuit Tracks review/tutorial', url: 'https://loopopmusic.com/circuit-tracks-vs-circuit-og-review-and-full-tutorial-for-novations-new-groovebox', note: 'The most-cited deep dive; chapter-marked.' },
+      { name: 'Nu-Trix the Synth Guy', url: 'https://www.youtube.com/@NuTrixtheSynthGuy', note: 'Practical Tracks walkthroughs.' },
+      { name: 'r/novationcircuit', url: 'https://www.reddit.com/r/novationcircuit/', note: 'Covers the whole Circuit family — verify tips are about Tracks. Grid FX / Drift / on-device sampling = Circuit Rhythm, not Tracks.' },
+      { name: 'Elektronauts Circuit thread', url: 'https://www.elektronauts.com', note: 'Same family-blur caveat applies.' },
+      { name: 'Isotonik Studios', url: 'https://isotonikstudios.com', note: 'Patch/sample packs. Their free “Big City Dream” pack was built for the original 2015 Circuit (Tracks compatibility added later); they also run a dedicated Tracks store.' },
+    ],
+  },
+];
 ---
 
-<Base title="Resources · Circuit Tracks Companion">
+<Base
+  title="Resources · Circuit Tracks Companion"
+  description="Official Novation links, vetted community resources, and how this site was verified."
+>
   <h1 class="text-3xl font-bold tracking-tight">Resources</h1>
-  <p class="mt-3 text-muted">Official links and vetted community resources land here.</p>
+
+  <div class="mt-8 space-y-10 max-w-3xl">
+    {
+      resources.map((group) => (
+        <section>
+          <h2 class="font-semibold text-lg">{group.heading}</h2>
+          <ul class="mt-3 space-y-3">
+            {group.items.map((r) => (
+              <li class="rounded-lg border border-border bg-surface p-4">
+                <a class="font-medium text-accent underline" href={r.url}>{r.name}</a>
+                <p class="mt-1 text-sm text-muted">{r.note}</p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+
+    <section>
+      <h2 class="font-semibold text-lg">How this site was verified</h2>
+      <p class="mt-2 text-sm leading-6 text-muted">
+        Every operational fact here derives from a research dossier built by a multi-agent
+        process: six research angles produced 235 falsifiable claims about the Circuit Tracks,
+        and each claim was independently checked by three adversarial reviewers — an
+        official-manual cross-check (reading the User Guide v3 PDF page by page), a
+        device-confusion audit (Tracks vs. the original Circuit vs. Circuit Rhythm — the most
+        common error in community material), and a skeptical refuter. 233 claims survived; the
+        failures were corrected with sources. Where Novation's manual contradicts itself (it
+        does, twice), the site says so explicitly. The handful of facts that only a physical
+        device can settle are marked as Device Labs in the course — findings feed back into the
+        research. The full methodology, dossier, and claim-level evidence live in the project
+        repository.
+      </p>
+    </section>
+  </div>
+
 </Base>

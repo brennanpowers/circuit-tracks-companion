@@ -1,2 +1,90 @@
-<!-- Pagefind search lands with plan Task 13; placeholder keeps Header stable. -->
-<span data-search-slot></span>
+---
+import { withBase } from '../lib/url';
+---
+
+<button
+  id="search-open"
+  type="button"
+  class="p-2 rounded-md hover:bg-surface-2"
+  aria-label="Search the site"
+>
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+    <circle cx="11" cy="11" r="7"></circle>
+    <path d="m21 21-4.3-4.3"></path>
+  </svg>
+</button>
+
+<dialog
+  id="search-dialog"
+  class="w-[min(640px,92vw)] rounded-xl border border-border bg-surface text-text p-4 backdrop:bg-black/60 mx-auto mt-[10vh]"
+>
+  <div class="flex items-center justify-between mb-3">
+    <h2 class="font-semibold">Search</h2>
+    <button id="search-close" class="p-1.5 rounded-md hover:bg-surface-2" aria-label="Close search">✕</button>
+  </div>
+  <div id="pagefind-container">
+    <p id="search-unavailable" class="text-sm text-muted" hidden>
+      Search index not available (it's generated at build time — run a production build).
+    </p>
+  </div>
+</dialog>
+
+<script define:vars={{ pagefindBase: withBase('pagefind/') }}>
+  const dialog = document.getElementById('search-dialog');
+  const openBtn = document.getElementById('search-open');
+  let loaded = false;
+
+  async function loadPagefind() {
+    if (loaded) return;
+    loaded = true;
+    try {
+      const css = document.createElement('link');
+      css.rel = 'stylesheet';
+      css.href = pagefindBase + 'pagefind-ui.css';
+      document.head.appendChild(css);
+      await new Promise((res, rej) => {
+        const s = document.createElement('script');
+        s.src = pagefindBase + 'pagefind-ui.js';
+        s.onload = res;
+        s.onerror = rej;
+        document.head.appendChild(s);
+      });
+      new window.PagefindUI({
+        element: '#pagefind-container',
+        showSubResults: true,
+        showImages: false,
+      });
+    } catch {
+      document.getElementById('search-unavailable').hidden = false;
+    }
+  }
+
+  openBtn?.addEventListener('click', async () => {
+    await loadPagefind();
+    dialog.showModal();
+    dialog.querySelector('input')?.focus();
+  });
+  document.getElementById('search-close')?.addEventListener('click', () => dialog.close());
+  dialog?.addEventListener('click', (e) => {
+    if (e.target === dialog) dialog.close();
+  });
+  document.addEventListener('keydown', (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+      e.preventDefault();
+      openBtn?.click();
+    }
+  });
+</script>
+
+<style>
+  #search-dialog::backdrop {
+    backdrop-filter: blur(2px);
+  }
+  #pagefind-container {
+    --pagefind-ui-primary: var(--accent);
+    --pagefind-ui-text: var(--text);
+    --pagefind-ui-background: var(--surface);
+    --pagefind-ui-border: var(--border);
+    --pagefind-ui-tag: var(--surface-2);
+  }
+</style>

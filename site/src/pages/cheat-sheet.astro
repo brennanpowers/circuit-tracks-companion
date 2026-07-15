@@ -1,8 +1,73 @@
 ---
+import { getEntry, render } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import { withBase } from '../lib/url';
+
+const shortcuts = await getEntry('reference', '11-shortcuts');
+if (!shortcuts) throw new Error('reference entry 11-shortcuts missing');
+const { Content } = await render(shortcuts);
 ---
 
-<Base title="Cheat Sheet · Circuit Tracks Companion">
-  <h1 class="text-3xl font-bold tracking-tight">Cheat sheet</h1>
-  <p class="mt-3 text-muted">Coming together — the printable combo tables land here.</p>
+<Base
+  title="Cheat Sheet · Circuit Tracks Companion"
+  description="Every Circuit Tracks combo on one printable page, plus the jam-night preflight checklist."
+>
+  <div class="flex items-start justify-between gap-4 flex-wrap">
+    <div>
+      <h1 class="text-3xl font-bold tracking-tight">Cheat sheet</h1>
+      <p class="mt-2 text-muted max-w-2xl">
+        Every combo and power-on gesture, plus the jam preflight. Phone-friendly; prints to two
+        clean pages.
+      </p>
+    </div>
+    <button
+      onclick="window.print()"
+      class="no-print rounded-lg border border-border px-4 py-2 text-sm font-medium hover:border-accent"
+      >Print this</button
+    >
+  </div>
+
+  <section class="mt-6 rounded-xl border border-border bg-surface p-4 sm:p-6 print:border-0 print:p-0">
+    <h2 class="font-semibold text-lg">Jam-night preflight</h2>
+    <ol class="mt-2 grid sm:grid-cols-2 gap-x-8 list-decimal pl-5 text-sm leading-6">
+      <li>Charged, or USB battery bank packed</li>
+      <li>Jam project loaded; scenes ordered by energy</li>
+      <li>Tempo &amp; key set — or ready to tap / follow</li>
+      <li>Click <strong>off</strong> (it plays on all outputs)</li>
+      <li>Filter centred; mutes at home state</li>
+      <li><strong>Save Lock on</strong> (power on holding <code>Shift + Save</code>)</li>
+      <li>DI box / cables / adapters packed</li>
+      <li>Master Volume low → bring up at soundcheck</li>
+    </ol>
+    <p class="mt-2 text-xs text-muted">
+      Mono PA: use L/Mono alone — it auto-sums. Headphones mirror the mains (no cue bus).
+    </p>
+  </section>
+
+  <article class="prose cheat-prose mt-8 max-w-none" data-pagefind-body>
+    <Content />
+  </article>
+
+  <p class="mt-8 text-sm text-muted no-print">
+    Sourced from the <a class="underline" href={withBase('reference/11-shortcuts/')}>shortcuts reference</a> —
+    the always-current version.
+  </p>
 </Base>
+
+<style>
+  .cheat-prose :global(table) {
+    font-size: 0.82rem;
+  }
+  @media print {
+    .cheat-prose :global(a) {
+      text-decoration: none;
+      color: #000;
+    }
+    .cheat-prose :global(h2) {
+      break-after: avoid;
+    }
+    .cheat-prose :global(table) {
+      break-inside: avoid;
+    }
+  }
+</style>
