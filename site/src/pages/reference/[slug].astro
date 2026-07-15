@@ -1,0 +1,18 @@
+---
+import { getCollection, render } from 'astro:content';
+import Reference from '../../layouts/Reference.astro';
+import { REFERENCE_SECTIONS } from '../../data/reference-sections';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('reference');
+  return entries.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const meta = REFERENCE_SECTIONS.find((s) => s.id === entry.id);
+const { Content } = await render(entry);
+---
+
+<Reference currentId={entry.id} title={meta?.title ?? entry.id}>
+  <Content />
+</Reference>

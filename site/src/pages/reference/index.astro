@@ -1,0 +1,35 @@
+---
+import Base from '../../layouts/Base.astro';
+import { withBase } from '../../lib/url';
+import { REFERENCE_SECTIONS } from '../../data/reference-sections';
+---
+
+<Base
+  title="Reference · Circuit Tracks Companion"
+  description="The verified Circuit Tracks wiki — every button, mode, and behavior, cross-checked against the official manual."
+>
+  <h1 class="text-3xl font-bold tracking-tight">Reference</h1>
+  <p class="mt-3 max-w-2xl text-muted">
+    The wiki side of the site: twelve sections covering every control and behavior on the
+    Circuit Tracks, verified against the official User Guide v3. The
+    <a class="text-accent underline" href={withBase('course/')}>course</a> links into these pages
+    whenever you want to go deeper — or start with the
+    <a class="text-accent underline" href={withBase('cheat-sheet/')}>cheat sheet</a> if you just
+    need a combo.
+  </p>
+
+  <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    {
+      REFERENCE_SECTIONS.map((s) => (
+        <a
+          href={withBase(`reference/${s.id}/`)}
+          class="group rounded-xl border border-border bg-surface p-5 hover:border-accent transition-colors"
+        >
+          <div class="text-xs font-mono text-muted">{s.id.slice(0, 2)}</div>
+          <h2 class="mt-1 font-semibold group-hover:text-accent">{s.title}</h2>
+          <p class="mt-1 text-sm text-muted">{s.blurb}</p>
+        </a>
+      ))
+    }
+  </div>
+</Base>
