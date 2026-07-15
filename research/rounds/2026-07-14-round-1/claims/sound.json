@@ -353,195 +353,195 @@
         {
           "id": "sound-1",
           "verdict": "confirmed",
-          "note": "User Guide v3 'Playing a Synth' (p27): 'The two synth tracks - Synth 1 and Synth 2 - operate identically. The only difference is the pad colour - Synth 1 keys are illuminated violet and Synth 2 keys are pale green.' Colour coding is consistent across views. Fully confirmed for Circuit Tracks."
+          "note": "User Guide p22 color table + p27/p33: two synth tracks, Synth 1 pads violet, Synth 2 pale green; 'The Note Views for the four drum tracks are the same, apart from the colour coding' logic mirrors synths. Functionally identical apart from colour (they do differ in default patch/page and default MIDI channel, but operation is the same). Confirmed."
         },
         {
           "id": "sound-2",
           "verdict": "confirmed",
-          "note": "User Guide v3 p35: 'Circuit Tracks' synth engines are \"six-note polyphonic\" - that is, you can assign up to six notes to any step in the pattern, if the Patch you've selected is suitably polyphonic.' Spec sheet also lists '6-voice polyphony'."
+          "note": "User Guide p35: \"Circuit Tracks' synth engines are 'six-note polyphonic' - that is, you can assign up to six notes to any step in the pattern, if the Patch you've selected is suitably polyphonic.\" Feature list p6 also states 'Two synth tracks with 6-voice polyphony.'"
         },
         {
           "id": "sound-3",
           "verdict": "confirmed",
-          "note": "Sound On Sound review calls them 'dual-oscillator wavetable/virtual analogue polysynths' using 'the same Nova engines' as the original Circuit. Official Novation support article 'Circuit and Circuit Tracks Synth Engine Explained' and MusicRadar confirm the engine is derived from the Novation MiniNova (Nova family). Raw waveforms are virtual-analogue; wavetables (30 total osc options: 14 analogue + 16 wavetables) are unlocked via Components. The user guide itself only says 'powerful and versatile synth engine' without naming Nova, but external and official-support sources confirm the family and parity with the original Circuit."
+          "note": "Not in the official manual (which never names the engine), but confirmed by Sound On Sound review: the Tracks has 'two on-board synths (using the same Nova engines)' as the original Circuit, described as 'dual-oscillator wavetable/virtual analogue polysynths.' Same Nova engine family as the 2015 Circuit."
         },
         {
           "id": "sound-4",
           "verdict": "confirmed",
-          "note": "User Guide v3 'Selecting Patches' (p33): 'Each of the two synth tracks can use any one of 128 pre-loaded Patches, which have been developed specifically for Circuit Tracks. The Patches are arranged as four pages of 32 in Patch View. ... press Preset.'"
+          "note": "User Guide p33 'Selecting Patches': 'Each of the two synth tracks can use any one of 128 pre-loaded Patches... arranged as four pages of 32 in Patch View,' opened by pressing Preset."
         },
         {
           "id": "sound-5",
           "verdict": "confirmed",
-          "note": "User Guide v3 p33: 'This opens Patch View Page 1 if Synth 1 is selected and Patch View Page 3 if Synth 2 is selected. In each case, you can select the other pages by using the down/up (J/K) buttons.' Confirmed."
+          "note": "User Guide p33: pressing Preset 'opens Patch View Page 1 if Synth 1 is selected and Patch View Page 3 if Synth 2 is selected. In each case, you can select the other pages by using the down/up arrow buttons.' (The 'J/K' glyphs in the PDF are the down/up arrows, confirmed via Novation online guide.)"
         },
         {
           "id": "sound-6",
           "verdict": "confirmed",
-          "note": "User Guide v3 p33: 'Patch 1 (Pad 1 on Page 1) is the default Patch for Synth 1 and Patch 33 (Pad 1 on Page 2) is the default Patch for Synth 2.' Patch 33 = Page 2 Pad 1, matching the claim."
+          "note": "User Guide p33: 'Patch 1 (Pad 1 on Page 1) is the default Patch for Synth 1 and Patch 33 (Pad 1 on Page 2) is the default Patch for Synth 2.' Note Synth 2's default patch (33, page 2) differs from the page it opens on (page 3) - both are stated verbatim."
         },
         {
           "id": "sound-7",
           "verdict": "confirmed",
-          "note": "User Guide v3 p33-34: 'Patch Preview takes into account the current Scale and Root Note setting when auditioning a Patch. If you hold down Shift while pressing a pad in Patch View, Preview is disabled.' (Also disabled during Record Mode playback.)"
+          "note": "User Guide p33-34 'Patch Preview': 'Patch Preview takes into account the current Scale and Root Note setting when auditioning a Patch. If you hold down Shift while pressing a pad in Patch View, Preview is disabled.'"
         },
         {
           "id": "sound-8",
           "verdict": "confirmed",
-          "note": "User Guide v3 'External Patch Select' (p34): 'Synth Patches may also be recalled from an external MIDI controller by sending MIDI Program Change (PGM) messages: the default MIDI channels are Channel 1 (Synth 1) and Channel 2 (Synth 2).'"
+          "note": "User Guide p34 'External Patch Select': recalled via MIDI Program Change, 'the default MIDI channels are Channel 1 (Synth 1) and Channel 2 (Synth 2), though MIDI channels may be reassigned in Setup View.'"
         },
         {
           "id": "sound-9",
           "verdict": "confirmed",
-          "note": "User Guide v3 'Exploring the Macros' (p34): 'Each of the 128 factory Patches ... can have up to four of its parameters \"tweaked\" by each Macro control.' 'The rotary controls are \"endless\".' Eight macros confirmed."
+          "note": "User Guide p34 'Exploring the Macros': eight Macro controls; 'Each of the 128 factory Patches... can have up to four of its parameters tweaked by each Macro control.' 'The rotary controls are endless.'"
         },
         {
           "id": "sound-10",
           "verdict": "confirmed",
-          "note": "Panel labels in User Guide v3 diagrams (p34/p63/etc): 1 Oscillator, 2 Oscillator Mod, 3 Amp Envelope, 4 Filter Envelope, 5 Filter Frequency, 6 Resonance, 7 Modulation, 8 FX. Guide notes 'With certain Patches, some Macros will be assigned a function quite different to their normal one' - so these are only the primary/default functions and patches can reassign them. Confirmed."
+          "note": "Confirmed by the Mixer/panel labels in the guide: 1 Oscillator, 2 Oscillator Mod, 3 Amp Envelope, 4 Filter Envelope, 5 Filter Frequency, 6 Resonance, 7 Modulation, 8 FX. Guide p34: 'The primary function of each Macro is indicated below the knob' and 'With certain Patches, some Macros will be assigned a function quite different to their normal one.'"
         },
         {
           "id": "sound-11",
           "verdict": "confirmed",
-          "note": "On-device editing is via the eight Macros only; deep editing is in Components. User Guide 'Novation Components integration - full synth engine editing' (features list) and references to 'Novation Components' Synth Editor' (p34); Sound On Sound: the Components 'real-time synth editor ... unlocks full sound-design control over the built-in sound engines' and 'you can customise your own macro per patches here for control from the hardware.' Confirmed."
+          "note": "User Guide p34 notes patches 'created using Novation Components' Synth Editor' and p33 'You can use Components to load Patches.' On-device sound shaping is limited to the eight macros; deep parameter assignment/patch building is done in Components. Sound On Sound review concurs."
         },
         {
           "id": "sound-12",
           "verdict": "confirmed",
-          "note": "User Guide v3 'Scales' (p30): 'Up to 16 musical scales are available ... Not all these scales contain eight notes, though the only one that has more than eight is Chromatic, with 12.' Set via the Scales button in Scales View. Confirmed."
+          "note": "User Guide p31 'Scales': 'Up to 16 musical scales are available... Not all these scales contain eight notes, though the only one that has more than eight is Chromatic, with 12.' Set in Scales View via the Scales button."
         },
         {
           "id": "sound-13",
           "verdict": "confirmed",
-          "note": "User Guide v3 scale table (p30-31), pads 17-32 exactly: Natural Minor, Major, Dorian, Phrygian, Mixolydian, Melodic Minor (ascending), Harmonic Minor, Bebop Dorian, Blues, Minor Pentatonic, Hungarian Minor, Ukranian Dorian, Marva, Todi, Whole Tone, Chromatic. Matches claim exactly (note Novation's own spelling 'Ukranian')."
+          "note": "User Guide p31 scale table (pads 17-32) exactly: Natural Minor, Major, Dorian, Phrygian, Mixolydian, Melodic Minor (ascending), Harmonic Minor, Bebop Dorian, Blues, Minor Pentatonic, Hungarian Minor, Ukranian Dorian, Marva, Todi, Whole Tone, Chromatic. Order matches the claim verbatim."
         },
         {
           "id": "sound-14",
           "verdict": "confirmed",
-          "note": "User Guide v3 'Root note' (p32): 'The default root note for all scales is C. In the Scales View ... Pad 9, corresponding to C, is lit a darker blue than the other pads.' Pressing a different keynote pad transposes; 'the keynote selection pads always show an octave from C to B.' Confirmed."
+          "note": "User Guide p32 'Root note': 'The default root note for all scales is C... Pad 9, corresponding to C, is lit a darker blue than the other pads.' 'the keynote selection pads always show an octave from C to B.' Pressing another keynote pad transposes."
         },
         {
           "id": "sound-15",
           "verdict": "confirmed",
-          "note": "User Guide v3 p32: keynote/scale can be changed 'even while the Project is playing'; changing scale is 'not destructive'; absent notes get 'an intelligent decision ... normally either one semitone above or below the original note' and revert when the original scale is restored. Confirmed."
+          "note": "User Guide p32-33: changing keynote transposes 'even while the Project is playing'; changing scale, missing notes get 'an intelligent decision as to which note to play instead, which will normally be either one semitone above or below the original note. Changing scale in this way is not destructive: you can revert to the original scale.'"
         },
         {
           "id": "sound-16",
           "verdict": "confirmed",
-          "note": "User Guide v3 p27-28: two lower rows = synth keyboard; 'the upper row of the synth keyboard contains notes one octave above those in the second row.' 'The synth has a total range of 10 octaves; you can access higher or lower pairs of octaves by using the J and K buttons.' Chromatic scale yields a one-octave keyboard (all 12 notes fill one octave). Confirmed."
+          "note": "User Guide p28: two lower grid rows are the synth keyboard (play area), 'the upper row of the synth keyboard contains notes one octave above those in the second row' (highest note of lower octave = lowest note of higher octave). p28: 'The synth has a total range of 10 octaves; you can access higher or lower pairs of octaves' via the arrows. Chromatic reduces the keyboard to one octave (p31/p32)."
         },
         {
           "id": "sound-17",
           "verdict": "confirmed",
-          "note": "User Guide v3 'Expanded Note View' (p28): 'hold down Shift and press Note; Note now illuminates gold ... removes the pattern display in the two upper rows ... replacing it with keys for the next two higher octaves of the selected scale.' Yields a four-octave surface. Confirmed."
+          "note": "User Guide p29 'Expanded Note View': 'hold down Shift and press Note; Note now illuminates gold... removes the pattern display in the two upper rows... replacing it with keys for the next two higher octaves of the selected scale' - i.e., a four-octave surface."
         },
         {
           "id": "sound-18",
           "verdict": "confirmed",
-          "note": "User Guide v3 'The Drums' (p60) and 'Selecting Samples' (p62): 'Circuit Tracks has four separate drum tracks, Drum 1 to Drum 4' and 'Each of the four drum tracks ... can use any one of 64 pre-loaded samples.' Each programmed independently. Confirmed."
+          "note": "User Guide p60-63: 'Circuit Tracks has four separate drum tracks, Drum 1 to Drum 4,' each programmed independently; 'Each of the four drum tracks... can use any one of 64 pre-loaded samples.'"
         },
         {
           "id": "sound-19",
           "verdict": "confirmed",
-          "note": "User Guide v3 p60/p62: samples 'four pages of these (each with 16 samples)' in Note View; Preset View (track button then Preset) shows 'two pages of 32'. Confirmed."
+          "note": "User Guide p63 'Selecting Samples': audition/select 'in Note View, four pages of 16 at a time, or use Preset View... the samples are arranged as two pages of 32.' Preset View opened by pressing the track button then Preset."
         },
         {
           "id": "sound-20",
           "verdict": "confirmed",
-          "note": "User Guide v3 p60: 'Drum 1: Page 1, slot 1 (Kick 1); Drum 2: Page 1, slot 3 (Snare 1); Drum 3: Page 1, slot 5 (Closed hi hat 1); Drum 4: Page 1, slot 9 (Additional percussion 1).' 'Drums 1 and 2 are kick drums, 3 and 4 are snares, 5 and 6 are closed hi hats, 7 and 8 are open hi hats, 9 through 12 tend to be additional percussion, and 13 through 16 are melodic sounds.' Matches exactly."
+          "note": "User Guide p60: 'default sample page allocation: Drum 1: Page 1, slot 1 (Kick 1); Drum 2: Page 1, slot 3 (Snare 1); Drum 3: Page 1, slot 5 (Closed hi hat 1); Drum 4: Page 1, slot 9 (Additional percussion 1).' Kit layout: 'Drums 1 and 2 are kick drums, 3 and 4 are snares, 5 and 6 are closed hi hats, 7 and 8 are open hi hats, 9 through 12... additional percussion, and 13 through 16 are melodic sounds.'"
         },
         {
           "id": "sound-21",
           "verdict": "confirmed",
-          "note": "User Guide v3 p61: 'To change the active sample, give a different sample pad a quick tap: a longer press will play the sample but leave the previous sample assigned as the active one.' Confirmed."
+          "note": "User Guide p61: 'To change the active sample, give a different sample pad a quick tap: a longer press will play the sample but leave the previous sample assigned as the active one.'"
         },
         {
           "id": "sound-22",
           "verdict": "confirmed",
-          "note": "User Guide v3 'Sample Flip' (p62-63): 'Press and hold the pad for the required sample (it turns red) and then press the step pads ... they also turn red.' 'steps with hits of the active sample illuminate bright blue, but any that have been flipped illuminate pink.' 'You can do this independently for each of the four drums.' Confirmed."
+          "note": "User Guide p62-63 'Sample Flip': 'Press and hold the pad for the required sample (it turns red) and then press the step pads... they also turn red.' 'steps with hits of the active sample illuminate bright blue, but any that have been flipped illuminate pink.' 'You can do this independently for each of the four drums.'"
         },
         {
           "id": "sound-23",
           "verdict": "confirmed",
-          "note": "User Guide v3 'Using the Macros for drum design' (p63): 'Only the even-numbered Macros are active when a drum track is selected.' Table: Macro 2 = Pitch, 4 = Decay envelope time, 6 = Distortion, 8 = EQ. Confirmed exactly."
+          "note": "User Guide p63/p64 'Using the Macros for drum design': 'Only the even-numbered Macros are active when a drum track is selected.' Table: Macro 2 = Pitch, 4 = Decay envelope time, 6 = Distortion, 8 = EQ."
         },
         {
           "id": "sound-24",
           "verdict": "confirmed",
-          "note": "User Guide v3 'Expanded Drum View' (p61): entered via Shift + Note; 'all the grid pads except 29-32 are disabled' and pads 29-32 become 'Playing Pads for Drums 1 - 4' (current active sample per track). Confirmed."
+          "note": "User Guide p61-62 'Expanded Drum View': opened by 'holding Shift and pressing Note'; 'all the grid pads except 29-32 are disabled'; pads 29-32 are 'Playing Pads for Drums 1-4' triggering each track's current active sample simultaneously."
         },
         {
           "id": "sound-25",
           "verdict": "confirmed",
-          "note": "User Guide v3 'FX Section' (p90): 'Sixteen delay and eight reverb presets are provided, and you can select any one of each type. The send levels from each track ... are individually adjustable for each track using the Macro controls.' 'It is not possible to use different reverb presets on different tracks' - i.e. one delay + one reverb active globally. Confirmed."
+          "note": "User Guide p91-92: 'Sixteen delay and eight reverb presets are provided, and you can select any one of each type.' 'It is not possible to use different reverb presets on different tracks' (one delay + one reverb globally). Send amounts are per-track via the 8 macros (same layout as Mixer)."
         },
         {
           "id": "sound-26",
           "verdict": "confirmed",
-          "note": "User Guide v3 p90: '\"peach\" pads on Rows 1 and 2 calls up a delay preset ... \"cream\" pads on Row 3 enable reverb presets ... reverb presets ... increasing reverberation time from Pad 17 to Pad 24, and the delay presets with increasing complexity from Pad 1 to Pad 16.' 'delay time is related to the BPM' (all BPM-synced). Confirmed."
+          "note": "User Guide p91: 'Each of the peach pads on Rows 1 and 2 calls up a delay preset, and similarly, the cream pads on Row 3 enable reverb presets... reverb presets are arranged with increasing reverberation time from Pad 17 to Pad 24, and the delay presets with increasing complexity from Pad 1 to Pad 16... In all cases, delay time is related to the BPM.'"
         },
         {
           "id": "sound-27",
           "verdict": "confirmed",
-          "note": "User Guide v3 reverb table (p91): 1 Small Chamber, 2 Small Room 1, 3 Small Room 2, 4 Large Room, 5 Hall, 6 Large Hall, 7 Hall - long reflection, 8 Large Hall - long reflection. Matches claim exactly."
+          "note": "User Guide p91 reverb table matches exactly: 1 Small Chamber, 2 Small Room 1, 3 Small Room 2, 4 Large Room, 5 Hall, 6 Large Hall, 7 Hall - long reflection, 8 Large Hall - long reflection."
         },
         {
           "id": "sound-28",
           "verdict": "confirmed",
-          "note": "User Guide v3 delay table (p92), all 16: 1 Slapback Fast, 2 Slapback Slow, 3 32nd Triplets, 4 32nd, 5 16th Triplets, 6 16th, 7 16th Ping Pong, 8 16th Ping Pong Swung, 9 8th Triplets, 10 8th dotted Ping Pong, 11 8th, 12 8th Ping Pong, 13 8th Ping Pong Swung, 14 4th Triplets, 15 4th dotted Ping Pong Swung, 16 4th Triplets Ping Pong Wide. Matches the claim's list exactly."
+          "note": "User Guide p92 delay table matches all 16: Slapback Fast, Slapback Slow, 32nd Triplets, 32nd, 16th Triplets, 16th, 16th Ping Pong, 16th Ping Pong Swung, 8th Triplets, 8th dotted Ping Pong, 8th, 8th Ping Pong, 8th Ping Pong Swung, 4th Triplets, 4th dotted Ping Pong Swung, 4th Triplets Ping Pong Wide."
         },
         {
           "id": "sound-29",
           "verdict": "confirmed",
-          "note": "Confirmed with a location nuance. User Guide v3 p90: 'There is also a master compressor which is applied to your mix by default.' The authoritative toggle description is in Advanced Setup View (p106): 'Circuit Tracks includes a master compressor, which is applied to all audio outputs ... It can be enabled or disabled by pressing FX while in Advanced Setup View' (FX bright green = on, dim red = off). No user-adjustable parameters - only on/off. NOTE: the FX-Section page (p92) has an internal inconsistency, saying 'enabled or disabled by the FX button in Setup View: see page 102' - but the real control lives in Advanced Setup View (p106). The claim's hedge 'Setup/Advanced Setup View' covers this; core claim confirmed."
+          "note": "User Guide p90/p93: 'There is also a master compressor which is applied to your mix by default.' 'Master Compressor - This is enabled or disabled by the FX button in Setup View: see page 103.' Only on/off control exists (no adjustable parameters). Minor: manual cites Setup View p103; the claim's 'Setup/Advanced Setup View' is substantively correct."
         },
         {
           "id": "sound-30",
           "verdict": "confirmed",
-          "note": "User Guide v3 'Side Chains' (p93): 'Side Chain View is the secondary view of the FX button. Open by holding Shift and pressing FX.' 'Seven Side Chain presets are available.' 'The default state is for Side Chain to be OFF on both synths and both MIDI tracks.' Confirmed."
+          "note": "User Guide p94 'Side Chains': 'Side Chain View is the secondary view of the FX button. Open by holding Shift and pressing FX.' 'Seven Side Chain presets are available.' 'The default state is for Side Chain to be OFF on both synths and both MIDI tracks.'"
         },
         {
           "id": "sound-31",
           "verdict": "confirmed",
-          "note": "User Guide v3 p93-94: 'Side Chain allows the hits of the selected drum track to duck the audio level of the synths' (or external inputs). Page 1 = Synth 1/Synth 2, Page 2 = MIDI (Audio In) 1/2. 'the seven Side Chain Presets (Pads 2 to 8 in each row) ... the first pad in each row is the OFF button ... Pad 1 is illuminated bright red when the Side Chain is OFF.' 'Pads 5 to 8 on the top row let you select which Drum track will be the side chain trigger.' Confirmed exactly."
+          "note": "User Guide p94: Page 1 = Synth 1/Synth 2, Page 2 = MIDI (Audio In) 1/2. 'seven Side Chain Presets (Pads 2 to 8 in each row); the first pad in each row is the OFF button... Pad 1 is illuminated bright red when the Side Chain is OFF.' 'Pads 5 to 8 on the top row let you select which Drum track will be the side chain trigger.' Ducks synth or external audio input by the selected drum's hits."
         },
         {
           "id": "sound-32",
           "verdict": "confirmed",
-          "note": "User Guide v3 p94: 'Side Chain ducking will continue even when the level of the source track is reduced to zero in the Mixer View ... However, if you mute the drum track selected as the key in Mixer View, side chain triggering is disabled.' Confirmed."
+          "note": "User Guide p94: 'Side Chain ducking will continue even when the level of the source (trigger drum) track is reduced to zero in the Mixer View... However, if you mute the drum track selected as the key in Mixer View, side chain triggering is disabled.'"
         },
         {
           "id": "sound-33",
           "verdict": "confirmed",
-          "note": "User Guide v3 'The Filter Knob' (p94): 'The entire audio output ... the sum of the sounds from all six internal tracks plus the two external audio inputs' passes through the Master Filter knob. Anticlockwise = low-pass, clockwise = high-pass; centre detent = no filtering, 'LED below the knob is dimly lit white'; 'The LED changes to pale blue when either filter type is active.' Confirmed exactly."
+          "note": "User Guide p95 'The Filter Knob': filters 'the sum of the sounds from all six internal tracks plus the two external audio inputs.' 'controls a low-pass filter when you turn it anticlockwise from the centre position and a high-pass filter when you turn it clockwise.' Centre detent = no filtering, LED dimly lit white; LED changes to pale blue when active."
         },
         {
           "id": "sound-34",
           "verdict": "confirmed",
-          "note": "User Guide v3 'Mixer' (p88): 'Circuit Tracks includes an eight-channel mixer ... all the tracks play at a volume level of 100 (arbitrary units, range 0-127).' 'The illuminated pads on Row 1 are Mute buttons for each track.' No Solo function exists anywhere in the guide. Confirmed."
+          "note": "User Guide p89 'Mixer': 'eight-channel mixer... all the tracks play at a volume level of 100 (arbitrary units, range 0-127).' 'The illuminated pads on Row 1 are Mute buttons for each track.' No Solo function exists on Circuit Tracks (only Mute is documented)."
         },
         {
           "id": "sound-35",
           "verdict": "confirmed",
-          "note": "User Guide v3 p88-89: 'By default, in Mixer View the Macros control volume level of each track' (down arrow / J lit); 'Macro controls 3 and 4 (the MIDI tracks) control the level of external ... Inputs 1 and 2.' 'Pressing the [down] J button converts the Macro controls to pan controls ... default pan position ... stereo-centre ... Macro LEDs showing white. Panning a track left turns the LED increasingly bright blue; panning to the right turns it increasingly bright pink.' Both level and pan are automatable. Confirmed."
+          "note": "User Guide p89: macros default to level control (down-arrow lit); Macros 3 and 4 control external Inputs 1 and 2. 'Pressing the [down arrow] button converts the Macro controls to pan controls... default pan position... stereo-centre, indicated by the Macro LEDs showing white. Panning a track left turns the LED... bright blue; panning to the right... bright pink.' Both level and pan automatable. (Verified the down-arrow=pan mapping via Novation's online Mixer article, since the PDF renders the arrow glyph as 'J'.)"
         },
         {
           "id": "sound-36",
           "verdict": "confirmed",
-          "note": "User Guide v3 'Rear view' (p18): 'Outputs - L/Mono and R ... on two 1/4\" TS jack sockets. Max. output level is +5.3 dBu (+/-1.5 dBu). With no plug in the R socket, the L/Mono socket carries a mono mix.' 'Inputs 1 and 2 - two external audio inputs: line level ... unbalanced on 1/4\" TS jack sockets.' Confirmed."
+          "note": "User Guide p17-18 'Rear view': 'Outputs - L/Mono and R... on two 1/4\" TS jack sockets. Max. output level is +5.3 dBu (+/-1.5 dBu). With no plug in the R socket, the L/Mono socket carries a mono mix of L and R channels.' 'Inputs 1 and 2 - two external audio inputs: line level signals... unbalanced on 1/4\" TS jack sockets.'"
         },
         {
           "id": "sound-37",
           "verdict": "confirmed",
-          "note": "User Guide v3 p18: 'USB-C port. This is also the DC power input ... The port is MIDI class compliant ... NOTE - Circuit Tracks' USB port does not carry audio.' Therefore DAW audio recording must use the analogue outputs. Confirmed."
+          "note": "User Guide p18: USB-C port is 'the DC power input... The port is MIDI class compliant... NOTE - Circuit Tracks' USB port does not carry audio.' Recording into a DAW therefore requires the analogue outputs (direct inference from 'does not carry audio')."
         },
         {
           "id": "sound-38",
           "verdict": "confirmed",
-          "note": "User Guide v3 p18: Headphones - 'The main outputs remain active when a plug is inserted. The headphone amplifier can drive +5 dBu into a pair of 150 ohm stereo headphones.' Sync - 'a 3.5 mm TRS jack socket supplying a clock signal of 5 V amplitude ... The default rate is two pulses per quarter note.' Confirmed (note it is a TRS socket, and the ratio is settable in Setup View)."
+          "note": "User Guide p18: Headphones - 'The main outputs remain active when a plug is inserted. The headphone amplifier can drive +5 dBu into a pair of 150 ohm stereo headphones.' Sync - '3.5 mm TRS jack socket supplying a clock signal of 5 V amplitude... The default rate is two pulses per quarter note' (ratio configurable in Setup View)."
         }
       ],
-      "overallNotes": "All 38 'sound' claims are CONFIRMED against the official Novation Circuit Tracks User Guide v3 (English PDF: https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf), cross-checked with the Sound On Sound review and Novation's own 'Circuit and Circuit Tracks Synth Engine Explained' support material for the engine claim. Everything is explicitly Circuit-Tracks-specific (not original Circuit or Circuit Rhythm) - the guide names Synth 1/Synth 2, two MIDI tracks, four drum tracks, and external audio inputs, which are the Tracks feature set.\n\nAccuracy nuances / corrections to note:\n1. sound-29 location error in the claim's own reasoning: the master compressor's on/off toggle actually lives in ADVANCED Setup View (p106: 'enabled or disabled by pressing FX while in Advanced Setup View'), not the regular Setup View. The guide itself is internally inconsistent - the FX-Section page (p90/92) wrongly says 'Setup View: see page 102'. The claim hedged as 'Setup/Advanced Setup View' so it is still correct, but the definitive control is Advanced Setup View, entered by holding Shift while powering on.\n2. sound-3 engine detail worth adding: the engine is specifically MiniNova-derived (Nova family). Raw oscillators are virtual-analogue (14 analogue waveforms); the 16 WAVETABLES are only reachable through the Components Synth Editor, not from the hardware macros - so on-device the engine reads as VA, with wavetables/deep modulation unlocked in software. Osc has 30 total waveform options.\n3. Novation's own (mis)spelling is 'Ukranian Dorian' (sic) in the scale table - the claim reproduced it faithfully.\n4. Terminology: the Sync socket is a 3.5 mm TRS jack (claim said '3.5mm Sync out', fine); the sync ratio (default 2 ppqn) is user-settable in Setup View.\n\nFacts about SOUND the claim set MISSED entirely (candidates for the guide):\n- Master Volume knob: a physical rotary that sets overall output level, separate from the Mixer's per-track 0-127 levels.\n- Micro steps / non-quantised recording: six 'micro step' tick positions exist between each of the 16 steps (Shift+Record = Rec Quantise toggle), affecting timing/feel of both synth and drum hits.\n- Factory default projects load Synth 1 as MONOPHONIC and Synth 2 as POLYPHONIC (so Synth 1 suits bass, Synth 2 chords) - a sound-relevant default, though changeable.\n- Reverb/delay send Macro LED colours in FX View: cream for reverb sends, peach for delay sends (mirrors the pad colours), and the same eight macros switch role based on whether the last FX pad pressed was reverb or delay.\n- Drum sample slots 13-16 of each kit are 'melodic' samples (pitched), and Macro 2 (Pitch) can retune any drum - relevant to using drum tracks as tonal/bass sources.\n- The eight mixer channels include the two external audio inputs (surfaced as 'MIDI 1/MIDI 2' = Audio In 1/2), which are fully routed through Mixer, FX (reverb/delay send), side-chain and the Master Filter - i.e. external gear gets the same sound-shaping as internal tracks.\n- Chromatic scale is the way to guarantee all 12 chromatic notes are playable (external-controller notes outside the current scale are 'snapped' to the nearest in-scale note otherwise).\n- Sample flip / drum patches can also be recalled externally via MIDI CC on Channel 10.\n- The guide does not state sample bit-depth/sample-rate or synth DAC specs; those are absent from the User Guide and would need a spec sheet if desired."
+      "overallNotes": "All 38 sound-angle claims verified against the OFFICIAL Novation Circuit Tracks User Guide (v3 EN, official copy at fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf; verified via an identical mirror). Page numbers cited by the claims match the actual guide. sound-3 is the only claim not covered by the manual (which never names the engine); it is confirmed by the Sound On Sound review (\"same Nova engines,\" \"dual-oscillator wavetable/virtual analogue polysynths\"). Every claim is explicitly about Circuit Tracks, not the original Circuit or Circuit Rhythm.\n\nOne glyph caveat resolved: the PDF renders the down/up arrow buttons as \"J\" and \"K\" (font-encoding artifact). I confirmed via Novation's official online Mixer article that the DOWN arrow (down-triangle) is what switches macros to pan and the UP arrow returns to level - so sound-35's \"down arrow\" wording is correct. The same J/K = down/up arrows apply to sound-5's page navigation (correct).\n\nIMPORTANT SOUND-ANGLE FACTS THE CLAIMS MISSED ENTIRELY:\n1. Drum sample/patch recall via MIDI: drum samples can be recalled externally by MIDI CC messages on MIDI Channel 10 (User Guide p63) - parallel to the synth Program Change facility in sound-8, but omitted.\n2. Factory default patch character: default Projects load with a MONOPHONIC sound for Synth 1 and a POLYPHONIC sound for Synth 2 (User Guide p35). Relevant context for the six-note polyphony claim (sound-2) - out of the box the two synths behave differently.\n3. Drum macros are FIXED-function (unlike synth macros which patches can reassign) - the guide explicitly contrasts this (p64): \"Unlike the synth Macros, the functions are fixed for drums.\"\n4. FX send macros indicate mode by LED colour: reverb send macros light dim CREAM, delay send macros light PEACH, matching the pad colours (User Guide p91-92). Reverb/delay send levels are automatable in Record Mode (p92).\n5. Synth-keyboard octave overlap: the highest note of the lower keyboard row (Pad 32) is the SAME pitch as the lowest note of the higher row (Pad 17) - an important playing-surface detail (User Guide p28).\n6. Note View note-shift range: the arrows shift synth/MIDI pitch \"up by one to five octaves, or down by one to six octaves,\" adjustable independently per track (User Guide p17) - the mechanism behind the 10-octave range in sound-16.\n7. Sync-out ratio is user-configurable in Setup View (default 2 ppqn is only the default); the guide notes \"the actual ratio can be set in Setup View\" (p18).\n8. Master Volume is a separate analogue output-level knob (control 4), distinct from the per-track mixer levels and the Master Filter (User Guide p18/p89).\n9. Chromatic scale has a DIFFERENT keyboard layout (piano-style, matching the keynote-selection pads) rather than the standard two-row scale layout (User Guide p31-32) - noted for sound-16 but the layout specifics were not.\n10. Side-chain terminology: the trigger drum is called the \"key\"; a good demo setup (synth note Gate 16 + Drum 1 kicks) is documented (p94) - minor, but the \"key\" wording matters for accuracy."
     },
     {
       "lens": "device",
@@ -549,27 +549,27 @@
         {
           "id": "sound-1",
           "verdict": "confirmed",
-          "note": "User Guide v3 p27 (playing a synth): 'The two synth tracks \u2013 Synth 1 and Synth 2 - operate identically. The only difference is the pad colour \u2013 Synth 1 keys are illuminated violet and Synth 2 keys are pale green.' Track colour table also lists Synth 1 Violet, Synth 2 Pale Green. Tracks-specific."
+          "note": "User Guide v3 p27: Synth 1 keys illuminated violet, Synth 2 pale green; behaviour is identical apart from colour coding. Minor nuance: factory-default Projects load a monophonic patch on Synth 1 and a polyphonic patch on Synth 2 (default patch differs), but the tracks are functionally identical. Circuit Tracks-specific."
         },
         {
           "id": "sound-2",
           "verdict": "confirmed",
-          "note": "p35: 'Circuit Tracks' synth engines are \"six-note polyphonic\" \u2013 that is, you can assign up to six notes to any step in the pattern, if the Patch you've selected is suitably polyphonic.' Spec sheet: 'Two synth tracks with 6-voice polyphony.'"
+          "note": "p35: 'Circuit Tracks' synth engines are six-note polyphonic - that is, you can assign up to six notes to any step in the pattern, if the Patch you've selected is suitably polyphonic.' Also spec line: 'Two synth tracks with 6-voice polyphony.'"
         },
         {
           "id": "sound-3",
           "verdict": "confirmed",
-          "note": "Correctly attributed shared engine, not a false-parity error. Sound On Sound: 'the Tracks has two on-board synths (using the same Nova engines)' and describes them as 'surprisingly deep dual-oscillator wavetable/virtual analogue polysynths.' MusicRadar/Novation support ('Circuit and Circuit Tracks Synth Engine Explained') confirm the UltraNova-derived virtual-analogue engine is shared with the original Circuit."
+          "note": "Sound On Sound review: 'two on-board synths (using the same Nova engines)' and 'dual-oscillator wavetable/virtual analogue polysynths.' Lineage confirmed: engine derived from MiniNova (2012), Nova-class family (Supernova->UltraNova->MiniNova->Circuit/Circuit Tracks); same engine as original Circuit. MusicRadar corroborates two oscillators with VA waves and wavetables."
         },
         {
           "id": "sound-4",
           "verdict": "confirmed",
-          "note": "p33: 'Each of the two synth tracks can use any one of 128 pre-loaded Patches... arranged as four pages of 32 in Patch View. To open Patch View for the currently selected synth, press Preset.'"
+          "note": "p33: 'Each of the two synth tracks can use any one of 128 pre-loaded Patches... arranged as four pages of 32 in Patch View. To open Patch View... press Preset.' Circuit Tracks-specific."
         },
         {
           "id": "sound-5",
           "verdict": "confirmed",
-          "note": "p33 verbatim: 'This opens Patch View Page 1 if Synth 1 is selected and Patch View Page 3 if Synth 2 is selected... you can select the other pages by using the [down/up] buttons.' Matches source exactly (note the guide's own Page-3 vs default-Patch-33 quirk, see overallNotes)."
+          "note": "p33: pressing Preset 'opens Patch View Page 1 if Synth 1 is selected and Patch View Page 3 if Synth 2 is selected... select the other pages by using the down/up (J/K) buttons.'"
         },
         {
           "id": "sound-6",
@@ -579,72 +579,72 @@
         {
           "id": "sound-7",
           "verdict": "confirmed",
-          "note": "p33-34: 'Patch Preview takes into account the current Scale and Root Note setting when auditioning a Patch. If you hold down Shift while pressing a pad in Patch View, Preview is disabled.' Also disabled in Record Mode during playback."
+          "note": "p33-34: 'Patch Preview takes into account the current Scale and Root Note setting when auditioning a Patch. If you hold down Shift while pressing a pad in Patch View, Preview is disabled.'"
         },
         {
           "id": "sound-8",
           "verdict": "confirmed",
-          "note": "p34: 'Synth Patches may also be recalled from an external MIDI controller by sending... Program Change (PGM) messages: the default MIDI channels are Channel 1 (Synth 1) and Channel 2 (Synth 2).'"
+          "note": "p34 External Patch Select: 'the default MIDI channels are Channel 1 (Synth 1) and Channel 2 (Synth 2)' for MIDI Program Change recall; channels reassignable in Setup View."
         },
         {
           "id": "sound-9",
           "verdict": "confirmed",
-          "note": "p34: 'Each of the 128 factory Patches... can have up to four of its parameters \"tweaked\" by each Macro control... The rotary controls are \"endless\".' Eight Macros (numbered 1-8 on panel)."
+          "note": "p34: eight Macro controls, 'endless' rotary; 'Each of the 128 factory Patches... can have up to four of its parameters tweaked by each Macro control.'"
         },
         {
           "id": "sound-10",
           "verdict": "confirmed",
-          "note": "Panel legend (p34, and repeated on Mixer/FX pages): 1 Oscillator, 2 Oscillator Mod, 3 Amp Envelope, 4 Filter Envelope, 5 Filter Frequency, 6 Resonance, 7 Modulation, 8 FX. Guide notes 'With certain Patches, some Macros will be assigned a function quite different to their normal one,' confirming these are primary/reassignable functions."
+          "note": "Panel legend (reproduced in FX/drum diagrams): 1 Oscillator, 2 Oscillator Mod, 3 Amp Envelope, 4 Filter Envelope, 5 Filter Frequency, 6 Resonance, 7 Modulation, 8 FX. Guide notes these are the primary function and patches can reassign them ('some Macros will be assigned a function quite different to their normal one'). Exact match."
         },
         {
           "id": "sound-11",
           "verdict": "confirmed",
-          "note": "On-device editing is the 8 macros only; deeper editing is in Components. p34 references 'Patches... created using Novation Components' Synth Editor'; Introduction lists 'Novation Components integration \u2013 full synth engine editing.' Consistent with SOS review."
+          "note": "p34 references patches 'created using Novation Components' Synth Editor'; on-device the guide describes only the eight Macros for sound modification. Deep four-parameters-per-knob editing is a Components feature. Consistent with Sound On Sound."
         },
         {
           "id": "sound-12",
           "verdict": "confirmed",
-          "note": "p30-31: scales set in Scales View (press Scales button). Scale table lists 16 scales on pads 17-32. Only Chromatic exceeds 8 notes: 'Chromatic scaling offers all twelve notes in the octave.' All other listed scales are 5-7 notes."
+          "note": "p30-31: 'Scales View, accessed by pressing the Scales button'; 16 scales; Chromatic is the only scale with more than eight notes: 'all 12 notes in the scale are available.'"
         },
         {
           "id": "sound-13",
           "verdict": "confirmed",
-          "note": "p31 scale table matches exactly, pads 17-32: Natural Minor, Major, Dorian, Phrygian, Mixolydian, Melodic Minor (ascending), Harmonic Minor, Bebop Dorian, Blues, Minor Pentatonic, Hungarian Minor, Ukranian Dorian, Marva, Todi, Whole Tone, Chromatic."
+          "note": "p31 scale table pads 17-32 exactly: Natural Minor, Major, Dorian, Phrygian, Mixolydian, Melodic Minor (ascending), Harmonic Minor, Bebop Dorian, Blues, Minor Pentatonic, Hungarian Minor, Ukranian Dorian, Marva, Todi, Whole Tone, Chromatic. Note guide spells it 'Ukranian' (sic)."
         },
         {
           "id": "sound-14",
           "verdict": "confirmed",
-          "note": "p32: 'The default root note for all scales is C... Pad 9, corresponding to C, is lit a darker blue than the other pads. To change the keyboard root note... press a different keynote selection pad in Scale View. (Note that the keynote selection pads always show an octave from C to B.)'"
+          "note": "p32: 'The default root note for all scales is C... Pad 9, corresponding to C, is lit a darker blue... the keynote selection pads always show an octave from C to B.'"
         },
         {
           "id": "sound-15",
           "verdict": "confirmed",
-          "note": "p32: 'you can change the keynote to transpose the notes, even while the Project is playing... some notes present when [it] was created may not exist in the new scale. In such a case, Circuit Tracks makes an intelligent decision... normally either one semitone above or below the original note. Changing scale in this way is not destructive: you can revert to the original scale and the notes will sound as they did before.'"
+          "note": "p32-33: 'you can change the keynote to transpose the notes, even while the Project is playing... Circuit Tracks makes an intelligent decision... normally either one semitone above or below... Changing scale in this way is not destructive: you can revert to the original scale and the notes will sound as they did before.'"
         },
         {
           "id": "sound-16",
           "verdict": "confirmed",
-          "note": "p27/p31: 'The two lower rows of the grid constitute the synth keyboard' and 'the upper row of the synth keyboard contains notes one octave above those in the second row.' 'The synth has a total range of 10 octaves; you can access higher or lower pairs of octaves by using the [down/up] buttons.' Chromatic reduces keyboard to one octave."
+          "note": "p28/p31: two lower rows are the keyboard, upper row one octave higher (Pad 32 = Pad 17); 'The synth has a total range of 10 octaves; you can access higher or lower pairs of octaves by using the down/up (J/K) buttons.' Chromatic yields a one-octave keyboard."
         },
         {
           "id": "sound-17",
           "verdict": "confirmed",
-          "note": "p28: 'hold down Shift and press Note; Note now illuminates gold. This is called Expanded Note View, and removes the pattern display in the two upper rows... replacing it with keys for the next two higher octaves.' Yields a four-octave surface (p35: 'extend over four octaves rather than two')."
+          "note": "p28: 'hold down Shift and press Note; Note now illuminates gold... Expanded Note View... removes the pattern display... replacing it with keys for the next two higher octaves.' Correction: it is the NOTE BUTTON that illuminates gold, not the pads as the claim states; the four-octave surface, step-display removal, and Shift+Note trigger are all correct."
         },
         {
           "id": "sound-18",
           "verdict": "confirmed",
-          "note": "p59/p62: 'Circuit Tracks has four separate drum tracks, Drum 1 to Drum 4' programmed independently, and 'Each of the four drum tracks... can use any one of 64 pre-loaded samples.'"
+          "note": "p59/p62: 'Circuit Tracks has four separate drum tracks, Drum 1 to Drum 4', each independently programmable; 'Each of the four drum tracks can use any one of 64 pre-loaded samples.'"
         },
         {
           "id": "sound-19",
           "verdict": "confirmed",
-          "note": "p62: 'audition and select the samples in Note View, four pages of 16 at a time, or use Preset View, which is opened by pressing the relevant track button, then Preset. In Preset View for the drum tracks, the samples are arranged as two pages of 32.'"
+          "note": "p60/p62: 'four pages of these (each with 16 samples)' in Note View; in Preset View 'the samples are arranged as two pages of 32.' Preset View opened via track button then Preset."
         },
         {
           "id": "sound-20",
           "verdict": "confirmed",
-          "note": "p60 verbatim: 'The default sample page allocation is: Drum 1: Page 1, slot 1 (Kick 1); Drum 2: Page 1, slot 3 (Snare 1); Drum 3: Page 1, slot 5 (Closed hi hat 1); Drum 4: Page 1, slot 9 (Additional percussion 1). Drums 1 and 2 are kick drums, 3 and 4 are snares, 5 and 6 are closed hi hats, 7 and 8 are open hi hats, 9 through 12... additional percussion, and 13 through 16 are melodic sounds.'"
+          "note": "p60 exactly: Drum 1 = Page1 slot1 (Kick 1), Drum 2 = slot3 (Snare 1), Drum 3 = slot5 (Closed hi hat 1), Drum 4 = slot9 (Additional percussion 1). Kit layout: 1-2 kicks, 3-4 snares, 5-6 closed hats, 7-8 open hats, 9-12 additional percussion, 13-16 melodic."
         },
         {
           "id": "sound-21",
@@ -654,42 +654,238 @@
         {
           "id": "sound-22",
           "verdict": "confirmed",
-          "note": "p62-63: Sample Flip \u2014 'Press and hold the pad for the required sample (it turns red) and then press the step pads... they also turn red.' 'steps with hits of the active sample illuminate bright blue, but any that have been flipped illuminate pink.' 'You can do this independently for each of the four drums.'"
+          "note": "p62: 'Press and hold the pad for the required sample (it turns red) and then press the step pads... they also turn red... steps with hits of the active sample illuminate bright blue, but any that have been flipped illuminate pink.' Sample Flip can be done independently per drum track. Exact match."
         },
         {
           "id": "sound-23",
           "verdict": "confirmed",
-          "note": "p63: 'Only the even-numbered Macros are active when a drum track is selected.' Table: Macro 2 = Pitch, 4 = Decay envelope time, 6 = Distortion, 8 = EQ."
+          "note": "p63: 'Only the even-numbered Macros are active when a drum track is selected'; table: Macro 2 = Pitch, 4 = Decay envelope time, 6 = Distortion, 8 = EQ. Exact match."
         },
         {
           "id": "sound-24",
           "verdict": "confirmed",
-          "note": "p61: Expanded Drum View (Shift + Note) \u2014 'all the grid pads except 29-32 are disabled'; pads 29-32 are 'Playing Pads for Drums 1-4', each playing that track's current active sample simultaneously."
+          "note": "p61 Expanded Drum View: Shift+Note; 'all the grid pads except 29-32 are disabled' - pads 29-32 become live triggers for Drums 1-4 simultaneously."
         },
         {
           "id": "sound-25",
           "verdict": "confirmed",
-          "note": "p90-92: 'Sixteen delay and eight reverb presets are provided, and you can select any one of each type. The send levels from each track... are individually adjustable for each track using the Macro controls.' 'It is not possible to use different reverb presets on different tracks.'"
+          "note": "p89-90: 'Sixteen delay and eight reverb presets are provided, and you can select any one of each type'; 'It is not possible to use different reverb presets on different tracks'; send levels individually adjustable per track via Macros."
         },
         {
           "id": "sound-26",
           "verdict": "confirmed",
-          "note": "p90: 'Each of the \"peach\" pads on Rows 1 and 2 calls up a delay preset... the \"cream\" pads on Row 3 enable reverb presets... reverb presets... increasing reverberation time from Pad 17 to Pad 24, and the delay presets with increasing complexity from Pad 1 to Pad 16... delay time is related to the BPM.'"
+          "note": "p90: 'Each of the peach pads on Rows 1 and 2 calls up a delay preset... the cream pads on Row 3 enable reverb presets... reverb presets arranged with increasing reverberation time from Pad 17 to Pad 24, and the delay presets with increasing complexity from Pad 1 to Pad 16... delay time is related to the BPM.'"
         },
         {
           "id": "sound-27",
           "verdict": "confirmed",
-          "note": "p91 reverb table (8): Small Chamber, Small Room 1, Small Room 2, Large Room, Hall, Large Hall, Hall \u2013 long reflection, Large Hall \u2013 long reflection. Exact match."
+          "note": "p91 reverb table exactly: Small Chamber, Small Room 1, Small Room 2, Large Room, Hall, Large Hall, Hall - long reflection, Large Hall - long reflection."
         },
         {
           "id": "sound-28",
           "verdict": "confirmed",
-          "note": "p92 delay table (16): 1 Slapback Fast, 2 Slapback Slow, 3 32nd Triplets, 4 32nd, 5 16th Triplets, 6 16th, 7 16th Ping Pong, 8 16th Ping Pong Swung, 9 8th Triplets, 10 8th dotted Ping Pong, 11 8th, 12 8th Ping Pong, 13 8th Ping Pong Swung, 14 4th Triplets, 15 4th dotted Ping Pong Swung, 16 4th Triplets Ping Pong Wide. Exact match."
+          "note": "p92 delay table exactly (16): Slapback Fast, Slapback Slow, 32nd Triplets, 32nd, 16th Triplets, 16th, 16th Ping Pong, 16th Ping Pong Swung, 8th Triplets, 8th dotted Ping Pong, 8th, 8th Ping Pong, 8th Ping Pong Swung, 4th Triplets, 4th dotted Ping Pong Swung, 4th Triplets Ping Pong Wide."
         },
         {
           "id": "sound-29",
           "verdict": "confirmed",
-          "note": "p90: 'There is also a master compressor which is applied to your mix by default.' Advanced Setup View (p106): 'a master compressor, which is applied to all audio outputs... can be enabled or disabled by pressing FX while in Advanced Setup View' (bright green = on, dim red = off). It is on/off only, not otherwise adjustable. (Guide p92 loosely says 'Setup View p102'; authoritative location is Advanced Setup View p106 \u2014 the claim's 'Setup/Advanced Setup' hedge covers this.)"
+          "note": "p89/p92: 'There is also a master compressor which is applied to your mix by default'; 'This is enabled or disabled by the FX button in Setup View.' Minor: guide names it 'Setup View' (page 102); Advanced Setup View is a separate view for MIDI Thru clone etc. Substance (whole-mix default, not adjustable, FX-button toggle) confirmed."
+        },
+        {
+          "id": "sound-30",
+          "verdict": "confirmed",
+          "note": "p93: 'Side Chain View is the secondary view of the FX button. Open by holding Shift and pressing FX'; 'Seven Side Chain presets are available'; 'The default state is for Side Chain to be OFF on both synths and both MIDI tracks.'"
+        },
+        {
+          "id": "sound-31",
+          "verdict": "confirmed",
+          "note": "p93-94: Page 1 = Synth 1/Synth 2, Page 2 = MIDI 1/MIDI 2 (external inputs). 'seven Side Chain Presets (Pads 2 to 8 in each row)... the first pad in each row is the OFF button... Pad 1 is illuminated bright red when the Side Chain is OFF... Pads 5 to 8 on the top row let you select which Drum track will be the side chain trigger.' Exact match."
+        },
+        {
+          "id": "sound-32",
+          "verdict": "confirmed",
+          "note": "p94: 'Side Chain ducking will continue even when the level of the source track is reduced to zero in the Mixer View... if you mute the drum track selected as the key in Mixer View, side chain triggering is disabled.'"
+        },
+        {
+          "id": "sound-33",
+          "verdict": "confirmed",
+          "note": "p94: 'The entire audio output... the sum of the sounds from all six internal tracks plus the two external audio inputs... low-pass filter when you turn it anticlockwise from the centre... high-pass filter when you turn it clockwise... detent in the centre - in this position no filtering takes place and the LED... is dimly lit white... LED changes to pale blue when either filter type is active.'"
+        },
+        {
+          "id": "sound-34",
+          "verdict": "confirmed",
+          "note": "p88: 'Circuit Tracks includes an eight-channel mixer... all the tracks play at a volume level of 100 (arbitrary units, range 0-127)... The illuminated pads on Row 1 are Mute buttons for each track.' No Solo function exists - only Mute is documented."
+        },
+        {
+          "id": "sound-35",
+          "verdict": "confirmed",
+          "note": "p88-89: macros default to level control (Macros 3 and 4 control external Inputs 1 and 2); pressing the arrow (down/J) converts Macros to pan (default centre = white LED, left = bright blue, right = bright pink). Both level and pan automatable in Record Mode. Note: guide labels the arrow buttons J/K; J lit = level, pressing switches to pan with K lit."
+        },
+        {
+          "id": "sound-36",
+          "verdict": "confirmed",
+          "note": "p18: 'main audio outputs on two 1/4\" TS jack sockets. Max output level is +5.3 dBu... With no plug in the R socket, the L/Mono socket carries a mono mix.' Inputs 1 and 2: 'unbalanced on 1/4\" TS jack sockets' line-level. Exact match."
+        },
+        {
+          "id": "sound-37",
+          "verdict": "confirmed",
+          "note": "p18: USB-C 'is also the DC power input... The port is MIDI class compliant... NOTE - Circuit Tracks' USB port does not carry audio.' So DAW audio recording must use the analogue outputs."
+        },
+        {
+          "id": "sound-38",
+          "verdict": "confirmed",
+          "note": "p18: 'The main outputs remain active when a plug is inserted. The headphone amplifier can drive +5 dBu into a pair of 150 ohm stereo headphones.' Sync: '3.5 mm TRS jack socket supplying a clock signal of 5 V amplitude... default rate is two pulses per quarter note.'"
+        }
+      ],
+      "overallNotes": "Source of record: official Novation Circuit Tracks User Guide v3 (focusrite CDN PDF), fetched and text-extracted; corroborated by Sound On Sound and MusicRadar for engine lineage. All 38 claims are specifically true of the Circuit TRACKS \u2014 no cross-device contamination detected. Only correction: sound-17 says the PADS turn gold in Expanded Note View, but per p28 it is the NOTE BUTTON that illuminates gold (four-octave surface / step-display-removal / Shift+Note all correct).\n\nFacts the claims missed or under-specified for the 'sound' angle:\n1) Engine lineage detail (strengthens sound-3): the synth engine is derived from the Novation MiniNova (2012), a Nova-class engine tracing to the Supernova (1990s) -> UltraNova -> MiniNova -> Circuit/Circuit Tracks. Circuit Tracks exposes fewer controls than MiniNova.\n2) Oscillator depth (Components Synth Editor): each of the two oscillators offers 30 waveforms = 14 virtual-analogue waves + 16 wavetables, with Index (pulse width / wavetable position) and Interpolate controls; the filter offers low/high/bandpass modes each with two slopes, plus resonance and a Q width parameter \u2014 all only editable in Components, not on the hardware macros (context for sound-11).\n3) Factory default patch character: Synth 1 default patch is monophonic, Synth 2 default is polyphonic (nuance behind sound-1's 'operate identically').\n4) The two 'MIDI tracks' double as the two external audio inputs throughout the mixer/FX/side-chain \u2014 Inputs 1 & 2 are governed by Macros 3 & 4 in Mixer View, can receive their own reverb/delay sends, and can be side-chain-ducked (relevant to sound-25, 31, 33).\n5) Master compressor is toggled specifically via the FX button in Setup View (p102); it is otherwise non-adjustable (sound-29 loosely cited 'Setup/Advanced Setup View' \u2014 it is Setup View).\n6) Pan/level automation, FX-send automation, and drum-macro moves are all recordable per-pattern (Record Mode), deletable via Clear + turning the macro (LED goes red) \u2014 relevant to how sound is shaped over time.\n7) Sync Out ratio (default 2 ppqn) is user-configurable in Setup View; tempo range is 40-240 BPM internal, 30-300 BPM to external clock (context for sound-38).\n8) Velocity is 7-bit (0-127); drum tracks have Velocity View and Gate View (with Micro Steps) rather than a visible step row, which is where per-hit sound/timing is edited."
+    },
+    {
+      "lens": "skeptic",
+      "verdicts": [
+        {
+          "id": "sound-1",
+          "verdict": "confirmed",
+          "note": "User Guide v3 p27 (The Synths / Playing a Synth): 'The two synth tracks \u2013 Synth 1 and Synth 2 - operate identically. The only difference is the pad colour \u2013 Synth 1 keys are illuminated violet and Synth 2 keys are pale green.' Minor nuance omitted by the claim: high/low notes in each octave are a paler shade than the intermediate keys, but the core claim is exact."
+        },
+        {
+          "id": "sound-2",
+          "verdict": "confirmed",
+          "note": "p35: 'Circuit Tracks' synth engines are six-note polyphonic \u2013 that is, you can assign up to six notes to any step in the pattern, if the Patch you've selected is suitably polyphonic.' Note (missed by claim): the factory default Projects load Synth 1 as MONOphonic and Synth 2 as polyphonic (p36 tip box), so six-note poly is patch-dependent."
+        },
+        {
+          "id": "sound-3",
+          "verdict": "confirmed",
+          "note": "Not a manual claim; verified via Novation Support ('Circuit and Circuit Tracks Synth Engine Explained') and MusicRadar: both Circuit and Circuit Tracks use the same Nova engine family, based on the Novation MiniNova, with dual oscillators, noise, ring mod, multimode filters, 3 envelopes, 2 LFOs, per-patch FX. 'Same engine family as the original Circuit' and 'dual-oscillator wavetable/virtual-analogue' are supported."
+        },
+        {
+          "id": "sound-4",
+          "verdict": "confirmed",
+          "note": "p33: 'Each of the two synth tracks can use any one of 128 pre-loaded Patches... arranged as four pages of 32 in Patch View. To open Patch View for the currently selected synth, press Preset.'"
+        },
+        {
+          "id": "sound-5",
+          "verdict": "confirmed",
+          "note": "p33: 'This opens Patch View Page 1 if Synth 1 is selected and Patch View Page 3 if Synth 2 is selected. In each case, you can select the other pages by using the down and up buttons.' Exact."
+        },
+        {
+          "id": "sound-6",
+          "verdict": "confirmed",
+          "note": "p33: 'Patch 1 (Pad 1 on Page 1) is the default Patch for Synth 1 and Patch 33 (Pad 1 on Page 2) is the default Patch for Synth 2.' Exact. (Quirk in the manual, not the claim: Synth 2's default patch sits on Page 2 yet pressing Preset for Synth 2 opens Page 3 per sound-5 \u2014 both statements are verbatim from p33.)"
+        },
+        {
+          "id": "sound-7",
+          "verdict": "confirmed",
+          "note": "p33: 'Patch Preview takes into account the current Scale and Root Note setting when auditioning a Patch.' p34: 'If you hold down Shift while pressing a pad in Patch View, Preview is disabled.' (Also disabled during active playback in Record Mode.)"
+        },
+        {
+          "id": "sound-8",
+          "verdict": "confirmed",
+          "note": "p34 (External Patch Select): 'the default MIDI channels are Channel 1 (Synth 1) and Channel 2 (Synth 2)', via MIDI Program Change (PGM) messages; channels reassignable in Setup View."
+        },
+        {
+          "id": "sound-9",
+          "verdict": "confirmed",
+          "note": "p34: 'Each of the 128 factory Patches... can have up to four of its parameters tweaked by each Macro control' and 'The rotary controls are endless'; p36 confirms 'any of the eight Macro controls'."
+        },
+        {
+          "id": "sound-10",
+          "verdict": "confirmed",
+          "note": "Panel diagram on p63 lists the synth macro labels exactly: 1 Oscillator, 2 Oscillator Mod, 3 Amp Envelope, 4 Filter Envelope, 5 Filter Frequency, 6 Resonance, 7 Modulation, 8 FX. p34 confirms these are the 'primary function' and that patches (e.g. from Components) can reassign a macro to a different function."
+        },
+        {
+          "id": "sound-11",
+          "verdict": "confirmed",
+          "note": "p33: 'You can use Components to load Patches onto Circuit Tracks'; p34 tip references 'Novation Components' Synth Editor' for patches beyond factory ones. On-device sound design is via the eight macros only; deep parameter assignment/patch-building is done in Components. Supported."
+        },
+        {
+          "id": "sound-12",
+          "verdict": "confirmed",
+          "note": "p30: 'Up to 16 musical scales are available... the only one that has more than eight is Chromatic, with 12'; 'set using the Scales View, accessed by pressing the Scales button.'"
+        },
+        {
+          "id": "sound-13",
+          "verdict": "confirmed",
+          "note": "p31 scale table (pads 17-32) matches the claim exactly in order: Natural Minor, Major, Dorian, Phrygian, Mixolydian, Melodic Minor (ascending), Harmonic Minor, Bebop Dorian, Blues, Minor Pentatonic, Hungarian Minor, Ukranian Dorian, Marva, Todi, Whole Tone, Chromatic. Note manual spelling 'Ukranian' (sic)."
+        },
+        {
+          "id": "sound-14",
+          "verdict": "confirmed",
+          "note": "p32 (Root note): 'The default root note for all scales is C... Pad 9, corresponding to C, is lit a darker blue than the other pads... (Note that the keynote selection pads always show an octave from C to B.)' Pressing a different keynote pad transposes."
+        },
+        {
+          "id": "sound-15",
+          "verdict": "confirmed",
+          "note": "p32-33: 'you can change the keynote to transpose the notes, even while the Project is playing... Circuit Tracks makes an intelligent decision as to which note to play instead, which will normally be either one semitone above or below the original note. Changing scale in this way is not destructive: you can revert to the original scale and the notes will sound as they did before.'"
+        },
+        {
+          "id": "sound-16",
+          "verdict": "confirmed",
+          "note": "p27: 'The two lower rows of the grid constitute the synth keyboard'; p28: 'the upper row of the synth keyboard contains notes one octave above those in the second row'; 'The synth has a total range of 10 octaves; you can access higher or lower pairs of octaves by using the down and up buttons'; p31: Chromatic yields only a one-octave keyboard. All confirmed."
+        },
+        {
+          "id": "sound-17",
+          "verdict": "confirmed",
+          "note": "p28: 'hold down Shift and press Note; Note now illuminates gold. This is called Expanded Note View, and removes the pattern display in the two upper rows... replacing it with keys for the next two higher octaves of the selected scale' (=four-octave surface). Minor imprecision in the claim: it is the NOTE BUTTON that illuminates gold, not the pads."
+        },
+        {
+          "id": "sound-18",
+          "verdict": "confirmed",
+          "note": "p60: 'Circuit Tracks has four separate drum tracks, Drum 1 to Drum 4'; p62: 'Each of the four drum tracks in Circuit Tracks can use any one of 64 pre-loaded samples.'"
+        },
+        {
+          "id": "sound-19",
+          "verdict": "confirmed",
+          "note": "p62: 'four pages of 16 at a time' in Note View, 'or use Preset View... the samples are arranged as two pages of 32', opened by 'pressing the relevant track button, then Preset.'"
+        },
+        {
+          "id": "sound-20",
+          "verdict": "confirmed",
+          "note": "p60 verbatim: Drum 1 = Page1 slot1 (Kick 1), Drum 2 = slot3 (Snare 1), Drum 3 = slot5 (Closed hi hat 1), Drum 4 = slot9 (Additional percussion 1). Kit layout: 1-2 kicks, 3-4 snares, 5-6 closed hats, 7-8 open hats, 9-12 (tend to be) additional percussion, 13-16 melodic. Exact."
+        },
+        {
+          "id": "sound-21",
+          "verdict": "confirmed",
+          "note": "p61: 'To change the active sample, give a different sample pad a quick tap: a longer press will play the sample but leave the previous sample assigned as the active one.'"
+        },
+        {
+          "id": "sound-22",
+          "verdict": "confirmed",
+          "note": "p62-63: 'Press and hold the pad for the required sample (it turns red) and then press the step pads... they also turn red... steps with hits of the active sample illuminate bright blue, but any that have been flipped illuminate pink.' 'You can do this independently for each of the four drums.'"
+        },
+        {
+          "id": "sound-23",
+          "verdict": "confirmed",
+          "note": "p63: 'Only the even-numbered Macros are active when a drum track is selected', table: Macro 2 = Pitch, 4 = Decay envelope time, 6 = Distortion, 8 = EQ. Exact."
+        },
+        {
+          "id": "sound-24",
+          "verdict": "confirmed",
+          "note": "p61: 'Expanded Drum View is the secondary view of the Note button. Open by holding Shift and pressing Note... In this View, all the grid pads except 29-32 are disabled', pads 29-32 = Playing Pads for Drums 1-4."
+        },
+        {
+          "id": "sound-25",
+          "verdict": "confirmed",
+          "note": "p90: 'Sixteen delay and eight reverb presets are provided, and you can select any one of each type. The send levels from each track... are individually adjustable for each track using the Macro controls.' p91: 'It is not possible to use different reverb presets on different tracks' (one global reverb; same for delay)."
+        },
+        {
+          "id": "sound-26",
+          "verdict": "confirmed",
+          "note": "p90: 'the peach pads on Rows 1 and 2 calls up a delay preset... the cream pads on Row 3 enable reverb presets... reverb presets arranged with increasing reverberation time from Pad 17 to Pad 24, and the delay presets with increasing complexity from Pad 1 to Pad 16. In all cases, delay time is related to the BPM.'"
+        },
+        {
+          "id": "sound-27",
+          "verdict": "confirmed",
+          "note": "p91 table: 1 Small Chamber, 2 Small Room 1, 3 Small Room 2, 4 Large Room, 5 Hall, 6 Large Hall, 7 Hall \u2013 long reflection, 8 Large Hall \u2013 long reflection. Exact. (Manual's table header is mislabeled 'DELAY TYPE' \u2014 a typo; it is the reverb table.)"
+        },
+        {
+          "id": "sound-28",
+          "verdict": "confirmed",
+          "note": "p92 table matches all 16 in order: 1 Slapback Fast, 2 Slapback Slow, 3 32nd Triplets, 4 32nd, 5 16th Triplets, 6 16th, 7 16th Ping Pong, 8 16th Ping Pong Swung, 9 8th Triplets, 10 8th dotted Ping Pong, 11 8th, 12 8th Ping Pong, 13 8th Ping Pong Swung, 14 4th Triplets, 15 4th dotted Ping Pong Swung, 16 4th Triplets Ping Pong Wide. Exact."
+        },
+        {
+          "id": "sound-29",
+          "verdict": "confirmed",
+          "note": "p90: 'There is also a master compressor which is applied to your mix by default.' p92 (Master Compressor): 'This is enabled or disabled by the FX button in Setup View'. Not adjustable (only on/off). Page-ref nuance: v3 manual points to p102, not the claim's p106; substance correct."
         },
         {
           "id": "sound-30",
@@ -699,241 +895,45 @@
         {
           "id": "sound-31",
           "verdict": "confirmed",
-          "note": "p93-94: Page 1 = Synth 1/Synth 2, Page 2 = MIDI (Audio In) 1/2. 'The two lower rows of pads corresponds to the seven Side Chain Presets (Pads 2 to 8 in each row)... the first pad in each row is the OFF button... Pad 1 is illuminated bright red when the Side Chain is OFF... Pads 5 to 8 on the top row let you select which Drum track will be the side chain trigger.'"
+          "note": "p93-94: 'Side Chain allows the hits of the selected drum track to duck the audio level of the synths' (or external inputs). Page 1 = Synth 1/Synth 2, Page 2 = MIDI 1/MIDI 2 (external inputs). 'the first pad in each row is the OFF button... Pad 1 is illuminated bright red when the Side Chain is OFF... the seven Side Chain Presets (Pads 2 to 8 in each row).' 'Pads 5 to 8 on the top row let you select which Drum track (1-4) will be the side chain trigger.' Exact."
         },
         {
           "id": "sound-32",
           "verdict": "confirmed",
-          "note": "p94: 'Side Chain ducking will continue even when the level of the source track is reduced to zero in the Mixer View... However, if you mute the drum track selected as the key in Mixer View, side chain triggering is disabled.' The claim's reading (fader-zero on the trigger drum still ducks; Mute disables) is the correct interpretation \u2014 the manual explicitly calls the drum 'the key' and frames the zero-level behaviour as a creative feature."
+          "note": "p94: 'Side Chain ducking will continue even when the level of the source track is reduced to zero in the Mixer View... However, if you mute the drum track selected as the key in Mixer View, side chain triggering is disabled.'"
         },
         {
           "id": "sound-33",
           "verdict": "confirmed",
-          "note": "p94: 'The entire audio output of Circuit Tracks \u2013 the sum of the sounds from all six internal tracks plus the two external audio inputs \u2013 is fed through a... DJ-style filter.' Centre detent: 'no filtering takes place and the LED... is dimly lit white'; anticlockwise = low-pass, clockwise = high-pass; 'LED changes to pale blue when either filter type is active.'"
+          "note": "p94 (The Filter Knob): 'The entire audio output... the sum of the sounds from all six internal tracks plus the two external audio inputs... low-pass filter when you turn it anticlockwise from the centre... high-pass filter when you turn it clockwise... a detent in the centre \u2013 in this position, no filtering takes place and the LED below the knob is dimly lit white... The LED changes to pale blue when either filter type is active.'"
         },
         {
           "id": "sound-34",
           "verdict": "confirmed",
-          "note": "p88: 'Circuit Tracks includes an eight-channel mixer... By default, all the tracks play at a volume level of 100 (arbitrary units, range 0-127).' 'The illuminated pads on Row 1 are Mute buttons for each track.' No Solo function documented anywhere (mute only)."
+          "note": "p88: 'Circuit Tracks includes an eight-channel mixer... all the tracks play at a volume level of 100 (arbitrary units, range 0-127)... The illuminated pads on Row 1 are Mute buttons for each track.' No Solo function is documented (consistent with 'there is no Solo function')."
         },
         {
           "id": "sound-35",
           "verdict": "confirmed",
-          "note": "p88-89: 'By default, in Mixer View the Macros control volume level of each track' (down-arrow lit); 'Macro controls 3 and 4 (the MIDI tracks) control the level of external analogue audio sources connected to... Inputs 1 and 2.' Pressing the down arrow converts Macros to pan: 'default pan position... is stereo-centre... LEDs showing white. Panning a track left turns the LED increasingly bright blue; panning to the right turns it increasingly bright pink.' Both level and pan automatable in Record Mode."
+          "note": "p88: 'in Mixer View the Macros control volume level... Macro controls 3 and 4 (the MIDI tracks) control the level of external analogue audio sources connected to... Inputs 1 and 2.' p89: 'Pressing the down button converts the Macro controls to pan controls... default pan position... stereo-centre, indicated by the Macro LEDs showing white. Panning a track left turns the LED increasingly bright blue; panning to the right... bright pink.' Both level and pan are automatable (p88-89)."
         },
         {
           "id": "sound-36",
           "verdict": "confirmed",
-          "note": "p18 Rear view: 'Outputs - L/Mono and R... on two 1/4\" TS jack sockets. Max. output level is +5.3 dBu (+/-1.5 dBu). With no plug in the R socket, the L/Mono socket carries a mono mix of L and R channels.' 'Inputs 1 and 2 \u2013 two external audio inputs: line level signals... The inputs are unbalanced on 1/4\" TS jack sockets.'"
+          "note": "p18 (Rear view): 'Outputs - L/Mono and R \u2013 Circuit Tracks' main audio outputs on two \u00bc\" TS jack sockets. Max. output level is +5.3 dBu (+/-1.5 dBu). With no plug in the R socket, the L/Mono socket carries a mono mix of L and R channels.' 'Inputs 1 and 2 \u2013 two external audio inputs... unbalanced on \u00bc\" TS jack sockets' (line level)."
         },
         {
           "id": "sound-37",
           "verdict": "confirmed",
-          "note": "p18: USB-C is 'the DC power input... The port is MIDI class compliant... NOTE \u2013 Circuit Tracks' USB port does not carry audio.' No digital audio over USB, so DAW recording must use the analogue outputs (reasonable inference from the no-audio spec)."
+          "note": "p18: 'USB-C port... The port is MIDI class compliant; connect to other devices supporting MIDI via USB... NOTE \u2013 Circuit Tracks' USB port does not carry audio.' The 'must use analogue outputs to record into a DAW' is a correct inference from 'does not carry audio'."
         },
         {
           "id": "sound-38",
           "verdict": "confirmed",
-          "note": "p18: 'Headphones... The main outputs remain active when a plug is inserted. The headphone amplifier can drive +5 dBu into a pair of 150 ohm stereo headphones.' 'Sync \u2013 a 3.5 mm TRS jack socket supplying a clock signal of 5 V amplitude... The default rate is two pulses per quarter note' (ratio adjustable in Setup View)."
+          "note": "p18: '(Headphones) ... The main outputs remain active when a plug is inserted. The headphone amplifier can drive +5 dBu into a pair of 150 ohm stereo headphones.' 'Sync \u2013 a 3.5 mm TRS jack socket supplying a clock signal of 5 V amplitude... The default rate is two pulses per quarter note.'"
         }
       ],
-      "overallNotes": "All 38 sound-angle claims CONFIRMED against the exact cited primary source (Novation Circuit Tracks User Guide Version 3, downloaded from focusrite CDN and text-extracted locally). No cross-device (original Circuit 2015 / Circuit Rhythm) contamination detected \u2014 every fact was checked against Tracks-specific documentation. sound-3 is the one place where feature parity with the original Circuit is genuinely true and documented (Novation states the Nova/UltraNova-derived virtual-analogue synth engine is shared), so it is correctly framed rather than a false-parity error.\n\nTwo source-internal quirks worth flagging to downstream writers (both claims still match their source verbatim):\n1. Apparent guide inconsistency around Synth 2 patches: p33 says pressing Preset with Synth 2 selected opens Patch View at PAGE 3 (sound-5), yet the default Synth 2 patch is Patch 33 = PAGE 2 (sound-6). Both claims reproduce the guide exactly; the guide itself is internally inconsistent here. Verify on hardware before publishing.\n2. Master compressor toggle location: p92 loosely says 'FX button in Setup View (page 102)', but the authoritative Advanced Setup View section (p106) says it is toggled with FX 'while in Advanced Setup View' (FX lights bright green when on, dim red when off). sound-29's 'Setup/Advanced Setup View' hedge navigates this correctly.\n\nSound-relevant facts the claim set MISSED entirely:\n- Mono/poly default: factory-default Projects load Synth 1 with a MONOPHONIC sound and Synth 2 POLYPHONIC (p35). Synths can be switched between mono and poly modes (poly mode good for chords/pads, mono for basslines).\n- Drum sound recall via MIDI: Drum 'Patches' (samples) can be recalled from an external controller via MIDI CC messages on Channel 10 (p62) \u2014 parallels the synth Program-Change recall in sound-8.\n- Macro polarity: in Components the eight macros can be defined unipolar or bipolar, affecting only LED response, not transmitted values (p58).\n- Custom samples: the 64 drum samples are user-replaceable \u2014 you can upload your own samples/Packs via Novation Components and microSD (p60/appendix). The 64 factory samples are only the defaults.\n- Master Volume knob (control 4) is a separate global output control, distinct from the per-track Mixer levels.\n- FX sends (reverb/delay) and mixer level/pan are all automatable in Record Mode and clearable with the Clear button.\n- Delay-time behaviour: all 16 delay presets are BPM-synced with feedback; several add swung timing and stereo ping-pong (already partly in sound-26/28).\n- Sync-out ratio is adjustable in Setup View (default 2 ppqn, per sound-38) \u2014 worth noting the default is only the default."
-    },
-    {
-      "lens": "skeptic",
-      "verdicts": [
-        {
-          "id": "sound-1",
-          "verdict": "confirmed",
-          "note": "User Guide v3 'Playing a Synth' (p27): 'The two synth tracks \u2013 Synth 1 and Synth 2 - operate identically. The only difference is the pad colour \u2013 Synth 1 keys are illuminated violet and Synth 2 keys are pale green.' Exact match."
-        },
-        {
-          "id": "sound-2",
-          "verdict": "confirmed",
-          "note": "Guide: synth pattern is 'polyphonic \u2013 that is, you can assign up to six notes to any step in the pattern, if the Patch you've selected is suitably polyphonic.' Also Novation support: 6-voice polyphony. Confirmed."
-        },
-        {
-          "id": "sound-3",
-          "verdict": "confirmed",
-          "note": "Confirmed but phrasing note: Novation's own support article 'Circuit and Circuit Tracks Synth Engine Explained' states the engine is based on the MiniNova (part of Novation's Nova lineage) and is shared between the original Circuit and Circuit Tracks. Sound On Sound: 'two on-board synths (using the same Nova engines).' MusicRadar confirms dual-oscillator with virtual-analogue waves + wavetables. 'Nova-family / dual-oscillator wavetable/virtual-analogue / same family as original Circuit' all supported."
-        },
-        {
-          "id": "sound-4",
-          "verdict": "confirmed",
-          "note": "Guide 'Selecting Patches' (p33): 'Each of the two synth tracks can use any one of 128 pre-loaded Patches... arranged as four pages of 32 in Patch View. To open Patch View... press Preset.' Exact match."
-        },
-        {
-          "id": "sound-5",
-          "verdict": "confirmed",
-          "note": "Guide p33: pressing Preset 'opens Patch View Page 1 if Synth 1 is selected and Patch View Page 3 if Synth 2 is selected. In each case, you can select the other pages by using the [down/up] buttons.' Exact match."
-        },
-        {
-          "id": "sound-6",
-          "verdict": "confirmed",
-          "note": "Guide p33: 'Patch 1 (Pad 1 on Page 1) is the default Patch for Synth 1 and Patch 33 (Pad 1 on Page 2) is the default Patch for Synth 2.' Exact match."
-        },
-        {
-          "id": "sound-7",
-          "verdict": "confirmed",
-          "note": "Guide 'Patch Preview' (p33-34): 'Patch Preview takes into account the current Scale and Root Note setting when auditioning a Patch. If you hold down Shift while pressing a pad in Patch View, Preview is disabled.' Exact match."
-        },
-        {
-          "id": "sound-8",
-          "verdict": "confirmed",
-          "note": "Guide 'External Patch Select' (p34): recall via MIDI Program Change, 'the default MIDI channels are Channel 1 (Synth 1) and Channel 2 (Synth 2), though MIDI channels may be reassigned in Setup View.' Exact match."
-        },
-        {
-          "id": "sound-9",
-          "verdict": "confirmed",
-          "note": "Guide 'Exploring the Macros' (p34): eight Macro controls; 'Each of the 128 factory Patches... can have up to four of its parameters tweaked by each Macro control.' 'The rotary controls are endless.' Exact match."
-        },
-        {
-          "id": "sound-10",
-          "verdict": "confirmed",
-          "note": "Panel labels in guide (FX View & Mixer View diagrams, e.g. p63/p90): 1 Oscillator, 2 Oscillator Mod, 3 Amp Envelope, 4 Filter Envelope, 5 Filter Frequency, 6 Resonance, 7 Modulation, 8 FX. Guide notes 'With certain Patches, some Macros will be assigned a function quite different to their normal one' (patches can reassign). Exact match."
-        },
-        {
-          "id": "sound-11",
-          "verdict": "confirmed",
-          "note": "Guide references 'Patches... created using Novation Components' Synth Editor' and feature list 'Novation Components integration \u2013 full synth engine editing.' On-device sound design is via the 8 macros; deep editing is in Components. Confirmed."
-        },
-        {
-          "id": "sound-12",
-          "verdict": "confirmed",
-          "note": "Guide 'Scales' (p30): 'Up to 16 musical scales are available... Not all these scales contain eight notes, though the only one that has more than eight is Chromatic, with 12.' Set in Scales View via Scales button. Exact match."
-        },
-        {
-          "id": "sound-13",
-          "verdict": "confirmed",
-          "note": "Guide p31 scale table pads 17-32 lists exactly: Natural Minor, Major, Dorian, Phrygian, Mixolydian, Melodic Minor (ascending), Harmonic Minor, Bebop Dorian, Blues, Minor Pentatonic, Hungarian Minor, Ukranian Dorian, Marva, Todi, Whole Tone, Chromatic. Exact match including the guide's own spelling 'Ukranian'."
-        },
-        {
-          "id": "sound-14",
-          "verdict": "confirmed",
-          "note": "Guide 'Root note' (p32): 'The default root note for all scales is C... Pad 9, corresponding to C, is lit a darker blue... the keynote selection pads always show an octave from C to B.' Exact match."
-        },
-        {
-          "id": "sound-15",
-          "verdict": "confirmed",
-          "note": "Guide p32-33: scale/root can be changed during playback; a note absent from a new scale is remapped to 'either one semitone above or below the original'; 'Changing scale in this way is not destructive: you can revert to the original scale.' Exact match."
-        },
-        {
-          "id": "sound-16",
-          "verdict": "confirmed",
-          "note": "Guide p27/p31: two lower rows are the synth keyboard, upper keyboard row is one octave above the lower; 'The synth has a total range of 10 octaves; you can access higher or lower pairs of octaves by using the [down/up] buttons'; Chromatic scale yields only a one-octave keyboard in Note View. Exact match."
-        },
-        {
-          "id": "sound-17",
-          "verdict": "confirmed",
-          "note": "Guide 'Expanded Note View' (p28): 'hold down Shift and press Note; Note now illuminates gold... removes the pattern display in the two upper rows... replacing it with keys for the next two higher octaves of the selected scale.' Two base octaves + two added = four-octave surface. Exact match."
-        },
-        {
-          "id": "sound-18",
-          "verdict": "confirmed",
-          "note": "Guide 'Selecting Samples' (p62): 'Each of the four drum tracks in Circuit Tracks can use any one of 64 pre-loaded samples.' Each drum is an independently programmable sequencer track (Drum 1-4). Exact match."
-        },
-        {
-          "id": "sound-19",
-          "verdict": "confirmed",
-          "note": "Guide p60/p62: samples audition in Note View 'four pages of 16 at a time,' or in Preset View 'arranged as two pages of 32' (opened via track button then Preset). Exact match."
-        },
-        {
-          "id": "sound-20",
-          "verdict": "confirmed",
-          "note": "Guide p60: 'Drum 1: Page 1, slot 1 (Kick 1); Drum 2: Page 1, slot 3 (Snare 1); Drum 3: Page 1, slot 5 (Closed hi hat 1); Drum 4: Page 1, slot 9 (Additional percussion 1)' and 'Drums 1 and 2 are kick drums, 3 and 4 are snares, 5 and 6 are closed hi hats, 7 and 8 are open hi hats, 9 through 12... additional percussion, and 13 through 16 are melodic sounds.' Exact match."
-        },
-        {
-          "id": "sound-21",
-          "verdict": "confirmed",
-          "note": "Guide p61: 'To change the active sample, give a different sample pad a quick tap: a longer press will play the sample but leave the previous sample assigned as the active one.' Exact match."
-        },
-        {
-          "id": "sound-22",
-          "verdict": "confirmed",
-          "note": "Guide 'Sample Flip' (p62-63): 'Press and hold the pad for the required sample (it turns red) and then press the step pads... they also turn red'; flipped steps illuminate pink vs bright blue for active-sample hits; 'You can do this independently for each of the four drums.' Exact match."
-        },
-        {
-          "id": "sound-23",
-          "verdict": "confirmed",
-          "note": "Guide 'Using the Macros for drum design' (p63): 'Only the even-numbered Macros are active when a drum track is selected.' Table: Macro 2 = Pitch, 4 = Decay envelope time, 6 = Distortion, 8 = EQ. Exact match."
-        },
-        {
-          "id": "sound-24",
-          "verdict": "confirmed",
-          "note": "Guide 'Expanded Drum View' (p61): open via Shift+Note; 'all the grid pads except 29-32 are disabled'; pads 29-32 are 'Playing Pads for Drums 1 - 4' (live triggers, one per drum track). Exact match."
-        },
-        {
-          "id": "sound-25",
-          "verdict": "confirmed",
-          "note": "Guide 'FX Section' (p90-91): 'Sixteen delay and eight reverb presets are provided, and you can select any one of each type'; 'It is not possible to use different reverb presets on different tracks' (one global delay + one global reverb); per-track send levels set with the macros. Exact match."
-        },
-        {
-          "id": "sound-26",
-          "verdict": "confirmed",
-          "note": "Guide p90: 'Each of the peach pads on Rows 1 and 2 calls up a delay preset... the cream pads on Row 3 enable reverb presets... reverb presets... increasing reverberation time from Pad 17 to Pad 24, and the delay presets with increasing complexity from Pad 1 to Pad 16... delay time is related to the BPM.' Exact match."
-        },
-        {
-          "id": "sound-27",
-          "verdict": "confirmed",
-          "note": "Guide p91 reverb table: 1 Small Chamber, 2 Small Room 1, 3 Small Room 2, 4 Large Room, 5 Hall, 6 Large Hall, 7 Hall \u2013 long reflection, 8 Large Hall \u2013 long reflection. Exact match."
-        },
-        {
-          "id": "sound-28",
-          "verdict": "confirmed",
-          "note": "Guide p92 delay table (16 presets): 1 Slapback Fast, 2 Slapback Slow, 3 32nd Triplets, 4 32nd, 5 16th Triplets, 6 16th, 7 16th Ping Pong, 8 16th Ping Pong Swung, 9 8th Triplets, 10 8th dotted Ping Pong, 11 8th, 12 8th Ping Pong, 13 8th Ping Pong Swung, 14 4th Triplets, 15 4th dotted Ping Pong Swung, 16 4th Triplets Ping Pong Wide. Matches the claim's list exactly."
-        },
-        {
-          "id": "sound-29",
-          "verdict": "confirmed",
-          "note": "Guide p90/p92: 'There is also a master compressor which is applied to your mix by default'; 'Master Compressor... enabled or disabled by the FX button in Setup View.' No adjustable parameters are described (on/off only). Minor page-ref note: guide directs to Setup View p102 for the toggle; the claim's cited p106 is the Advanced Setup section. Substantive claim confirmed."
-        },
-        {
-          "id": "sound-30",
-          "verdict": "confirmed",
-          "note": "Guide 'Side Chains' (p93): 'Seven Side Chain presets are available... The default state is for Side Chain to be OFF on both synths and both MIDI tracks. Side Chain View is the secondary view of the FX button... Open by holding Shift and pressing FX.' Exact match."
-        },
-        {
-          "id": "sound-31",
-          "verdict": "confirmed",
-          "note": "Guide p93-94: Page 1 = Synth 1/Synth 2, Page 2 = MIDI (Audio In) 1/2; 'lower two rows... seven Side Chain Presets (Pads 2 to 8)... the first pad in each row is the OFF button... Pad 1 is illuminated bright red when the Side Chain is OFF'; 'Pads 5 to 8 on the top row let you select which Drum track will be the side chain trigger.' Exact match."
-        },
-        {
-          "id": "sound-32",
-          "verdict": "confirmed",
-          "note": "Guide p94: 'Side Chain ducking will continue even when the level of the source track is reduced to zero in the Mixer View... However, if you mute the drum track selected as the key in Mixer View, side chain triggering is disabled.' The 'source/key' is the trigger drum. Exact match."
-        },
-        {
-          "id": "sound-33",
-          "verdict": "confirmed",
-          "note": "Guide 'The Filter Knob' (p94): 'The entire audio output... the sum of the sounds from all six internal tracks plus the two external audio inputs... a low-pass filter when you turn it anticlockwise from the centre... high-pass filter when you turn it clockwise... detent in the centre... no filtering... LED below the knob is dimly lit white... LED changes to pale blue when either filter type is active.' Exact match."
-        },
-        {
-          "id": "sound-34",
-          "verdict": "confirmed",
-          "note": "Guide 'Mixer' (p88): 'eight-channel mixer... By default, all the tracks play at a volume level of 100 (arbitrary units, range 0-127)... The illuminated pads on Row 1 are Mute buttons for each track.' No Solo function exists anywhere in the guide. Exact match."
-        },
-        {
-          "id": "sound-35",
-          "verdict": "confirmed",
-          "note": "Guide p88-89: macros default to level control; 'Macro controls 3 and 4 (the MIDI tracks) control the level of external analogue audio sources connected to... Inputs 1 and 2'; pressing the down arrow converts macros to pan (centre = white LED, left = bright blue, right = bright pink); pressing up returns to level; both level and pan are automatable. Confirmed (down/up arrow directions per the panel's two nav buttons)."
-        },
-        {
-          "id": "sound-36",
-          "verdict": "confirmed",
-          "note": "Guide 'Rear view' (p18): 'Outputs - L/Mono and R... two \u00bc\" TS jack sockets. Max. output level is +5.3 dBu (+/-1.5 dBu). With no plug in the R socket, the L/Mono socket carries a mono mix.' 'Inputs 1 and 2... line level signals... The inputs are unbalanced on \u00bc\" TS jack sockets.' Exact match."
-        },
-        {
-          "id": "sound-37",
-          "verdict": "confirmed",
-          "note": "Guide p18: USB-C port is DC power input and 'MIDI class compliant; connect to other devices supporting MIDI via USB... NOTE \u2013 Circuit Tracks' USB port does not carry audio.' DAW recording therefore requires the analogue outputs. Exact match."
-        },
-        {
-          "id": "sound-38",
-          "verdict": "confirmed",
-          "note": "Guide p18: Headphones \u2013 'The main outputs remain active when a plug is inserted. The headphone amplifier can drive +5 dBu into a pair of 150 ohm stereo headphones.' Sync \u2013 '3.5 mm TRS jack socket supplying a clock signal of 5 V amplitude... The default rate is two pulses per quarter note.' Exact match."
-        }
-      ],
-      "overallNotes": "All 38 'sound' claims independently verified against the official Novation Circuit Tracks User Guide v3 (PDF from fael-downloads-prod.focusrite.com / files.kraftmusic.com), extracted and searched via pdftotext, cross-checked with Novation support, Sound On Sound and MusicRadar for the engine-lineage claim. Every claim is CONFIRMED and specifically about Circuit Tracks (not the original Circuit or Circuit Rhythm). Page-number citations were accurate throughout, with one minor exception on sound-29 (the master-compressor on/off toggle is documented as living in Setup View p102, not p106).\n\nNotable SOUND-angle facts the claim set MISSED:\n1. MONOPHONIC MODE: Synths can be switched to monophonic (good for basslines). Critically, the factory default Projects load Synth 1 as MONOphonic and Synth 2 as POLYphonic \u2014 so 6-voice poly (sound-2) is a capability, not the out-of-box state of both synths. This nuance is omitted.\n2. FULL SYNTH ARCHITECTURE (behind the macros): per Novation, each engine has 2 oscillators with multiple waveshapes plus a noise source, a multi-type/multi-slope filter, 3 envelopes, and 2 LFOs \u2014 all editable in Components. The claims only characterize on-device control (8 macros) and the engine family.\n3. DRUM external recall: drum samples/patches can be recalled from an external MIDI controller via MIDI CC on Channel 10 (the drum analogue of sound-8's Program Change for synths) \u2014 not captured.\n4. EXTERNAL AUDIO INPUTS are treated as full 'sound' tracks: the two rear line inputs are represented by the MIDI tracks in the Mixer/FX/Side-Chain, so they get independent level, pan, reverb send, delay send, side-chain ducking and master-filter processing \u2014 a significant sound feature only partially implied by sounds 31/33/35.\n5. CHROMATIC special cases: in standard Note View Chromatic gives a single-octave keyboard (noted), but in Expanded Note View Chromatic yields a two-octave keyboard \u2014 an edge case worth stating.\n6. FX send macros: reverb and delay share the same eight macros but stay independent (macro LEDs show cream for reverb sends, peach for delay sends), and FX sends are automatable in Record Mode. Delay feedback gives multiple echoes and some presets add stereo ping-pong/swing."
+      "overallNotes": "All 38 claims verified against the authoritative primary source: Novation Circuit Tracks User Guide Version 3 (circuit_tracks_user_guide_v3_en.pdf, fael-downloads-prod.focusrite.com), read directly page-by-page \u2014 not paraphrased. Page citations in the claims are accurate. Every claim is CONFIRMED. Two minor imprecisions worth flagging to the guide author, neither changing a verdict: (1) sound-17 says 'pads turn gold' in Expanded Note View \u2014 actually it is the NOTE BUTTON that illuminates gold (p28), not the pads. (2) sound-29 cites p106 for the master-compressor toggle; the v3 manual actually points to p102 (Setup View), and the compressor table header on p91 is mislabeled 'DELAY TYPE' (a Novation typo) though it lists the reverb presets.\n\nImportant sound-angle facts the claims MISSED entirely:\n- FACTORY DEFAULT POLYPHONY: The factory-default Projects load Synth 1 with a MONOphonic sound and Synth 2 with a POLYphonic sound (p36 tip box) \u2014 'so you can easily use Synth 1 for a bass line, and Synth 2 for keyboard sounds.' This qualifies sound-2: six-note polyphony is available but not the out-of-box state for Synth 1.\n- SYNTH-ENGINE INTERNALS (supports sound-3, per Novation Support + MusicRadar): the Nova/MiniNova-derived engine has dual oscillators plus noise and ring modulation, multimode filters (12 and 24 dB/oct low-pass, high-pass, band-pass), three envelopes, two LFOs, and per-patch insert FX (distortion, EQ, chorus, phaser). Reviewers note it excels at digital pads/wavetable leads/dirty basses but has a digital coloration that struggles with classic analog tones.\n- DRUM MIDI RECALL: Drum Patches (samples) are recalled externally via MIDI CC on Channel 10 (p62) \u2014 distinct from the synths' Program-Change recall on Channels 1/2. A sound/MIDI fact adjacent to sound-8.\n- MASTER FILTER is the large knob labeled '2' on the panel (a DJ-style performance filter), one of the key performance controls (p94).\n- NOTE-VIEW OVERLAP DETAIL: the highest note of the lower keyboard octave (Pad 32) is the same pitch as the lowest note of the higher octave (Pad 17) (p28).\n- Sync-out rate (2 ppqn) is the DEFAULT and is adjustable in Setup View (p18); reverb/delay send automation can be deleted with Clear + Macro (p92); FX per-track send Macros show cream (reverb) or peach (delay) LEDs and adopt whichever function matches the last FX pad pressed (p91)."
     }
   ]
 }

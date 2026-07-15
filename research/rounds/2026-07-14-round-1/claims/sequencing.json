@@ -378,62 +378,484 @@
         {
           "id": "sequencing-1",
           "verdict": "confirmed",
-          "note": "Guide (p64 body text, also Patterns chapter p73): 'There are eight Patterns for each of the eight tracks \u2013 two synths, two MIDI and four drums.' 8 patterns per track across all 8 tracks confirmed for Circuit Tracks."
+          "note": "Guide 'Patterns' section: 'Each Project in Circuit Tracks has memory space for eight separate Patterns per track... eight Patterns for each synth, eight Patterns for each drum and eight Patterns for each of two external MIDI instruments.' 8 patterns x 8 tracks confirmed."
         },
         {
           "id": "sequencing-2",
           "verdict": "confirmed",
-          "note": "p35: synth notes 'won't be recorded until you press the Record button'; 'press Record again to stop recording.' p35-36: 'The Record button has the dual momentary/latching action... If you hold the button down for more than half a second, Circuit Tracks will drop out of Record Mode as soon as you release it.' Record = button 13 (Record 13)."
+          "note": "'they won't be recorded until you press the Record button... press Record and carry on playing; after the pattern has completed, the notes will be replayed... press Record again to stop recording.' And box: 'The Record button has the dual momentary/latching action... If you hold the button down for more than half a second, Circuit Tracks will drop out of Record Mode as soon as you release it.' Fully confirmed."
         },
         {
           "id": "sequencing-3",
           "verdict": "confirmed",
-          "note": "p37: 'Quantised recording is disabled by holding down Shift and pressing Record (note the button is also legended Rec Quantise)... press Shift: if the Record button illuminates green, quantisation is enabled; if it is red, recording will be non-quantised.' Exact match."
+          "note": "'Quantised recording is disabled by holding down Shift and pressing Record (note the button is also legended Rec Quantise)... check... by pressing Shift: if the Record button illuminates green, quantisation is enabled; if it is red, recording will be non-quantised.' Exact match."
         },
         {
           "id": "sequencing-4",
           "verdict": "confirmed",
-          "note": "p37: 'Six finer intervals \u2013 or micro steps \u2013 in between adjacent pattern steps.' p48: 'delaying individual notes on a step by between one and five ticks, where a tick is a sixth of a step.' Six micro steps, tick = 1/6 step, confirmed. Guide uses 'tick' and 'micro step' interchangeably."
+          "note": "'Six \"finer\" intervals - or \"micro steps\" - in between adjacent pattern steps' and Micro Step Edit: 'delaying individual notes... by between one and five \"ticks\", where a tick is a sixth of a step.' 6 micro steps, 1 tick = 1/6 step confirmed."
         },
         {
           "id": "sequencing-5",
           "verdict": "confirmed",
-          "note": "p36: 'as soon as you make an adjustment, the LED turns red to confirm that you are now recording the knob movement.' p36-37: 'you must exit Record Mode before the sequence loops, otherwise Circuit Tracks will overwrite the automation movements you've just recorded with that corresponding to the new knob position.' Exact match."
+          "note": "'as soon as you make an adjustment, the LED turns red to confirm that you are now recording the knob movement... you must exit Record Mode before the sequence loops, otherwise Circuit Tracks will overwrite the automation movements you've just recorded with that corresponding to the new knob position.' Confirmed."
         },
         {
           "id": "sequencing-6",
           "verdict": "confirmed",
-          "note": "p37: 'in Note View, press Record, select the step at which the change should occur by pressing and holding the pad... Then adjust the Macro control(s) as desired; the new value(s) will be written to the automation data.' Confirmed."
+          "note": "'record Macro control changes when the sequence isn't playing; in Note View, press Record, select the step... by pressing and holding the pad... Then adjust the Macro control(s).' Confirmed."
         },
         {
           "id": "sequencing-7",
           "verdict": "confirmed",
-          "note": "p37: 'delete any Macro automation data... by holding down Clear and moving the knob in question by at least 20% of its rotation... this will clear the automation data for that Macro for the whole Pattern, not just at the sequencer's current step.' Exact match."
+          "note": "'delete any Macro automation data... by holding down Clear and moving the knob in question by at least 20% of its rotation - the LED... will turn red... this will clear the automation data for that Macro for the whole Pattern, not just at the sequencer's current step.' Exact match."
         },
         {
           "id": "sequencing-8",
           "verdict": "confirmed",
-          "note": "p38: 'In Note View... the two upper rows of grid pads is the 16-step pattern display and the two lower rows constitute the synth keyboard.' 'The pads for the steps which have notes associated with them will be illuminated bright blue.' Confirmed."
+          "note": "'the two upper rows of grid pads is the 16-step pattern display and the two lower rows constitute the synth keyboard... The pads for the steps which have notes associated with them will be illuminated bright blue.' Confirmed."
         },
         {
           "id": "sequencing-9",
           "verdict": "confirmed",
-          "note": "p40 Inserting notes: 'holding down the step pad and pressing the desired note. Note that Record Mode does not need to be enabled... You can add multiple notes to the same step.' p40 Deleting notes: 'press the step pad (lights red) and then press the unwanted keyboard pad.' Confirmed."
+          "note": "Inserting notes: 'add a synth note to a step by holding down the step pad and pressing the desired note... Record Mode does not need to be enabled... add multiple notes to the same step.' Deleting: 'press the step pad (lights red) and then press the unwanted keyboard pad.' Confirmed."
         },
         {
           "id": "sequencing-10",
           "verdict": "confirmed",
-          "note": "p40: Clear + step pad deletes 'all notes at this step' in one go, avoiding octave-hunting (across all octaves). Duplicate: hold Duplicate, press source step then destination step; copies 'All the note information' plus attributes; 'Any pre-existing note information in the destination step will be overwritten.' Confirmed."
+          "note": "Clear: 'Press and hold Clear... press the step pad... all notes at this step for the currently selected synth track will be deleted' (across octaves). Duplicate: 'copy all the synth notes on a step, together with their various attributes... Any pre-existing note information in the destination step will be overwritten.' Confirmed."
         },
         {
           "id": "sequencing-11",
           "verdict": "confirmed",
-          "note": "p41-44: Velocity View selected by pressing Velocity (button 6). Table gives 1 lit pad=8 ... 16 pads=127. p42: 'if you record in real time... the velocity value is set internally to 7-bit accuracy: a value between 0 and 127. However, Velocity View can only display... 16 increments of 8.' Confirmed."
+          "note": "Velocity View entered via Velocity button. Table confirms 1 pad=8 ... 16 pads=127. 'If you record in real time... the velocity value is set internally to 7-bit accuracy: a value between 0 and 127.' Confirmed (note: 16 pads = 127, not 128)."
         },
         {
           "id": "sequencing-12",
           "verdict": "confirmed",
-          "note": "p43: 'Fixed Velocity function, which sets Velocity at a value of 96'; 'toggle Fixed Velocity mode on and off by pressing Velocity while holding down Shift'; '96 (12 pads lit)'; 'setting Velocity to Fixed does not alter the Velocity values of any notes previously recorded.' Global/all-tracks scope explicitly confirmed on p68 (drums): 'the selection of fixed or variable velocity is global, i.e., it applies to all tracks.' Fully confirmed."
+          "note": "'Circuit Tracks has a Fixed Velocity function, which sets Velocity at a value of 96... toggle... by pressing Velocity while holding down Shift... all synth notes you play have a Velocity value of 96 (12 pads lit)... setting Velocity to Fixed does not alter the Velocity values of any notes previously recorded.' Value 96/12 pads/non-destructive confirmed. Caveat: the guide describes it in the synth context and does not explicitly state 'global/all tracks' on this page, but Fixed Velocity is indeed a global toggle."
+        },
+        {
+          "id": "sequencing-13",
+          "verdict": "confirmed",
+          "note": "'It is also possible for synth notes on the same step to have different Velocity values, provided Circuit Tracks is not in Fixed Velocity Mode.' Confirmed."
+        },
+        {
+          "id": "sequencing-14",
+          "verdict": "confirmed",
+          "note": "Gate View: 'It may have any value between one-sixth and 16, in increments of one-sixth of a Step, giving a total of 96 possible values... A Gate value of 16 means that notes at that step will sound continuously for an entire 16-step pattern.' Confirmed. (Button number: guide/OCR renders Gate as button 6, same as claim; a minor labeling detail.)"
+        },
+        {
+          "id": "sequencing-15",
+          "verdict": "confirmed",
+          "note": "'Fractional Gate values are assigned by pressing the highest-numbered illuminated pad... an additional number of times... Each additional press reduces the Gate time by one sixth of a step, and the illumination dims incrementally... After the fifth press... the Gate time reverts to the former integral value on the sixth.' Confirmed."
+        },
+        {
+          "id": "sequencing-16",
+          "verdict": "confirmed",
+          "note": "'Probability View is the secondary view of the Pattern Settings button. Open by holding Shift and pressing Pattern Settings, or press Pattern Settings a second time... Pads 17-24 constitute a \"probability meter\".' Value table: 100/87.5/75/62.5/50/37.5/25/12.5%. Confirmed."
+        },
+        {
+          "id": "sequencing-17",
+          "verdict": "confirmed",
+          "note": "'All notes assigned to the step will have a collective chance of being played... either all of the notes at the step will play, or none of them will.' And 'Clearing steps, Patterns and Projects will also reset all Probabilities to 100%. Live recording of a new note to a step will also reset the probability at that step to 100%.' Confirmed."
+        },
+        {
+          "id": "sequencing-18",
+          "verdict": "confirmed",
+          "note": "'Micro Step View is the secondary view of the Gate button. Open by holding Shift and pressing Gate, or press Gate a second time...' Micro nudge pads shown 0-5. 'up to 6 notes assigned to a single step... Multiple notes are displayed left to right in the order they were assigned.' Staggered playback allows strummed chords. Confirmed."
+        },
+        {
+          "id": "sequencing-19",
+          "verdict": "confirmed",
+          "note": "'turn the tie-forward setting on/off for this step by pressing pad 24... set the gate length so that the note ends just before the next note is played or overlaps with it.' And 'In Note View, tied notes are shown as orange when the steps are held down as opposed to the usual red.' Confirmed."
+        },
+        {
+          "id": "sequencing-20",
+          "verdict": "confirmed",
+          "note": "'The default length of a Pattern in Circuit Tracks is 16 steps, but you can double the length to 32 steps with the Step Page button 8 (legended 1-16/17-32)... bright blue for Page 1 (Steps 1 to 16), and orange for Page 2 (Steps 17 to 32).' Confirmed."
+        },
+        {
+          "id": "sequencing-21",
+          "verdict": "confirmed",
+          "note": "'it is possible for the Pattern in any track to be any other number of steps in length, up to the maximum of 32 steps... the start and end points of a Pattern may be independently defined.' Per-track (for currently selected track). Confirmed."
+        },
+        {
+          "id": "sequencing-22",
+          "verdict": "confirmed",
+          "note": "'If no adjustments... Pad 16 will be illuminated sand... change the end point... by pressing a different Pattern step pad... the \"higher\" pads either go dark or dim red, the latter indicating that note/hit data has previously been assigned.' Start point: 'exactly the same process, except that Shift needs to be held down while selecting the new start point.' Confirmed."
+        },
+        {
+          "id": "sequencing-23",
+          "verdict": "confirmed",
+          "note": "'Pads 29 to 32 in Pattern Settings View': Forwards (Default) Pad 29, Reverse Pad 30, Ping-pong Pad 31, Random Pad 32. Exact match."
+        },
+        {
+          "id": "sequencing-24",
+          "verdict": "confirmed",
+          "note": "'The third row of Pattern Settings View determines the speed... a multiplier/divider of the BPM... default rate is \"x1\" (pad 5 in row 3)... The sync rates available are 1/4, 1/4T, 1/8, 1/8T, 1/16, 1/16T, 1/32, 1/32T.' Default pad 5 = 1/16. Confirmed."
+        },
+        {
+          "id": "sequencing-25",
+          "verdict": "confirmed",
+          "note": "'Mutate \"shuffles\" the notes or hits in the current Pattern, to different steps... number of notes/hits... and the synth notes or drum samples themselves are both unchanged... All step parameters are reassigned by Mutate, including micro steps, gate values, sample flips, probability and automation data. To mutate a Pattern, hold Shift and press Duplicate... Mutate only affects the Pattern currently playing... Mutate cannot be \"undone\".' Confirmed."
+        },
+        {
+          "id": "sequencing-26",
+          "verdict": "confirmed",
+          "note": "'Patterns View, accessed by pressing Patterns 10... has two pages, selected by the down and up buttons 15... on Page 1 the pads select Patterns 1 to 4 for each track, on Page 2 they select Patterns 5 to 8.' Arranged vertically with 8 track columns. Confirmed."
+        },
+        {
+          "id": "sequencing-27",
+          "verdict": "confirmed",
+          "note": "'if you select a Pattern while another is already playing you can... \"queue\" the next Pattern to play at the end of current one... the pad for the next Pattern will flash quickly while it is being \"queued\"... if you hold down Shift while selecting the next Pattern memory, it will start playing immediately from the corresponding Pattern step, thereby ensuring that the overall timing maintains continuity.' Confirmed."
+        },
+        {
+          "id": "sequencing-28",
+          "verdict": "confirmed",
+          "note": "'To create a Pattern Chain, press and hold the pad for the lowest-numbered Pattern required and then press the pad for the highest-numbered Pattern required.' 'the Patterns you chain together must be contiguous, that is, numerically consecutive... you can't chain 1,2 and 6 together.' 'Circuit Tracks allows Pattern chains of up to 256 (8 x 32) steps.' Confirmed."
+        },
+        {
+          "id": "sequencing-29",
+          "verdict": "confirmed",
+          "note": "'each track will loop round its own chain of Patterns. The longest chain is Drum 4 - this defines the overall length of the sequence... Synth 2 only has one Pattern, so this will repeat eight times.' Confirmed."
+        },
+        {
+          "id": "sequencing-30",
+          "verdict": "confirmed",
+          "note": "IMPORTANT box: 'You can copy a Pattern from one Synth or MIDI track to the other, or between a Synth track and a MIDI track using Duplicate: you can also use it to copy a Pattern from one Drum track to another, but you cannot copy data from a Synth or MIDI track to a Drum track, or vice-versa.' Confirmed."
+        },
+        {
+          "id": "sequencing-31",
+          "verdict": "confirmed",
+          "note": "'set a Pattern length back to the default of 16 steps by holding down Clear and pressing the Step Page button... Notes/hits assigned to the all 32 steps are preserved.' 'Holding down Duplicate and pressing the Step Page button will extend the Pattern length... to 32 steps, and copy all data at steps 1 to 16 to steps 17 to 32... including automation data.' Confirmed."
+        },
+        {
+          "id": "sequencing-32",
+          "verdict": "confirmed",
+          "note": "'The two lower rows of pads in Mixer View represent the 16 Scenes... The first (Pad 17) will be pulsing bright green, which indicates that the currently playing Patterns correspond with the last selected Scene (Scene 1 by default).' Pads 17-32, 16 scenes. Confirmed."
+        },
+        {
+          "id": "sequencing-33",
+          "verdict": "confirmed",
+          "note": "'Open Patterns View and define all the Pattern Chains... Change to Mixer View, press and hold Shift: the Scene pads change colour to dim gold. Press a Scene pad (while still holding Shift) - it will light bright gold while pressed... On releasing Shift, the pad with the stored Scene now shows bright white.' And Scenes let you 'overcome the restriction in Patterns View of not being able to define a Pattern Chain of non-contiguous Patterns.' Confirmed."
+        },
+        {
+          "id": "sequencing-34",
+          "verdict": "confirmed",
+          "note": "'holding down the pad for the first Scene, then pressing the pad for the last Scene: these pads and all those between them will illuminate green... Each Scene will play the Pattern Chain assigned to it once and then switch to the next Scene. The Scenes will play in numerical order, and then repeat.' Queuing: 'The pad for a queued Scene flashes green and at the end of the Drum 1 Pattern currently playing, the new Scene will begin playing from the start without losing sync.' Confirmed."
+        },
+        {
+          "id": "sequencing-35",
+          "verdict": "confirmed",
+          "note": "'There are 64 memory slots, arranged as two pages of 32.' 'Save needs to be pressed twice... a second press will save your work to the last Project memory that was in use... the original version will be overwritten. To ensure that your work gets saved in a different Project memory, switch to Projects View...' No autosave described. Confirmed."
+        },
+        {
+          "id": "sequencing-36",
+          "verdict": "confirmed",
+          "note": "'If you select a new Project by pressing its pad, the current Pattern will play through to its last step (note - only the current Pattern, not a Scene or complete chain of Patterns)... If you hold down Shift when selecting a new Project, the newly selected Project will begin playing immediately... from the same step in the Pattern chain that the previous Project had reached.' Confirmed."
+        },
+        {
+          "id": "sequencing-37",
+          "verdict": "confirmed",
+          "note": "'Circuit Tracks' synth engines are \"six-note polyphonic\" - that is, you can assign up to six notes to any step in the pattern.' Intro also describes two polyphonic synths. Confirmed."
+        },
+        {
+          "id": "sequencing-38",
+          "verdict": "confirmed",
+          "note": "'the Pattern must be running (press Play) in order for you to hear the hits; unlike the synth tracks, you won't hear anything in Note View if you hit a bright blue step pad with the Pattern stopped. (However, you can hear the hits in this way using Velocity View or Gate View...).' Confirmed."
+        },
+        {
+          "id": "sequencing-39",
+          "verdict": "confirmed",
+          "note": "'you can also choose to have duplicate hits assigned to other micro steps within the same interval. To adjust the micro step values, press Gate View for the relevant drum track. Pads 17 to 22 display the micro step values.' Offline: 'Any drum hits added \"off-line\" (i.e., in Stop Mode)... will always be assigned to the step's first micro step, which is on the exact beat.' Micro steps toggle on/off per drum step. Confirmed."
+        },
+        {
+          "id": "sequencing-40",
+          "verdict": "confirmed",
+          "note": "'\"freeze\" the Pattern Step display to the current Pattern (and Page) by holding down Shift and pressing Patterns 10... the state of View Lock is not saved. It will default to \"inactive\" whenever Circuit Tracks is powered on.' Confirmed."
+        },
+        {
+          "id": "sequencing-41",
+          "verdict": "confirmed",
+          "note": "Pattern Octave: 'shift the pitch of an entire synth or MIDI Pattern up or down one or more octaves by holding down Shift and then pressing down or up [octave buttons 15]... can be changed in any of the Step Views, i.e., Note View, Velocity View, Gate View or Pattern Settings View.' Confirmed."
+        }
+      ],
+      "overallNotes": "SOURCE: Verified against the official Novation Circuit Tracks User Guide (PDF, copyright 2020 Focusrite; cover shows only \"User Guide\" with no version number - this mirror appears to be the v1/original 2020 edition, NOT \"v3\"). All content matched, but the claims' \"v3, pXX\" page citations sit ~1-2 pages off this edition's pagination (e.g., Recording is p36-38, Probability p48, Micro Step p49-50, Pattern Settings p54-56, Mutate p57, Patterns/chaining p74-79, View Lock/Pattern Octave p80-81, Scenes p82-85, Projects/Save p96-97). Not a factual issue - just a version/pagination note. All 41 claims are CONFIRMED and explicitly about Circuit Tracks (not the original Circuit or Circuit Rhythm).\n\nBUTTON-NUMBER NOTE: The tiny circled control-reference numbers OCR unreliably. Claims sequencing-11 (Velocity) and sequencing-14 (Gate) BOTH cite \"button 6,\" which is internally inconsistent since Velocity and Gate are two separate adjacent buttons on the left of the grid. The guide's own text/OCR also renders both as 6, so I could not refute against the same source; treat the exact number as non-load-bearing. Numbers I could cross-confirm hold up: Step Page = 8, Pattern Settings = 7, Patterns = 10, Record = 13, Save = 19, Shift = 20, Octave up/down = 15.\n\nMINOR CAVEAT on sequencing-12: The guide states Fixed Velocity value 96 / 12 pads / Shift+Velocity toggle / non-destructive - all confirmed - but describes it within the synth section and does not literally say \"global setting affecting all tracks\" on that page. (It is in fact a global toggle; just not spelled out there.)\n\nIMPORTANT SEQUENCING FACTS THE CLAIMS MISSED ENTIRELY:\n1. Velocity, Gate and Probability are properties of the STEP, not the notes: if you change a note on a step, these values are retained provided you ADD the new note first, then delete the old one. Also, Velocity/Gate/Probability can be set independently for the same pattern step on each synth. (guide p42)\n2. Steps with no notes have a zero Gate value and their Gate cannot be edited; all Gate pads are unlit. (p47)\n3. Play behaviour: pressing Play always restarts a Pattern/Pattern Chain from Step 1 (or the defined Start Point / first pattern in a chain); holding Shift + Play instead continues from the step where the sequencer was last stopped. This applies to single patterns, pattern chains, and project switching. (p39, p75, p80)\n4. Changing Play Order OR Sync Rate while in Play Mode does not take effect immediately - the Pattern always completes its current cycle at the existing setting, then switches. (p55-56)\n5. Pattern Octave transpose is blocked at the pitch extremes: if a pattern already contains notes at Circuit Tracks' highest (or lowest) generatable octave, the octave button lights RED to indicate the shift can't be executed for those notes. (p80)\n6. Tie-forward interaction with overdubbing: notes ADDED to a step that already has a tied note do NOT inherit the tie-forward setting and show red (not orange), preventing multiple ties; to include a new note in the tie, toggle tie-forward off then back on in Gate View so all notes on the step inherit it. Newly added notes also get their own (possibly different) gate lengths. (p53)\n7. When auditioning a step whose notes have different micro-step delays, playback is staggered per the micro-step values (enabling \"strummed\" chords); lowering the Pattern tempo helps you hear each note. (p50-52)\n8. Sync rate: 1/16 is the default where one step = a 16th note; raising the sync rate increases step resolution at the cost of total playback time, lowering it is useful for long evolving pads. (p56)\n9. Drum Note View entry detail: a short-press (tap) on a step assigns the current DEFAULT sample (step lit bright blue); a long-press on the step then a sample-pad press performs a Sample Flip (step lit PINK). Pattern display shows flipped steps pink vs bright blue for default-sample hits. This is the mechanism underlying \"sample flips\" referenced in Mutate. (p63-66)\n10. Mutate can be applied repeatedly (each press re-randomises) and works in any view that has a Pattern-step display (Note/Velocity/Gate/Pattern Settings View); it only affects the currently playing pattern, leaving other patterns in a chain untouched. (p57)\n11. Projects loaded while stopped play at the tempo saved with the project; projects loaded while running keep the current tempo (so you can recall projects sequentially with constant tempo). (p23)"
+    },
+    {
+      "lens": "device",
+      "verdicts": [
+        {
+          "id": "sequencing-1",
+          "verdict": "confirmed",
+          "note": "Manual (p73/p78 region): 'eight Patterns for each of the eight tracks \u2013 two synths, two MIDI and four drums.' Also 'Each Project in Circuit Tracks has memory space for eight separate Patterns per track.' Circuit Tracks specifically (8 tracks incl. 2 MIDI). Confirmed."
+        },
+        {
+          "id": "sequencing-2",
+          "verdict": "confirmed",
+          "note": "p35: notes 'won't be recorded until you press the Record button'; 'press Record again to stop recording.' p36: 'The Record button has the dual momentary/latching action... If you hold the button down for more than half a second, Circuit Tracks will drop out of Record Mode as soon as you release it' (punch-in/out). Confirmed verbatim."
+        },
+        {
+          "id": "sequencing-3",
+          "verdict": "confirmed",
+          "note": "p37: 'Quantised recording is disabled by holding down Shift and pressing Record (note the button is also legended Rec Quantise)... by pressing Shift: if the Record button illuminates green, quantisation is enabled; if it is red, recording will be non-quantised.' Confirmed exactly."
+        },
+        {
+          "id": "sequencing-4",
+          "verdict": "confirmed",
+          "note": "p37: 'Six finer intervals \u2013 or micro steps \u2013 in between adjacent pattern steps.' p48: 'a tick is a sixth of a step.' Confirmed. (Micro-nudge pads are labelled 0-5, 0 = on the beat.)"
+        },
+        {
+          "id": "sequencing-5",
+          "verdict": "confirmed",
+          "note": "p36: 'as soon as you make an adjustment, the LED turns red.' p37: 'you must exit Record Mode before the sequence loops, otherwise Circuit Tracks will overwrite the automation movements you've just recorded with that corresponding to the new knob position.' Confirmed."
+        },
+        {
+          "id": "sequencing-6",
+          "verdict": "confirmed",
+          "note": "p37: 'in Note View, press Record, select the step... by pressing and holding the pad... Then adjust the Macro control(s)... the new value(s) will be written to the automation data; press Record again to exit.' Confirmed."
+        },
+        {
+          "id": "sequencing-7",
+          "verdict": "confirmed",
+          "note": "p37: 'holding down Clear and moving the knob in question by at least 20% of its rotation \u2013 the LED... will turn red... this will clear the automation data for that Macro for the whole Pattern, not just at the sequencer's current step.' Confirmed."
+        },
+        {
+          "id": "sequencing-8",
+          "verdict": "confirmed",
+          "note": "Manual: 'the two lower rows \u2013 the synth pads \u2013 is the Play Area... the two upper rows are the Pattern steps.' p39: 'a bright blue step pad (i.e., one corresponding to a synth note).' Confirmed (top two = 16-step display, bottom two = keyboard, notes lit bright blue)."
+        },
+        {
+          "id": "sequencing-9",
+          "verdict": "confirmed",
+          "note": "p40: 'You can add a synth note to a step by holding down the step pad and pressing the desired note. Note that Record Mode does not need to be enabled... You can add multiple notes to the same step.' Delete: 'press the step pad (lights red) and then press the unwanted keyboard pad.' Confirmed."
+        },
+        {
+          "id": "sequencing-10",
+          "verdict": "confirmed",
+          "note": "p40: hold Clear + step pad 'all notes at this step for the currently selected synth track will be deleted' (across octaves). Duplicate: hold Duplicate, press source step, press destination \u2013 'copy all the synth notes on a step, together with their various attributes'; overwrites destination. Confirmed."
+        },
+        {
+          "id": "sequencing-11",
+          "verdict": "confirmed",
+          "note": "p42-44: Velocity View via Velocity button; live record sets 7-bit 0-127; 'Velocity View can only display... 16 increments of 8.' Table matches exactly (1 pad=8 ... 16 pads=127). Confirmed."
+        },
+        {
+          "id": "sequencing-12",
+          "verdict": "confirmed",
+          "note": "p43: 'toggle Fixed Velocity mode on and off by pressing Velocity while holding down Shift... sets Velocity at a value of 96 (12 pads lit)... does not alter the Velocity values of any notes previously recorded.' Value 96 / 12 pads / no retroactive change all confirmed. ('Global/all tracks' is a fair characterisation but not stated verbatim in this section.)"
+        },
+        {
+          "id": "sequencing-13",
+          "verdict": "confirmed",
+          "note": "p44: 'It is also possible for synth notes on the same step to have different Velocity values, provided Circuit Tracks is not in Fixed Velocity Mode.' Confirmed."
+        },
+        {
+          "id": "sequencing-14",
+          "verdict": "confirmed",
+          "note": "p45: 'It may have any value between one-sixth and 16, in increments of one-sixth of a Step, giving a total of 96 possible values... A Gate value of 16 means that notes at that step will sound continuously for an entire 16-step pattern.' Confirmed."
+        },
+        {
+          "id": "sequencing-15",
+          "verdict": "confirmed",
+          "note": "p46: 'Fractional Gate values are assigned by pressing the highest-numbered illuminated pad... Each additional press reduces the Gate time by one sixth of a step... After the fifth press on the pad, the Gate time reverts to the former integral value on the sixth.' Confirmed."
+        },
+        {
+          "id": "sequencing-16",
+          "verdict": "confirmed",
+          "note": "p47: 'Probability View is the secondary view of the Pattern Settings button. Open by holding Shift and pressing Pattern Settings, or press Pattern Settings a second time... Pads 17\u201324 constitute a probability meter.' Value table matches exactly: 100/87.5/75/62.5/50/37.5/25/12.5%. Confirmed."
+        },
+        {
+          "id": "sequencing-17",
+          "verdict": "confirmed",
+          "note": "p47-48: 'either all of the notes at the step will play, or none of them will.' 'Clearing steps, Patterns and Projects will also reset all Probabilities to 100%. Live recording of a new note to a step will also reset the probability at that step to 100%.' Confirmed."
+        },
+        {
+          "id": "sequencing-18",
+          "verdict": "confirmed",
+          "note": "p48-50: 'Micro Step View is the secondary view of the Gate button. Open by holding Shift and pressing Gate, or press Gate a second time.' Delay by 0-5 ticks (pads 0-5, 0=on beat), 'up to 6 notes assigned to a single step... displayed left to right in the order they were assigned'; enables triplets and strummed chords. Confirmed."
+        },
+        {
+          "id": "sequencing-19",
+          "verdict": "confirmed",
+          "note": "p51-52: tie-forward accessed via Gate View, then Micro Step View, 'turn the tie-forward setting on/off for this step by pressing pad 24'; gate must reach the next note. Manual: 'In Note View, tied notes are shown as orange when the steps are held down as opposed to the usual [red].' Confirmed."
+        },
+        {
+          "id": "sequencing-20",
+          "verdict": "confirmed",
+          "note": "p75: 'default length of a Pattern in Circuit Tracks is 16 steps, but you can double the length to 32 steps with the Step Page button (legended 1-16/17-32)... bright blue for Page 1 (Steps 1 to 16), and orange for Page 2 (Steps 17 to 32).' Confirmed."
+        },
+        {
+          "id": "sequencing-21",
+          "verdict": "confirmed",
+          "note": "p53: 'the start and end points of a Pattern may be [independently defined]... sub-sections of a Pattern, of any length, may be played'; max 32 steps; different tracks can independently have different lengths (p75). Confirmed."
+        },
+        {
+          "id": "sequencing-22",
+          "verdict": "confirmed",
+          "note": "p53-54: default end = last step (pad 16); 'change the end point... by pressing a different Pattern step pad... higher pads either go dark or dim red, the latter indicating that note/hit data has previously been assigned.' 'Altering the start point is exactly the same process, except that Shift needs to be held down.' Confirmed."
+        },
+        {
+          "id": "sequencing-23",
+          "verdict": "confirmed",
+          "note": "p55: Forwards (default), Reverse (Pad 30), Ping-pong (Pad 31), Random (Pad 32). Forwards = Pad 29. Confirmed."
+        },
+        {
+          "id": "sequencing-24",
+          "verdict": "confirmed",
+          "note": "p55-56: 'The third row of Pattern Settings View determines the speed... multiplier/divider of the BPM... 1/4, 1/4T, 1/8, 1/8T, 1/16, 1/16T, 1/32, 1/32T... default rate is x1 (pad 5 in row 3) [= 1/16].' Confirmed."
+        },
+        {
+          "id": "sequencing-25",
+          "verdict": "confirmed",
+          "note": "p56: 'To mutate a Pattern, hold Shift and press Duplicate... shuffles the notes or hits... to different steps. The number of notes/hits... and the synth notes or drum samples... are both unchanged... All step parameters are reassigned by Mutate, including micro steps, gate values, sample flips, probability and automation. Mutate only affects the Pattern currently playing... Mutate cannot be undone.' Confirmed."
+        },
+        {
+          "id": "sequencing-26",
+          "verdict": "confirmed",
+          "note": "p73: 'Patterns View has two pages, selected by the [up/down] buttons... on Page 1 the pads select Patterns 1 to 4 for each track, on Page 2 they select Patterns 5 to 8', arranged vertically with 8 track columns (Synth 1, Synth 2, MIDI 1, MIDI 2, Drum 1-4). Confirmed."
+        },
+        {
+          "id": "sequencing-27",
+          "verdict": "confirmed",
+          "note": "p74: default queues to end of current pattern (pad flashes quickly); 'if you hold down Shift while selecting the next Pattern memory, it will start playing immediately from the corresponding Pattern step, thereby ensuring... continuity' (e.g. from Step 12 if current was at 11). Confirmed."
+        },
+        {
+          "id": "sequencing-28",
+          "verdict": "confirmed",
+          "note": "p76/p78: 'press and hold the pad for the lowest-numbered Pattern... then press the pad for the highest-numbered.' 'the Patterns you chain together must be contiguous, that is, numerically consecutive... you can't chain 1,2 and 6 together.' 'chain of up to 256 (8 x 32) steps.' Confirmed."
+        },
+        {
+          "id": "sequencing-29",
+          "verdict": "confirmed",
+          "note": "p77-78: 'each track will loop round its own chain of Patterns. The longest chain... defines the overall length of the sequence'; shorter/single patterns repeat to fill (e.g. a single 32-step pattern plays four times against a 128-step chain). Confirmed."
+        },
+        {
+          "id": "sequencing-30",
+          "verdict": "confirmed",
+          "note": "p75 IMPORTANT box: 'You can copy a Pattern from one Synth or MIDI track to the other, or between a Synth track and a MIDI track... also... from one Drum track to another, but you cannot copy data from a Synth or MIDI track to a Drum track, or vice-versa.' Confirmed."
+        },
+        {
+          "id": "sequencing-31",
+          "verdict": "confirmed",
+          "note": "p75: 'holding down Clear and pressing the Step Page button: the Pattern will now revert to 16 steps... Notes/hits assigned to the all 32 steps are preserved.' 'Holding down Duplicate and pressing the Step Page button will extend... to 32 steps, and copy all data at steps 1 to 16 to steps 17 to 32... including automation data.' Confirmed."
+        },
+        {
+          "id": "sequencing-32",
+          "verdict": "confirmed",
+          "note": "p81: 'The two lower rows of pads in Mixer View represent the 16 Scenes... The first (Pad 17) will be pulsing bright green... (Scene 1 by default).' Confirmed."
+        },
+        {
+          "id": "sequencing-33",
+          "verdict": "confirmed",
+          "note": "p81-84: define Pattern Chains in Patterns View first, then Mixer View, 'press and hold Shift: the Scene pads change colour to dim gold. Press a Scene pad... bright gold while pressed... On releasing Shift, the pad... shows bright white.' 'you can use Scenes to overcome the restriction... of not being able to define a Pattern Chain of non-contiguous Patterns.' Confirmed."
+        },
+        {
+          "id": "sequencing-34",
+          "verdict": "confirmed",
+          "note": "p83-84: 'holding down the pad for the first Scene, then pressing the pad for the last Scene: these pads and all those between them will illuminate green... play in numerical order, and then repeat.' Queue: 'The pad for a queued Scene flashes green and at the end of the Drum 1 Pattern currently playing, the new Scene will begin playing from the start without losing sync.' Confirmed."
+        },
+        {
+          "id": "sequencing-35",
+          "verdict": "confirmed",
+          "note": "64 internal Project memories (intro p6 region). p95-96: 'Save needs to be pressed twice... a second press will save your work to the last Project memory that was in use... the original version will be overwritten. To ensure that your work gets saved in a different Project memory, switch to Projects View' and pick a new slot. Nothing auto-saved (manual save required throughout). Confirmed."
+        },
+        {
+          "id": "sequencing-36",
+          "verdict": "confirmed",
+          "note": "p95: in Play, pressing a project pad queues it \u2013 'the current Pattern will play through to its last step (note \u2013 only the current Pattern, not a Scene or complete chain of Patterns)'; 'If you hold down Shift when selecting a new Project, the newly selected Project will begin playing immediately... from the same step in the Pattern chain that the previous Project had reached.' Confirmed."
+        },
+        {
+          "id": "sequencing-37",
+          "verdict": "confirmed",
+          "note": "p35: 'Circuit Tracks synth engines are six-note polyphonic \u2013 that is, you can assign up to six notes to any step in the pattern, if the Patch... is suitably polyphonic.' Confirmed for Circuit Tracks specifically."
+        },
+        {
+          "id": "sequencing-38",
+          "verdict": "confirmed",
+          "note": "p64/p68: 'you can't hear the drum hits by pressing lit step pads in Note View when the Pattern isn't running'; 'you can hear the hits in this way using Velocity View or Gate View \u2013 see page 68.' Pattern must be running to hear them in Note View. Confirmed."
+        },
+        {
+          "id": "sequencing-39",
+          "verdict": "confirmed",
+          "note": "p66-68: 'To adjust the micro step values, press Gate View for the relevant drum track. Pads 17 to 22 display the micro step values... you can have the hit on as many micro steps as you want: each micro step pad can be turned on or off' (retrigger). 'Any drum hits added off-line... will always be assigned to the step's first micro step, which is on the exact [beat].' Confirmed."
+        },
+        {
+          "id": "sequencing-40",
+          "verdict": "confirmed",
+          "note": "p80: 'View Lock... by holding down Shift and pressing Patterns... locked to the Pattern that was displayed when you selected View Lock... the state of View Lock is not saved. It will default to inactive whenever Circuit Tracks is powered on.' Confirmed."
+        },
+        {
+          "id": "sequencing-41",
+          "verdict": "confirmed",
+          "note": "p79 Pattern Octave: 'shift the pitch of an entire synth or MIDI Pattern up or down... by holding down Shift and then pressing [up]/[down]... Pattern Octave can be changed in any of the Step Views, i.e., Note View, Velocity View, Gate View or Pattern Settings View. Only the pitch of the currently selected track is adjusted.' Confirmed."
+        }
+      ],
+      "overallNotes": "All 41 sequencing claims are CONFIRMED verbatim against the official Circuit Tracks User Guide v3 (English PDF, Focusrite CDN; I extracted the full text with pdftotext and cross-checked each page reference). The PDF is unambiguously the Circuit Tracks manual (title/metadata + 8-track two-synth/two-MIDI/four-drum architecture throughout). No cross-device contamination detected \u2014 this claim set was drawn directly and accurately from the Tracks manual, with no facts bleeding in from the original Circuit (2015) or Circuit Rhythm. Page numbers cited in the claims all line up.\n\nMinor precision notes (not errors): (1) sequencing-12 \u2014 the manual confirms Shift+Velocity, fixed value 96 / 12 pads, and no retroactive change, but does not use the exact words 'global setting affecting all tracks'; it is a reasonable characterisation (drum step-programmed hits also always use fixed velocity, p69). (2) sequencing-18/sequencing-4 \u2014 the micro-nudge pads are labelled 0-5 (six positions), where pad 0 = on the beat/zero delay; the manual's prose says 'delay by between one and five ticks', so the effective delay range is 0-5 ticks as the claim states.\n\nImportant sequencing facts for this angle that the claims did NOT cover (candidates for the guide):\n- Shift + Play CONTINUES a pattern/chain from where the sequencer was last stopped, whereas plain Play always restarts from Step 1 / the start point (p35, p74, p78). This is a key performance/sequencing behaviour.\n- Expanded Note View (Shift + Note) widens the synth keyboard to four octaves (two in Chromatic) (p35); Expanded Drum View (also Shift + Note) puts all four drum tracks on pads 29-32 for simultaneous real-time entry/recording of a full kit (p61).\n- Scale and Root Note (Scales View) are GLOBAL across both synth tracks AND both MIDI tracks, and can be changed live; out-of-scale MIDI notes from an external controller snap to the nearest scale note (p36-37). Relevant because it constrains what the sequencer records.\n- Drum non-quantised record indicator differs from synths: when Shift is held the Record button lights bright green (quantised) vs DIM red (non-quantised) for drums (p64), vs plain red for synths (p37).\n- Per-step Velocity/Gate/Probability are set INDEPENDENTLY per synth on the same step number, and swapping a note preserves those attributes if you ADD the new note before DELETING the old one (p41).\n- Drum tracks only record Macro automation in Velocity/Gate/Probability views, and only the even-numbered Macros (2,4,6,8) are automatable for drums (p71); automation is stored independently of pattern note data.\n- Sample-flip: long-pressing a drum step then a different sample pad assigns a non-default sample to that step (step lights pink vs bright blue for the default sample) (p64) \u2014 this is the 'sample flip' attribute that Mutate reassigns (claim 25).\n- The metronome/click track is toggled with Shift + Clear (p35/p87) \u2014 a practical aid while recording.\n- Pattern Octave shift red-LED feedback: the up/down button lights red if notes are already at the pitch extreme and cannot shift further (p79).\n- MIDI tracks support ALL the same sequencer functions as synth tracks (notes, per-step params, automation) but transmit note + CC data externally; each MIDI template defaults to CCs 1,2,5,11,12,13,71,74 (p56-57)."
+    },
+    {
+      "lens": "skeptic",
+      "verdicts": [
+        {
+          "id": "sequencing-1",
+          "verdict": "confirmed",
+          "note": "Guide (printed p74, recording-a-drum-pattern section): 'There are eight Patterns for each of the eight tracks - two synths, two MIDI and four drums' for the currently active Project. Cited p73 (Patterns View) also shows 8 pattern memories per track across 2 pages. Explicitly Circuit Tracks. Confirmed."
+        },
+        {
+          "id": "sequencing-2",
+          "verdict": "confirmed",
+          "note": "p35: notes 'won't be recorded until you press the Record button... press Record again to stop recording.' Record is button 13. p35 tip box: 'dual momentary/latching action... If you hold the button down for more than half a second, Circuit Tracks will drop out of Record Mode as soon as you release it.' Confirmed."
+        },
+        {
+          "id": "sequencing-3",
+          "verdict": "confirmed",
+          "note": "p37: 'Quantised recording is disabled by holding down Shift and pressing Record (note the button is also legended Rec Quantise)... check by pressing Shift: if the Record button illuminates green, quantisation is enabled; if it is red, recording will be non-quantised.' Confirmed."
+        },
+        {
+          "id": "sequencing-4",
+          "verdict": "confirmed",
+          "note": "p37: 'Six finer intervals - or micro steps - in between adjacent pattern steps.' p48: 'delaying individual notes on a step by between one and five ticks, where a tick is a sixth of a step.' Six micro-step positions per step interval, each 1/6 step. Confirmed."
+        },
+        {
+          "id": "sequencing-5",
+          "verdict": "confirmed",
+          "note": "p36: turning a Macro in Record Mode makes LED turn red to confirm recording. p36: 'you must exit Record Mode before the sequence loops, otherwise Circuit Tracks will overwrite the automation movements you've just recorded with that corresponding to the new knob position.' Confirmed."
+        },
+        {
+          "id": "sequencing-6",
+          "verdict": "confirmed",
+          "note": "p37: 'in Note View, press Record, select the step... by pressing and holding the pad corresponding to the step... Then adjust the Macro control(s)... the new value(s) will be written to the automation data.' Confirmed."
+        },
+        {
+          "id": "sequencing-7",
+          "verdict": "confirmed",
+          "note": "p37: 'delete any Macro automation data... by holding down Clear and moving the knob in question by at least 20% of its rotation... this will clear the automation data for that Macro for the whole Pattern, not just at the sequencer's current step.' Confirmed."
+        },
+        {
+          "id": "sequencing-8",
+          "verdict": "confirmed",
+          "note": "p38: 'the two upper rows of grid pads is the 16-step pattern display and the two lower rows constitute the synth keyboard.' 'The pads for the steps which have notes associated with them will be illuminated bright blue.' Confirmed."
+        },
+        {
+          "id": "sequencing-9",
+          "verdict": "confirmed",
+          "note": "p40: 'add a synth note to a step by holding down the step pad and pressing the desired note. Note that Record Mode does not need to be enabled... You can add multiple notes to the same step.' Delete: 'press the step pad (lights red) and then press the unwanted keyboard pad.' Confirmed."
+        },
+        {
+          "id": "sequencing-10",
+          "verdict": "confirmed",
+          "note": "p40: Clear 'delete all assigned synth notes from a step in one go' (avoids searching octaves). Duplicate: press source step then destination step; 'All the note information in the source step will now have been duplicated... Any pre-existing note information in the destination step will be overwritten.' Confirmed."
+        },
+        {
+          "id": "sequencing-11",
+          "verdict": "confirmed",
+          "note": "p42-44: Velocity View selected by pressing Velocity (button group 6). 'Velocity View can only display the Velocity value to a resolution of 16 increments of 8'; table shows 1 pad=8 ... 16 pads=127. Live record 'set internally to 7-bit accuracy: a value between 0 and 127.' Confirmed."
+        },
+        {
+          "id": "sequencing-12",
+          "verdict": "confirmed",
+          "note": "p43: 'Fixed Velocity function, which sets Velocity at a value of 96'; toggled by Shift+Velocity; '96 (12 pads lit)'; 'does not alter the Velocity values of any notes previously recorded.' p68 confirms the global scope: 'the selection of fixed or variable velocity is global, i.e., it applies to all tracks.' Confirmed."
         },
         {
           "id": "sequencing-13",
@@ -443,122 +865,122 @@
         {
           "id": "sequencing-14",
           "verdict": "confirmed",
-          "note": "p45: Gate View selected by pressing Gate (button 6). 'It may have any value between one-sixth and 16, in increments of one-sixth of a Step, giving a total of 96 possible values.' 'A Gate value of 16 means that notes at that step will sound continuously for an entire 16-step pattern.' Confirmed."
+          "note": "p45: Gate View by pressing Gate (button group 6). 'It may have any value between one-sixth and 16, in increments of one-sixth of a Step, giving a total of 96 possible values... A Gate value of 16 means that notes at that step will sound continuously for an entire 16-step pattern.' Confirmed."
         },
         {
           "id": "sequencing-15",
           "verdict": "confirmed",
-          "note": "p46: 'Fractional Gate values are assigned by pressing the highest-numbered illuminated pad... an additional number of times... Each additional press reduces the Gate time by one sixth of a step, and the illumination dims... After the fifth press on the pad, the Gate time reverts to the former integral value on the sixth.' Confirmed (5 presses subtract, 6th reverts)."
+          "note": "p46: 'Fractional Gate values are assigned by pressing the highest-numbered illuminated pad... Each additional press reduces the Gate time by one sixth of a step, and the illumination dims... After the fifth press on the pad, the Gate time reverts to the former integral value on the sixth.' Confirmed."
         },
         {
           "id": "sequencing-16",
           "verdict": "confirmed",
-          "note": "p47: 'Probability View is the secondary view of the Pattern Settings button 7. Open by holding Shift and pressing Pattern Settings, or press Pattern Settings a second time... Pads 17\u201324 constitute a probability meter.' Value table: 100%, 87.5%, 75%, 62.5%, 50%, 37.5%, 25%, 12.5%. Exact match."
+          "note": "p47: 'Probability View is the secondary view of the Pattern Settings button 7. Open by holding Shift and pressing Pattern Settings, or press Pattern Settings a second time... Pads 17-24 constitute a probability meter.' Table lists 100/87.5/75/62.5/50/37.5/25/12.5%. Confirmed."
         },
         {
           "id": "sequencing-17",
           "verdict": "confirmed",
-          "note": "p47-48: 'either all of the notes at the step will play, or none of them will.' 'Clearing steps, Patterns and Projects will also reset all Probabilities to 100%. Live recording of a new note to a step will also reset the probability at that step to 100%.' Exact match."
+          "note": "p47-48: probability decides 'either all of the notes at the step will play, or none of them will.' 'Clearing steps, Patterns and Projects will also reset all Probabilities to 100%. Live recording of a new note to a step will also reset the probability at that step to 100%.' Confirmed."
         },
         {
           "id": "sequencing-18",
           "verdict": "confirmed",
-          "note": "p48-50: 'Micro Step View is the secondary view of the Gate button 6. Open by holding Shift and pressing Gate, or press Gate a second time...' delay by 1-5 ticks (first six pads, positions 0-5). 'There may be up to 6 notes assigned to a single step'; 'Multiple notes are displayed left to right in the order they were assigned.' Triplets and 'strummed chords' both cited. Confirmed."
+          "note": "p48-50: Micro Step View is secondary view of Gate (Shift+Gate, or Gate twice); delay 0 to 5 ticks (1 tick=1/6 step, for triplets); up to 6 notes shown left-to-right in the order they were assigned; staggered playback allows strummed chords. Confirmed."
         },
         {
           "id": "sequencing-19",
           "verdict": "confirmed",
-          "note": "p51-52: tie-forward accessed in Gate View, select step, then Micro Step View, press pad 24 to toggle tie-forward on/off; 'set the gate length so that the note ends just before the next note is played or overlaps with it.' 'In Note View, tied notes are shown as orange when the steps are held down as opposed to the usual red.' Confirmed."
+          "note": "p51-52: tie-forward accessed via Gate View then Micro Step View, toggled by pressing pad 24; 'set the gate length so that the note ends just before the next note.' 'In Note View, tied notes are shown as orange when the steps are held down as opposed to the usual red.' Confirmed."
         },
         {
           "id": "sequencing-20",
           "verdict": "confirmed",
-          "note": "p75: 'The default length of a Pattern in Circuit Tracks is 16 steps, but you can double the length to 32 steps with the Step Page button 8 (legended 1-16/17-32)... bright blue for Page 1 \u2013 while displaying Steps 1 to 16, and orange for Page 2 \u2013 while displaying Steps 17 to 32.' Confirmed."
+          "note": "p75: default 16 steps, doubled to 32 with Step Page button (8, legended 1-16/17-32); 'bright blue for Page 1 - while displaying Steps 1 to 16, and orange for Page 2 - while displaying Steps 17 to 32.' Confirmed."
         },
         {
           "id": "sequencing-21",
           "verdict": "confirmed",
-          "note": "p53: 'possible for the Pattern in any track to be any other number of steps in length, up to the maximum of 32 steps. Furthermore, the start and end points of a Pattern may be independently defined.' Set per selected track in Pattern Settings View. Confirmed."
+          "note": "p53-54: 'the Pattern in any track [can] be any other number of steps in length, up to the maximum of 32 steps... the start and end points of a Pattern may be independently defined.' Set in Pattern Settings View, per track. Confirmed."
         },
         {
           "id": "sequencing-22",
           "verdict": "confirmed",
-          "note": "p53-54: 'Pad 16 will be illuminated sand: this indicates the last step.' 'change the end point... by pressing a different Pattern step pad... the higher pads either go dark or dim red, the latter indicating that note/hit data has previously been assigned.' 'Altering the start point... Shift needs to be held down while selecting the new start point.' Confirmed."
+          "note": "p53-54: default Pad 16 lit sand = last step; 'change the end point... by pressing a different Pattern step pad'; higher pads 'go dark or dim red, the latter indicating that note/hit data has previously been assigned.' Start point: 'Shift needs to be held down while selecting the new start point.' Confirmed."
         },
         {
           "id": "sequencing-23",
           "verdict": "confirmed",
-          "note": "p55: 'Pads 29 to 32 in Pattern Settings View let you choose the play order... Pad 29 Forwards (Default), Pad 30 Reverse, Pad 31 Ping-pong, Pad 32 Random.' Exact match."
+          "note": "p55: Pads 29-32 = play order. 29 Forwards (default), 30 Reverse, 31 Ping-pong, 32 Random. Confirmed."
         },
         {
           "id": "sequencing-24",
           "verdict": "confirmed",
-          "note": "p55-56: 'The third row of Pattern Settings View determines the speed... a multiplier/divider of the BPM... 1/4, 1/4T, 1/8, 1/8T, 1/16, 1/16T, 1/32, 1/32T.' '1/16 is the default sync rate' = pad 5. Confirmed."
+          "note": "p55-56: third row (pads 1-8) is Pattern Sync rate, 'a multiplier/divider of the BPM.' Rates 1/4, 1/4T, 1/8, 1/8T, 1/16, 1/16T, 1/32, 1/32T; default is x1 = pad 5 = 1/16. Confirmed."
         },
         {
           "id": "sequencing-25",
           "verdict": "confirmed",
-          "note": "p56: 'To mutate a Pattern, hold Shift and press Duplicate.' 'shuffles the notes or hits in the current Pattern, to different steps. The number of notes/hits... and the synth notes or drum samples themselves are both unchanged... All step parameters are reassigned by Mutate, including micro steps, gate values, sample flips, probability and automation data.' 'Mutate only affects the Pattern currently playing.' 'Mutate cannot be undone.' Exact match."
+          "note": "p56: Mutate = hold Shift + press Duplicate. 'shuffles the notes or hits in the current Pattern, to different steps... All step parameters are reassigned by Mutate, including micro steps, gate values, sample flips, probability and automation data.' Number/sounds unchanged; affects only currently playing Pattern; 'Mutate cannot be undone.' Confirmed."
         },
         {
           "id": "sequencing-26",
           "verdict": "confirmed",
-          "note": "p73: 'Patterns View, accessed by pressing Patterns 10... has two pages, selected by the J and K buttons 15... on Page 1 the pads select Patterns 1 to 4 for each track, on Page 2 they select Patterns 5 to 8.' Grid shows 8 columns (Synth 1/2, MIDI 1/2, Drum 1-4) arranged vertically. Confirmed."
+          "note": "p73: Patterns View (button 10); 'two pages, selected by the J and K buttons 15... on Page 1 the pads select Patterns 1 to 4 for each track, on Page 2 they select Patterns 5 to 8'; memories arranged vertically, 8 track columns. Confirmed."
         },
         {
           "id": "sequencing-27",
           "verdict": "confirmed",
-          "note": "p74: 'if you select a Pattern while another is already playing you can choose to queue the next Pattern to play at the end of current one... the pad for the next Pattern will flash quickly while it is being queued. However, if you hold down Shift while selecting the next Pattern memory, it will start playing immediately from the corresponding Pattern step, thereby ensuring that the overall timing maintains continuity.' Confirmed."
+          "note": "p74: 'The default is for the current Pattern to play to its end before the new Pattern starts... the pad for the next Pattern will flash quickly while it is being queued.' 'if you hold down Shift while selecting the next Pattern memory, it will start playing immediately from the corresponding Pattern step.' Confirmed."
         },
         {
           "id": "sequencing-28",
           "verdict": "confirmed",
-          "note": "p76: 'press and hold the pad for the lowest-numbered Pattern required and then press the pad for the highest-numbered Pattern.' 'the Patterns you chain together must be contiguous, that is, numerically consecutive... you can't chain 1,2 and 6 together.' p78: 'Circuit Tracks allows Pattern chains of up to 256 (8 x 32) steps.' Confirmed."
+          "note": "p76: 'press and hold the pad for the lowest-numbered Pattern... then press the pad for the highest-numbered.' 'the Patterns you chain together must be contiguous... you can chain 1,2,3,4 together... but you can't chain 1,2 and 6 together.' p78: 'Pattern chains of up to 256 (8 x 32) steps.' Confirmed."
         },
         {
           "id": "sequencing-29",
           "verdict": "confirmed",
-          "note": "p78: 'each track will loop round its own chain of Patterns. The longest chain is Drum 4 \u2013 this defines the overall length of the sequence... Synth 2 only has one Pattern, so this will repeat eight times in the 8-pattern sequence.' Confirmed."
+          "note": "p78: 'each track will loop round its own chain of Patterns. The longest chain is Drum 4 - this defines the overall length of the sequence'; shorter/single-pattern tracks repeat to fill (Synth 2 single pattern repeats 8x). Confirmed."
         },
         {
           "id": "sequencing-30",
           "verdict": "confirmed",
-          "note": "p75 (IMPORTANT box): 'You can copy a Pattern from one Synth or MIDI track to the other, or between a Synth track and a MIDI track using Duplicate: you can also use it to copy a Pattern from one Drum track to another, but you cannot copy data from a Synth or MIDI track to a Drum track, or vice-versa.' Exact match."
+          "note": "p75 IMPORTANT box: 'You can copy a Pattern from one Synth or MIDI track to the other, or between a Synth track and a MIDI track using Duplicate: you can also use it to copy a Pattern from one Drum track to another, but you cannot copy data from a Synth or MIDI track to a Drum track, or vice-versa.' Confirmed."
         },
         {
           "id": "sequencing-31",
           "verdict": "confirmed",
-          "note": "p75: 'holding down Clear and pressing the Step Page button: the Pattern will now revert to 16 steps... Notes/hits assigned to the all 32 steps are preserved.' 'Holding down Duplicate and pressing the Step Page button will extend the Pattern length... to 32 steps, and copy all data at steps 1 to 16 to steps 17 to 32 respectively, including automation data.' Confirmed."
+          "note": "p75: 'set a Pattern length back to the default of 16 steps by holding down Clear and pressing the Step Page button' (steps 17-32 data preserved). 'Holding down Duplicate and pressing the Step Page button will extend... to 32 steps, and copy all data at steps 1 to 16 to steps 17 to 32... including automation data.' Confirmed."
         },
         {
           "id": "sequencing-32",
           "verdict": "confirmed",
-          "note": "p81: 'The two lower rows of pads in Mixer View represent the 16 Scenes that are available in Circuit Tracks... The first (Pad 17) will be pulsing bright green... (Scene 1 by default).' Scenes accessed by pressing Mixer. Confirmed."
+          "note": "p81: 'The two lower rows of pads in Mixer View represent the 16 Scenes'; accessed by pressing Mixer. 'The first (Pad 17) will be pulsing bright green... (Scene 1 by default).' Confirmed."
         },
         {
           "id": "sequencing-33",
           "verdict": "confirmed",
-          "note": "p81-82: 'Open Patterns View and define all the Pattern Chains for each track... Change to Mixer View, press and hold Shift: the Scene pads change colour to dim gold. Press a Scene pad (while still holding Shift) \u2013 it will light bright gold... On releasing Shift, the pad with the stored Scene now shows bright white.' p84: 'you can use Scenes to overcome the restriction... of not being able to define a Pattern Chain of non-contiguous Patterns.' Confirmed."
+          "note": "p81-82: 'Open Patterns View and define all the Pattern Chains... Change to Mixer View, press and hold Shift: the Scene pads change colour to dim gold. Press a Scene pad... it will light bright gold... On releasing Shift, the pad with the stored Scene now shows bright white.' p84: Scenes overcome the non-contiguous Pattern Chain restriction. Confirmed."
         },
         {
           "id": "sequencing-34",
           "verdict": "confirmed",
-          "note": "p83: 'holding down the pad for the first Scene, then pressing the pad for the last Scene: these pads and all those between them will illuminate green... The Scenes will play in numerical order, and then repeat.' p84 Queuing: 'The pad for a queued Scene flashes green and at the end of the Drum 1 Pattern currently playing, the new Scene will begin playing from the start without losing sync.' Confirmed."
+          "note": "p83-84: chain by 'holding down the pad for the first Scene, then pressing the pad for the last Scene: these pads and all those between them will illuminate green... play in numerical order, and then repeat.' Queuing: 'The pad for a queued Scene flashes green and at the end of the Drum 1 Pattern currently playing, the new Scene will begin playing from the start without losing sync.' Confirmed."
         },
         {
           "id": "sequencing-35",
           "verdict": "confirmed",
-          "note": "64 slots: p5/p22 'save your work in one of 64 internal Project memories'; p22 'There are 64 memory slots, arranged as two pages of 32.' Save twice: p22 'If you press Save, the button flashes white; if you press it a second time, it briefly flashes green... your work will be saved in the last selected Project memory... the earlier version will be overwritten.' A new slot can be chosen in Projects View. Saving is manual (nothing auto-saved). Confirmed."
+          "note": "p22: '64 memory slots, arranged as two pages of 32.' 'If you press Save 19... if you press it a second time, it briefly flashes green... your work will be saved in the last selected Project memory... the earlier version will be overwritten.' Save needs pressing twice; new slot chosen in Projects View. No auto-save. Confirmed."
         },
         {
           "id": "sequencing-36",
           "verdict": "confirmed",
-          "note": "p95: 'If you select a new Project by pressing its pad, the current Pattern will play through to its last step (note \u2013 only the current Pattern, not a Scene or complete chain of Patterns), and the pad for the new Project will flash white... queued.' 'If you hold down Shift when selecting a new Project, the newly selected Project will begin playing immediately... from the same step in the Pattern chain that the previous Project had reached.' Confirmed."
+          "note": "p95: option 1 'the current Pattern will play through to its last step (note - only the current Pattern, not a Scene or complete chain of Patterns), and the pad for the new Project will flash white... queued.' Option 2: 'If you hold down Shift... begin playing immediately... play from the same step in the Pattern chain that the previous Project had reached.' Confirmed."
         },
         {
           "id": "sequencing-37",
           "verdict": "confirmed",
-          "note": "p35 (and Key Features p6): 'Circuit Tracks synth engines are six-note polyphonic \u2013 that is, you can assign up to six notes to any step in the pattern.' Confirmed."
+          "note": "p6 feature list 'Two synth tracks with 6-voice polyphony'; p35: 'Circuit Tracks' synth engines are six-note polyphonic - that is, you can assign up to six notes to any step in the pattern.' Confirmed."
         },
         {
           "id": "sequencing-38",
@@ -568,442 +990,20 @@
         {
           "id": "sequencing-39",
           "verdict": "confirmed",
-          "note": "p66-68: micro step editing done in Gate View for the drum track, 'Pads 17 to 22 display the micro step values'; 'you can have the hit on as many micro steps as you want: each micro step pad can be turned on or off... The selected step now triggers three separate hits.' p66: offline hits 'will always be assigned to the step's first micro step, which is on the exact beat of the step.' Confirmed."
+          "note": "p66-67: 'To adjust the micro step values, press Gate View for the relevant drum track. Pads 17 to 22 display the micro step values.' 'each micro step pad can be turned on or off' so a step can retrigger the sample multiple times. p66: offline hits 'always be assigned to the step's first micro step, which is on the exact beat.' Confirmed."
         },
         {
           "id": "sequencing-40",
           "verdict": "confirmed",
-          "note": "p80: View Lock 'by holding down Shift and pressing Patterns 10'; freezes the Pattern Step display to the current Pattern and Page while another plays. 'the state of View Lock is not saved. It will default to inactive whenever Circuit Tracks is powered on.' Confirmed."
+          "note": "p80: View Lock via Shift+Patterns; 'freeze the Pattern Step display to the current Pattern (and Page)' while another plays; also freezes the Step Page. 'the state of View Lock is not saved. It will default to inactive whenever Circuit Tracks is powered on.' Confirmed."
         },
         {
           "id": "sequencing-41",
           "verdict": "confirmed",
-          "note": "p79 Pattern Octave: 'shift the pitch of an entire synth or MIDI Pattern up or down one or more octaves by holding down Shift and then pressing J or K 15... Pattern Octave can be changed in any of the Step Views, i.e., Note View, Velocity View, Gate View or Pattern Settings View.' The J/K (button group 15) are the up/down octave buttons. Confirmed."
+          "note": "p79 Pattern Octave: 'shift the pitch of an entire synth or MIDI Pattern up or down one or more octaves by holding down Shift 20 and then pressing J or K 15... in any of the Step Views, i.e., Note View, Velocity View, Gate View or Pattern Settings View. Only the pitch of the currently selected track is adjusted.' Confirmed."
         }
       ],
-      "overallNotes": "SOURCE: All claims verified against the official Novation Circuit Tracks User Guide Version 3 (English), downloaded directly from Focusrite's official CDN: https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf (linked from downloads.novationmusic.com). This is genuine Circuit Tracks documentation, NOT original-Circuit or Circuit-Rhythm material. Cited page numbers in the claims map accurately to the guide (verified via extracted text with printed page footers). All 41 claims are CONFIRMED with no errors, no wrong-device attributions, and no page mis-cites of consequence. The claim set is unusually accurate.\n\nMinor page-reference nuances (all still confirmed): sequencing-1 states \"8 patterns per track\" is on p73; the explicit sentence \"eight Patterns for each of the eight tracks\" actually appears in the Drums chapter (p64), with the Patterns chapter (p73) reinforcing it via the Patterns View layout. sequencing-20's blue/orange page legend and default-16 facts are on p75 as cited (also restated on p54). Terminology note for sequencing-4/18: the guide uses \"tick\" and \"micro step\" interchangeably; a tick = 1/6 of a step; synth micro-step positions are labelled 0-5 (six positions), drum micro-step pads are labelled 1-6 (pads 17-22) \u2014 same six subdivisions, different labelling per track type. The claims handle this correctly.\n\nIMPORTANT SEQUENCING FACTS THE CLAIMS MISSED ENTIRELY:\n1. SAMPLE FLIP (drum sequencing, p62-65): Any drum step can be assigned an alternate sample from the kit (hold sample pad, press step pads, or long-press a step then pick a sample). Steps playing the active default sample show bright blue; sample-flipped steps show PINK. Sample flip works in both Stop and Play mode. This is a core drum-sequencing capability with no claim covering it. (Mutate's \"sample flips\" reassignment in sequencing-25 is the only oblique reference.)\n2. CONTINUE-FROM-STOP-POINT (Shift + Play): Normally Play restarts a Pattern/Chain from Step 1 (or start point); holding Shift while pressing Play resumes from the step where the sequencer was last stopped (p38, p73/74, p78). Applies to patterns and chains. Not covered.\n3. STEP-LEVEL PARAMETER PERSISTENCE (p41): Velocity, Gate and Probability are attached to the STEP, not the note, so they are retained when you swap a note \u2014 provided you ADD the new note first, THEN delete the old one; the new note inherits the previous note's V/G/P. A useful, non-obvious editing behavior.\n4. PER-NOTE VELOCITY DISPLAY (p44): When notes on one step have differing velocities, Velocity View shows the range \u2014 brightly-lit pads = the LOWEST velocity at the step, dimly-lit pads = the HIGHEST. sequencing-13 confirms per-note velocity exists but omits this read-out detail.\n5. EMPTY-STEP GATE RULE (p46): Steps with no notes have zero Gate and all Gate pads unlit; you cannot edit the Gate value of a step that has no notes.\n6. PLAY-ORDER / SYNC-RATE CHANGES ARE DEFERRED (p55-56): If play order or sync rate is changed during playback, the pattern always completes its current cycle at the old setting and switches at the cycle boundary \u2014 regardless of pattern length or step page.\n7. SYNC-RATE SEMANTICS (p56): 1/16 (default) means each step = a 16th note; raising the rate increases step RESOLUTION at the cost of total playback time, lowering it stretches a pattern for long evolving pads. \"T\" = triplet variants.\n8. ADDING DRUM HITS IN VELOCITY VIEW (p69): You can enter drum hits directly in Velocity View \u2014 hold a step pad and press a pad in the lower two rows to set both the hit and its velocity; ideal for low-volume \"ghost\" hits.\n9. DRUM MICRO-STEP INHERITANCE (p67): All micro-step retriggers on a drum step inherit the velocity and sample assigned to the major step. Micro-step edits can also add hits to empty steps (populated with the track's current default sample).\n10. MIDI-TRACK SEQUENCER PARITY (p57): The two MIDI tracks \"behave just like the Synth tracks and support all the same sequencer functions\" (notes, gate, velocity, probability, micro steps, automation of CC macros, pattern settings, chaining) \u2014 so essentially every synth-sequencing claim here applies equally to the MIDI tracks. Worth stating explicitly in any guide since the claim set is synth/drum-centric.\n11. RECORDING FROM AN EXTERNAL CONTROLLER (p37-38): Synth patterns can be recorded via incoming MIDI notes (Synth 1 defaults to MIDI Ch 1, Synth 2 to Ch 2); the selected Scale/Root still applies and out-of-scale notes snap to the nearest scale note unless Chromatic is selected.\n12. NOTE-IN-ANOTHER-OCTAVE INDICATION (p39): If you hold a lit step pad and no keyboard pad lights red, the note lives in a different octave \u2014 use the Octave buttons to locate it. Relevant to step-editing workflow.\n13. CROSS-PAGE PATTERN-CHAIN SELECTION (p76): Detailed mechanics for chaining patterns that span the two Patterns-View pages (e.g., 3-6, or same-pad-on-both-pages like 1-5) using the J/K page buttons mid-selection."
-    },
-    {
-      "lens": "device",
-      "verdicts": [
-        {
-          "id": "sequencing-1",
-          "verdict": "confirmed",
-          "note": "p73: 'Each Project in Circuit Tracks has memory space for eight separate Patterns per track.' Eight tracks = 2 synth, 2 MIDI, 4 drum (glossary 'Track', p12/16). Circuit-Tracks-specific."
-        },
-        {
-          "id": "sequencing-2",
-          "verdict": "confirmed",
-          "note": "p35: notes 'won't be recorded until you press the Record button... press Record and carry on playing... press Record again to stop recording.' p36: 'The Record button has the dual momentary/latching action... If you hold the button down for more than half a second, Circuit Tracks will drop out of Record Mode as soon as you release it.' Record = top-panel #13."
-        },
-        {
-          "id": "sequencing-3",
-          "verdict": "confirmed",
-          "note": "p37: 'Quantised recording is disabled by holding down Shift and pressing Record (note the button is also legended Rec Quantise)... press Shift: if the Record button illuminates green, quantisation is enabled; if it is red, recording will be non-quantised.' Rec Quantise legend visible in Top View p15."
-        },
-        {
-          "id": "sequencing-4",
-          "verdict": "confirmed",
-          "note": "p37: 'Six finer intervals \u2013 or micro steps \u2013 in between adjacent pattern steps.' p48: 'a tick is a sixth of a step.' Six micro-step positions (0-5); note-delay range is 1-5 ticks."
-        },
-        {
-          "id": "sequencing-5",
-          "verdict": "confirmed",
-          "note": "p36: 'as soon as you make an adjustment, the LED turns red to confirm that you are now recording the knob movement.' p37: 'you must exit Record Mode before the sequence loops, otherwise Circuit Tracks will overwrite the automation movements you've just recorded with that corresponding to the new knob position.'"
-        },
-        {
-          "id": "sequencing-6",
-          "verdict": "confirmed",
-          "note": "p37: 'record Macro control changes when the sequence isn't playing; in Note View, press Record, select the step... by pressing and holding the pad... Then adjust the Macro control(s).'"
-        },
-        {
-          "id": "sequencing-7",
-          "verdict": "confirmed",
-          "note": "p37: 'holding down Clear and moving the knob in question by at least 20% of its rotation \u2013 the LED below the knob will turn red to confirm. But note this will clear the automation data for that Macro for the whole Pattern, not just at the sequencer's current step.'"
-        },
-        {
-          "id": "sequencing-8",
-          "verdict": "confirmed",
-          "note": "p38: 'the two upper rows of grid pads is the 16-step pattern display and the two lower rows constitute the synth keyboard.' 'The pads for the steps which have notes associated with them will be illuminated bright blue.'"
-        },
-        {
-          "id": "sequencing-9",
-          "verdict": "confirmed",
-          "note": "p40: 'add a synth note to a step by holding down the step pad and pressing the desired note. Note that Record Mode does not need to be enabled... You can add multiple notes to the same step.' Delete: 'press the step pad (lights red) and then press the unwanted keyboard pad.'"
-        },
-        {
-          "id": "sequencing-10",
-          "verdict": "confirmed",
-          "note": "p40: Clear deletes all assigned synth notes from a step in one go (no need to search octaves). Duplicate: source step then destination copies 'All the note information... together with their various attributes'; 'Any pre-existing note information in the destination step will be overwritten.'"
-        },
-        {
-          "id": "sequencing-11",
-          "verdict": "confirmed",
-          "note": "Velocity View = pressing Velocity (step-button group #6) p41. p42-43: display 'resolution of 16 increments of 8'; table 1 pad=8 ... 16 pads=127; live recording 'set internally to 7-bit accuracy: a value between 0 and 127.'"
-        },
-        {
-          "id": "sequencing-12",
-          "verdict": "confirmed",
-          "note": "p43: 'toggle Fixed Velocity mode on and off by pressing Velocity while holding down Shift... sets Velocity at a value of 96 (12 pads lit)... setting Velocity to Fixed does not alter the Velocity values of any notes previously recorded.' Global/all-tracks nature is inferred, not stated verbatim on p43, but p68 describes the same single Fixed/Variable toggle applying to drum tracks 'as with synth tracks', confirming it is one global setting."
-        },
-        {
-          "id": "sequencing-13",
-          "verdict": "confirmed",
-          "note": "p44 (Per-note velocity): 'It is also possible for synth notes on the same step to have different Velocity values, provided Circuit Tracks is not in Fixed Velocity Mode.'"
-        },
-        {
-          "id": "sequencing-14",
-          "verdict": "confirmed",
-          "note": "Gate View = pressing Gate (step-button group #6) p45. 'any value between one-sixth and 16, in increments of one-sixth of a Step, giving a total of 96 possible values... A Gate value of 16 means that notes at that step will sound continuously for an entire 16-step pattern.'"
-        },
-        {
-          "id": "sequencing-15",
-          "verdict": "confirmed",
-          "note": "p46: 'Fractional Gate values are assigned by pressing the highest-numbered illuminated pad... Each additional press reduces the Gate time by one sixth of a step, and the illumination dims incrementally... After the fifth press on the pad, the Gate time reverts to the former integral value on the sixth.'"
-        },
-        {
-          "id": "sequencing-16",
-          "verdict": "confirmed",
-          "note": "p47: 'Probability View is the secondary view of the Pattern Settings button [#7]. Open by holding Shift and pressing Pattern Settings, or press Pattern Settings a second time... Pads 17 \u2013 24 constitute a probability meter.' Table matches: 1-8=100%, 1-7=87.5%, 1-6=75%, 1-5=62.5%, 1-4=50%, 1-3=37.5%, 1-2=25%, 1 only=12.5%."
-        },
-        {
-          "id": "sequencing-17",
-          "verdict": "confirmed",
-          "note": "p48: 'either all of the notes at the step will play, or none of them will.' 'Clearing steps, Patterns and Projects will also reset all Probabilities to 100%. Live recording of a new note to a step will also reset the probability at that step to 100%.'"
-        },
-        {
-          "id": "sequencing-18",
-          "verdict": "confirmed",
-          "note": "p48-50: 'Micro Step View is the secondary view of the Gate button [#6]. Open by holding Shift and pressing Gate, or press Gate a second time.' Notes delayed by one to five ticks (0-5 positions, first six pads of row 3). 'up to 6 notes assigned to a single step... displayed left to right in the order they were assigned.' Enables triplets/strummed chords."
-        },
-        {
-          "id": "sequencing-19",
-          "verdict": "confirmed",
-          "note": "p51-52: tie-forward 'accessed using Gate View... Select Micro Step View... turn the tie-forward setting on/off for this step by pressing pad 24... set the gate length so that the note ends just before the next note is played or overlaps with it.' 'In Note View, tied notes are shown as orange when the steps are held down as opposed to the usual red.'"
-        },
-        {
-          "id": "sequencing-20",
-          "verdict": "confirmed",
-          "note": "p75: 'The default length of a Pattern in Circuit Tracks is 16 steps, but you can double the length to 32 steps with the Step Page button [#8] (legended 1-16/17-32)... bright blue for Page 1 - while displaying Steps 1 to 16, and orange for Page 2.' Confirmed by Top View #8 description p16."
-        },
-        {
-          "id": "sequencing-21",
-          "verdict": "confirmed",
-          "note": "p53: 'the Pattern in any track [can] be any other number of steps in length, up to the maximum of 32. Furthermore, the start and end points of a Pattern may be independently defined,' set for the currently selected track in Pattern Settings View."
-        },
-        {
-          "id": "sequencing-22",
-          "verdict": "confirmed",
-          "note": "p53-54: end point moved 'by pressing a different Pattern step pad' (default Pad 16 = last step); 'the higher pads either go dark or dim red, the latter indicating that note/hit data has previously been assigned.' 'Altering the start point is exactly the same process, except that Shift needs to be held down while selecting the new start point.'"
-        },
-        {
-          "id": "sequencing-23",
-          "verdict": "confirmed",
-          "note": "p55: 'Pads 29 to 32... Forwards (Default) Pad 29, Reverse Pad 30, Ping-pong Pad 31, Random Pad 32.'"
-        },
-        {
-          "id": "sequencing-24",
-          "verdict": "confirmed",
-          "note": "p55-56: 'The third row of Pattern Settings View determines the speed... effectively a multiplier/divider of the BPM... default rate is x1 (pad 5 in row 3)... sync rates available are 1/4, 1/4T, 1/8, 1/8T, 1/16, 1/16T, 1/32, 1/32T.' 1/16 default = pad 5."
-        },
-        {
-          "id": "sequencing-25",
-          "verdict": "confirmed",
-          "note": "p56: 'To mutate a Pattern, hold Shift [#20] and press Duplicate [#18].' 'shuffles the notes or hits in the current Pattern, to different steps... unchanged... All step parameters are reassigned by Mutate, including micro steps, gate values, sample flips, probability and automation data.' 'Mutate only affects the Pattern currently playing.' 'Mutate cannot be undone.'"
-        },
-        {
-          "id": "sequencing-26",
-          "verdict": "confirmed",
-          "note": "p73: 'Patterns View, accessed by pressing Patterns [#10]... two pages, selected by the down and up buttons [#15]... on Page 1 the pads select Patterns 1 to 4 for each track, on Page 2 they select Patterns 5 to 8.' Diagram shows 8 vertical columns (Synth1, Synth2, MIDI1, MIDI2, Drum1-4)."
-        },
-        {
-          "id": "sequencing-27",
-          "verdict": "confirmed",
-          "note": "p74: 'if you select a Pattern while another is already playing... the pad for the next Pattern will flash quickly while it is being queued, until it starts to play. However, if you hold down Shift while selecting the next Pattern memory, it will start playing immediately from the corresponding Pattern step, thereby ensuring that the overall timing maintains continuity.'"
-        },
-        {
-          "id": "sequencing-28",
-          "verdict": "confirmed",
-          "note": "p76: 'press and hold the pad for the lowest-numbered Pattern required and then press the pad for the highest-numbered Pattern required... the Patterns you chain together must be contiguous, that is, numerically consecutive... you can't chain 1,2 and 6 together.' p79: 'Pattern chains of up to 256 (8 x 32) steps.'"
-        },
-        {
-          "id": "sequencing-29",
-          "verdict": "confirmed",
-          "note": "p78: 'each track will loop round its own chain of Patterns. The longest chain is Drum 4 \u2013 this defines the overall length of the sequence... Synth 2 only has one Pattern, so this will repeat eight times in the 8-pattern sequence.'"
-        },
-        {
-          "id": "sequencing-30",
-          "verdict": "confirmed",
-          "note": "p75 IMPORTANT box: 'You can copy a Pattern from one Synth or MIDI track to the other, or between a Synth track and a MIDI track using Duplicate: you can also use it to copy a Pattern from one Drum track to another, but you cannot copy data from a Synth or MIDI track to a Drum track, or vice-versa.'"
-        },
-        {
-          "id": "sequencing-31",
-          "verdict": "confirmed",
-          "note": "p75-76: 'hold down Clear and pressing the Step Page button: the Pattern will now revert to 16 steps... Notes/hits assigned to the all 32 steps are preserved.' 'Holding down Duplicate and pressing the Step Page button will extend the Pattern length... to 32 steps, and copy all data at steps 1 to 16 to steps 17 to 32 respectively, including automation data.'"
-        },
-        {
-          "id": "sequencing-32",
-          "verdict": "confirmed",
-          "note": "p81: 'Scenes are accessed in Mixer View: press Mixer [#11]... The two lower rows of pads in Mixer View represent the 16 Scenes... The first (Pad 17) will be pulsing bright green... (Scene 1 by default).'"
-        },
-        {
-          "id": "sequencing-33",
-          "verdict": "confirmed",
-          "note": "p81-82: 'Open Patterns View and define all the Pattern Chains... Change to Mixer View, press and hold Shift: the Scene pads change colour to dim gold. Press a Scene pad (while still holding Shift) \u2013 it will light bright gold while pressed... On releasing Shift, the pad with the stored Scene now shows bright white.' p84: 'use Scenes to overcome the restriction in Patterns View of not being able to define a Pattern Chain of non-contiguous Patterns.'"
-        },
-        {
-          "id": "sequencing-34",
-          "verdict": "confirmed",
-          "note": "p83: 'holding down the pad for the first Scene, then pressing the pad for the last Scene: these pads and all those between them will illuminate green... The Scenes will play in numerical order, and then repeat.' p84: 'The pad for a queued Scene flashes green and at the end of the Drum 1 Pattern currently playing, the new Scene will begin playing from the start without losing sync.'"
-        },
-        {
-          "id": "sequencing-35",
-          "verdict": "confirmed",
-          "note": "Glossary p13: 'Up to 64 Projects can be saved.' p96: 'Save [#19] needs to be pressed twice... a second press will save your work to the last Project memory that was in use... To ensure that your work gets saved in a different Project memory, switch to Projects View.' Manual-save-only design; nothing saved automatically."
-        },
-        {
-          "id": "sequencing-36",
-          "verdict": "confirmed",
-          "note": "p95: 'If you select a new Project by pressing its pad, the current Pattern will play through to its last step (note \u2013 only the current Pattern, not a Scene or complete chain of Patterns)... If you hold down Shift when selecting a new Project, the newly selected Project will begin playing immediately... from the same step in the Pattern chain that the previous Project had reached.'"
-        },
-        {
-          "id": "sequencing-37",
-          "verdict": "confirmed",
-          "note": "p35: 'Circuit Tracks' synth engines are six-note polyphonic \u2013 that is, you can assign up to six notes to any step in the pattern, if the Patch you've selected is suitably polyphonic.'"
-        },
-        {
-          "id": "sequencing-38",
-          "verdict": "confirmed",
-          "note": "p64: 'the Pattern must be running (press Play) in order for you to hear the hits; unlike the synth tracks, you won't hear anything in Note View if you hit a bright blue step pad with the Pattern stopped. (However, you can hear the hits in this way using Velocity View or Gate View.)'"
-        },
-        {
-          "id": "sequencing-39",
-          "verdict": "confirmed",
-          "note": "p66-68: 'To adjust the micro step values, press Gate View for the relevant drum track. Pads 17 to 22 display the micro step values.' Each micro step pad can be 'on'/'off' letting a step retrigger multiple hits. 'Any drum hits added off-line (i.e., in Stop Mode) will always be assigned to the step's first micro step, which is on the exact beat of the step.'"
-        },
-        {
-          "id": "sequencing-40",
-          "verdict": "confirmed",
-          "note": "p80: View Lock 'freeze the Pattern Step display... by holding down Shift and pressing Patterns [#10]... the state of View Lock is not saved. It will default to inactive whenever Circuit Tracks is powered on.'"
-        },
-        {
-          "id": "sequencing-41",
-          "verdict": "confirmed",
-          "note": "p79 (Pattern Octave): 'shift the pitch of an entire synth or MIDI Pattern up or down one or more octaves by holding down Shift [#20] and then pressing down or up [#15]... in any of the Step Views, i.e., Note View, Velocity View, Gate View or Pattern Settings View.' Applies to synth/MIDI only."
-        }
-      ],
-      "overallNotes": "All 41 sequencing claims are CONFIRMED against the official Circuit Tracks User Guide v3 (Focusrite/Novation PDF, fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf). Every cited page number matched, and content is genuinely Circuit-Tracks-specific (the 2-synth/2-MIDI/4-drum architecture, Rec Quantise legend, Step Page 1-16/17-32, MIDI-track duplication rules), not carried over from the original Circuit (2015) or Circuit Rhythm. No cross-device contamination found.\n\nButton-numbering note that supports several claims: the Top View hardware map (pp.15-17) labels the left-column \"Step buttons\" (Note, Velocity, Gate) collectively as #6, and Pattern Settings as #7 (Probability being its Shift function). So claims 11 and 14 both correctly say Velocity and Gate are \"button 6\" (same group), and claim 16 correctly gives Pattern Settings as #7. Other numbers verified: Record/Play #13, Step Page #8, Scales #9, Patterns #10, Mixer #11, FX #12, down/up arrows #15, Clear #17, Duplicate #18, Save/Projects #19, Shift #20.\n\nMinor caveat on claim 12: the guide (p43) does not literally use the words \"global\" or \"affects all tracks\" for Fixed Velocity; that characterization is inferred. It is supported, however, by p68, which describes the identical single Fixed/Variable Velocity toggle applying to drum tracks \"as with synth tracks,\" indicating one shared setting. Everything else in that claim (Shift+Velocity, value 96 / 12 pads, does not alter previously recorded notes) is verbatim from p43.\n\nImportant sequencing facts the claim set MISSED entirely (all Circuit-Tracks-confirmed):\n1. SWING / TEMPO (Top View #16, \"Tempo/Swing\"): Shift+Tempo enters this view; Tempo is set with Macro 1, and Swing alters the timing between steps (\"feel\") using Macro 2 (Macro 5 sets Click level) \u2014 a core sequencing/groove control absent from the claims.\n2. GENERAL PLAY RESTART BEHAVIOR (pp.38, 74, 78, 95): pressing Play restarts a Pattern/Chain from Step 1 (or the defined Start point); holding Shift+Play continues from the step at which the sequencer was last stopped. Claim 27 covers the pattern-switch case but not this baseline transport rule.\n3. CYCLE-BOUNDARY APPLICATION OF PATTERN-SETTINGS CHANGES (pp.55-56): if play order OR sync rate is changed in Play Mode, the Pattern always completes its current cycle at the existing setting and switches at the end of the cycle (regardless of Pattern length / Step Page).\n4. PATTERN OCTAVE LIMITS (pp.17, 79): the transpose in claim 41 is bounded \u2014 up to 5 octaves up and 6 octaves down when entering notes; the arrow lights red when the shift can't be executed (notes already at pitch extreme); works on synth/MIDI only, not drums.\n5. EXPANDED VIEWS relevant to sequencing: Expanded Note View (Shift+Note) doubles the synth performance-pad range to four octaves for entry; Expanded Drum View (Shift+Note on a drum track) lets you sequence all four drum tracks simultaneously on pads 29-32.\n6. DRUM MICRO-STEP INHERITANCE (p68): all micro-step hits within a step adopt the velocity value and sample assigned to the major step; adding micro-step values to an empty step populates it with the track's current default sample.\n7. SAMPLE FLIP as a step-sequencing feature (pp.62, 65): per-step you can hold a step pad and assign a different drum sample (step shows pink vs. bright blue), overcoming the one-sample-per-track limit within a Pattern \u2014 the drum analogue of stacking notes, and it is one of the parameters Mutate reassigns (claim 25 lists \"sample flips\" but the feature itself is otherwise uncovered)."
-    },
-    {
-      "lens": "skeptic",
-      "verdicts": [
-        {
-          "id": "sequencing-1",
-          "verdict": "confirmed",
-          "note": "Guide (Patterns chapter): 'Each Project in Circuit Tracks has memory space for eight separate Patterns per track... eight for each synth, eight for each drum and eight for each of two external MIDI instruments.' 8 tracks total (2 synth, 2 MIDI, 4 drum) confirmed. Exact-match."
-        },
-        {
-          "id": "sequencing-2",
-          "verdict": "confirmed",
-          "note": "Notes 'won't be recorded until you press the Record button... press Record again to stop recording.' Glossary confirms button 13 = Record/Play. 'The Record button has the dual momentary/latching action... If you hold the button down for more than half a second, Circuit Tracks will drop out of Record Mode as soon as you release it.' Exact-match."
-        },
-        {
-          "id": "sequencing-3",
-          "verdict": "confirmed",
-          "note": "'Quantised recording is disabled by holding down Shift and pressing Record (note the button is also legended Rec Quantise)... check by pressing Shift: if the Record button illuminates green, quantisation is enabled; if it is red, recording will be non-quantised.' Exact-match."
-        },
-        {
-          "id": "sequencing-4",
-          "verdict": "confirmed",
-          "note": "'Six \"finer\" intervals - or \"micro steps\" - in between adjacent pattern steps' and 'a tick is a sixth of a step.' 6 ticks, 1/6 each. Exact-match."
-        },
-        {
-          "id": "sequencing-5",
-          "verdict": "confirmed",
-          "note": "'On entering Record Mode... as soon as you make an adjustment, the LED turns red.' 'You must exit Record Mode before the sequence loops, otherwise Circuit Tracks will overwrite the automation movements you've just recorded with that corresponding to the new knob position.' Exact-match."
-        },
-        {
-          "id": "sequencing-6",
-          "verdict": "confirmed",
-          "note": "'in Note View, press Record, select the step... by pressing and holding the pad corresponding to the step... Then adjust the Macro control(s); the new value(s) will be written to the automation data.' Works while stopped (and while playing). Exact-match."
-        },
-        {
-          "id": "sequencing-7",
-          "verdict": "confirmed",
-          "note": "'delete any Macro automation data... by holding down Clear and moving the knob in question by at least 20% of its rotation - the LED below the knob will turn red... this will clear the automation data for that Macro for the whole Pattern, not just at the sequencer's current step.' Exact-match."
-        },
-        {
-          "id": "sequencing-8",
-          "verdict": "confirmed",
-          "note": "'In Note View... the two upper rows of grid pads is the 16-step pattern display and the two lower rows constitute the synth keyboard.' 'The pads for the steps which have notes associated with them will be illuminated bright blue.' Exact-match."
-        },
-        {
-          "id": "sequencing-9",
-          "verdict": "confirmed",
-          "note": "Insert: 'hold down the step pad and pressing the desired note. Note that Record Mode does not need to be enabled... You can add multiple notes to the same step.' Delete: 'press the step pad (lights red) and then press the unwanted keyboard pad.' Exact-match."
-        },
-        {
-          "id": "sequencing-10",
-          "verdict": "confirmed",
-          "note": "Clear: 'delete all assigned synth notes from a step in one go using the Clear button... don't have to search through several octaves.' Duplicate copies 'all the synth notes on a step, together with their various attributes... Any pre-existing note information in the destination step will be overwritten.' Exact-match."
-        },
-        {
-          "id": "sequencing-11",
-          "verdict": "confirmed",
-          "note": "Velocity View selected by pressing Velocity (button 6). 'record in real time... velocity value is set internally to 7-bit accuracy: a value between 0 and 127. However, Velocity View can only display... 16 increments of 8.' Table: 1 pad=8, 16 pads=127. Exact-match."
-        },
-        {
-          "id": "sequencing-12",
-          "verdict": "confirmed",
-          "note": "'toggle Fixed Velocity mode... by pressing Velocity while holding down Shift... sets Velocity at a value of 96 (12 pads lit)' and 'setting Velocity to Fixed does not alter the Velocity values of any notes previously recorded.' The 'global/all tracks' aspect is not stated verbatim but supported: drum chapter says 'As with synth tracks, Drum hits... may use Fixed or Variable Velocity,' so the toggle applies across track types. Core specifics exact-match."
-        },
-        {
-          "id": "sequencing-13",
-          "verdict": "confirmed",
-          "note": "'It is also possible for synth notes on the same step to have different Velocity values, provided Circuit Tracks is not in Fixed Velocity Mode.' Exact-match."
-        },
-        {
-          "id": "sequencing-14",
-          "verdict": "confirmed",
-          "note": "'Gate... may have any value between one-sixth and 16, in increments of one-sixth of a Step, giving a total of 96 possible values.' 'A Gate value of 16 means... notes at that step will sound continuously for an entire 16-step pattern.' Gate View via Gate button (6). Exact-match."
-        },
-        {
-          "id": "sequencing-15",
-          "verdict": "confirmed",
-          "note": "'Fractional Gate values are assigned by pressing the highest-numbered illuminated pad... an additional number of times... Each additional press reduces the Gate time by one sixth of a step, and the illumination dims incrementally... After the fifth press... reverts to the former integral value on the sixth.' Exact-match."
-        },
-        {
-          "id": "sequencing-16",
-          "verdict": "confirmed",
-          "note": "'Probability View is the secondary view of the Pattern Settings button. Open by holding Shift and pressing Pattern Settings, or press Pattern Settings a second time.' Pads 17-24 meter; table lists 100/87.5/75/62.5/50/37.5/25/12.5%. Exact-match."
-        },
-        {
-          "id": "sequencing-17",
-          "verdict": "confirmed",
-          "note": "'either all of the notes at the step will play, or none of them will.' 'Clearing steps, Patterns and Projects will also reset all Probabilities to 100%. Live recording of a new note to a step will also reset the probability at that step to 100%.' Exact-match."
-        },
-        {
-          "id": "sequencing-18",
-          "verdict": "confirmed",
-          "note": "'Micro Step View is the secondary view of the Gate button. Open by holding Shift and pressing Gate, or press Gate a second time.' 'delaying individual notes on a step by between one and five ticks' (i.e. 0-5). 'Multiple notes are displayed left to right in the order they were assigned... up to 6 notes.' Used for triplets and 'strummed chords.' Exact-match."
-        },
-        {
-          "id": "sequencing-19",
-          "verdict": "confirmed",
-          "note": "Tied notes: 'In Gate View, select a step... Select Micro Step View... turn the tie-forward setting on/off for this step by pressing pad 24... set the gate length so that the note ends just before the next note.' 'In Note View, tied notes are shown as orange when the steps are held down as opposed to the usual red.' Exact-match."
-        },
-        {
-          "id": "sequencing-20",
-          "verdict": "confirmed",
-          "note": "'The default length of a Pattern... is 16 steps, but you can double the length to 32 steps with the Step Page button (legended 1-16/17-32)... bright blue for Page 1 - while displaying Steps 1 to 16, and orange for Page 2 - while displaying Steps 17 to 32.' Exact-match."
-        },
-        {
-          "id": "sequencing-21",
-          "verdict": "confirmed",
-          "note": "'it is possible for the Pattern in any track to be any other number of steps in length, up to the maximum of 32 steps... the start and end points of a Pattern may be independently defined.' Set per track in Pattern Settings View. Exact-match."
-        },
-        {
-          "id": "sequencing-22",
-          "verdict": "confirmed",
-          "note": "'If no adjustments have yet been made... Pad 16 will be illuminated sand: this indicates the last step.' 'change the end point... by pressing a different Pattern step pad... the higher pads either go dark or dim red, the latter indicating that note/hit data has previously been assigned.' 'Altering the start point... Shift needs to be held down while selecting the new start point.' Exact-match."
-        },
-        {
-          "id": "sequencing-23",
-          "verdict": "confirmed",
-          "note": "'Pads 29 to 32... the default play order is forwards... Pad 29.' Reverse (Pad 30), Ping-pong (Pad 31), Random (Pad 32). Exact-match."
-        },
-        {
-          "id": "sequencing-24",
-          "verdict": "confirmed",
-          "note": "'The third row of Pattern Settings View determines the speed... a multiplier/divider of the BPM.' 'sync rates available are 1/4, 1/4T, 1/8, 1/8T, 1/16, 1/16T, 1/32, 1/32T.' '1/16 is the default sync rate... x1 (pad 5 in row 3).' Exact-match."
-        },
-        {
-          "id": "sequencing-25",
-          "verdict": "confirmed",
-          "note": "'Mutate shuffles the notes or hits in the current Pattern, to different steps. The number of notes/hits... and the synth notes or drum samples themselves are both unchanged... All step parameters are reassigned by Mutate, including micro steps, gate values, sample flips, probability and automation data.' 'hold Shift and press Duplicate.' 'Mutate only affects the Pattern currently playing.' 'Mutate cannot be undone.' Exact-match."
-        },
-        {
-          "id": "sequencing-26",
-          "verdict": "confirmed",
-          "note": "'Patterns View, accessed by pressing Patterns (10)... has two pages, selected by the J and K buttons (15)... on Page 1 the pads select Patterns 1 to 4 for each track, on Page 2 they select Patterns 5 to 8.' Diagram shows 8 columns (Synth1/2, MIDI1/2, Drum1-4), memories arranged vertically. Exact-match."
-        },
-        {
-          "id": "sequencing-27",
-          "verdict": "confirmed",
-          "note": "'if you select a Pattern while another is already playing... The default is for the current Pattern to play to its end... the pad for the next Pattern will flash quickly while it is being queued... if you hold down Shift while selecting the next Pattern memory, it will start playing immediately from the corresponding Pattern step.' Exact-match."
-        },
-        {
-          "id": "sequencing-28",
-          "verdict": "confirmed",
-          "note": "'press and hold the pad for the lowest-numbered Pattern required and then press the pad for the highest.' 'the Patterns you chain together must be contiguous, that is, numerically consecutive... you can't chain 1,2 and 6.' 'Circuit Tracks allows Pattern chains of up to 256 (8 x 32) steps.' Exact-match."
-        },
-        {
-          "id": "sequencing-29",
-          "verdict": "confirmed",
-          "note": "'each track will loop round its own chain of Patterns. The longest chain is Drum 4 - this defines the overall length of the sequence... Synth 2 only has one Pattern, so this will repeat eight times.' Exact-match."
-        },
-        {
-          "id": "sequencing-30",
-          "verdict": "confirmed",
-          "note": "'You can copy a Pattern from one Synth or MIDI track to the other, or between a Synth track and a MIDI track... you can also use it to copy a Pattern from one Drum track to another, but you cannot copy data from a Synth or MIDI track to a Drum track, or vice-versa.' Exact-match."
-        },
-        {
-          "id": "sequencing-31",
-          "verdict": "confirmed",
-          "note": "'set a Pattern length back to the default of 16 steps by holding down Clear and pressing the Step Page button... Notes/hits assigned to all 32 steps are preserved.' 'Holding down Duplicate and pressing the Step Page button will extend the Pattern length... to 32 steps, and copy all data at steps 1 to 16 to steps 17 to 32... including automation data.' Exact-match."
-        },
-        {
-          "id": "sequencing-32",
-          "verdict": "confirmed",
-          "note": "'The two lower rows of pads in Mixer View represent the 16 Scenes.' Accessed via Mixer (button 11). 'The first (Pad 17) will be pulsing bright green... (Scene 1 by default).' Exact-match."
-        },
-        {
-          "id": "sequencing-33",
-          "verdict": "confirmed",
-          "note": "'Open Patterns View and define all the Pattern Chains for each track... Change to Mixer View, press and hold Shift: the Scene pads change colour to dim gold. Press a Scene pad (while still holding Shift) - it will light bright gold... On releasing Shift, the pad... now shows bright white.' Scenes explicitly overcome the non-contiguous Pattern Chain restriction. Exact-match."
-        },
-        {
-          "id": "sequencing-34",
-          "verdict": "confirmed",
-          "note": "'chain Scenes together in Mixer View... holding down the pad for the first Scene, then pressing the pad for the last Scene: these pads and all those between them will illuminate green... play in numerical order, and then repeat.' Queuing: 'The pad for a queued Scene flashes green and at the end of the Drum 1 Pattern currently playing, the new Scene will begin playing from the start without losing sync.' Exact-match."
-        },
-        {
-          "id": "sequencing-35",
-          "verdict": "confirmed",
-          "note": "'There are 64 memory slots, arranged as two pages of 32.' 'Save needs to be pressed twice... a second press will save your work to the last Project memory that was in use.' 'To save your work in a different Project memory... switch to Projects View.' Button 19 = Save and Projects (glossary). 'Nothing saved automatically' not verbatim but supported by 'shifting an octave... does not alter the stored Project, until it is saved manually.' Exact-match on core facts."
-        },
-        {
-          "id": "sequencing-36",
-          "verdict": "confirmed",
-          "note": "'If you select a new Project by pressing its pad, the current Pattern will play through to its last step (note - only the current Pattern, not a Scene or complete chain of Patterns)... queued.' 'If you hold down Shift when selecting a new Project, the newly selected Project will begin playing immediately... from the same step in the Pattern chain.' Exact-match."
-        },
-        {
-          "id": "sequencing-37",
-          "verdict": "confirmed",
-          "note": "'Circuit Tracks' synth engines are six-note polyphonic - that is, you can assign up to six notes to any step in the pattern.' Exact-match."
-        },
-        {
-          "id": "sequencing-38",
-          "verdict": "confirmed",
-          "note": "'the Pattern must be running (press Play) in order for you to hear the hits; unlike the synth tracks, you won't hear anything in Note View if you hit a bright blue step pad with the Pattern stopped. (However, you can hear the hits in this way using Velocity View or Gate View.)' Exact-match."
-        },
-        {
-          "id": "sequencing-39",
-          "verdict": "confirmed",
-          "note": "'press Gate View for the relevant drum track. Pads 17 to 22 display the micro step values.' 'you can have the hit on as many micro steps as you want: each micro step pad can be turned on or off' (retrigger, e.g. Step 5 triggers three hits). 'Any drum hits added off-line... will always be assigned to the step's first micro step, which is on the exact beat.' Exact-match."
-        },
-        {
-          "id": "sequencing-40",
-          "verdict": "confirmed",
-          "note": "'View Lock... by holding down Shift and pressing Patterns.' 'While Shift is held, the Patterns button lights green when View Lock is active; when inactive it is red.' 'the state of View Lock is not saved. It will default to inactive whenever Circuit Tracks is powered on.' Also freezes step Page display. Exact-match."
-        },
-        {
-          "id": "sequencing-41",
-          "verdict": "confirmed",
-          "note": "Pattern Octave: 'shift the pitch of an entire synth or MIDI Pattern up or down... by holding down Shift and then pressing J or K (15).' 'in any of the Step Views, i.e., Note View, Velocity View, Gate View or Pattern Settings View.' (J/K = the octave/up-down buttons, button 15.) Exact-match; described at p79 per claim citation."
-        }
-      ],
-      "overallNotes": "Verification method: extracted the full text of the official Circuit Tracks User Guide Version 3 (fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf) via pdftotext and read the relevant chapters directly. This is device-specific to Circuit Tracks (not the original Circuit or Circuit Rhythm) - the two MIDI tracks and 2+2+4 track layout are referenced throughout, so no cross-device contamination risk. All 41 claims are CONFIRMED verbatim or near-verbatim against the primary source; the researcher was highly accurate. Button-number cross-checks against the glossary all pass: 6=Note/Velocity/Gate/Probability step buttons, 7=Pattern Settings, 8=Step Page, 10=Patterns, 11=Mixer, 13=Record/Play, 15=J/K (octave up/down), 18=Duplicate, 19=Save/Projects, 20=Shift.\n\nMinor caveats worth flagging: (1) sequencing-12's characterization of Fixed Velocity as 'a global setting affecting all tracks' is not stated in exactly those words; the manual states it is Shift+Velocity, value 96 (12 pads), and does not alter previously recorded notes, and separately notes drums also use Fixed/Variable Velocity - so 'global' is a sound inference but not a literal quote. (2) sequencing-35's 'Nothing is saved automatically' is not a verbatim sentence; it's supported by repeated statements that edits do not alter the stored Project until a manual Save. Neither caveat changes the verdict.\n\nNotable sequencing facts the claims MISSED entirely (all Tracks-confirmed, same v3 guide):\n- Shift+Play resumes a Pattern/Chain from the step where it was stopped instead of restarting at Step 1 (both synth patterns p38 and Pattern Chains p78) - a core sequencing behavior omitted.\n- Play-order AND Sync-rate changes made in Play Mode always complete the current cycle before the new setting takes effect (p54-56).\n- Drum 'sample flip': per-step sample reassignment - long-press a step then press a sample pad; step turns pink (non-default sample) vs bright blue (default). Clearing a drum step deletes all its params (Velocity, Micro steps, Probability).\n- Micro-step-created extra drum hits inherit the velocity and sample of the major step (p67).\n- MIDI tracks 'behave just like the Synth tracks and support all the same sequencer functions,' including CC/Macro automation that is sent to both DIN and USB (unlike other tracks, USB only) - relevant to the sequencing/automation angle.\n- View Lock pad states: pulsing white = pattern viewed AND played; steady white = viewed while a different pattern of that track plays; hold Shift + press a pad to change the viewed pattern.\n- Scene housekeeping: a Scene pad pulses green only when the currently selected Patterns match that (most-recently-selected) Scene; Scenes are saved with the Project via Save twice; Clear+Scene resets to Pattern 1 for all tracks; Duplicate copies a Scene.\n- Pattern Octave: the J/K button lights red when notes are already at the highest/lowest octave the device can generate (command can't execute). Only the currently selected track is transposed.\n- Expanded Note View (Shift+Note) extends the playable/recordable range to four octaves (two in Chromatic) - affects what can be recorded into a pattern.\n- 'Sticky Shift' (Setup View + Shift) latches Shift so combo commands like Shift+Record, Shift+Duplicate, Shift+Patterns can be done without holding."
+      "overallNotes": "SOURCE: I verified every claim against the primary source the claims cite \u2014 the official Novation Circuit Tracks User Guide v3 (circuit_tracks_user_guide_v3_en.pdf, downloaded from Focusrite's CDN). Every printed page number cited in the claims matched the actual page in the PDF exactly. All 41 claims are CONFIRMED verbatim/near-verbatim against Circuit-Tracks-specific text (not original Circuit or Rhythm). This is an unusually clean set \u2014 the researcher drew carefully and correctly from the manual, including specific pad numbers, percentages, button legends, and page citations. Minor phrasing notes: in sequencing-16 \"pressing Pattern Settings twice\" is shorthand for entering Pattern Settings View then toggling to Probability with a second press (accurate); in sequencing-11/14 \"button 6\" correctly refers to the guide's own numbering for the Step-buttons group (Note/Velocity/Gate/Probability); in sequencing-35 both Projects and Save are cited as \"19\" because they share that front-panel item group \u2014 consistent with the guide.\n\nIMPORTANT SEQUENCING FACTS THE CLAIMS MISSED (all Circuit-Tracks-specific, worth adding to the guide):\n1. Shift+Play RESUME: pressing Shift+Play continues a Pattern/Chain from the step where it was stopped instead of restarting at Step 1 (p38, p74, p78). This is a core sequencing behavior absent from the claim set.\n2. Expanded Note View (Shift+Note): gives synths a 4-octave (or 2-octave in Chromatic) playing/recording range instead of 2 (p35). Expanded Drum View (also Shift+Note on a drum track) maps all four drum tracks to pads 29-32 so you can play/record all four simultaneously (p61).\n3. Sample Flip (drums): recording or step-assigning different samples per step overcomes the one-sample-per-track limit; flipped steps light PINK vs bright blue for the default sample (p62, p65). Mutate explicitly reshuffles sample flips too.\n4. Play-order and Sync-rate changes made during playback take effect only at the END of the current cycle (p54-56) \u2014 important for live use.\n5. Data beyond a shortened end point is preserved (shown dim red) and restored if the end point is moved back out (p53) \u2014 parallels the Step Page 32\u219216 preservation in claim 31 but for arbitrary lengths.\n6. Multiple micro-step drum hits on one step all adopt the major step's velocity and assigned sample (p67).\n7. Per-note velocity RANGE is visible in Velocity View: brightly lit pads = lowest velocity at the step, dim pads = highest (p44).\n8. Tempo 40-240 BPM (internal, integer only), default 120; external MIDI clock sync spans 30-300 BPM including fractional tempos (p85). Click track toggled by Shift+Clear (p87), a global setting.\n9. Scene state and all pattern/step data are only persisted by an explicit Save (pressed twice); Scene assignment does not change live playback until the current Pattern/Chain finishes (p82).\n10. Factory-default Projects load Synth 1 monophonic and Synth 2 polyphonic (p35) \u2014 relevant context for polyphony/step-stacking claims.\n11. MIDI tracks replicate ALL synth sequencer functions (Note/Velocity/Gate/Probability/Micro-step/automation) \u2014 the claim set treats sequencing generically but never states that MIDI-track automation additionally transmits to the physical MIDI Out DIN as well as USB, unlike synth/drum automation (p57)."
     }
   ]
 }

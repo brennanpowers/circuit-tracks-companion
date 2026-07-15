@@ -1,8 +1,16 @@
 # Round 1 — status
 
-Workflow run `wf_a6e71cc2-393` (2026-07-14, all-Opus agents). All 6 research angles
-completed: **235 claims total**. 8 of 18 verification agents failed on a session usage
-limit, so verification coverage is uneven:
+**COMPLETE.** Workflow run `wf_a6e71cc2-393` (2026-07-14/15, all-Opus agents,
+resumed once after a usage-limit interruption). All 6 angles researched (**235
+claims**) and all 18 verification lenses completed on the resume. Final tally:
+233 confirmed ×3 lenses, 1 refuted (`community-34` — "balanced" I/O; corrected in
+dossier.md A.1), 1 unverifiable (`community-7` — macro-tweak persistence; moved to
+open-questions.md as a device-check). Verdicts changed between the two passes for
+one claim (`midi-performance-27`): the first-pass manual lens refuted its phrasing,
+the re-run confirmed it — adjudicated with precise wording in dossier.md A.2.
+Adjudicated output: `../../dossier.md`. Gaps: `../../open-questions.md`.
+
+Historical note — the interrupted first pass (kept for the record):
 
 | Angle            | Claims | manual | device | skeptic | Non-confirmed verdicts |
 |------------------|--------|--------|--------|---------|------------------------|

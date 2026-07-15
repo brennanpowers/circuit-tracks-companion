@@ -380,5 +380,624 @@
       "tracksConfirmed": true
     }
   ],
-  "verification": []
+  "verification": [
+    {
+      "lens": "manual",
+      "verdicts": [
+        {
+          "id": "community-1",
+          "verdict": "confirmed",
+          "note": "loopop (Ziv Eliraz) 'Circuit TRACKS vs Circuit OG' video (youtu.be/s3oJv6KAM0k, ~39 min) is chapter-marked with 20+ timestamps covering sequencing, sample flip, scales, micro steps, probability, mutate, ratchets, automation, MIDI, sidechain, view lock, scenes and packs \u2014 all confirmed via loopopmusic.com page. 'Most-cited' is a subjective characterization but reasonable; the topic coverage is accurate."
+        },
+        {
+          "id": "community-2",
+          "verdict": "confirmed",
+          "note": "YouTube 0To9D9RhlXs confirmed as 'Circuit Tracks - Introduction // Novation', Novation's official intro video. Novation maintains a Circuit Tracks tutorial series (e.g. 'Steps Page and Pattern Settings', 'Shift & Power Menu Overview')."
+        },
+        {
+          "id": "community-3",
+          "verdict": "confirmed",
+          "note": "Official user guide/manual (Circuit Tracks manual p.96-97): 'Save needs to be pressed twice... the first press will flash the Save button' and causes 'the pad for the last-selected Project to pulse white. If your current work was based on a previously-saved Project, the original version will be overwritten.'"
+        },
+        {
+          "id": "community-4",
+          "verdict": "confirmed",
+          "note": "Manual p.97: after the first Save press, in Projects View press the pad for a different slot: 'all other pads will go dark and the selected pad will rapidly flash green for a couple of seconds.' Macro 1 knob also lets you pick from 14 colours before committing."
+        },
+        {
+          "id": "community-5",
+          "verdict": "confirmed",
+          "note": "Official docs: 'you can \"abort\" the Save routine after the first press of Save by pressing any other button.' Manual p.97 and user guide confirm."
+        },
+        {
+          "id": "community-6",
+          "verdict": "confirmed",
+          "note": "SoundOnSound confirms no undo: 'The closest workaround is to Save your Project before doing something you might want to Undo.' Duplicating a pattern before Mutate to preserve the original is the documented practice (see community-18)."
+        },
+        {
+          "id": "community-7",
+          "verdict": "confirmed",
+          "note": "Consistent with Circuit Tracks behavior: a live macro tweak is not stored as a static value on reload; it must be captured as recorded automation (which is saved with the project) to persist. SoundOnSound is the cited source; nuance is that automation IS saved, unautomated knob positions are not."
+        },
+        {
+          "id": "community-8",
+          "verdict": "confirmed",
+          "note": "Official user guide 'Managing your data': 'Do not remove the microSD card from Circuit Tracks during Save or Load operations. Doing so may result in the loss of previously saved work.' Save operations include Components transfers and pack duplication."
+        },
+        {
+          "id": "community-9",
+          "verdict": "confirmed",
+          "note": "SoundOnSound: 'Each track still has eight Pattern slots' and 'Patterns can now be expanded from their default 16 steps to 32.' Applies to all 8 tracks. Slots are paged 1-4 / 5-8 in the manual."
+        },
+        {
+          "id": "community-10",
+          "verdict": "confirmed",
+          "note": "MusicRadar: 'Melodic sequences can be up to 32 steps, and can be chained to create patterns of up to 256 steps.' SoundOnSound confirms chaining by pressing start and end patterns; 8 x 32 = 256 max."
+        },
+        {
+          "id": "community-11",
+          "verdict": "confirmed",
+          "note": "SoundOnSound: 'a dedicated Scene system, letting you store a snapshot of the currently playing set of Patterns or Pattern Chains'; the '16 Scene pads have been rolled into the Mixer page.' Scenes can be chained into song sections."
+        },
+        {
+          "id": "community-12",
+          "verdict": "confirmed",
+          "note": "SoundOnSound: 'The Circuit Tracks can hold 64 active Projects at a time (double the original's capacity).'"
+        },
+        {
+          "id": "community-13",
+          "verdict": "confirmed",
+          "note": "Manual p.41: 'Press and hold Clear; the button shows bright red... press the step pad; it will turn red and all notes at this step for the currently selected... track will be deleted.' Clear is also used (with Pattern/Project pads and macro knobs) to delete patterns, projects and clear automation."
+        },
+        {
+          "id": "community-14",
+          "verdict": "confirmed",
+          "note": "Manual p.41: 'Press and hold Duplicate: it shows bright green. Press the pad... to be copied (the source step); it will turn green and the note(s) assigned to it will turn red', then press destination step(s) which give a red blink; overwrites existing destination notes."
+        },
+        {
+          "id": "community-15",
+          "verdict": "confirmed",
+          "note": "Manual (View Lock, ~p.81): engaged by 'holding down Shift and pressing Patterns'; 'The upper two rows will now be locked to the Pattern that was displayed' (upper two rows = 16 step pads), letting you edit one pattern while another plays. Also locks the step page on 32-step patterns; resets to off on power-on."
+        },
+        {
+          "id": "community-16",
+          "verdict": "confirmed",
+          "note": "SoundOnSound confirms Notes/Gate/Velocity views and Pattern Settings. Official docs: 'Probability is the Shift function of the Pattern Settings button' (hold Shift + Pattern Settings, or press Pattern Settings a second time). Manual p.71 covers Probability."
+        },
+        {
+          "id": "community-17",
+          "verdict": "confirmed",
+          "note": "SoundOnSound: 'micro-steps, dividing each sequencer step into six sub steps. Six... allows you to add both triplet or straight ratchets and strums'; 'With Record Quantise disabled the micro steps are used during live recording.'"
+        },
+        {
+          "id": "community-18",
+          "verdict": "confirmed",
+          "note": "SoundOnSound: 'Mutate, which destructively alters the currently selected pattern.' Duplicating first to preserve the original is the documented safe practice (ties to community-6)."
+        },
+        {
+          "id": "community-19",
+          "verdict": "confirmed",
+          "note": "SoundOnSound: 'Although four drum voices is a bit limiting, Circuit makes good use of what it has by allowing sample flipping: triggering different samples on each step.'"
+        },
+        {
+          "id": "community-20",
+          "verdict": "confirmed",
+          "note": "MusicRadar: 'Tracks has a hidden global compressor, with just an on/off setting accessed by the Advanced Setup menu.' Advanced/Setup View is entered by holding Shift while powering on (exit with Play); master compressor on/off is one of its global options alongside MIDI channels, clock and brightness."
+        },
+        {
+          "id": "community-21",
+          "verdict": "confirmed",
+          "note": "Official Components docs: samples are loaded via Novation Components and 'All audio will be converted to 48kHz Mono 16bit when sent to Circuit Tracks through the Components software.'"
+        },
+        {
+          "id": "community-22",
+          "verdict": "confirmed",
+          "note": "Firmware 1.1.5: total 196.6 seconds per pack (Novation's own article: '196.6 seconds... worth of sample time'; synthanatomy confirms). Official/Novation docs also state 'No sample can be longer than 98.3 seconds' \u2014 the per-sample cap is confirmed, up from the old 60s-per-pack limit."
+        },
+        {
+          "id": "community-23",
+          "verdict": "confirmed",
+          "note": "SoundOnSound: 'A Pack is... 64 Projects, 64 samples... and 128 synth patches.' Official docs: internal memory holds a single Pack; the microSD card holds a further 31 Packs, for up to 32 total when the card is inserted (Class 10+, FAT32)."
+        },
+        {
+          "id": "community-24",
+          "verdict": "confirmed",
+          "note": "SoundOnSound: the Components editor works on 'USB-connected computers and Android tablets (but not iOS devices).' No iOS support is an accurate, noted limitation."
+        },
+        {
+          "id": "community-25",
+          "verdict": "confirmed",
+          "note": "Isotonik Studios runs a Circuit Tracks patch store and offers the free 'Big City Dream' pack ('12 wonderful free presets'). SoundGhost (soundghost.net) sells Circuit Tracks packs (Sunsets, Waves, Synth Drums) and Nu-Trix offers a free Circuit pack (64 wav + 64 patches). Note: Big City Dream originated for the original Circuit with Tracks support added."
+        },
+        {
+          "id": "community-26",
+          "verdict": "confirmed",
+          "note": "deavid review: 'it's sad that I can't use scales per-pattern and instrument. It seems to be global per project.' Owner-reported but consistent with device behavior."
+        },
+        {
+          "id": "community-27",
+          "verdict": "confirmed",
+          "note": "deavid review: 'the midi channel config is global and not per project.' Consistent with MIDI channel assignment living in the global Setup View."
+        },
+        {
+          "id": "community-28",
+          "verdict": "confirmed",
+          "note": "deavid: drum pitch 'is in a continuous fashion on the knob that makes it almost impossible to know which note you're playing' (no quantization). SoundOnSound corroborates limited melodic use of drum samples."
+        },
+        {
+          "id": "community-29",
+          "verdict": "confirmed",
+          "note": "djtechtools: to export, 'the user must manually solo-cue and play each pattern of each track into an audio interface, then edit the recording' \u2014 no multitrack or USB audio out. deavid corroborates 'only way to get recordings out is... a cable from the line out or headphones.'"
+        },
+        {
+          "id": "community-30",
+          "verdict": "confirmed",
+          "note": "djtechtools: '16 delay types and 8 reverb types'; per-track send amounts, reviewer 'would have liked some more direct control over effect parameters (time, feedback, depth, etc.)' \u2014 no real-time control, send-only."
+        },
+        {
+          "id": "community-31",
+          "verdict": "confirmed",
+          "note": "djtechtools: sidechain \u2014 'set the trigger source (out of the 4 drum tracks) and amount.' MusicRadar: DJ-style 'ability to sweep the output using the filter' on the master. Both confirmed."
+        },
+        {
+          "id": "community-32",
+          "verdict": "confirmed",
+          "note": "MusicRadar: 'Internal battery life is not great... around four hours, but... it can run from USB power.' djtechtools: 'up to 4 hours of battery life... recharge it with your typical battery bank.'"
+        },
+        {
+          "id": "community-33",
+          "verdict": "confirmed",
+          "note": "MusicRadar: 'MIDI in and USB can be used to receive clock messages, and an analogue pulse out can drive Volcas, modular gear'; the MIDI thru port 'can act as a secondary MIDI out\u2014good for live use!'"
+        },
+        {
+          "id": "community-34",
+          "verdict": "confirmed",
+          "note": "djtechtools: 'two 1/4 jack balanced mono inputs, stereo 1/4 balanced master and minijack headphone outputs.' MusicRadar confirms inputs can run through reverb/delay/filter (basic summing mixer)."
+        },
+        {
+          "id": "community-35",
+          "verdict": "confirmed",
+          "note": "SoundOnSound confirms the 16 Scene pads were rolled into the Mixer page; Mixer view combines scene launchers with per-track mutes, levels and pan \u2014 the live-performance hub."
+        },
+        {
+          "id": "community-36",
+          "verdict": "confirmed",
+          "note": "djtechtools: 'Synth 1 uses purple, Synth 2 uses green, MIDI 1 is teal, MIDI 2 is orange.'"
+        },
+        {
+          "id": "community-37",
+          "verdict": "confirmed",
+          "note": "SoundOnSound: two on-board Nova-engine synths, four sample-based drum voices, plus two dedicated MIDI sequencing tracks = 8 fixed tracks; allocation is not reassignable."
+        },
+        {
+          "id": "community-38",
+          "verdict": "confirmed",
+          "note": "deavid: '3min 50s is my current record' for a complete song, citing 8 pattern slots per instrument and 16 scenes. Owner-opinion but accurately sourced."
+        },
+        {
+          "id": "community-39",
+          "verdict": "confirmed",
+          "note": "The Elektronauts thread 'Novation Circuit Rhythm and Circuit Tracks' (t/145048) exists and is a large multi-page community thread, though it skews toward announcement/impressions/design debate more than pure troubleshooting. r/novationcircuit is the main subreddit hub. Reasonable as 'main community forums'."
+        },
+        {
+          "id": "community-40",
+          "verdict": "confirmed",
+          "note": "The absence of any screen is repeatedly cited (SoundOnSound, deavid, Elektronauts): scale names, patch names and knob values are not displayed, making the workflow a memory exercise. deavid notes the lack of 'a text display for parameter feedback.'"
+        }
+      ],
+      "overallNotes": "All 40 claims CONFIRMED and all are genuinely about the Circuit Tracks (2020) \u2014 no original-Circuit or Rhythm contamination detected. Sources checked include the official Novation user guides, support articles, Novation's own firmware-1.1.5 article, and the manualslib mirror of the Circuit Tracks manual (#2152517), plus the cited community sources (SoundOnSound, djtechtools, MusicRadar, deavid, synthanatomy, Isotonik, SoundGhost, Nu-Trix, loopop, Elektronauts).\n\nSourcing/access notes: userguides.novationmusic.com and soundonsound.com sometimes return HTTP 403 to direct fetches \u2014 content was recoverable via WebSearch summaries and the manualslib mirror. The authoritative official PDF is the 'Circuit Tracks User Guide v3' hosted at fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf (also mirrored at files.kraftmusic.com and bhphotovideo lit_files/1002200.pdf) \u2014 worth citing directly in the guide instead of the fragile support-portal links.\n\nFacts the claims MISSED for the community angle:\n1. No-screen workarounds beyond memory: the community 'beppigames' web tool (beppigames.de/misc/how_to_read_circuit_macro_knob_positions.html) reverse-engineers macro knob values, and the official Novation Components web app is the canonical way to see/name patches and samples visually \u2014 the main practical answer to the screenless workflow.\n2. Setup/Advanced View (Shift + power-on) holds several global settings the claims only partially cover: MIDI channel assignment, MIDI I/O (DIN/USB) and clock source/rate, master compressor on/off, and pad brightness. Relevant to the global-not-per-project criticisms (community-26/27).\n3. View Lock has two behaviors the claim understates: it also locks the displayed step-page on 32-step patterns, applies across all tracks and grid views (Note/Velocity/Gate), and resets to OFF on every power-on.\n4. Fixed FX detail worth noting for community how-tos: reverb/delay are global sends (one delay + one reverb engine shared across tracks), and the delay is tempo-syncable \u2014 a frequent forum question.\n5. microSD specifics: Class 10 minimum, FAT32, ~1 GB for a full 31-pack card; Components can auto-populate the card or it can be set up manually (official 'Manually setting up Circuit Tracks SD card packs' article) \u2014 a common community pain point.\n6. The Isotonik 'Big City Dream' free pack predates Circuit Tracks (built for the original Circuit, Tracks compatibility added later); worth flagging so users don't expect Tracks-specific MIDI-track content in it.\n7. Other notable community resources not in the claim list: Nu-Trix 'the Synth Guy' YouTube tutorials, the r/circuit / r/novationcircuit subreddits, and synthpatches.gumroad.com Circuit Tracks patch collections."
+    },
+    {
+      "lens": "device",
+      "verdicts": [
+        {
+          "id": "community-1",
+          "verdict": "confirmed",
+          "note": "loopop (Ziv Eliraz) 'Circuit TRACKS vs Circuit OG - Review and full tutorial' exists and is chapter-marked, covering sequencing, sample flip/melody, scales, micro-steps, probability, mutate, ratchets, automation, MIDI, sidechain, view lock, scenes and a jam. It is one of the most-referenced Tracks tutorials. 'Most-cited' is a reasonable community characterization."
+        },
+        {
+          "id": "community-2",
+          "verdict": "confirmed",
+          "note": "Novation publishes an official Circuit Tracks video series/introduction; the intro video (YouTube ID 0To9D9RhlXs) is the vendor-baseline tutorial. Consistent with Novation's official Circuit Tracks YouTube tutorials and userguides.novationmusic.com content. Tracks-specific."
+        },
+        {
+          "id": "community-3",
+          "verdict": "confirmed",
+          "note": "Manual (manualslib p97 / Novation guide): first Save press flashes Save and, in Projects View, causes the last-selected Project pad to pulse white; second press saves to the last Project memory in use, overwriting it. Tracks-specific."
+        },
+        {
+          "id": "community-4",
+          "verdict": "confirmed",
+          "note": "Manual: pressing a new Project pad after the first Save press makes all other pads go dark and the selected pad rapidly flash green for a couple of seconds, saving to that new slot. Tracks-specific. (Bonus detail: Macro 1 sets the pad color, 14 colors.)"
+        },
+        {
+          "id": "community-5",
+          "verdict": "confirmed",
+          "note": "Manual explicitly: 'you can abort the Save routine after the first press of Save by pressing any other button.' Tracks-specific."
+        },
+        {
+          "id": "community-6",
+          "verdict": "confirmed",
+          "note": "Sound on Sound confirms no undo function on Circuit Tracks; save/reload and duplicating before Mutate are the standard community workarounds. Tracks-specific."
+        },
+        {
+          "id": "community-7",
+          "verdict": "confirmed",
+          "note": "Consistent with Tracks behavior: live macro-knob positions are not persisted on reload unless captured as recorded automation or saved with the project. Sound on Sound / device operation supports this. Medium-strength but accurate."
+        },
+        {
+          "id": "community-8",
+          "verdict": "confirmed",
+          "note": "Novation's data-management guidance warns against removing the microSD card during Save/Load, which can lose or corrupt work. Tracks-specific guide."
+        },
+        {
+          "id": "community-9",
+          "verdict": "confirmed",
+          "note": "djtechtools and SoS confirm each track has 8 pattern slots and patterns default to 16 steps, expandable to 32. Tracks-specific (original Circuit had 8 patterns too but no 32-step expansion of this generation's implementation is the Tracks context here)."
+        },
+        {
+          "id": "community-10",
+          "verdict": "confirmed",
+          "note": "Pattern chaining = hold start pad, press end pad. 8 patterns x 32 steps = 256 steps max. Arithmetic and mechanism consistent with Tracks manual/reviews. Tracks-specific."
+        },
+        {
+          "id": "community-11",
+          "verdict": "confirmed",
+          "note": "djtechtools confirms 16 Scene pads storing snapshots of currently-playing patterns/chains, chainable into song sections; accessed within Mixer View. Tracks-specific (note: original Circuit had 16 scenes too, but this is correctly true of Tracks)."
+        },
+        {
+          "id": "community-12",
+          "verdict": "confirmed",
+          "note": "djtechtools: 64 active Projects, 'double the original's capacity' (original Circuit = 32). Tracks-specific and correctly contrasts the sibling device."
+        },
+        {
+          "id": "community-13",
+          "verdict": "confirmed",
+          "note": "Manual (p41): hold Clear (bright red) then tap a step to delete all notes at that step for the selected track. Clear is also the mechanism used in other views to remove macro automation, and to delete patterns/projects in their views. Tracks-specific."
+        },
+        {
+          "id": "community-14",
+          "verdict": "confirmed",
+          "note": "Manual (p41): hold Duplicate (bright green), tap source step (turns green, its notes red), tap destination step(s) to paste; can repeat to multiple destinations. Tracks-specific."
+        },
+        {
+          "id": "community-15",
+          "verdict": "confirmed",
+          "note": "View Lock is engaged by holding Shift and pressing the Patterns button; it freezes the step display to the current pattern/page so one pattern can be edited while another plays. Manual p81. Tracks-specific. ('top 16 step pads' is a slightly loose phrasing of 'freezes the step display', but substantively correct.)"
+        },
+        {
+          "id": "community-16",
+          "verdict": "confirmed",
+          "note": "Note/Velocity/Gate/Probability are dedicated grid views for per-step editing; Probability is specifically the Shift function of the Pattern Settings button. Confirmed against Tracks manual p71. Tracks-specific."
+        },
+        {
+          "id": "community-17",
+          "verdict": "confirmed",
+          "note": "djtechtools/SoS confirm each step subdivides into 6 micro-steps for ratchets/strums/feel; with Record Quantise off, live notes land on micro-steps. Tracks-specific (6 sub-steps)."
+        },
+        {
+          "id": "community-18",
+          "verdict": "confirmed",
+          "note": "Mutate subtly/algorithmically alters the selected pattern and is destructive; duplicating first to preserve the original is the standard recommended practice. SoS supports. Tracks-specific."
+        },
+        {
+          "id": "community-19",
+          "verdict": "confirmed",
+          "note": "Sample-flipping (different drum sample per step via sample automation) is the well-documented community workaround for only 4 drum voices. SoS supports. Tracks-specific."
+        },
+        {
+          "id": "community-20",
+          "verdict": "confirmed",
+          "note": "Confirmed via Novation guide/manual: a global master compressor (simple on/off, no adjustable parameters) is toggled with the FX button inside Advanced Setup View, entered by holding Shift while powering the unit on (green=on, dim red=off). Tracks-specific."
+        },
+        {
+          "id": "community-21",
+          "verdict": "confirmed",
+          "note": "Novation: samples loaded via Components; 'all audio will be converted to 48kHz Mono 16-bit when sent to Circuit Tracks.' Tracks-specific support article."
+        },
+        {
+          "id": "community-22",
+          "verdict": "confirmed",
+          "note": "Firmware 1.1.5 raised sample memory to 196.6 seconds total per pack; Novation states no single sample can exceed 98.3s (half the pack total). Confirmed via synthanatomy (196.6s/pack) and Novation Components docs (98.3s single, 196.6s total). Tracks-exclusive per Novation ('only possible on Circuit Tracks')."
+        },
+        {
+          "id": "community-23",
+          "verdict": "confirmed",
+          "note": "djtechtools: each Pack = 64 Projects, 64 samples, 128 synth patches; internal memory holds one pack and the microSD holds up to 32 packs total (i.e. 31 more). Tracks-specific."
+        },
+        {
+          "id": "community-24",
+          "verdict": "confirmed",
+          "note": "Novation confirms Components web runs only in Chromium browsers on Windows/Mac/Linux and on Android tablets, NOT iOS (Safari blocked, no native iOS app); a Mac/Windows standalone app is the offline alternative. Tracks-specific limitation. Medium->confirmed."
+        },
+        {
+          "id": "community-25",
+          "verdict": "confirmed",
+          "note": "Isotonik Studios runs a Circuit Tracks patch/sample store and offers the free 'Big City Dream' 12-preset pack; SoundGhost sells Circuit Tracks packs (Waves, Sunsets, etc.) and Nu-Trix offers free Circuit sound/sample packs, alongside Novation Components. All Tracks-compatible sources verified. Note: Big City Dream is a Circuit/Circuit-family preset pack usable on Tracks."
+        },
+        {
+          "id": "community-26",
+          "verdict": "confirmed",
+          "note": "deavid review confirms scale selection is global per project (not per pattern or per track) - pick D Minor and you're committed for the whole song. Owner criticism accurately attributed. Tracks-specific."
+        },
+        {
+          "id": "community-27",
+          "verdict": "confirmed",
+          "note": "deavid confirms MIDI channel config is global, not per-project (MIDI tracks default to channels 3/4); Novation Setup View lists MIDI channel assignment among global unit settings. Tracks-specific."
+        },
+        {
+          "id": "community-28",
+          "verdict": "confirmed",
+          "note": "SoS: 'no effective way to play samples in a pitched fashion'; drum-track pitch is a continuous knob with no note quantization, making reliable melodic sample playback impractical. Tracks-specific."
+        },
+        {
+          "id": "community-29",
+          "verdict": "confirmed",
+          "note": "djtechtools/deavid confirm no multitrack or USB audio export; capturing stems requires solo-cueing each track and recording via the analog line out into an interface. Tracks-specific."
+        },
+        {
+          "id": "community-30",
+          "verdict": "confirmed",
+          "note": "djtechtools: 16 delay types and 8 reverb types, menu-selected, with per-track send-amount control (8 macro sends) and no direct real-time time/feedback/depth knobs. Tracks-specific."
+        },
+        {
+          "id": "community-31",
+          "verdict": "confirmed",
+          "note": "djtechtools/musicradar confirm sidechain ducking with trigger source selectable from one of the 4 drum tracks, plus a DJ-style master Filter knob on the master output. Tracks-specific."
+        },
+        {
+          "id": "community-32",
+          "verdict": "confirmed",
+          "note": "CORRECT device distinction: unlike the original Circuit (6x AA batteries), Circuit Tracks has an internal rechargeable battery giving up to ~4 hours, charged over USB-C and runnable from a USB power bank. Confirmed by SoS ('internal battery replacing AA') and djtechtools ('up to 4 hours'). Tracks-specific."
+        },
+        {
+          "id": "community-33",
+          "verdict": "confirmed",
+          "note": "Novation confirms DIN MIDI In/Out/Thru with the Thru port configurable to duplicate MIDI Out (second Out), plus a rear analog Sync Out (5V, selectable 1/2/4/8/24 ppqn, default 2) to drive Volcas/modular. It can also receive MIDI clock via MIDI In or USB. Tracks-specific (analog sync + MIDI tracks are Tracks additions over the original Circuit)."
+        },
+        {
+          "id": "community-34",
+          "verdict": "refuted",
+          "note": "The I/O COUNTS are correct (two 1/4-inch mono inputs routable through FX/mixer, a stereo 1/4-inch main output, a minijack headphone out), but the 'balanced' descriptor is WRONG. Novation's official spec states both the audio inputs and the L/Mono+R main outputs are UNBALANCED 1/4-inch TS jacks (max output -5.6 dBu). The djtechtools review's 'balanced' wording is an error. Correct to 'unbalanced TS'."
+        },
+        {
+          "id": "community-35",
+          "verdict": "confirmed",
+          "note": "Mixer View is the performance cockpit combining the 16 Scene launchers with per-track mute, level and pan controls. Consistent with SoS and Tracks manual. Tracks-specific."
+        },
+        {
+          "id": "community-36",
+          "verdict": "confirmed",
+          "note": "djtechtools explicitly: Synth 1 = purple, Synth 2 = green, MIDI 1 = teal, MIDI 2 = orange. Tracks-specific (MIDI track colors only exist on Tracks, not the original Circuit)."
+        },
+        {
+          "id": "community-37",
+          "verdict": "confirmed",
+          "note": "8 tracks in fixed allocation: 2 polyphonic Nova-engine synths, 4 sample drum tracks, 2 dedicated external-MIDI sequencer tracks; not reassignable. SoS/djtechtools confirm. Tracks-specific - the 2 MIDI tracks are the defining Tracks addition over the 2015 Circuit's 2 synth + 4 drum layout."
+        },
+        {
+          "id": "community-38",
+          "verdict": "confirmed",
+          "note": "deavid criticism: with 8 patterns/track and 16 scenes, self-contained songs tend to top out around 3-4 minutes and feel repetitive; he judged it more a jam/live device than a full-song producer. Accurately attributed owner opinion. Tracks-specific."
+        },
+        {
+          "id": "community-39",
+          "verdict": "confirmed",
+          "note": "The Elektronauts thread 'Novation Circuit Rhythm and Circuit Tracks' (t/145048) exists and is a main community discussion venue; r/novationcircuit is the active subreddit for the Circuit family. Both are legitimate community forums. Caveat: the Elektronauts thread and subreddit are shared across Circuit devices (Rhythm/Tracks/original), not Tracks-exclusive - device-blur risk when mining tips there."
+        },
+        {
+          "id": "community-40",
+          "verdict": "confirmed",
+          "note": "SoS and deavid both cite the total absence of any screen/display as a key beginner adjustment - scale names, patch names and knob values are not shown, so settings become a memory exercise. Tracks-specific (true of the whole Circuit line, and true of Tracks)."
+        }
+      ],
+      "overallNotes": "DEVICE-CONFUSION AUDIT RESULT: Only ONE claim is wrong, and it is a spec error rather than cross-device contamination.\n\n- community-34 is REFUTED on the 'balanced' descriptor: Novation's own spec confirms Circuit Tracks audio inputs AND main outputs are UNBALANCED 1/4-inch TS jacks (max output -5.6 dBu). The I/O counts are right; only 'balanced' is wrong (the djtechtools reviewer mis-stated it). Fix to 'unbalanced TS'.\n\n- Positive note on device distinction: community-32 correctly captures the key Tracks-vs-original-Circuit difference (Tracks = internal rechargeable USB-C battery, ~4h; the 2015 Circuit used 6x AA). community-36 (MIDI track colors) and community-37 (2 dedicated MIDI tracks) are also genuinely Tracks-only features and were stated correctly.\n\n- Mild device-blur caveat on community-39: the cited Elektronauts thread and r/novationcircuit are SHARED Circuit-family venues (Rhythm + Tracks + original Circuit), not Tracks-exclusive. Tips mined there must be re-checked against Tracks specifically. Also, some 'Big City Dream'/Isotonik and Nu-Trix packs are marketed for the whole 'Novation Circuit' family; they work on Tracks but originate as general Circuit content (community-25 still stands as accurate).\n\nFACTS THE CLAIMS MISSED for the community/how-to angle:\n1. Analog Sync Out is 5V amplitude, rate selectable 1/2/4/8/24 ppqn (default 2 ppqn); swing is NOT applied to the analog clock - a real gotcha when syncing Volcas/modular.\n2. During Save, the Macro 1 knob recolors the target Project pad (14 color choices) before the second press - a commonly-taught organization trick.\n3. Compressor is toggled specifically with the FX button inside Advanced Setup View (green = on, dim red = off), not a generic menu item.\n4. A downloadable Components Standalone desktop app (Mac/Windows) is the offline alternative to Chrome-based Components - worth flagging for users who can't use the browser tool.\n5. Sample format target is exactly 48kHz / 16-bit / MONO; stereo/other-rate imports are auto-downmixed and down-converted - users lose stereo width on import.\n6. Firmware 1.1.5 was Tracks-exclusive per Novation ('only possible on Circuit Tracks' due to newer internal hardware); original Circuit never got the 196.6s upgrade.\n7. Not mentioned anywhere in the claim set: the two synth tracks are polyphonic (up to 6 voices each on the shared Nova-derived engine) - relevant to community chord/lead workflows and worth stating for beginners.\n8. MIDI tracks default to MIDI channels 3 and 4 (not 1/2) out of the box - a frequent community setup confusion point, adjacent to community-27."
+    },
+    {
+      "lens": "skeptic",
+      "verdicts": [
+        {
+          "id": "community-1",
+          "verdict": "confirmed",
+          "note": "loopopmusic.com page and YouTube video s3oJv6KAM0k confirm a full Circuit Tracks vs Circuit OG tutorial/review by Ziv Eliraz with chapter markers for Sequencing, Sample flip, Scales, Live rec, Micro steps, Probability, Mutate, Ratchets, Automation, MIDI seq, Effects, Sidechain, View lock, Scenes. Chapters and all listed topics verified. Only the superlative 'most-cited' is subjective/unverifiable, but the video is a well-known comprehensive Tracks tutorial."
+        },
+        {
+          "id": "community-2",
+          "verdict": "confirmed",
+          "note": "YouTube 0To9D9RhlXs is 'Circuit Tracks - Introduction // Novation', official channel, published 2021-02-09. Novation also maintains a Circuit Tracks playlist. Vendor-baseline tutorial confirmed."
+        },
+        {
+          "id": "community-3",
+          "verdict": "confirmed",
+          "note": "User Guide v3 p23: 'If you press Save, the button flashes white; if you press it a second time, it briefly flashes green rapidly to confirm... your work will be saved in the last selected Project memory... the earlier version will be overwritten.' The last-used Project pad pulses white on first press. Exact match."
+        },
+        {
+          "id": "community-4",
+          "verdict": "confirmed",
+          "note": "User Guide v3 p23: 'enter Projects View. Press Save; both Save and the pad for the currently selected Project will flash white. Press a different memory pad: all the other pads will go dark, and the selected pad will flash green rapidly for a second or so to confirm.' Exact match."
+        },
+        {
+          "id": "community-5",
+          "verdict": "confirmed",
+          "note": "Novation User Guide (Managing your data on the Circuit Tracks) states the Save routine can be aborted after the first Save press by pressing any other button. Independently confirmed via search of that article."
+        },
+        {
+          "id": "community-6",
+          "verdict": "confirmed",
+          "note": "Sound on Sound: 'Undo is one of the main missing features... The closest workaround is to Save your Project before doing something you might want to Undo, so you can reload it.' No undo confirmed. Duplicate-a-pattern-before-Mutate is standard community advice consistent with Mutate being destructive (p on Mutate)."
+        },
+        {
+          "id": "community-7",
+          "verdict": "unverifiable",
+          "note": "Could not find a source explicitly stating macro-knob movements are not retained on reload unless recorded as automation. SoS review does not mention it; not found in the User Guide. Plausible (live macro tweaks are momentary and only persist if captured as automation) but uncited for Tracks specifically. Note: static macro/patch state IS saved with the project, so the claim's phrasing is imprecise."
+        },
+        {
+          "id": "community-8",
+          "verdict": "confirmed",
+          "note": "User Guide v3 p99 WARNING (verbatim): 'Do not remove the microSD card from Circuit Tracks during Save or Load operations. Doing so may result in the loss of previously saved work. Note that Save operations include the process of duplicating a pack and transferring content from Components.' Exact match."
+        },
+        {
+          "id": "community-9",
+          "verdict": "confirmed",
+          "note": "User Guide: eight Patterns per track (page down to see Patterns 5-8); 'Patterns are 16 steps long by default. This can be changed to 32 steps for any or all of the eight tracks.' SoS corroborates. Exact match."
+        },
+        {
+          "id": "community-10",
+          "verdict": "confirmed",
+          "note": "User Guide v3 p76/79: 'press and hold the pad for the lowest-numbered Pattern required and then press the pad for the highest-numbered Pattern required (Or indeed, the other way round).' and 'Circuit Tracks allows Pattern chains of up to 256 (8 x 32) steps.' Exact match. MusicRadar corroborates 256 steps."
+        },
+        {
+          "id": "community-11",
+          "verdict": "confirmed",
+          "note": "User Guide v3 p81: 'The two lower rows of pads in Mixer View represent the 16 Scenes... Scenes are accessed in Mixer View: press Mixer.' Scenes store pattern/chain snapshots and can be chained into song sections (p83 'Chaining Scenes to create an arrangement'). Exact match."
+        },
+        {
+          "id": "community-12",
+          "verdict": "confirmed",
+          "note": "User Guide p22: 'There are 64 memory slots, arranged as two pages of 32.' SoS: 'can hold 64 active Projects (double the original's capacity).' Confirmed."
+        },
+        {
+          "id": "community-13",
+          "verdict": "confirmed",
+          "note": "User Guide v3 p40: 'Press and hold Clear; the button shows bright red... press the step pad; it will turn red and all notes at this step for the currently selected synth track will be deleted.' Clear has additional functions in Patterns View (p84) and Projects View (p95) to clear patterns/scenes/projects. Macro-automation clearing is a real separate gesture (hold Clear + move a macro). Core claim confirmed."
+        },
+        {
+          "id": "community-14",
+          "verdict": "confirmed",
+          "note": "User Guide v3 p40: 'press and hold Duplicate: it shows bright green. Press the pad... (the source step); it will turn green and the note(s) assigned to it will turn red... Now press the pad... where the data is to be copied to (the destination step).' Exact match."
+        },
+        {
+          "id": "community-15",
+          "verdict": "confirmed",
+          "note": "User Guide v3 p80: 'freeze the Pattern Step display to the current Pattern (and Page) by holding down Shift and pressing Patterns. The upper two rows will now be locked.' Exact match. State is not saved; defaults to inactive on power-on."
+        },
+        {
+          "id": "community-16",
+          "verdict": "confirmed",
+          "note": "User Guide v3 p47: 'Probability View is the secondary view of the Pattern Settings button. Open by holding Shift and pressing Pattern Settings, or press Pattern Settings a second time if already in Pattern Settings View.' Dedicated Note, Velocity (p41), Gate (p45) and Probability views all confirmed for per-step editing. Exact match."
+        },
+        {
+          "id": "community-17",
+          "verdict": "confirmed",
+          "note": "User Guide v3 p66 'Micro step edit': 'the timing of drum hits recorded in real time is assigned to one of six micro steps in between adjacent Pattern steps' when quantised recording is not enabled. Six micro-steps for ratchets/strums confirmed; SoS corroborates 'six sub steps.' Exact match."
+        },
+        {
+          "id": "community-18",
+          "verdict": "confirmed",
+          "note": "SoS: 'Mutate, which destructively alters the currently selected pattern in subtle ways.' Duplicating the pattern first to preserve the original is standard community/best-practice advice consistent with the destructive behavior and the lack of undo."
+        },
+        {
+          "id": "community-19",
+          "verdict": "confirmed",
+          "note": "User Guide 'Sample Flip' (p62) and SoS both confirm sample flipping (triggering a different drum sample per step) as the way to overcome the one-sample-per-track (4 drum voice) restriction. Confirmed."
+        },
+        {
+          "id": "community-20",
+          "verdict": "confirmed",
+          "note": "User Guide v3 p106 'Advanced Setup View' is 'entered by holding down Shift while powering the unit on' and contains 'Master Compressor... applied to all audio outputs... enabled or disabled by pressing FX' (simple on/off, no parameters). MusicRadar corroborates. Note: manual p102 inconsistently also lists 'master compressor on/off' under Setup View (Shift+Save), but the definitive detailed section places it in Advanced Setup View (Shift-on-power-on), matching the claim."
+        },
+        {
+          "id": "community-21",
+          "verdict": "confirmed",
+          "note": "Novation support confirms audio files are converted to 48kHz mono 16-bit when sent to Circuit Tracks via Components (regardless of source format). Samples loaded via Components confirmed. Exact match."
+        },
+        {
+          "id": "community-22",
+          "verdict": "confirmed",
+          "note": "Novation support: 'No sample can be longer than 98.3 seconds, and you can store a total of 196.6 seconds worth of samples.' synthanatomy and Novation's own article confirm 196.6s/pack after firmware 1.1.5 (up from 60s). Both figures exact match."
+        },
+        {
+          "id": "community-23",
+          "verdict": "confirmed",
+          "note": "User Guide v3 p99: 'internal memory holds only a single Pack: the microSD card can hold a further 31 Packs, thus allowing the availability of up to 32 Packs.' SoS confirms pack = '64 Projects, 64 samples and 128 synth patches.' Exact match."
+        },
+        {
+          "id": "community-24",
+          "verdict": "confirmed",
+          "note": "SoS: Components synth editor 'works on USB-connected computers and Android tablets (but not iOS devices) directly from Chrome.' No iOS support confirmed (Android/Chrome/desktop only)."
+        },
+        {
+          "id": "community-25",
+          "verdict": "confirmed",
+          "note": "Isotonik runs a dedicated Circuit Tracks Patch Store; the free 'Big City Dream' pack is confirmed as 12 presets sorted by category; SoundGhost has a circuit-tracks product tag. CAVEAT: Big City Dream is marketed by Isotonik/rekkerd/macProVideo as a 'Novation Circuit' (original) patch pack, not specifically Circuit Tracks \u2014 its Tracks applicability needs confirmation (patches may transfer via Components, same Nova engine). 'Nu-Trix' as a Circuit Tracks source was not independently verified."
+        },
+        {
+          "id": "community-26",
+          "verdict": "confirmed",
+          "note": "deavid review: 'I can't use scales per-pattern and instrument. It seems to be global per project.' Consistent with User Guide (Scales View sets one scale/root for the project). Confirmed as an owner criticism; scale is a project-level global setting."
+        },
+        {
+          "id": "community-27",
+          "verdict": "confirmed",
+          "note": "deavid: 'the midi channel config is global and not per project.' User Guide p102-103 confirms MIDI channel assignment is a global unit setting in Setup View (channel 16 reserved for the Project), not stored per project. Confirmed."
+        },
+        {
+          "id": "community-28",
+          "verdict": "confirmed",
+          "note": "SoS: 'no effective way to play samples in a pitched fashion.' deavid: pitch 'is in a continuous fashion on the knob that makes it almost impossible to know which note you're playing.' User Guide p63: drum Macro 2 = Pitch (continuous, unquantized). Confirmed."
+        },
+        {
+          "id": "community-29",
+          "verdict": "confirmed",
+          "note": "djtechtools calls the lack of DAW export the 'biggest flaw': user must 'manually solo-cue and play each pattern of each track into an audio interface.' deavid: 'The only way to get recordings out is to use a cable from the line out or headphones.' No multitrack/USB audio export confirmed."
+        },
+        {
+          "id": "community-30",
+          "verdict": "confirmed",
+          "note": "djtechtools: '16 delay types and 8 reverb types' with send amounts controllable per track via the eight macro knobs. Types are menu-selected; only per-track send is exposed (no real-time time/feedback/depth control). Confirmed."
+        },
+        {
+          "id": "community-31",
+          "verdict": "confirmed",
+          "note": "djtechtools: sidechain menu with 'trigger source (out of the 4 drum tracks) and amount.' MusicRadar confirms a 'DJ-style filter' / 'bi-directional, DJ-style filter' sweep on the output. Sidechain ducking from a drum track and master filter both confirmed."
+        },
+        {
+          "id": "community-32",
+          "verdict": "confirmed",
+          "note": "djtechtools: 'up to 4 hours of battery life... USB-C connection so you can recharge it with your typical battery bank.' MusicRadar: 'around four hours... can run from USB power.' Confirmed."
+        },
+        {
+          "id": "community-33",
+          "verdict": "confirmed",
+          "note": "User Guide p105: analogue Sync Out (5V, selectable 1/2/4/8/24 ppqn) drives Volcas/modular; MIDI clock received via MIDI In or USB. p106: MIDI Thru port 'will act as a second MIDI Out.' MusicRadar corroborates all three. Confirmed."
+        },
+        {
+          "id": "community-34",
+          "verdict": "confirmed",
+          "note": "djtechtools: 'two 1/4 jack balanced mono inputs, stereo 1/4 balanced master and minijack headphone outputs.' MusicRadar: external audio routes 'through the internal reverb and delay or the sample track-driven sidechain and... filter.' Confirmed."
+        },
+        {
+          "id": "community-35",
+          "verdict": "confirmed",
+          "note": "User Guide: Mixer View (press Mixer) holds the 16 Scene launchers plus per-track level/mute/pan controls. SoS: Mixer page combines 'song section launching, track mutes and levels.' Live-performance cockpit role confirmed (pan is also editable in Mixer View)."
+        },
+        {
+          "id": "community-36",
+          "verdict": "confirmed",
+          "note": "djtechtools: 'Synth 1 uses purple, Synth 2 uses green, MIDI 1 is teal, MIDI 2 is orange.' User Guide p27 corroborates Synth 1 keys illuminated violet, Synth 2 pale green. Confirmed."
+        },
+        {
+          "id": "community-37",
+          "verdict": "confirmed",
+          "note": "User Guide: 'eight Patterns for each of the eight tracks - two synths, two MIDI and four drums.' Two Nova-engine polysynths + four sample drum tracks + two external-MIDI sequencer tracks; fixed allocation. SoS corroborates. Confirmed."
+        },
+        {
+          "id": "community-38",
+          "verdict": "confirmed",
+          "note": "deavid: 'making long songs it's very tricky on this device,' with a personal record of '3min 50s' for a complete composition, given 8 patterns per track and 16 scenes. Owner-reported ~3-4 minute practical ceiling confirmed as sourced opinion."
+        },
+        {
+          "id": "community-39",
+          "verdict": "confirmed",
+          "note": "The Elektronauts thread 'Novation Circuit Rhythm and Circuit Tracks' (t/145048) exists as a multi-page community discussion thread. r/novationcircuit is the recognized subreddit. CAVEAT: the Elektronauts thread is primarily impressions/discussion rather than a dedicated tips/troubleshooting thread, and r/novationcircuit covers all three Circuit devices (Circuit, Tracks, Rhythm), not Tracks exclusively."
+        },
+        {
+          "id": "community-40",
+          "verdict": "confirmed",
+          "note": "SoS notes the screenless design; deavid: 'A text display would have been nice. Some settings like setting the scales require reading constantly the manual to understand which scale is which.' No screen making scale/patch/value invisible confirmed as a widely-cited adjustment."
+        }
+      ],
+      "overallNotes": "STRONG OVERALL ACCURACY: 38 of 40 claims confirmed against primary sources (I read the Circuit Tracks User Guide v3 PDF directly, pages verified: save p22-23, Clear/Duplicate p40, Velocity/Gate/Probability p41-47, Sample Flip/micro-steps p62-66, chaining/View Lock/Scenes p76-84, microSD/packs/Setup/Advanced Setup p99-106). Only community-7 (macro retention) is unverifiable; community-25 (Isotonik packs) is confirmed with an important scope caveat.\n\nKEY SCOPE/DEVICE CAVEATS (per the three-device confusion warning):\n- community-25: Isotonik's free 'Big City Dream' 12-preset pack is marketed as a 'Novation Circuit' (original 2015) patch pack, NOT specifically Circuit Tracks. Isotonik does run a separate dedicated Circuit Tracks Patch Store, but the guide should not present Big City Dream as a Tracks-native pack without noting it originates for the original Circuit (compatibility via Components/same Nova engine is likely but unstated). 'Nu-Trix' as a Tracks patch source was not independently verifiable.\n- community-20: There is a real inconsistency IN Novation's own manual \u2014 p102 lists the master compressor under 'Setup View' (Shift+Save), while p106's detailed 'Advanced Setup View' section (Shift held during power-on, toggled with the FX button) is the authoritative location. The claim's access method (Shift on power-up) matches the authoritative section and is correct.\n\nFACTUAL CORRECTION to the task framing (not a claim): Circuit Tracks was released/announced in early 2021 (official intro video 2021-02-09; sample-time firmware 1.1.5 April 2021), not 2020. Worth fixing wherever the '2020' release date appears.\n\nIMPORTANT COMMUNITY/FEATURE FACTS THE CLAIMS MISSED:\n1. Save Lock (User Guide p107): hold Shift+Save while powering on to disable the Save function entirely \u2014 a live-performance safeguard against accidental overwrites, retained across power cycles. Highly relevant to the 'no undo' community pain point.\n2. Forced blank-project recovery: hold Shift+Clear while powering on loads a blank Project if a project became corrupted (p107) \u2014 a real troubleshooting tip missed.\n3. Fixed Velocity mode (value 96, toggle Velocity while holding Shift) and per-note velocity per step (p42-44); Gate ranges from 1/6 to 16 in sixths of a step (96 values, p45). These per-step edit details round out community-16/17.\n4. Pattern Octave shift (Shift + up/down arrows) transposes an entire synth/MIDI pattern (p79).\n5. Non-quantised drum record toggle: hold Shift + Record (Record lights green=quantised, dim red=non-quantised) (p64) \u2014 the mechanism behind the micro-step behavior in community-17.\n6. Setup View (Shift+Save) is distinct from Advanced Setup View (Shift-on-power-on); Setup View holds MIDI channel assignment, MIDI Rx/Tx per data category (Note/CC/PGM/Clock), clock source and analogue clock rate, and brightness (Pad 24 dims ~50%). Drums 1-4 all share one MIDI channel (default 10); channel 16 is reserved for the Project.\n7. DEVICE-CONFUSION GUARDRAIL for the guide: Grid FX, Drift, and on-device audio recording/resampling are Circuit RHYTHM features, NOT Circuit Tracks \u2014 forum/tutorial material blurs these constantly. Tracks has no on-board sampling; samples arrive only via Components.\n8. Bootloader Mode (hold Scales+Preset+Note during power-on) for firmware-version diagnostics (p108) \u2014 occasionally referenced in troubleshooting threads."
+    }
+  ]
 }

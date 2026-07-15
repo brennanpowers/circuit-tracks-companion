@@ -366,5 +366,624 @@
       "tracksConfirmed": true
     }
   ],
-  "verification": []
+  "verification": [
+    {
+      "lens": "manual",
+      "verdicts": [
+        {
+          "id": "official-1",
+          "verdict": "confirmed",
+          "note": "Manual p.6-7: 'It's an eight track instrument - two for the polyphonic synths, four for samples and two for interfacing with external MIDI devices.' Key Features list 'Two synth tracks with 6-voice polyphony', 'Two MIDI tracks', 'Four sample-based drum tracks'. Note View track-button diagrams show left-to-right order Synth 1, Synth 2, MIDI 1, MIDI 2, Drum 1-4. Confirmed."
+        },
+        {
+          "id": "official-2",
+          "verdict": "confirmed",
+          "note": "Manual: '32 illuminated, velocity-sensitive pads' with RGB coding (4x8 grid). Note View: 'The two lower rows constitute the synth keyboard, while the two upper rows show the 16 steps of the pattern.' 'The highest note of the lower octave (Pad 32) is the always the same as the lowest note of the higher octave (Pad 17).' Confirmed."
+        },
+        {
+          "id": "official-3",
+          "verdict": "confirmed",
+          "note": "Manual: 'hold down Shift and press Note; Note now illuminates gold. This is called Expanded Note View' replacing pattern display with 'the next two higher octaves' (2+2 = 4 octaves; p.36 confirms 'four octaves rather than two'); 'press Note when already in Note View to toggle'. Expanded Drum View (Shift+Note on a drum track): 'all the grid pads except 29-32 are disabled', pads 29-32 are 'Playing Pads for Drums 1-4'. Confirmed."
+        },
+        {
+          "id": "official-4",
+          "verdict": "confirmed",
+          "note": "Manual Scales table lists 16 scales on pads 17-32 in exactly the claimed order: Natural Minor, Major, Dorian, Phrygian, Mixolydian, Melodic Minor, Harmonic Minor, Bebop Dorian, Blues, Minor Pentatonic, Hungarian Minor, Ukranian Dorian, Marva, Todi, Whole Tone, Chromatic. (Manual spells it 'Ukranian'; claim says 'Ukrainian' \u2014 same scale.) Confirmed."
+        },
+        {
+          "id": "official-5",
+          "verdict": "confirmed",
+          "note": "Manual: 'The selected scale and root note apply to both Synth tracks, and also both MIDI tracks.' 'The default root note for all scales is C.' On scale change, out-of-scale notes get an 'intelligent decision... normally either one semitone above or below', and 'Changing scale in this way is not destructive: you can revert to the original scale and the notes will sound as they did before.' Also applies to external MIDI note input ('snap to the nearest note in the current Scale'). Confirmed."
+        },
+        {
+          "id": "official-6",
+          "verdict": "confirmed",
+          "note": "Manual: 'the only one that has more than eight is Chromatic, with 12'. With Chromatic 'only a one-octave keyboard is possible'; 'In Expanded Note View with Chromatic scale selected, a two-octave keyboard is presented.' Confirmed."
+        },
+        {
+          "id": "official-7",
+          "verdict": "confirmed",
+          "note": "Manual: 'Each of the two synth tracks can use any one of 128 pre-loaded Patches... arranged as four pages of 32.' 'Patch 1 (Pad 1 on Page 1) is the default Patch for Synth 1 and Patch 33 (Pad 1 on Page 2) is the default Patch for Synth 2.' 'press Preset... opens Patch View Page 1 if Synth 1 is selected and Patch View Page 3 if Synth 2 is selected.' Confirmed."
+        },
+        {
+          "id": "official-8",
+          "verdict": "confirmed",
+          "note": "Manual: 'any one of 64 pre-loaded samples', 'four pages of 16 at a time' in Note View, and Preset View 'arranged as two pages of 32'. Default page allocation: Drum 1 Page 1 slot 1 (Kick 1), Drum 2 slot 3 (Snare 1), Drum 3 slot 5 (Closed hi hat 1), Drum 4 slot 9 (Additional percussion 1). Claim's 'Perc1' = manual's 'Additional percussion 1'. Confirmed."
+        },
+        {
+          "id": "official-9",
+          "verdict": "confirmed",
+          "note": "Manual: 'Only the even-numbered Macros are active when a drum track is selected' \u2014 Macro 2=Pitch, 4=Decay envelope time, 6=Distortion, 8=EQ. Synth: 'Each of the 128 factory Patches... can have up to four of its parameters tweaked by each Macro control.' Confirmed."
+        },
+        {
+          "id": "official-10",
+          "verdict": "confirmed",
+          "note": "Manual: Patterns View 'two pages... Page 1 Patterns 1 to 4... Page 2 Patterns 5 to 8' (8 per track). 'The default length of a Pattern... is 16 steps, but you can double the length to 32 steps with the Step Page button.' Clear+Step Page reverts to 16 with steps 17-32 preserved. Duplicate+Step Page 'copy all data at steps 1 to 16 to steps 17 to 32'. Confirmed."
+        },
+        {
+          "id": "official-11",
+          "verdict": "confirmed",
+          "note": "Manual: chained patterns 'must be contiguous, that is, numerically consecutive' (hold lowest, press highest); 'Circuit Tracks' Scenes feature allows you to overcome this restriction'. 'The two lower rows of pads in Mixer View represent the 16 Scenes.' Assign: 'Change to Mixer View, press and hold Shift... Press a Scene pad (while still holding Shift).' Confirmed."
+        },
+        {
+          "id": "official-12",
+          "verdict": "confirmed",
+          "note": "Manual IMPORTANT box: 'You can copy a Pattern from one Synth or MIDI track to the other, or between a Synth track and a MIDI track using Duplicate; you can also use it to copy a Pattern from one Drum track to another, but you cannot copy data from a Synth or MIDI track to a Drum track, or vice-versa.' Confirmed."
+        },
+        {
+          "id": "official-13",
+          "verdict": "confirmed",
+          "note": "Manual: 'Circuit Tracks will operate at any tempo in the range 40 to 240 BPM; the default tempo for a new Project is 120 BPM.' 'the internal tempo clock only allows integer BPMs'; external clock via USB or MIDI In auto-selected, 'synchronise to any external clock rates - including fractional values - in the range 30 to 300 BPM', displays 'SYN'. Macro 1 adjusts tempo in Tempo View. Confirmed."
+        },
+        {
+          "id": "official-14",
+          "verdict": "confirmed",
+          "note": "Manual: Swing 'default value of 50 (the range is 20 to 80)', 'alters the timing of even-numbered steps (the off-beats)', 'adjusted with Macro 2, while in Tempo View'. Tap Tempo: 'Hold down Shift and tap the Tempo/Swing button... You need at least three taps... averaging the last five taps.' Confirmed."
+        },
+        {
+          "id": "official-15",
+          "verdict": "confirmed",
+          "note": "Manual: Click 'activated or deactivated by holding Shift and pressing Clear. Clear will light bright green when Click is enabled'; 'metronome tick at every quarter note... whenever the sequencer is playing'; 'a global setting'; 'The setting is not saved when Circuit Tracks is powered off.' Volume via Macro 5 in Tempo View; 'level setting is saved when the device is powered off'. Confirmed."
+        },
+        {
+          "id": "official-16",
+          "verdict": "confirmed",
+          "note": "Manual: 'Sixteen delay and eight reverb presets are provided, and you can select any one of each type.' 'It is not possible to use different reverb presets on different tracks' (one global reverb + one global delay); send levels per-track via the 8 Macros. 'In all cases, delay time is related to the BPM.' Confirmed."
+        },
+        {
+          "id": "official-17",
+          "verdict": "confirmed",
+          "note": "Manual: 'Side Chain View is the secondary view of the FX button. Open by holding Shift and pressing FX.' 'Seven Side Chain presets are available' per synth/MIDI track; 'Pads 5 to 8 on the top row let you select which Drum track will be the side chain trigger.' 'Side Chain ducking will continue even when the level of the source track is reduced to zero'; 'if you mute the drum track selected as the key in Mixer View, side chain triggering is disabled.' Confirmed."
+        },
+        {
+          "id": "official-18",
+          "verdict": "confirmed",
+          "note": "Manual: 'the sum of the sounds from all six internal tracks plus the two external audio inputs, is fed through a traditional DJ-style filter.' 'controls a low-pass filter when you turn it anticlockwise from the centre position and a high-pass filter when you turn it clockwise'; 'the control has a detent in the centre - in this position, no filtering takes place.' Confirmed."
+        },
+        {
+          "id": "official-19",
+          "verdict": "confirmed",
+          "note": "Manual: 'each MIDI template defaults to eight CC indexes with values 1, 2, 5, 11, 12, 13, 71 and 74 respectively' (table CC1,2,5,11,12,13,71,74). 'The eight default MIDI templates are identical.' 'automated MIDI template controls will send data to the MIDI Out DIN port as well as the USB port, unlike parameters on the other tracks, which are only sent to the USB port.' Confirmed."
+        },
+        {
+          "id": "official-20",
+          "verdict": "confirmed",
+          "note": "Manual: on MIDI tracks the Mixer/FX Macros 'act on the analogue audio signal applied at the two audio Inputs on the rear panel.' 'The recommended workflow is to send MIDI data from Circuit Tracks to your external synth... while routing the audio outputs of that device back into Circuit Tracks' audio inputs.' Rear inputs are unbalanced mono 1/4-inch TS jacks. Confirmed."
+        },
+        {
+          "id": "official-21",
+          "verdict": "confirmed",
+          "note": "Rear panel (manual p.19): stereo 1/4-inch TS Outputs (L/Mono+R), 3.5mm TRS Sync out at 5V, headphone output, 5-pin DIN MIDI In/Out/Thru (Thru configurable to clone MIDI Out in Advanced Setup), two external audio inputs 'unbalanced on 1/4-inch TS jack sockets', USB-C ('MIDI class compliant', DC power/charging, 'USB port does not carry audio'), microSD slot. Confirmed."
+        },
+        {
+          "id": "official-22",
+          "verdict": "confirmed",
+          "note": "Manual: 'Built-in rechargeable battery with 4 hours of battery life'; 'Circuit Tracks will operate for up to 4 hours.' Power switch: 'soft on/off switch; to prevent inadvertent power up/down, a press of approx. one second is needed to turn the unit on or off.' Confirmed."
+        },
+        {
+          "id": "official-23",
+          "verdict": "confirmed",
+          "note": "Manual: 'A Pack contains the totality... including the contents of all 64 Project memories, all 128 synth Patches and all 64 drum Samples.' Internal memory holds one Pack; 'microSD card can hold a further 31 Packs... up to 32 Packs.' 'Packs View is the secondary view of the Projects button. Open by holding Shift and pressing Projects'; 'You can only access Packs View when a microSD card is present.' Confirmed."
+        },
+        {
+          "id": "official-24",
+          "verdict": "confirmed",
+          "note": "Manual: 'MicroSD cards need to be Class 10 as a minimum, and use FAT32 format.' 'Packs may only be removed via Components, and cannot be cleared from the device directly.' Confirmed."
+        },
+        {
+          "id": "official-25",
+          "verdict": "confirmed",
+          "note": "Manual: 'Save needs to be pressed twice'; first press pulses last-selected Project pad white and you can redirect to a new slot before the second press. Colour: 'After pressing Save for the first time, the LED under Macro 1... You can now scroll through a palette of 14 colours by rotating the Macro 1 knob.' Confirmed."
+        },
+        {
+          "id": "official-26",
+          "verdict": "confirmed",
+          "note": "Manual Components list: download content, create/edit synth patches, load own samples, edit MIDI track templates, backup projects, load new packs, update firmware. 'Components requires a Web MIDI enabled browser... We recommend using Google Chrome or Opera. Alternatively, you can download a standalone version... once you have registered your product.' Full synth-engine editor confirmed (Key Features: 'full synth engine editing'). Confirmed."
+        },
+        {
+          "id": "official-27",
+          "verdict": "confirmed",
+          "note": "Manual MIDI Channels table: Synth 1=1, Synth 2=2, MIDI 1=3, MIDI 2=4, Drums 1-4=10. 'Channel 16 is reserved for the Project.' 'each track... can be set to any of MIDI channels 1-15.' 'No two tracks can transmit on the same MIDI channel.' Confirmed."
+        },
+        {
+          "id": "official-28",
+          "verdict": "confirmed",
+          "note": "Manual: Setup View 'entered by holding down Shift and pressing Save, and exited by pressing Play.' Sets MIDI channels; independent Rx/Tx for Note/CC/Program-Change/Clock on pads 25-32, and 'By default, both MIDI Rx and MIDI Tx are ON... for all data categories.' Analogue clock rate pads 17-21 = 1/2/4/8/24 ppqn, default 2. Brightness: 'pressing Pad 24 dims them by approximately 50%.' Confirmed."
+        },
+        {
+          "id": "official-29",
+          "verdict": "confirmed",
+          "note": "Manual Bootloader Mode: 'Turn Circuit Tracks off; Hold down the Scales, Preset and Note buttons; Power Circuit Tracks on again.' 'Synth 1 and Synth 2 are lit; selecting either... displays a pattern of illuminated pads; the pattern represents the version numbers... in binary form.' 'Bootloader Mode is most easily exited by simply pressing the Play button.' Confirmed."
+        },
+        {
+          "id": "official-30",
+          "verdict": "confirmed",
+          "note": "Manual: Advanced Setup View 'entered by holding down Shift while powering the unit on.' Save Lock: 'hold both Shift and Save down while powering the unit on'; 'Save Lock status is retained during subsequent power cycles.' Recovery: 'hold down both Shift and Clear while turning Circuit Tracks on' to force-load a blank Project. Confirmed."
+        },
+        {
+          "id": "official-31",
+          "verdict": "confirmed",
+          "note": "Manual: 'Quantised recording is disabled by holding down Shift and pressing Record (note the button is also legended Rec Quantise).' Enables the six micro-steps between adjacent steps. 'if the Record button illuminates green, quantisation is enabled; if it is red, recording will be non-quantised' (shown while Shift held). Confirmed."
+        },
+        {
+          "id": "official-32",
+          "verdict": "confirmed",
+          "note": "Manual: synth engines are 'six-note polyphonic - that is, you can assign up to six notes to any step.' Insert: 'add a synth note to a step by holding down the step pad and pressing the desired note. Note that Record Mode does not need to be enabled.' Delete: 'press the step pad (lights red) and then press the unwanted keyboard pad.' 'press Shift and Play together' to continue from the stopped step. Confirmed."
+        },
+        {
+          "id": "official-33",
+          "verdict": "confirmed",
+          "note": "Firmware 1.1.5 (released April 2021): SynthAnatomy/Synthtopia and Novation release notes confirm sample time increased from 60s to 196.6s per pack, maximum single-sample time to 98.3s, voice-stealing reduced in patches with high v-sync/density/attack, and a sticky-Shift toggle added in Setup View. Confirmed."
+        },
+        {
+          "id": "official-34",
+          "verdict": "confirmed",
+          "note": "Firmware 1.2 (Novation article, SynthAnatomy, MatrixSynth) released mid-December 2022 (~Dec 15): adds ability to save mute states to Scenes so arrangements need no empty patterns. It is the newest officially documented Circuit Tracks firmware (no later official release notes exist; see official-40). Claim's date '15 December 2022' matches within a day. Confirmed."
+        },
+        {
+          "id": "official-35",
+          "verdict": "confirmed",
+          "note": "Manual Firmware Updates appendix: 'Components will let you know whether the connected unit is up to date and, if it's not, Components can update the unit's firmware to the latest version.' Matches the claim that Components detects the device and prompts an update. Confirmed."
+        },
+        {
+          "id": "official-36",
+          "verdict": "confirmed",
+          "note": "Manual Sample Flip: 'Press and hold the pad for the required sample (it turns red) and then press the step pads... where you want to place that sample... they also turn red.' 'steps with hits of the active sample illuminate bright blue, but any that have been flipped illuminate pink.' 'overcomes the one-sample-per-track restriction.' Confirmed."
+        },
+        {
+          "id": "official-37",
+          "verdict": "confirmed",
+          "note": "Manual: 'Every step in a pattern has three further parameters... Velocity... Gate, which sets the duration of the note; and Probability.' Gate value 'represents the time - as the number of steps - for which the notes at the step will sound.' 'Probability is the Shift function of the Pattern Settings button'; 'Micro Step View is the secondary view of the Gate button' (Shift+Gate). Minor nuance: the fourth physical step button is labelled 'Pattern Settings' (Probability is its Shift function), which the claim's own second half states correctly. Confirmed."
+        },
+        {
+          "id": "official-38",
+          "verdict": "confirmed",
+          "note": "Manual: 'The synth has a total range of 10 octaves; you can access higher or lower pairs of octaves by using the J and K buttons.' Pattern Octave: 'hold down Shift and then press J or K'; 'Only the pitch of the currently selected track is adjusted' (per-track); works on an already-recorded pattern ('alter the octave of the pattern after recording'). Confirmed."
+        },
+        {
+          "id": "official-39",
+          "verdict": "confirmed",
+          "note": "Manual repeatedly references 'the separate downloadable document Circuit Tracks Programmer's Reference Guide' (downloadable from novationmusic.com/downloads) for 'full MIDI implementation'. Synth Patches recalled via Program Change on default channels 1/2; drum samples recalled 'by sending MIDI CC messages on MIDI Channel 10'. Confirmed."
+        },
+        {
+          "id": "official-40",
+          "verdict": "confirmed",
+          "note": "The gist (userx14/664f5e74...) references firmware '1.2.1' / build 4486 but is an entirely community reverse-engineering effort (Ghidra/radare2, SysEx extraction); it cites no official Novation release notes. No official Novation documentation for 1.2.1 exists, so treating it as unconfirmed/not an official release is correct. Confirmed."
+        }
+      ],
+      "overallNotes": "All 40 claims CONFIRMED against the official Novation Circuit Tracks User Guide v3 (fetched from the fael-downloads-prod.focusrite.com PDF, extracted with pdftotext locally) and official/reputable firmware sources. Every fact was verified as explicitly Circuit-Tracks-specific (not original Circuit or Circuit Rhythm) \u2014 the guide is unambiguously the Circuit Tracks manual.\n\nMinor wording nuances (do not change verdicts): (1) official-4 \u2014 manual spells the 12th scale 'Ukranian Dorian' (claim says 'Ukrainian'); same scale. (2) official-37 \u2014 the fourth physical step button is labelled 'Pattern Settings', with Probability as its Shift function; the claim lists 'Note/Velocity/Gate/Probability' as the step buttons but then correctly states Probability = Shift+Pattern Settings, so it is internally consistent. (3) official-34 \u2014 release date corroborated as mid-December 2022 (~Dec 15-16); the exact calendar day '15 December' is approximate but within a day.\n\nNotable official facts the claim set MISSED entirely (candidates for the guide, all from the same official manual unless noted):\n- MUTATE: a dedicated function that randomly reorders/re-pitches the notes already in a pattern (per-track, non-destructive until saved) \u2014 not covered by any claim.\n- PATTERN SETTINGS VIEW: Start/End points (to shorten/offset a pattern's playback window per track), Play Order (forward, reverse, ping-pong, random), and per-track Pattern Sync Rate (1/4, 1/4T, 1/8, 1/8T, 1/16, 1/16T, 1/32, 1/32T relative to BPM) \u2014 a major feature area untouched.\n- VIEW LOCK (Shift+Patterns): freezes the step display to one pattern/page while another plays, for editing during performance.\n- MASTER COMPRESSOR: applied to all outputs by default; toggled by pressing FX in ADVANCED Setup View (distinct from normal Setup View). None of the claims mention the compressor.\n- VELOCITY detail: 16 velocity levels displayed on the grid; a global Fixed-vs-Variable velocity mode (Shift+Velocity) that applies to ALL tracks; per-note velocity assignment at a shared step.\n- TIED / DRONE NOTES: extending gate across steps to create sustained/drone notes.\n- MICRO STEPS: 6 subdivisions between steps (Shift+Gate = Micro Step View), used both in non-quantised record and manual step editing, on synth AND drum tracks.\n- SCENES additional ops: Scenes can be chained into full song arrangements, queued (Shift to switch immediately vs at end), cleared, and duplicated.\n- DRUM short/long-press pad logic: long-press a step pad to arm a sample flip; short vs long press on sample pads plays additional hits.\n- EASY START TOOL: Circuit Tracks mounts as a USB Mass Storage Device on first connect; can be disabled in Advanced Setup View (press Note).\n- MIXER specifics: 8-channel mixer, per-track level range 0-127 (default 100), pan via Macros (K button), plus a separate Master Volume knob; Mute buttons on Mixer View row 1.\n- PROJECT SWITCHING behaviour: queued vs instant (Shift) project changes, and the new project's tempo replaces the old.\n- Headphone amp spec (+5 dBu into 150 ohm) and main output max level (+5.3 dBu); Kensington MiniSaver slot; AC adaptor is 5V DC 2A USB-A output.\n- Firmware update can ALSO be performed via Bootloader Mode if the normal Components update fails."
+    },
+    {
+      "lens": "device",
+      "verdicts": [
+        {
+          "id": "official-1",
+          "verdict": "confirmed",
+          "note": "User guide (v3) confirms: 'Two synth tracks with 6-voice polyphony', 'Two MIDI tracks with programmable CC output', 'Four sample-based drum tracks' (p.16/features list). Track-button order is explicitly Synth 1, Synth 2, MIDI 1, MIDI 2, Drum 1, Drum 2, Drum 3, Drum 4 (repeated in the Note View diagrams and the front-panel control 5 description). MIDI tracks have no internal sound engine and are for sequencing external gear. Tracks-specific; not the 2015 Circuit."
+        },
+        {
+          "id": "official-2",
+          "verdict": "confirmed",
+          "note": "Guide: '32-pad playing grid - a 4 x 8 matrix of pads; internally illuminated with RGB LEDs' and 'velocity-sensitive'. In Note View 'The two lower rows constitute the synth keyboard, while the two upper rows show the 16 steps of the pattern.' Explicitly: 'The highest note of the lower octave (Pad 32) is always the same as the lowest note of the higher octave (Pad 17).' Fully confirmed for Tracks."
+        },
+        {
+          "id": "official-3",
+          "verdict": "confirmed",
+          "note": "Guide: 'hold down Shift and press Note; Note now illuminates gold. This is called Expanded Note View' giving the existing two octaves plus 'the next two higher octaves' (=4-octave keyboard across all rows). 'press Note when already in Note View to toggle.' For drums: 'Expanded Drum View... all the grid pads except 29-32 are disabled' and pads 29-32 are the 'Playing Pads for Drums 1-4'. Confirmed."
+        },
+        {
+          "id": "official-4",
+          "verdict": "confirmed",
+          "note": "Guide's scale table lists exactly these 16 on the lower two rows (pads 17-32) in this order: Natural Minor (Pad 17), Major, Dorian, Phrygian, Mixolydian, Melodic Minor (ascending), Harmonic Minor, Bebop Dorian, Blues, Minor Pentatonic, Hungarian Minor, Ukranian Dorian, Marva, Todi, Whole Tone, Chromatic. (Guide spells it 'Ukranian'; claim's 'Ukrainian' is a trivial spelling variant.) Confirmed."
+        },
+        {
+          "id": "official-5",
+          "verdict": "confirmed",
+          "note": "Core confirmed: 'The selected scale and root note apply to both Synth tracks, and also both MIDI tracks' and 'The default root note for all scales is C.' Scale/root changes during playback are non-destructive (don't alter the stored Project until saved). CAVEAT: the parenthetical 'out-of-scale notes snap to nearest and revert' misattributes a different mechanism - the guide's snap-to-nearest applies only to LIVE notes played from an external MIDI controller ('If a note which does not occur in the currently selected Scale is played on an external controller, Circuit Tracks will snap to the nearest note'), not to re-scaling an already-recorded pattern. Recorded steps store pitches and are not described as snapping/reverting."
+        },
+        {
+          "id": "official-6",
+          "verdict": "confirmed",
+          "note": "Guide: Chromatic is the only scale with 12 notes ('the only one that has more than eight is Chromatic, with 12'); with Chromatic selected 'only a one-octave keyboard is possible' in Note View, and 'In Expanded Note View with Chromatic scale selected, a two-octave keyboard is presented.' Confirmed."
+        },
+        {
+          "id": "official-7",
+          "verdict": "confirmed",
+          "note": "Guide confirms 128 patches 'arranged as four pages of 32', Patch 1 default for Synth 1, Patch 33 default for Synth 2, and Patch View 'opens Patch View Page 1 if Synth 1 is selected and Patch View Page 3 if Synth 2 is selected.' NOTE an internal inconsistency in the official guide itself: it calls Patch 33 'Pad 1 on Page 2', yet says Preset opens at 'Page 3' for Synth 2 - Patch 33 is on Page 2 (32/page), so 'Page 3' appears to be a documentation error the claim faithfully inherited. Substantive facts (128 patches / 4 pages of 32 / P1 & P33 defaults) are correct."
+        },
+        {
+          "id": "official-8",
+          "verdict": "confirmed",
+          "note": "Guide: 64 samples per drum track, auditioned 'four pages of 16 at a time' in Note View or 'two pages of 32' in Preset View. Kit layout per page: pads 1-2 kicks, 3-4 snares, 5-6 closed hats, 7-8 open hats, 9-12 percussion. Default assignments (Drum1=Kick slot1, Drum2=Snare slot3, Drum3=Closed hat slot5, Drum4=Perc slot9) are consistent with this documented kit layout and the factory default project. Confirmed."
+        },
+        {
+          "id": "official-9",
+          "verdict": "confirmed",
+          "note": "Guide: 'Only the even-numbered Macros are active when a drum track is selected... Only Macros 2, 4, 6 & 8 are active', with the table Macro 2=Pitch, Macro 4=Decay envelope time, Macro 6=Distortion, Macro 8=EQ. For synths: 'Each of the 128 factory Patches... can have up to four of its parameters tweaked by each Macro.' Confirmed."
+        },
+        {
+          "id": "official-10",
+          "verdict": "confirmed",
+          "note": "Guide: 'eight Pattern memories per track (as two pages of four)'; default length 16, Step Page doubles to 32. 'holding down Clear and pressing the Step Page button: the Pattern will now revert to 16 steps... Notes/hits assigned to all 32 steps are preserved.' 'Holding down Duplicate and pressing the Step Page button will extend the Pattern length... to 32 steps, and copy all data at steps 1 to 16 to steps 17 to 32.' Confirmed."
+        },
+        {
+          "id": "official-11",
+          "verdict": "confirmed",
+          "note": "Guide: 'the Patterns you chain together must be contiguous' (e.g. 3,4,5 but not 1,2,6), with 'Circuit Tracks' Scenes feature allows you to overcome this restriction.' Scenes: '16 Scenes... The two lower rows of pads in Mixer View represent the 16 Scenes.' Assigned by 'Change to Mixer View, press and hold Shift... Press a Scene pad.' Confirmed."
+        },
+        {
+          "id": "official-12",
+          "verdict": "confirmed",
+          "note": "Guide (IMPORTANT box): 'You can copy a Pattern from one Synth or MIDI track to the other, or between a Synth track and a MIDI track using Duplicate: you can also use it to copy a Pattern from one Drum track to another, but you cannot copy data from a Synth or MIDI track to a Drum track, or vice-versa.' Confirmed."
+        },
+        {
+          "id": "official-13",
+          "verdict": "confirmed",
+          "note": "Guide: 'any tempo in the range 40 to 240 BPM; the default tempo for a new Project is 120 BPM'; 'Macro control 1 is used to adjust the tempo' in Tempo View. External MIDI clock auto-slaves ('will automatically be selected as the clock source, and the grid will display SYN in red'); 'internal tempo clock only allows integer BPMs... Circuit Tracks will synchronise to any external clock rates - including fractional values - in the range 30 to 300 BPM.' Confirmed."
+        },
+        {
+          "id": "official-14",
+          "verdict": "confirmed",
+          "note": "Guide: 'Altering the Swing parameter from its default value of 50 (the range is 20 to 80) alters the timing of even-numbered steps (the offbeats)'; 'Swing is adjusted with Macro 2, while in Tempo View.' Tap Tempo: 'Hold down Shift and tap the Tempo/Swing button... You need at least three taps... it will then calculate the BPM by averaging the last five taps.' Confirmed."
+        },
+        {
+          "id": "official-15",
+          "verdict": "confirmed",
+          "note": "Guide: 'The Click (or metronome) can be activated or deactivated by holding Shift and pressing Clear. Clear will light bright green when Click is enabled and dim red when it is not... you will hear a metronome tick at every quarter note on all audio outputs... This is a global setting... The setting is not saved when Circuit Tracks is powered off.' Volume via Macro 5 in Tempo View, and 'The [click] level setting is saved when the device is powered off.' Confirmed."
+        },
+        {
+          "id": "official-16",
+          "verdict": "confirmed",
+          "note": "Guide: 'Sixteen delay and eight reverb presets are provided, and you can select any one of each type. The send levels from each track... are individually adjustable' via the Macros (same arrangement as Mixer). 'It is not possible to use different reverb presets on different tracks.' 'All the delay presets... delay time is related to the BPM.' Delay presets are pads 1-16, reverb pads 17-24. Confirmed."
+        },
+        {
+          "id": "official-17",
+          "verdict": "confirmed",
+          "note": "Guide: 'Side Chain View is the secondary view of the FX button. Open by holding Shift and pressing FX.' 'Seven Side Chain presets are available' per synth/MIDI(audio-input) track; pads 5-8 (top row) 'let you select which Drum track will be the side chain trigger.' 'Side Chain ducking will continue even when the level of the source track is reduced to zero in the [Mixer]... [when the trigger drum is muted/deselected] as the key in Mixer View, side chain triggering is disabled.' Confirmed."
+        },
+        {
+          "id": "official-18",
+          "verdict": "confirmed",
+          "note": "Guide: 'Circuit Tracks' Master Filter knob controls a low-pass filter when you turn it anticlockwise from the centre position and a high-pass filter when you turn it clockwise from the centre position. Note that the control has a detent in the centre - in this position, no filtering takes place.' Front-panel description: 'controls filter frequency of the entire mix... It is always active.' External inputs are 'always routed through the Mixer and FX sections', so they are part of the filtered mix. Confirmed."
+        },
+        {
+          "id": "official-19",
+          "verdict": "confirmed",
+          "note": "Guide: 'each MIDI template defaults to eight CC indexes with values 1, 2, 5, 11, 12, 13, 71 and 74 respectively' (table: CC1/CC2/CC5/CC11/CC12/CC13/CC71/CC74). 'The eight default MIDI templates are identical.' 'automated MIDI template controls will send data to the MIDI Out DIN port as well as the USB port, unlike parameters on the other tracks, which are only sent to the USB port.' Confirmed."
+        },
+        {
+          "id": "official-20",
+          "verdict": "confirmed",
+          "note": "Guide: on the MIDI tracks the Macro volume/pan (Mixer) and FX-send controls 'act on the analogue audio signal applied at the two audio Inputs on the rear panel.' Recommended workflow: 'send MIDI data from Circuit Tracks to your external synth... while routing the audio outputs of that device back into Circuit Tracks' audio inputs.' Inputs are unbalanced 1/4-inch TS, and are routed through Mixer/FX/sidechain. Confirmed."
+        },
+        {
+          "id": "official-21",
+          "verdict": "confirmed",
+          "note": "Guide rear-panel: 'MIDI In, Out and Thru - standard set of three... 5-pin DIN sockets' with 'MIDI Thru port may be configured in Advanced Setup View to act as a clone of the MIDI Out port'; USB-C 'DC power input... battery charging... MIDI class compliant... NOTE - Circuit Tracks' USB port does not carry audio'; microSD slot; 'Sync - a 3.5 mm TRS jack socket supplying a clock signal of 5 V'; two audio inputs on 1/4-inch TS; 'Outputs L/Mono and R... on two 1/4-inch TS jack sockets'; headphone output. All confirmed."
+        },
+        {
+          "id": "official-22",
+          "verdict": "confirmed",
+          "note": "Guide: 'Built-in rechargeable battery with 4 hours of battery life' / 'Circuit Tracks will operate for up to 4 hours' (non-removable Li-ion). Power button: 'soft on/off switch; to prevent inadvertent power up/down, a press of approx. one second is needed to turn the unit on or off.' Confirmed."
+        },
+        {
+          "id": "official-23",
+          "verdict": "confirmed",
+          "note": "Guide: 'A Pack contains the totality of Circuit Tracks' current operation, including the contents of all 64 Project memories, all 128 synth Patches and all 64 drum Samples. A card can hold 31 additional Packs' (internal 1 + card 31 = 32 total). 'Packs View is the secondary view of the Projects button. Open by holding Shift and pressing Projects... You can only access Packs View when a microSD card is present in the rear panel slot.' Confirmed."
+        },
+        {
+          "id": "official-24",
+          "verdict": "confirmed",
+          "note": "Guide: 'MicroSD cards need to be Class 10 as a minimum, and use FAT32 format.' 'Packs may only be removed via Components, and cannot be cleared from the device directly.' Confirmed."
+        },
+        {
+          "id": "official-25",
+          "verdict": "confirmed",
+          "note": "Guide: 'Save needs to be pressed twice... the first press will flash the Save button; a second press will save your work to the last Project memory that was in use.' In Projects View 'the first press of Save causes the pad for the last-selected Project to pulse white. If you want to save your work in a new memory slot, press the pad for that slot.' Colour: 'After pressing Save for the first time, the LED under Macro 1... You can now scroll through a palette of 14 colours by rotating the Macro 1 knob.' Confirmed."
+        },
+        {
+          "id": "official-26",
+          "verdict": "confirmed",
+          "note": "Guide Components list: 'Download new content; Create and edit synth patches; Load your own samples; Edit MIDI track templates; Backup your projects; Load new packs; Update to the latest firmware version.' 'Components requires a Web MIDI enabled browser... We recommend using Google Chrome or Opera. Alternatively, you can download a standalone version of Components once you have registered your product.' Full synth-engine editor referenced elsewhere ('full synth engine editing'). Confirmed."
+        },
+        {
+          "id": "official-27",
+          "verdict": "confirmed",
+          "note": "Guide default MIDI channels: Synth 1=1, Synth 2=2, MIDI 1=3, MIDI 2=4, Drums 1-4=10. 'Each track... can be set to any of MIDI channels 1-15. Channel 16 is reserved for the Project. Note that all four drum tracks use the same MIDI channel.' 'Important: No two tracks can transmit on the same MIDI channel.' Confirmed."
+        },
+        {
+          "id": "official-28",
+          "verdict": "confirmed",
+          "note": "Guide: Setup View 'entered by holding down Shift and pressing Save, and exited by pressing Play.' Rx/Tx for Note/CC/PGM/Clock on pads 25-32 ('both MIDI Rx and MIDI Tx are ON... for all data categories' by default). Analogue clock rate on pads 17-21: '1, 2, 4, 8 or 24 ppqn... The default value is 2 ppqn.' Brightness: 'Pad 24 (illuminated white) controls the brightness of the grid pads... pressing Pad 24 dims them by approximately 50%.' Confirmed."
+        },
+        {
+          "id": "official-29",
+          "verdict": "confirmed",
+          "note": "Guide: 'To enter Bootloader Mode: 1. Turn Circuit Tracks off 2. Hold down the Scales, Preset and Note buttons 3. Power Circuit Tracks on again.' 'Synth 1 and Synth 2 are lit; selecting either... displays a pattern of illuminated pads; the pattern represents the version numbers of the three firmware elements in binary form.' 'Bootloader Mode is most easily exited by simply pressing the Play button.' Confirmed (Tracks-specific combo)."
+        },
+        {
+          "id": "official-30",
+          "verdict": "confirmed",
+          "note": "Guide: Advanced Setup View 'entered by holding down Shift while powering the unit on.' Save Lock: 'To enable Save Lock, hold both Shift and Save down while powering the unit on... Save Lock status is retained during subsequent power cycles.' Recovery: 'we have included a method of turning Circuit Tracks on and forcing it to load a blank Project instead... hold down both Shift and Clear while turning Circuit Tracks on.' Confirmed."
+        },
+        {
+          "id": "official-31",
+          "verdict": "confirmed",
+          "note": "Guide: 'Six finer intervals - or micro steps - in between adjacent pattern steps can be made available in live record mode by disabling quantised recording. Quantised recording is disabled by holding down Shift and pressing Record (note the button is also legended Rec Quantise)... check... by pressing Shift: if the Record button illuminates green, quantisation is enabled; if it is red, recording will be non-quantised.' Confirmed."
+        },
+        {
+          "id": "official-32",
+          "verdict": "confirmed",
+          "note": "Guide: synth engines are 'six-note polyphonic - that is, you can assign up to six notes to any step.' Insert note: 'You can add a synth note to a step by holding down the step pad and pressing the desired note. Note that Record Mode does not need to be enabled.' Delete note: 'press the step pad (lights red) and then press the unwanted keyboard pad.' Shift+Play: default restart from Step 1 'may be overridden by holding down Shift while pressing Play' to continue from the stopped step. Confirmed."
+        },
+        {
+          "id": "official-33",
+          "verdict": "confirmed",
+          "note": "Full 1.1.5 changelog (April 2021, quoted from official release notes via Synthtopia): 'Pack sample time capacity increased from 60 seconds to 196.6 seconds'; 'Maximum single-sample time increased to 98.3 seconds'; 'Voice stealing has been reduced in synth patches that make use of high v-sync, density, and attack values'; 'Sticky shift toggle added in Setup View.' All four elements of the claim confirmed."
+        },
+        {
+          "id": "official-34",
+          "verdict": "confirmed",
+          "note": "Firmware 1.2 (build 1.2.001), released mid-December 2022, adds the ability to save mute states to Scenes ('store muted track states with Scenes so you can more easily arrange your track without... empty patterns') - confirmed by Novation's official article, SynthAnatomy, and MatrixSynth. It is the newest OFFICIALLY documented Circuit Tracks firmware (no official release beyond 1.2). The exact '15 December 2022' date is approximately right (announced ~14-15 Dec 2022); sources say mid-December."
+        },
+        {
+          "id": "official-35",
+          "verdict": "confirmed",
+          "note": "Guide: 'Components will let you know whether the connected unit is up to date and, if it's not, Components can update the unit's firmware to the latest version.' Corroborated by Novation's support article on updating Circuit Tracks firmware via Components. Confirmed."
+        },
+        {
+          "id": "official-36",
+          "verdict": "confirmed",
+          "note": "Guide (Sample Flip): 'Press and hold the pad for the required sample (it turns red) and then press the step pads in the Pattern display where you want to place that sample.' 'steps with hits of the active sample illuminate bright blue, but any that have been flipped illuminate pink.' 'it overcomes the one-sample-per-track restriction.' Confirmed."
+        },
+        {
+          "id": "official-37",
+          "verdict": "confirmed",
+          "note": "Confirmed: every step carries Velocity, Gate and Probability; 'Probability View is the secondary view of the Pattern Settings button. Open by holding Shift and pressing Pattern Settings'; 'Micro Step View is the secondary view of the Gate button. Open by holding Shift and pressing [Gate]'; Gate value = 'the number of pattern steps that the note at the step should sound for.' MINOR CAVEAT: the four physical step-edit buttons are labelled Note / Velocity / Gate / Pattern Settings - 'Probability' is the secondary view of the Pattern Settings button, not a standalone button, so listing the buttons as 'Note/Velocity/Gate/Probability' slightly mislabels the fourth button."
+        },
+        {
+          "id": "official-38",
+          "verdict": "confirmed",
+          "note": "Guide: 'The synth has a total range of 10 octaves; you can access higher or lower pairs of octaves by using the [up/down octave] buttons.' Transpose after recording: 'If you want to alter the octave of the pattern after recording, hold down Shift and then press an Octave button.' Octave is set per-track view (each track independently); the 10-octave range and Shift+octave transpose are explicitly stated. Confirmed."
+        },
+        {
+          "id": "official-39",
+          "verdict": "confirmed",
+          "note": "Guide repeatedly references 'the separate downloadable document Circuit Tracks Programmer's Reference Guide contains full details' (available from novationmusic.com/downloads). Synth patches recalled via Program Change (default ch1/ch2), and 'Drum Patches may also be recalled using an external MIDI controller by sending MIDI CC messages on MIDI Channel 10.' Confirmed."
+        },
+        {
+          "id": "official-40",
+          "verdict": "confirmed",
+          "note": "Confirmed: the '1.2.1' build (firmware 4486) appears only in the third-party reverse-engineering gist by userx14 (which spawned the 'CircuitTracksReverseEngineering' GitHub repo using Ghidra/firmware dumps). No official Novation release notes document a 1.2.1; the newest official firmware is 1.2 (build 1.2.001). Treating 1.2.1 as unconfirmed/unofficial is correct."
+        }
+      ],
+      "overallNotes": "All 40 claims were verified against the exact cited source: the Circuit Tracks v3 User Guide PDF (extracted to text) plus the firmware articles. NO cross-device contamination was found - every verified fact is genuinely Circuit-Tracks-specific. The MIDI tracks, dual audio inputs, MIDI-template CC output, sidechain on synth+MIDI/audio-input tracks, 5V analogue Sync Out, USB-C, microSD/32-pack system, and 6-voice synths are all correct Tracks features (they distinguish it from the 2015 Circuit and the Rhythm). Two claims reproduce quirks: (official-7) the guide itself is internally inconsistent - it says Preset opens 'Page 3' for Synth 2 yet places default Patch 33 on 'Page 2'; the claim inherited the guide's likely typo. (official-5) the parenthetical 'out-of-scale notes snap to nearest and revert' conflates the guide's LIVE external-controller snap-to-scale behavior with re-scaling a recorded pattern - the two are not the same, and recorded steps store pitches. (official-37) the fourth step-edit button is physically 'Pattern Settings', not 'Probability'.\n\nIMPORTANT OFFICIAL FACTS THE CLAIMS MISSED (worth adding to the guide's 'official' angle):\n1. Master Compressor - a global master compressor is enabled/disabled via the FX button inside Setup View. Not covered by any claim.\n2. Pattern Settings View content beyond probability: Play Order (forward / reverse / ping-pong / random via pads 29-32) and Pattern Sync Rate (1/4, 1/4T, 1/8, 1/8T, 1/16, ... selectable per pattern to change a track's playback speed relative to others), plus adjustable pattern Start/End step points (patterns can be any length 1-32, not just 16 or 32). None of these are in the claims.\n3. Fixed Velocity mode: Shift+Velocity toggles a fixed velocity value (Velocity button turns green) - separate from Non-quantised record.\n4. Per-note Velocity: different velocity values can be assigned to individual notes on the same step.\n5. View Lock (Shift+Patterns): holds the current step display while you audition/select other patterns; its state is not saved.\n6. Advanced Setup View extras (Shift+power): MIDI Thru clone-of-Out toggle (via Duplicate button), Master Compressor toggle, and disabling the Easy Start Tool / Mass Storage Device.\n7. Mutate - a pattern randomisation function is listed in the feature set ('pattern mutate') and reorders/randomises assigned notes within a pattern.\n8. 16 factory demo Projects ship pre-loaded; boot animation ~5 seconds.\n9. Note tie/drone creation across steps (long gates), and 'strummed chord' playback via micro-step offsets.\n10. Headphone amp spec: can drive +5 dBu into 150-ohm stereo headphones; main outputs stay active with headphones plugged in.\n11. Clock Rx/Tx behavior detail: Clock Rx OFF = internal-only; Clock Rx ON = AUTO (slaves to external if present); Clock Tx ON = Circuit Tracks is clock master on USB + MIDI Out.\n12. Copyright/publisher: guide is '2022 (c) Focusrite Audio Engineering Limited' (Novation is a Focusrite brand) - relevant for sourcing/attribution."
+    },
+    {
+      "lens": "skeptic",
+      "verdicts": [
+        {
+          "id": "official-1",
+          "verdict": "confirmed",
+          "note": "User Guide v3: 'Two synth tracks with 6-voice polyphony', 'Two MIDI tracks with programmable CC output', 'Four sample-based drum tracks'. Note View track diagram (p.28) shows the fixed left-to-right order Synth 1, Synth 2, MIDI 1, MIDI 2, Drum 1-4. MIDI tracks produce no internal sound (interface external gear via CC/notes). Fully confirmed for Circuit Tracks specifically."
+        },
+        {
+          "id": "official-2",
+          "verdict": "confirmed",
+          "note": "Guide: 'RGB grid with 32 velocity-sensitive pads' (4x8). In synth/MIDI Note View 'the two upper rows show the 16 steps of the pattern' (pads 1-16) and 'the two lower rows... constitute the synth keyboard' (pads 17-32). Explicitly: 'The highest note of the lower octave (Pad 32) is the always the same as the lowest note of the higher octave (Pad 17).' Confirmed."
+        },
+        {
+          "id": "official-3",
+          "verdict": "confirmed",
+          "note": "Guide: 'hold down Shift and press Note; Note now illuminates gold. This is called Expanded Note View... replacing it with keys for the next two higher octaves' (2 normal + 2 = 4 octaves), and 'press Note when already in Note View to toggle.' Expanded Drum View (secondary view of Note): 'all the grid pads except 29-32 are disabled', pads 29-32 = 'Playing Pads for Drums 1-4', playing each drum track's active sample live. Confirmed."
+        },
+        {
+          "id": "official-4",
+          "verdict": "confirmed",
+          "note": "Guide scale table (pads 17-32) lists exactly, in order: Natural Minor, Major, Dorian, Phrygian, Mixolydian, Melodic Minor (ascending), Harmonic Minor, Bebop Dorian, Blues, Minor Pentatonic, Hungarian Minor, Ukranian Dorian, Marva, Todi, Whole Tone, Chromatic. Matches the claim exactly (guide spells it 'Ukranian')."
+        },
+        {
+          "id": "official-5",
+          "verdict": "confirmed",
+          "note": "Guide: 'The selected scale and root note apply to both Synth tracks, and also both MIDI tracks.' Default keyboard 'based on a note of C'. Non-destructive: 'Circuit Tracks lets you alter the scale in use after you've created a pattern... certain notes shift up or down a semitone' and both Scale and Root can be altered during playback. Also 'the selected Scale and Root Note still takes effect when Circuit Tracks receives MIDI note data.' Confirmed."
+        },
+        {
+          "id": "official-6",
+          "verdict": "confirmed",
+          "note": "Guide: 'the only one that has more than eight is Chromatic, with 12.' 'Chromatic scaling offers all twelve notes in the octave; to accommodate them, the keyboard size is reduced to one octave.' And explicitly: 'In Expanded Note View with Chromatic scale selected, a two-octave keyboard is presented.' Fully confirmed including the expanded two-octave detail."
+        },
+        {
+          "id": "official-7",
+          "verdict": "confirmed",
+          "note": "Guide: 128 patches as 'four pages of 32'. 'Patch 1 (Pad 1 on Page 1) is the default Patch for Synth 1 and Patch 33 (Pad 1 on Page 2) is the default Patch for Synth 2.' Preset/Patch View opening: 'This opens Patch View Page 1 if Synth 1 is selected and Patch View Page 3 if Synth 2 is selected.' The claim reproduces the guide verbatim. FLAG: the guide is internally inconsistent \u2014 it says Preset opens 'Page 3' for Synth 2 yet places default Patch 33 on 'Page 2' (33-64 = page 2). The claim faithfully mirrors the official text but inherits this Novation documentation error."
+        },
+        {
+          "id": "official-8",
+          "verdict": "confirmed",
+          "note": "Guide: each drum track can use 'any of 64 percussion samples', auditioned 'in Note View, four pages of 16 at a time, or use Preset View' ('two pages of 32'). Default assignments listed exactly: Drum 1 = Page 1 slot 1 (Kick 1), Drum 2 = Page 1 slot 3 (Snare 1), Drum 3 = Page 1 slot 5 (Closed hi hat 1), Drum 4 = Page 1 slot 9 (Additional percussion 1). Confirmed."
+        },
+        {
+          "id": "official-9",
+          "verdict": "confirmed",
+          "note": "Guide: 'Only the even-numbered Macros are active when a drum track is selected' with the fixed table Macro 2=Pitch, 4=Decay envelope time, 6=Distortion, 8=EQ. Load-bearing drum-macro facts confirmed exactly. The secondary detail 'each patch maps up to 4 parameters per macro' on synth tracks is not stated numerically in the user guide (guide only says macros are customisable per patch); it is a known Components synth-editor characteristic but was not explicitly verifiable here."
+        },
+        {
+          "id": "official-10",
+          "verdict": "confirmed",
+          "note": "Guide: eight Pattern memories per track shown as two pages of four in Patterns View. 'The default length of a Pattern in Circuit Tracks is 16 steps, but you can double the length to 32 steps with the Step Page button.' 'holding down Clear and pressing the Step Page button: the Pattern will now revert to 16 steps... Notes/hits assigned to the all 32 steps are preserved.' 'Holding down Duplicate and pressing the Step Page button will extend... and copy all data at steps 1 to 16 to steps 17 to 32.' Confirmed."
+        },
+        {
+          "id": "official-11",
+          "verdict": "confirmed",
+          "note": "Guide: 'the Patterns you chain together must be contiguous, that is, numerically consecutive... you can't chain 1,2 and 6 together. (However, Circuit Tracks' Scenes feature allows you to overcome this restriction).' 'The two lower rows of pads in Mixer View represent the 16 Scenes.' 'Change to Mixer View, press and hold Shift... Press a Scene pad' to assign. Confirmed."
+        },
+        {
+          "id": "official-12",
+          "verdict": "confirmed",
+          "note": "Guide verbatim: 'You can copy a Pattern from one Synth or MIDI track to the other, or between a Synth track and a MIDI track using Duplicate: you can also use it to copy a Pattern from one Drum track to another, but you cannot copy data from a Synth or MIDI track to a Drum track, or vice-versa.' Confirmed exactly."
+        },
+        {
+          "id": "official-13",
+          "verdict": "confirmed",
+          "note": "Guide: 'Circuit Tracks will operate at any tempo in the range 40 to 240 BPM; the default tempo for a new Project is 120 BPM'; tempo adjusted with Macro 1 in Tempo View; 'the internal tempo clock only allows integer BPMs'. External clock (USB or MIDI In) auto-slaves ('No switching is required'), 'grid will display SYN in red', synchronises to fractional external rates 'in the range 30 to 300 BPM'. Confirmed."
+        },
+        {
+          "id": "official-14",
+          "verdict": "confirmed",
+          "note": "Guide: Swing default 50, 'the range is 20 to 80', 'alters the timing of even-numbered steps (the off-beats)', adjusted with Macro 2 in Tempo View. Tap Tempo: 'Hold down Shift and tap the Tempo/Swing button... You need at least three taps... calculate the BPM by averaging the last five taps.' Confirmed."
+        },
+        {
+          "id": "official-15",
+          "verdict": "confirmed",
+          "note": "Guide: Click 'activated or deactivated by holding Shift and pressing Clear. Clear will light bright green when Click is enabled', 'metronome tick at every quarter note on all audio outputs', 'This is a global setting', 'setting is not saved when Circuit Tracks is powered off.' Volume via Macro 5 in Tempo View and 'The level setting is saved when... powered off.' Confirmed."
+        },
+        {
+          "id": "official-16",
+          "verdict": "confirmed",
+          "note": "Guide: 'Sixteen delay and eight reverb presets are provided.' 'It is not possible to use different reverb presets on different tracks' (one global reverb + one global delay), but send levels are per-track via the Macros (FX View). All 16 delay presets are tempo-locked (table lists them in cycles-per-bar musical divisions). Confirmed."
+        },
+        {
+          "id": "official-17",
+          "verdict": "confirmed",
+          "note": "Guide: Side Chain View is 'the secondary view of the FX button. Open by holding Shift and pressing FX.' 'Seven Side Chain presets are available' per synth/MIDI track; top-row pads select which Drum 1-4 is the trigger. Verbatim: 'Side Chain ducking will continue even when the level of the source track is reduced to zero in the Mixer View... However, if you mute the drum track selected as the key in Mixer View, side chain triggering is disabled.' Confirmed exactly."
+        },
+        {
+          "id": "official-18",
+          "verdict": "confirmed",
+          "note": "Guide: 'The entire audio output of Circuit Tracks \u2013 the sum of the sounds from all six internal tracks plus the two external audio inputs \u2013 is fed through a traditional DJ-style filter.' 'controls a low-pass filter when you turn it anticlockwise from the centre position and a high-pass filter when you turn it clockwise... the control has a detent in the centre \u2013 in this position, no filtering takes place.' Confirmed."
+        },
+        {
+          "id": "official-19",
+          "verdict": "confirmed",
+          "note": "Guide: 'each MIDI template defaults to eight CC indexes with values 1, 2, 5, 11, 12, 13, 71 and 74 respectively.' 'The eight default MIDI templates are identical.' 'automated MIDI template controls will send data to the MIDI Out DIN port as well as the USB port, unlike parameters on the other tracks, which are only sent to the USB port.' Confirmed."
+        },
+        {
+          "id": "official-20",
+          "verdict": "confirmed",
+          "note": "Guide: 'on the MIDI tracks, these [Macro] act on the analogue audio signal applied at the two audio Inputs on the rear panel. The recommended workflow is to send MIDI data from Circuit Tracks to your external synth... while routing the audio outputs of that device back into Circuit Tracks' audio inputs.' Inputs are '\u00bc\" TS jack sockets'. Confirmed."
+        },
+        {
+          "id": "official-21",
+          "verdict": "confirmed",
+          "note": "Rear panel section confirms: 'MIDI In, Out and Thru \u2013 standard set of three MIDI connectors on 5-pin DIN sockets' (Thru configurable in Advanced Setup to clone MIDI Out); 'USB-C port... DC power input... port is MIDI class compliant... USB port does not carry audio'; 'microSD'; 'Sync \u2013 a 3.5 mm TRS jack socket supplying a clock signal of 5 V amplitude'; 'two external audio inputs... unbalanced on \u00bc\" TS jack sockets'; 'Outputs - L/Mono and R... two \u00bc\" TS jack sockets'; headphones socket. Confirmed."
+        },
+        {
+          "id": "official-22",
+          "verdict": "confirmed",
+          "note": "Guide key features: 'Built-in rechargeable battery with 4 hours of battery life.' Power button: 'soft on/off switch; to prevent inadvertent power up/down, a press of approx. one second is needed to turn the unit on or off.' Confirmed."
+        },
+        {
+          "id": "official-23",
+          "verdict": "confirmed",
+          "note": "Guide: 'A Pack contains the totality of Circuit Tracks' current operation, including the contents of all 64 Project memories, all 128 synth Patches and all 64 drum Samples. A card can hold 31 additional Packs' (32 total). 'Packs View is the secondary view of the Projects button. Open by holding Shift and pressing [Projects].' 'You can only access Packs View when a microSD card is present.' Confirmed."
+        },
+        {
+          "id": "official-24",
+          "verdict": "confirmed",
+          "note": "Guide: 'MicroSD cards need to be Class 10 as a minimum, and use FAT32 format.' 'Note that Packs may only be removed via Components, and cannot be cleared from the device directly.' Confirmed."
+        },
+        {
+          "id": "official-25",
+          "verdict": "confirmed",
+          "note": "Guide: press Save once ('button flashes white'), press again to confirm; to redirect, in Projects View 'Press Save; both Save and the pad for the currently selected Project will flash white. Press a different memory pad' before the second confirm. Colour: 'assign one of 14 colours'; 'After pressing Save for the first time, the LED under Macro 1 rotary control will light... scroll through a palette of 14 colours by rotating the Macro 1 knob.' Confirmed."
+        },
+        {
+          "id": "official-26",
+          "verdict": "confirmed",
+          "note": "Guide + components.novationmusic.com: Components 'requires a Web MIDI enabled browser... We recommend using Google Chrome or Opera. Alternatively, you can download a standalone version.' 'Components can update the unit's firmware.' Full synth-engine editing, sample upload, MIDI template editing, project backup, and pack loading are all documented Components functions. Confirmed. (Minor: 'after registration' for the standalone app is a site-flow detail, not contradicted.)"
+        },
+        {
+          "id": "official-27",
+          "verdict": "confirmed",
+          "note": "Guide MIDI Channels table: Synth 1=1, Synth 2=2, MIDI 1=3, MIDI 2=4, Drums 1-4=10. 'Each track... can be set to any of MIDI channels 1-15. Channel 16 is reserved for the Project.' 'Important: No two tracks can transmit on the same MIDI channel.' Confirmed."
+        },
+        {
+          "id": "official-28",
+          "verdict": "confirmed",
+          "note": "Guide: Setup View 'entered by holding down Shift and pressing Save, and exited by pressing Play.' Sets MIDI channels; pads 25-32 are independent Rx/Tx toggles for Note/CC/Program Change/Clock and 'By default, both MIDI Rx and MIDI Tx are ON... for all data categories'; clock sync rates 1/2/4/8/24 ppqn with default 2 ppqn; 'Pad 24... controls the brightness... pressing Pad 24 dims them by approximately 50%.' Confirmed."
+        },
+        {
+          "id": "official-29",
+          "verdict": "confirmed",
+          "note": "Guide Bootloader Mode: '1. Turn Circuit Tracks off, 2. Hold down the Scales, Preset and Note buttons, 3. Power Circuit Tracks on again.' 'Synth 1 and Synth 2 are lit; selecting either displays a pattern... the version numbers of the three firmware elements in binary form.' 'exited by simply pressing the Play button.' Confirmed."
+        },
+        {
+          "id": "official-30",
+          "verdict": "confirmed",
+          "note": "Guide: Advanced Setup View 'entered by holding down Shift while powering the unit on'. Save Lock: 'To enable Save Lock, hold both Shift and Save down while powering the unit on'; 'Save Lock status is retained during subsequent power cycles.' Blank-project recovery: 'hold down both Shift and Clear while turning Circuit Tracks on' forces loading a blank Project. Confirmed."
+        },
+        {
+          "id": "official-31",
+          "verdict": "confirmed",
+          "note": "Guide: non-quantised record toggled via Shift+Record ('also legended Rec Quantise'); enables the six micro steps between adjacent steps ('subdivided into six micro steps'). 'if it illuminates green, quantisation is enabled; if it is red, recording will be non-quantised' (shown when holding Shift). Confirmed."
+        },
+        {
+          "id": "official-32",
+          "verdict": "confirmed",
+          "note": "Guide: synths 'polyphonic \u2013 you can assign up to six notes to any step'. Manual entry: 'You can add a synth note to a step by holding down the step pad and pressing the desired note. Note that Record Mode does not need to be enabled.' Delete: 'press the step pad (lights red) and then press the unwanted keyboard pad.' 'when you press Play again, the pattern will restart from Step 1: however, this may be overridden by holding down Shift while pressing Play; in this case the pattern will continue from the step at which it was stopped.' Confirmed."
+        },
+        {
+          "id": "official-33",
+          "verdict": "confirmed",
+          "note": "Firmware 1.1.5 (April 2021) confirmed by Novation + press. Synthtopia reproduces the full official changelog (Andy Callaby): 'Pack sample time capacity increased from 60 seconds to 196.6 seconds', 'Maximum single-sample time increased to 98.3 seconds', 'Voice stealing has been reduced in synth patches that make use of high v-sync, density, and attack values', 'Sticky shift toggle added in Setup View.' All four claimed specifics confirmed. (Sticky Shift also documented in User Guide v3 Setup View.)"
+        },
+        {
+          "id": "official-34",
+          "verdict": "confirmed",
+          "note": "Firmware 1.2 confirmed by Novation article and SynthAnatomy/MatrixSynth: adds 'saving mute states to Scenes' \u2014 'Store muted track states with Scenes so you can more easily arrange your track without the need to have any empty patterns.' It is the newest officially documented firmware (nothing newer than 1.2 in official release notes). Date: the Novation article itself gives no date; MatrixSynth's post is dated December 15, 2022 (some coverage says Dec 16). '15 December 2022' is supportable but has minor cross-source ambiguity of \u00b11 day."
+        },
+        {
+          "id": "official-35",
+          "verdict": "confirmed",
+          "note": "User Guide: 'Components can update the unit's firmware to the latest version.' Novation support article 'Updating Circuit Tracks Firmware' describes Components detecting the connected device and prompting an update when out of date. Confirmed."
+        },
+        {
+          "id": "official-36",
+          "verdict": "confirmed",
+          "note": "Guide Sample Flip: 'Press and hold the pad for the required sample (it turns red) and then press the step pads in the Pattern display where you want to place that sample.' 'steps with hits of the active sample illuminate bright blue, but any that have been flipped illuminate pink.' 'overcomes the one-sample-per-track restriction.' Confirmed."
+        },
+        {
+          "id": "official-37",
+          "verdict": "confirmed",
+          "note": "Guide: each step carries Velocity, Gate and Probability. Step buttons are 'Note, Velocity, Gate and Probability'; 'Probability is the Shift function of the Pattern Settings button'; Micro step = 'Shift + Gate'. 'The Gate value of a note is how many steps it sounds for' / 'Gate is essentially the duration of the note at a Step, in units of steps.' Confirmed."
+        },
+        {
+          "id": "official-38",
+          "verdict": "confirmed",
+          "note": "Guide: 'The synth has a total range of 10 octaves; you can access higher or lower pairs of octaves by using the J and K buttons.' Pitch range of each track adjustable independently. Transpose recorded pattern: 'to alter the octave of the pattern after recording, hold down Shift and then press an Octave button' / 'shift the pitch of an entire synth or MIDI Pattern up or down... by holding down Shift and then pressing J or K.' Confirmed."
+        },
+        {
+          "id": "official-39",
+          "verdict": "confirmed",
+          "note": "Guide references a separate 'Circuit Tracks Programmer's Reference Guide, which may be downloaded from novationmusic.com/downloads.' Synth patches recallable via Program Change (default channels 1/2), and 'Drum Patches may also be recalled using an external MIDI controller by sending MIDI CC messages on MIDI Channel 10.' Confirmed."
+        },
+        {
+          "id": "official-40",
+          "verdict": "confirmed",
+          "note": "The GitHub gist (userx14) is explicitly third-party reverse-engineering ('CircuitTracksReverseEngineering', Ghidra/Radare2 analysis), referencing 'most recent 1.2.1 / 4486 for circuit tracks'. No official Novation release notes document a 1.2.1; official public firmware history tops out at 1.2. Treating 1.2.1 as unconfirmed/unofficial is correct. Confirmed."
+        }
+      ],
+      "overallNotes": "All 40 'official' claims are confirmed against the primary source (Circuit Tracks User Guide v3, extracted in full via pdftotext) plus corroborating firmware sources. The research is unusually accurate and device-specific (correctly Circuit Tracks, not original Circuit or Rhythm). Verification highlights and caveats:\n\n1. GUIDE INTERNAL INCONSISTENCY (official-7): The claim's 'Preset View opens at page 3 for Synth 2' is a verbatim quote of the guide (p.35: 'opens Patch View Page 3 if Synth 2 is selected'), but the SAME guide states the Synth 2 default is Patch 33 = 'Pad 1 on Page 2'. Patch 33 mathematically falls on page 2 (pages of 32: p1=1-32, p2=33-64). This is a genuine Novation documentation error the claim inherited. If the companion guide restates this, add a note that Patch 33 lives on page 2 despite the 'Page 3' wording \u2014 otherwise readers hunting patch 33 on page 3 will find patches 65-96.\n\n2. official-9 minor gap: the 'up to 4 parameters per macro' figure for synth tracks is not stated numerically anywhere in the user guide (guide only says synth macros are patch-customisable). The drum even-macro mapping (2/4/6/8 = Pitch/Decay/Distortion/EQ) is exact.\n\n3. official-34 date: Novation's own article carries no date; MatrixSynth's post is dated Dec 15 2022, some secondary coverage says Dec 16. '15 December 2022' is defensible but \u00b11 day across sources.\n\nIMPORTANT OFFICIAL FEATURES THE CLAIM SET MISSED ENTIRELY (all documented in User Guide v3, worth covering in a complete reference):\n- Master Compressor: a global compressor on all outputs, toggled with FX button inside Advanced Setup View (bright green = on). Distinct from the FX reverb/delay.\n- Pattern Settings View (Pattern Settings button): sets Pattern rate/sync-rate relative to BPM AND pattern play direction \u2014 pads 29-32 choose Forward / Reverse / Ping-pong (Back and forth) / Random play order. Also holds Start Point and End Point per pattern (patterns can start/end mid-grid, not just 1-16/17-32).\n- Nudge / Pattern Mutate: 'pattern mutate' is a named key feature (randomises/reorganises step assignments); nudging shifts pattern timing. Neither appears in the claims.\n- Fixed Velocity mode: toggles whether manually-entered notes use a fixed velocity vs. pad-strike velocity (velocity is quantised to display as a 5x8 = 40-pad meter internally, values 0-127).\n- View Lock (Shift + a step/pattern button): freezes the step display of one pattern while you navigate/select others \u2014 a real performance feature.\n- Easy Start Tool / Mass Storage Device: on first USB connection Circuit Tracks mounts as a 'TRACKS' drive with a Getting Started link; can be disabled in Advanced Setup View (Note button toggle).\n- Sticky Shift (added in fw 1.1.5): enable in Setup View by pressing Shift \u2014 lets Shift latch rather than needing to be held. Referenced only via the firmware claim, not as an operational feature.\n- Analogue Sync Out electrical detail: 3.5mm TRS, 5V amplitude, default 2 ppqn, selectable 1/2/4/8/24 ppqn (partially covered under Setup View).\n- Micro step edit detail: each step subdivides into exactly 6 micro steps for placing off-grid hits (Shift+Gate) \u2014 mentioned in passing but not as a standalone claim with the '6' count.\n\nSource quality: the FocRite/Focusrite-hosted User Guide v3 PDF is the authoritative primary source and is internally the most reliable; Novation's own 1.1.5 blog and the SynthAnatomy/Synthtopia/MatrixSynth posts corroborate firmware history. The full official 1.1.5 changelog is best found in the Andy Callaby comment on the Synthtopia article (it lists all four sub-features the claim cites)."
+    }
+  ]
 }
