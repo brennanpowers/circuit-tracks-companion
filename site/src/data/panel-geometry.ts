@@ -67,14 +67,14 @@ export const PANEL: PanelElement[] = [
   // ── Knob section ────────────────────────────────────────────────
   { kind: 'knob', id: 'master-volume', cx: 70, cy: 95, r: 28, label: 'Master Volume', plain: "How loud the whole device is — the knob to grab when someone says \u201cturn it down\u201d.", control: 'volume' },
   // Macros: evens on the upper row, odds on the lower row (staggered)
-  { kind: 'knob', id: 'macro-2', cx: 205, cy: 98, r: 27, label: '2 Oscillator Mod', plain: "Macro 2 — on synths, oscillator modulation (wobble/movement in the raw tone). On drums: sample pitch (tune the kick).", control: 'macros' },
-  { kind: 'knob', id: 'macro-4', cx: 337, cy: 98, r: 27, label: '4 Filter Envelope', plain: "Macro 4 — on synths, the filter envelope (a bark or bloom of brightness per note). On drums: decay — how long each hit rings.", control: 'macros' },
-  { kind: 'knob', id: 'macro-6', cx: 467, cy: 98, r: 27, label: '6 Resonance', plain: "Macro 6 — resonance: a whistling emphasis right at the brightness point. On drums: distortion/grit.", control: 'macros' },
-  { kind: 'knob', id: 'macro-8', cx: 598, cy: 98, r: 27, label: '8 FX', plain: "Macro 8 — the patch's built-in effect amount (chorus, drive, etc.). On drums: EQ tilt (darker/brighter).", control: 'macros' },
-  { kind: 'knob', id: 'macro-1', cx: 143, cy: 172, r: 27, label: '1 Oscillator', plain: "Macro 1 — on synths, usually the oscillator's basic character (the raw wave you start from).", control: 'macros' },
-  { kind: 'knob', id: 'macro-3', cx: 273, cy: 172, r: 27, label: '3 Amp Envelope', plain: "Macro 3 — on synths, the amp envelope: how the note starts and fades (plucky vs swelling).", control: 'macros' },
-  { kind: 'knob', id: 'macro-5', cx: 403, cy: 172, r: 27, label: '5 Filter Frequency', plain: "Macro 5 — on synths, brightness (filter cutoff): the single most-touched synth knob. Does nothing on drums.", control: 'macros' },
-  { kind: 'knob', id: 'macro-7', cx: 533, cy: 172, r: 27, label: '7 Modulation', plain: "Macro 7 — modulation: adds motion (vibrato/wobble, patch-dependent).", control: 'macros' },
+  { kind: 'knob', id: 'macro-2', cx: 205, cy: 98, r: 27, label: '2 Oscillator Mod', plain: "Macro 2 — on synths, oscillator modulation (wobble/movement in the raw tone). On drums: sample pitch (tune the kick).", control: 'macro-2' },
+  { kind: 'knob', id: 'macro-4', cx: 337, cy: 98, r: 27, label: '4 Filter Envelope', plain: "Macro 4 — on synths, the filter envelope (a bark or bloom of brightness per note). On drums: decay — how long each hit rings.", control: 'macro-4' },
+  { kind: 'knob', id: 'macro-6', cx: 467, cy: 98, r: 27, label: '6 Resonance', plain: "Macro 6 — resonance: a whistling emphasis right at the brightness point. On drums: distortion/grit.", control: 'macro-6' },
+  { kind: 'knob', id: 'macro-8', cx: 598, cy: 98, r: 27, label: '8 FX', plain: "Macro 8 — the patch's built-in effect amount (chorus, drive, etc.). On drums: EQ tilt (darker/brighter).", control: 'macro-8' },
+  { kind: 'knob', id: 'macro-1', cx: 143, cy: 172, r: 27, label: '1 Oscillator', plain: "Macro 1 — on synths, usually the oscillator's basic character (the raw wave you start from).", control: 'macro-1' },
+  { kind: 'knob', id: 'macro-3', cx: 273, cy: 172, r: 27, label: '3 Amp Envelope', plain: "Macro 3 — on synths, the amp envelope: how the note starts and fades (plucky vs swelling).", control: 'macro-3' },
+  { kind: 'knob', id: 'macro-5', cx: 403, cy: 172, r: 27, label: '5 Filter Frequency', plain: "Macro 5 — on synths, brightness (filter cutoff): the single most-touched synth knob. Does nothing on drums.", control: 'macro-5' },
+  { kind: 'knob', id: 'macro-7', cx: 533, cy: 172, r: 27, label: '7 Modulation', plain: "Macro 7 — modulation: adds motion (vibrato/wobble, patch-dependent).", control: 'macro-7' },
   { kind: 'knob', id: 'master-filter', cx: 665, cy: 182, r: 28, label: 'Master Filter', plain: "The big performance knob. Centre click = off; turn left to muffle the whole mix, right to thin it out. Always live.", control: 'filter' },
 
   // ── Function button row ─────────────────────────────────────────

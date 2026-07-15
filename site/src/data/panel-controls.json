@@ -29,6 +29,130 @@
     "ref": "01-orientation"
   },
   {
+    "id": "macro-1",
+    "label": "Macro 1 — Oscillator",
+    "zone": "macros",
+    "short": "Macro 1. On synths: the oscillator's basic character. One of the two knobs with a global job — it also sets the tempo in Tempo View.",
+    "views": {
+      "Synth Note View": "Oscillator character of the current patch (default legend — patches can remap up to 4 parameters onto this knob).",
+      "Drum Note View": "Inactive — odd-numbered macros do nothing on drum tracks.",
+      "Mixer View": "Synth 1 level (press ▼ to flip all eight knobs to pan, ▲ back to level).",
+      "FX View": "Synth 1 reverb or delay send — the LED shows which: cream = reverb, peach = delay.",
+      "Tempo View": "Tempo: 40–240 BPM (integers).",
+      "While saving": "After the first Save press: scrolls the project pad's colour (14 choices).",
+      "Recording": "Movements write into the pattern as automation while Record is lit."
+    },
+    "shift": null,
+    "ref": "03-synth-tracks"
+  },
+  {
+    "id": "macro-2",
+    "label": "Macro 2 — Oscillator Mod",
+    "zone": "macros",
+    "short": "Macro 2. On synths: oscillator modulation (movement in the raw tone). On drums: pitch. In Tempo View: swing.",
+    "views": {
+      "Synth Note View": "Oscillator modulation of the current patch (patch-remappable).",
+      "Drum Note View": "Pitch of the selected drum track — continuous, great for tuning a kick, useless for melodies.",
+      "Mixer View": "Synth 2 level (▼ = pan mode).",
+      "FX View": "Synth 2 reverb/delay send.",
+      "Tempo View": "Swing: 20–80, default 50 — below 50 rushes the off-beat steps, above 50 drags them.",
+      "Recording": "Movements write as automation while Record is lit (drums: only from Velocity/Gate/Probability views)."
+    },
+    "shift": null,
+    "ref": "04-drum-tracks"
+  },
+  {
+    "id": "macro-3",
+    "label": "Macro 3 — Amp Envelope",
+    "zone": "macros",
+    "short": "Macro 3. On synths: the amp envelope — how notes start and fade (plucky vs swelling). In the mixer it belongs to external Input 1.",
+    "views": {
+      "Synth Note View": "Amp envelope of the current patch (patch-remappable).",
+      "Drum Note View": "Inactive — odd-numbered macros do nothing on drum tracks.",
+      "Mixer View": "External audio Input 1 level — the MIDI 1 channel doubles as Input 1 (▼ = pan mode).",
+      "FX View": "Input 1 reverb/delay send — yes, you can put your external synth in the reverb.",
+      "Recording": "Movements write as automation while Record is lit."
+    },
+    "shift": null,
+    "ref": "03-synth-tracks"
+  },
+  {
+    "id": "macro-4",
+    "label": "Macro 4 — Filter Envelope",
+    "zone": "macros",
+    "short": "Macro 4. On synths: the filter envelope (a bloom of brightness per note). On drums: decay. In the mixer: external Input 2.",
+    "views": {
+      "Synth Note View": "Filter envelope of the current patch (patch-remappable).",
+      "Drum Note View": "Decay of the selected drum track — how long each hit rings (choke hats, let claps bloom).",
+      "Mixer View": "External audio Input 2 level — the MIDI 2 channel doubles as Input 2 (▼ = pan mode).",
+      "FX View": "Input 2 reverb/delay send.",
+      "Recording": "Movements write as automation while Record is lit (drums: only from Velocity/Gate/Probability views)."
+    },
+    "shift": null,
+    "ref": "04-drum-tracks"
+  },
+  {
+    "id": "macro-5",
+    "label": "Macro 5 — Filter Frequency",
+    "zone": "macros",
+    "short": "Macro 5. On synths: brightness (filter cutoff) — the most-touched synth knob on the panel. In Tempo View: click volume.",
+    "views": {
+      "Synth Note View": "Filter cutoff of the current patch — darker anticlockwise, brighter clockwise (patch-remappable).",
+      "Drum Note View": "Inactive — odd-numbered macros do nothing on drum tracks.",
+      "Mixer View": "Drum 1 level (▼ = pan mode).",
+      "FX View": "Drum 1 reverb/delay send.",
+      "Tempo View": "Click (metronome) volume.",
+      "Recording": "Movements write as automation while Record is lit."
+    },
+    "shift": null,
+    "ref": "03-synth-tracks"
+  },
+  {
+    "id": "macro-6",
+    "label": "Macro 6 — Resonance",
+    "zone": "macros",
+    "short": "Macro 6. On synths: resonance — a whistling emphasis right at the cutoff point. On drums: distortion.",
+    "views": {
+      "Synth Note View": "Resonance of the current patch (patch-remappable).",
+      "Drum Note View": "Distortion on the selected drum track — grit dial.",
+      "Mixer View": "Drum 2 level (▼ = pan mode).",
+      "FX View": "Drum 2 reverb/delay send.",
+      "Recording": "Movements write as automation while Record is lit (drums: only from Velocity/Gate/Probability views)."
+    },
+    "shift": null,
+    "ref": "04-drum-tracks"
+  },
+  {
+    "id": "macro-7",
+    "label": "Macro 7 — Modulation",
+    "zone": "macros",
+    "short": "Macro 7. On synths: modulation — vibrato, wobble, whatever motion the patch wires in.",
+    "views": {
+      "Synth Note View": "Modulation amount of the current patch (patch-remappable).",
+      "Drum Note View": "Inactive — odd-numbered macros do nothing on drum tracks.",
+      "Mixer View": "Drum 3 level (▼ = pan mode).",
+      "FX View": "Drum 3 reverb/delay send.",
+      "Recording": "Movements write as automation while Record is lit."
+    },
+    "shift": null,
+    "ref": "03-synth-tracks"
+  },
+  {
+    "id": "macro-8",
+    "label": "Macro 8 — FX",
+    "zone": "macros",
+    "short": "Macro 8. On synths: the patch's built-in effect amount (chorus, drive…). On drums: EQ tilt.",
+    "views": {
+      "Synth Note View": "Insert-FX amount of the current patch — distortion, EQ, chorus, or phaser, whichever the patch carries (patch-remappable).",
+      "Drum Note View": "EQ tilt on the selected drum track — darker or brighter.",
+      "Mixer View": "Drum 4 level (▼ = pan mode).",
+      "FX View": "Drum 4 reverb/delay send.",
+      "Recording": "Movements write as automation while Record is lit (drums: only from Velocity/Gate/Probability views)."
+    },
+    "shift": null,
+    "ref": "04-drum-tracks"
+  },
+  {
     "id": "filter",
     "label": "Master Filter",
     "zone": "master",

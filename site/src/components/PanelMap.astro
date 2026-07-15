@@ -45,9 +45,14 @@ const elementLabels = Object.fromEntries(
     document
       .querySelector(`.panel-map .pnl-el[data-element="${elementId}"]`)
       ?.setAttribute('data-active', 'true');
+    // Prefix the element name only for grouped controls (several elements share
+    // one card); per-element cards (each macro, each button) carry full labels.
+    const GROUPED = new Set(['tracks', 'arrows']);
     const elementLabel = elementLabels[elementId];
     els.title.textContent =
-      elementLabel && elementLabel !== c.label ? `${elementLabel} — ${c.label}` : c.label;
+      GROUPED.has(c.id) && elementLabel && elementLabel !== c.label
+        ? `${elementLabel} — ${c.label}`
+        : c.label;
     els.short.textContent = c.short;
     els.views.innerHTML = Object.entries(c.views ?? {})
       .map(
