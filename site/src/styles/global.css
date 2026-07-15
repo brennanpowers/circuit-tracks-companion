@@ -28,6 +28,15 @@
   --muted: #545b66;
   --border: #d9dde3;
   --accent: #6a58e0;
+  /* darker track variants — the pale device colours fail contrast as text on light */
+  --track-violet: #6a58e0;
+  --track-green: #1f7a38;
+  --track-blue: #1264c4;
+  --track-pink: #b81f74;
+  --track-orange: #a85a08;
+  --track-yellow: #8a6d00;
+  --track-purple: #8324c9;
+  --track-aqua: #0d7268;
 }
 
 @theme inline {

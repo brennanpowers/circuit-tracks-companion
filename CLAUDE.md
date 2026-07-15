@@ -13,11 +13,14 @@ parity with the sibling devices.
 ```
 research/        Verified research dossier (claims + sources) feeding the guide
 guide/           The complete reference guide (markdown, source of truth for site content)
-site/            Static site (Astro) — course, wiki reference, cheat sheet
+site/            Astro site — course, wiki reference, cheat sheet (see .contexts/site-architecture.md)
 docs/            Design specs and plans
 .contexts/       Persistent project context files (version-controlled)
 .sessions/       Session summaries (gitignored)
 ```
+
+Site commands (from `site/`): `npm run dev` · `npm run build` · `npm run check` ·
+`npm test` · `npm run test:links`. All four gates must pass before deploy.
 
 ## Content principles
 
@@ -35,3 +38,5 @@ never the other way around.
 
 - **guide-map** — one-line-per-section index of where facts live in `guide/`
   (`.contexts/guide-map.md`)
+- **site-architecture** — how site/ works: collections, guide-link plugin, base-path
+  rules, progress store, adding lessons (`.contexts/site-architecture.md`)
