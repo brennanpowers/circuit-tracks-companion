@@ -1,0 +1,22 @@
+---
+import PanelSVG from './PanelSVG.astro';
+
+/**
+ * Lesson asset: a 1-to-1 panel diagram with specific controls highlighted.
+ * Usage in MDX:  <PanelHighlight controls="macro-5" caption="Macro 5 — filter frequency" />
+ *                <PanelHighlight controls={['record', 'play']} />
+ * Accepts element ids and aliases from panel-geometry (macros, drums, tracks,
+ * arrows, step-buttons, transport, synths, grid, …).
+ */
+interface Props {
+  controls: string | string[];
+  caption?: string;
+}
+const { controls, caption } = Astro.props;
+const list = Array.isArray(controls) ? controls : [controls];
+---
+
+<figure class="panel-highlight my-6 rounded-xl border border-border bg-surface p-3 sm:p-4 max-w-xl mx-auto">
+  <PanelSVG highlight={list} labels={true} />
+  {caption && <figcaption class="mt-2 text-center text-sm text-muted">{caption}</figcaption>}
+</figure>

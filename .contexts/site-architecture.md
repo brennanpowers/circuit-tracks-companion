@@ -45,6 +45,22 @@ hand-write absolute internal links in content.
 `npm run test:links` (`scripts/check-links.mjs` — validates every internal
 href/src in dist/ resolves to a file; base-aware). CI runs all four before deploy.
 
+## The panel diagram (1-to-1 with the device)
+
+`src/data/panel-geometry.ts` — every physical control individually mapped (39
+elements) with coordinates transcribed from the manual's Top View photo (p15,
+PDF: fael CDN URL in guide README). Each element carries a `plain` layman
+description. Reviewed 2026-07-15 by a three-agent panel (layout / labels /
+descriptions) against manual pages 15-17 — verdicts in that day's session notes.
+`PanelSVG.astro` renders it (props: highlight[], interactive, labels);
+`PanelMap.astro` = interactive reference version; `PanelHighlight.astro` = lesson
+asset. In lesson MDX (no import needed):
+`<PanelHighlight controls={['macro-5','record']} caption="..." />` — accepts
+element ids and aliases (macros, drums, synths, tracks, arrows, step-buttons,
+transport, grid). Deliberately omitted: Novation logo (trade dress).
+Dev check loop: `node scripts/render-panel-check.mjs` → /tmp/panel-check.svg →
+headless-Chrome screenshot → eyeball against manual p15.
+
 ## Adding a lesson
 
 1. Create `src/content/course/<project>/<nn>-<slug>.mdx` with the frontmatter schema.
@@ -52,5 +68,7 @@ href/src in dist/ resolves to a file; base-aware). CI runs all four before deplo
    frontmatter goal — don't add another), `<TheoryBridge>`, `<DeviceLab issue="">`,
    `<Checkpoint>`, `<JamTip>`.
 3. Link to reference sections as `[text](06-sequencing.md)`.
+3b. Show where controls are with `<PanelHighlight controls={[...]} />` at the
+    moment a lesson introduces new hardware.
 4. Facts must trace to `guide/` — same rule as everything else.
 5. Prev/next and course cards pick it up automatically (order field).

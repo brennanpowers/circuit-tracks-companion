@@ -1,0 +1,232 @@
+---
+import { PANEL, PADS, VIEWBOX, resolveHighlights } from '../data/panel-geometry';
+
+interface Props {
+  /** element ids or aliases to highlight (e.g. "macro-5", "record", "drums") */
+  highlight?: string[];
+  /** hotspots + focus handling for the interactive reference map */
+  interactive?: boolean;
+  /** render text labels on elements (off for small inline uses) */
+  labels?: boolean;
+}
+const { highlight = [], interactive = false, labels = true } = Astro.props;
+const lit = resolveHighlights(highlight);
+const dimming = lit.size > 0;
+
+const btnClass = (id: string) =>
+  ['pnl-el', lit.has(id) ? 'pnl-lit' : '', dimming && !lit.has(id) ? 'pnl-dim' : '']
+    .filter(Boolean)
+    .join(' ');
+const hotspotAttrs = (el: { id: string; label: string; control: string }) =>
+  interactive
+    ? { 'data-control': el.control, 'data-element': el.id, tabindex: 0, role: 'button', 'aria-label': el.label.replace('\n', ' ') }
+    : {};
+---
+
+<svg
+  viewBox={VIEWBOX}
+  role="img"
+  aria-label={dimming
+    ? `Circuit Tracks panel with ${[...lit].join(', ')} highlighted`
+    : 'Circuit Tracks top panel'}
+  class:list={['panel-svg w-full h-auto select-none', { 'panel-svg--interactive': interactive }]}
+>
+  <!-- device body -->
+  <rect x="2" y="2" width="726" height="641" rx="18" class="pnl-body"></rect>
+  {labels && (
+    <text x="50" y="38" class="pnl-brand">CIRCUIT<tspan class="pnl-brand-light"> TRACKS</tspan></text>
+  )}
+
+  <!-- record/play shared surround (as on the device) -->
+  <rect x="632" y="479" width="58" height="132" rx="8" fill="none" stroke="#3a4150"></rect>
+
+  <!-- decorative pads -->
+  {PADS.map((p) => <rect x={p.x} y={p.y} width={p.w} height={p.h} rx="6" class="pnl-pad" />)}
+
+  {
+    PANEL.map((el) => {
+      if (el.kind === 'knob') {
+        return (
+          <g class={btnClass(el.id)} {...hotspotAttrs(el)}>
+            <circle cx={el.cx} cy={el.cy} r={el.r} class="pnl-knob" />
+            <line
+              x1={el.cx} y1={el.cy - el.r + 6} x2={el.cx} y2={el.cy - el.r / 2}
+              class="pnl-knob-tick"
+            />
+            {el.id.startsWith('macro') && <circle cx={el.cx} cy={el.cy + el.r + 5} r="2.5" class="pnl-led" />}
+            {labels && (
+              <text x={el.cx} y={el.cy + el.r + 16} class="pnl-label" text-anchor="middle">
+                {el.label}
+              </text>
+            )}
+          </g>
+        );
+      }
+      if (el.kind === 'zone') {
+        return (
+          <g class={btnClass(el.id)} {...hotspotAttrs(el)}>
+            <rect x={el.x} y={el.y} width={el.w} height={el.h} rx="8" class="pnl-zone" />
+          </g>
+        );
+      }
+      const lines = el.label.split('\n');
+      const isTrack = !!el.color;
+      return (
+        <g class={btnClass(el.id)} {...hotspotAttrs(el)}>
+          <rect
+            x={el.x} y={el.y} width={el.w} height={el.h} rx="5"
+            class="pnl-btn"
+            style={isTrack ? `stroke: var(${el.color}); stroke-opacity: 0.8` : undefined}
+          />
+          {labels &&
+            lines.map((line, i) => (
+              <text
+                x={el.x + el.w / 2}
+                y={el.y + (el.sub && el.h > 30 ? el.h / 2 - 4 : el.h / 2) + (i - (lines.length - 1) / 2) * 11 + 3.5}
+                class={el.id === 'record' || el.id === 'play' ? `pnl-btn-label pnl-${el.id}` : 'pnl-btn-label'}
+                style={isTrack ? `fill: var(${el.color})` : undefined}
+                text-anchor="middle"
+              >
+                {line}
+              </text>
+            ))}
+          {labels && el.sub && (
+            <text
+              x={el.x + el.w / 2}
+              y={el.h <= 30 ? el.y - 4 : el.y + el.h - 7}
+              class="pnl-sub"
+              text-anchor="middle"
+            >
+              {el.sub}
+            </text>
+          )}
+        </g>
+      );
+    })
+  }
+</svg>
+
+<style>
+  .pnl-body {
+    fill: color-mix(in srgb, var(--surface-2) 60%, #000);
+    stroke: var(--border);
+  }
+  :global([data-theme='light']) .pnl-body {
+    fill: #22262d;
+  }
+  .pnl-brand {
+    fill: #cfd3d9;
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    font-family: var(--font-sans);
+  }
+  .pnl-brand-light {
+    font-weight: 300;
+  }
+  .pnl-pad {
+    fill: #3a4150;
+    opacity: 0.9;
+  }
+  .pnl-knob {
+    fill: #14161a;
+    stroke: #4a5160;
+    stroke-width: 1.5;
+  }
+  .pnl-led {
+    fill: #c65fd6;
+    opacity: 0.85;
+  }
+  .pnl-knob-tick {
+    stroke: #aab2bf;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+  }
+  .pnl-btn {
+    fill: #14161a;
+    stroke: #4a5160;
+    stroke-width: 1;
+  }
+  .pnl-zone {
+    fill: transparent;
+    stroke: transparent;
+  }
+  .pnl-label {
+    fill: #9aa2ae;
+    font-size: 9.5px;
+    font-family: var(--font-sans);
+  }
+  .pnl-btn-label {
+    fill: #c8cdd5;
+    font-size: 10px;
+    font-family: var(--font-sans);
+  }
+  .pnl-record {
+    fill: #e05555;
+    font-size: 17px;
+  }
+  .pnl-play {
+    fill: #58c471;
+    font-size: 13px;
+  }
+  .pnl-sub {
+    fill: #88919c;
+    font-size: 7.5px;
+    font-family: var(--font-sans);
+  }
+
+  /* highlight / dim states */
+  .pnl-dim {
+    opacity: 0.35;
+  }
+  .pnl-lit .pnl-btn,
+  .pnl-lit .pnl-knob,
+  .pnl-lit .pnl-zone {
+    stroke: var(--accent);
+    stroke-width: 3;
+    fill: color-mix(in srgb, var(--accent) 28%, #14161a);
+  }
+  .pnl-lit .pnl-btn-label,
+  .pnl-lit .pnl-label {
+    fill: var(--text);
+    font-weight: 700;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .pnl-lit .pnl-btn,
+    .pnl-lit .pnl-knob,
+    .pnl-lit .pnl-zone {
+      animation: pnl-pulse 1.6s ease-in-out infinite;
+    }
+    @keyframes pnl-pulse {
+      50% {
+        stroke-opacity: 0.45;
+      }
+    }
+  }
+
+  /* interactive hotspots */
+  .panel-svg--interactive .pnl-el {
+    cursor: pointer;
+  }
+  .panel-svg--interactive .pnl-el:hover .pnl-btn,
+  .panel-svg--interactive .pnl-el:hover .pnl-knob,
+  .panel-svg--interactive .pnl-el:hover .pnl-zone,
+  .panel-svg--interactive .pnl-el:focus-visible .pnl-btn,
+  .panel-svg--interactive .pnl-el:focus-visible .pnl-knob,
+  .panel-svg--interactive .pnl-el:focus-visible .pnl-zone,
+  .panel-svg--interactive .pnl-el[data-active='true'] .pnl-btn,
+  .panel-svg--interactive .pnl-el[data-active='true'] .pnl-knob,
+  .panel-svg--interactive .pnl-el[data-active='true'] .pnl-zone {
+    stroke: var(--accent);
+    stroke-width: 2.5;
+    fill: color-mix(in srgb, var(--accent) 22%, #14161a);
+  }
+  .panel-svg--interactive .pnl-el:focus-visible {
+    outline: none;
+  }
+  .panel-svg--interactive .pnl-el[data-element='grid']:hover .pnl-zone,
+  .panel-svg--interactive .pnl-el[data-element='grid'][data-active='true'] .pnl-zone,
+  .panel-svg--interactive .pnl-el[data-element='grid']:focus-visible .pnl-zone {
+    fill: color-mix(in srgb, var(--accent) 10%, transparent);
+  }
+</style>

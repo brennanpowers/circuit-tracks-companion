@@ -8,6 +8,7 @@ import TheoryBridge from '../../components/callouts/TheoryBridge.astro';
 import DeviceLab from '../../components/callouts/DeviceLab.astro';
 import Checkpoint from '../../components/callouts/Checkpoint.astro';
 import JamTip from '../../components/callouts/JamTip.astro';
+import PanelHighlight from '../../components/PanelHighlight.astro';
 
 export async function getStaticPaths() {
   const lessons = await getCollection('course');
@@ -45,5 +46,5 @@ const { Content } = await render(entry);
   next={next}
   nextProjectHref={nextProjectEntryId ? withBase(`course/${nextProjectEntryId}/`) : undefined}
 >
-  <Content components={{ Goal, TheoryBridge, DeviceLab, Checkpoint, JamTip }} />
+  <Content components={{ Goal, TheoryBridge, DeviceLab, Checkpoint, JamTip, PanelHighlight }} />
 </Lesson>
