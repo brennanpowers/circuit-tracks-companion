@@ -82,7 +82,7 @@ Note View; page selector in Patterns/Side Chain/Mixer views).
 | Connector | Details |
 |---|---|
 | Outputs L/Mono, R | 1/4″ TS **unbalanced**, max +5.3 dBu. Nothing in R → L/Mono carries a mono sum |
-| Inputs 1, 2 | 1/4″ TS unbalanced line inputs; mixed, FX-capable, duckable |
+| Inputs 1, 2 | 1/4″ TS unbalanced line inputs; mixed, FX-capable, duckable. Printed "Sample In R · L/Mono" on later units (early units: "Inputs 2 · 1") — same jacks, and no, Tracks still can't sample |
 | Headphones | 3.5 mm stereo; mains stay active; drives +5 dBu into 150 Ω |
 | MIDI In / Out / Thru | Full-size 5-pin DIN; Thru reconfigurable as second Out (Advanced Setup) |
 | Sync Out | 3.5 mm TRS, 5 V pulse; 1/2/4/8/24 ppqn (default 2); swing never applied |
@@ -104,5 +104,5 @@ bottom-right as the pack loads.
 
 User Guide v3 p5–21, p28, p34, p88–94, p102–106. Dossier: `hardware-1…5, 14–21, 24,
 28–29, 34–36, 38–40`, `official-1–2, 9, 18, 20–22`, `sound-10, 33, 35–38`,
-`community-32, 36 (adjudicated A.9)`, adjudications A.1, A.9, A.10; dossier B
+`community-32, 36 (adjudicated A.9)`, adjudications A.1, A.9, A.10, A.11; dossier B
 (Hardware & interaction model).

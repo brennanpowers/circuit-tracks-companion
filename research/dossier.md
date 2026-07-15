@@ -64,7 +64,16 @@ Section C is the full verified claim base. `guide/` is written from this file on
    (djtechtools) calls MIDI 1 "teal" and MIDI 2 "orange"; the manual (p21) specifies
    MIDI 1 = **blue**, MIDI 2 = **pink** (and Drum 1 = orange). Use the manual's
    colour names everywhere; treat community-36's colours as reviewer approximation.
-10. **Terminology nuance:** the manual's glossary groups the step buttons as
+10. **Rear input labeling varies by production run** *(owner-verified on hardware,
+    2026-07-15)*. The User Guide v3 photo (p18) shows the external audio input pair
+    printed "— Inputs — 2 1". Brennan's production unit — confirmed a Circuit Tracks
+    by wordmark and the Synth/MIDI/Drum track row — prints the same pair
+    "Sample In  R  L/Mono" (matching Circuit Rhythm's rear print; presumably a
+    shared later-production panel). Function is unchanged: two unbalanced TS line
+    inputs, no sampling capability on Tracks (firmware 1.2 has no sampling). Mapping:
+    left jack "R" = Input 2 (Mixer Macro 4), right jack "L/Mono" = Input 1 (Mixer
+    Macro 3). Guide and diagrams should show the newer print and mention the older.
+11. **Terminology nuance:** the manual's glossary groups the step buttons as
    "Note, Velocity, Gate and Probability", but the fourth physical button is labelled
    **Pattern Settings** (Probability is its Shift function / second press). The guide
    should use the physical labels and mention the manual's naming.

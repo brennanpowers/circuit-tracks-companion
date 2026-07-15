@@ -83,6 +83,10 @@ inputs, USB-C + internal battery (the 2015 Circuit ran on 6×AA), microSD packs,
 doubled projects (64), and more sample time. Tutorials for the original mostly
 translate — but verify anything device-specific here first.
 
+**Why does my rear panel say "Sample In"?** Later production units print the two
+line inputs "Sample In R · L/Mono" (sharing the Rhythm's panel print); early units
+say "Inputs 2 · 1". Identical function — and Tracks cannot sample either way.
+
 **Is my firmware current?** 1.2 (Dec 2022) is the latest official release; Components
 prompts when out of date.
 

@@ -6,7 +6,7 @@ settings, and automation all work exactly as on the synths — but the output is
 to external gear, over both 5-pin DIN and USB.
 
 The intended loop: **sequence an external synth from a MIDI track, return its audio
-into Inputs 1/2.** On a MIDI track, the macros in Mixer and FX views control those
+into Inputs 1/2** (printed "Sample In" on later units — same jacks). On a MIDI track, the macros in Mixer and FX views control those
 external inputs (level via Macros 3/4, pan, reverb/delay sends), and the inputs can
 even be side-chain-ducked by the drums — external gear becomes a first-class mixer
 citizen.

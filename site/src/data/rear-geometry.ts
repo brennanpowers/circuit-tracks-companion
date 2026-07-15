@@ -2,7 +2,10 @@
  * 1-to-1 rear-panel geometry for the Circuit Tracks, transcribed from the
  * official User Guide v3 "Rear view" photograph (p18). Local space 730×150.
  * Left→right on the device: Kensington · power · USB-C · microSD ·
- * MIDI (Thru, Out, In) · Sync · Outputs (R, L/Mono) · phones · Inputs (2, 1).
+ * MIDI (Thru, Out, In) · Sync · Outputs (R, L/Mono) · phones · Sample In (R, L/Mono).
+ * NOTE: the input pair's print varies by production run — early units say
+ * "Inputs 2 1" (as in the manual v3 photo), later units "Sample In R L/Mono"
+ * (owner-verified; dossier adjudication A.10). Same jacks, no sampling.
  */
 
 export interface RearJack {
@@ -53,23 +56,24 @@ export const REAR: RearElement[] = [
     plain: 'Main output, left — used alone it carries the whole mix summed to mono. This is the jack for a mono PA.' },
   { kind: 'jack', id: 'phones', cx: 506, cy: 66, r: 9, label: 'Phones',
     plain: 'Headphones (3.5 mm) — mirrors the main outputs; there is no separate cue mix.' },
-  { kind: 'jack', id: 'input-2', cx: 566, cy: 80, r: 16, label: '2',
-    plain: 'External audio input 2 — line level in, mixable, effectable, duckable.' },
-  { kind: 'jack', id: 'input-1', cx: 610, cy: 80, r: 16, label: '1',
-    plain: 'External audio input 1 — return an external synth here to mix, effect, and side-chain it.' },
+  { kind: 'jack', id: 'input-2', cx: 566, cy: 80, r: 16, label: 'R',
+    plain: 'External audio input 2 (Mixer Macro 4) — line level in, mixable, effectable, duckable. Later units print this pair "Sample In"; early units "Inputs 2/1". Tracks cannot sample either way.' },
+  { kind: 'jack', id: 'input-1', cx: 610, cy: 80, r: 16, label: 'L/Mono',
+    plain: 'External audio input 1 (Mixer Macro 3) — return an external synth here to mix, effect, and side-chain it. Labeled "1" on early units.' },
 ];
 
 /** group labels drawn under jack clusters, as printed on the device */
 export const REAR_GROUPS = [
   { label: 'MIDI', x: 273, y: 128 },
   { label: 'Outputs', x: 442, y: 128 },
-  { label: 'Inputs', x: 588, y: 128 },
+  { label: 'Sample In', x: 588, y: 128 },
 ];
 
 export const REAR_ALIASES: Record<string, string[]> = {
   midi: ['midi-in', 'midi-out', 'midi-thru'],
   outputs: ['out-l-mono', 'out-r'],
   inputs: ['input-1', 'input-2'],
+  'sample-in': ['input-1', 'input-2'],
 };
 
 export function resolveRearHighlights(ids: string[]): Set<string> {
