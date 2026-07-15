@@ -33,9 +33,9 @@ research round. Remove items as they're resolved; record resolutions in `dossier
 - **Performance-technique mining** for the Jam Toolkit course project: loopop /
   Nu-Trix / Novation official videos on live workflows (pattern-switch timing, mute
   choreography, filter rides, scene arrangement on the fly).
-- **Jam-session audio practicalities**: mono-summing behavior of the L/Mono output,
-  gain staging into a PA/amp/DI at -5.6 dBu max output, headphone cueing workflow
-  while the mains play.
+- **Jam-session audio practicalities**: gain staging into a PA/amp/DI at +5.3 dBu
+  max output, headphone cueing workflow while the mains play. (RESOLVED during guide
+  writing: L/Mono carries a mono sum when R is unplugged — `hardware-15`, manual p18.)
 
 ## Known limitations (documented, not questions)
 

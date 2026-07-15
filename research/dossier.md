@@ -26,9 +26,10 @@ Section C is the full verified claim base. `guide/` is written from this file on
 
 1. **Audio I/O is UNBALANCED, not balanced** *(corrects refuted `community-34`)*.
    Two 1/4″ mono inputs (routable through FX/mixer/side-chain), stereo 1/4″ main out
-   (L/Mono + R), 3.5 mm headphone out — counts correct, but all TS **unbalanced**
-   per Novation's official spec (max output −5.6 dBu). The "balanced" wording in the
-   djtechtools review is wrong.
+   (L/Mono + R), 3.5 mm headphone out — counts correct, but all TS **unbalanced**.
+   Max main output **+5.3 dBu** per manual p18 (`hardware-15`, triple-confirmed; a
+   verifier quoted −5.6 dBu from a spec page — the manual figure wins). The "balanced"
+   wording in the djtechtools review is wrong. L/Mono sums to mono when R is unplugged.
 2. **Play/stop semantics, worded precisely** *(tightens `midi-performance-27`)*.
    Play is a stop/start toggle. Pressing Play while running **stops** playback.
    Pressing Play from stopped **restarts at step 1** (or the pattern's Start Point);
@@ -59,7 +60,11 @@ Section C is the full verified claim base. `guide/` is written from this file on
    TYPE" over the reverb preset list; the manual spells "Ukranian Dorian"
    (sic — use "Ukrainian Dorian"); arrow-button glyphs extract as "J"/"K" from the PDF
    (J = ▼ down, K = ▲ up, confirmed against the online HTML guide).
-9. **Terminology nuance:** the manual's glossary groups the step buttons as
+9. **MIDI track colours: manual wins over reviewer naming.** `community-36`
+   (djtechtools) calls MIDI 1 "teal" and MIDI 2 "orange"; the manual (p21) specifies
+   MIDI 1 = **blue**, MIDI 2 = **pink** (and Drum 1 = orange). Use the manual's
+   colour names everywhere; treat community-36's colours as reviewer approximation.
+10. **Terminology nuance:** the manual's glossary groups the step buttons as
    "Note, Velocity, Gate and Probability", but the fourth physical button is labelled
    **Pattern Settings** (Probability is its Shift function / second press). The guide
    should use the physical labels and mention the manual's naming.
