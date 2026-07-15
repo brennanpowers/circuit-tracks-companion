@@ -1,0 +1,649 @@
+{
+  "angle": "midi-performance",
+  "claims": [
+    {
+      "id": "midi-performance-1",
+      "claim": "Circuit Tracks has exactly two dedicated MIDI tracks (MIDI 1 and MIDI 2) that drive external gear and support all the same sequencer functions as the synth tracks but have no internal sound engine.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-2",
+      "claim": "Factory-default MIDI channels are Synth 1 = Ch 1, Synth 2 = Ch 2, MIDI 1 = Ch 3, MIDI 2 = Ch 4, and all four Drum tracks share Ch 10.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf",
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_programmer_s_reference_guide_v3.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-3",
+      "claim": "MIDI channel 16 is reserved for the Project (global project-level CCs and project program-change) and cannot be assigned to a track; tracks may be reassigned only to channels 1-15, and no two tracks may share a channel.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-4",
+      "claim": "Setup View is entered by holding Shift and pressing Save, and exited by pressing Play; MIDI channel assignment, clock Rx/Tx, and analogue sync rate are all set there.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-5",
+      "claim": "Circuit Tracks stores eight MIDI templates; you enter Template View by selecting a MIDI track and pressing the Preset button, and the eight templates appear as the top row of blue pads (selected pad lights white).",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-6",
+      "claim": "Each MIDI track can use a different template, and by default all eight templates are identical, mapping the eight Macro knobs to CC1, CC2, CC5, CC11, CC12, CC13, CC71 and CC74 respectively.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-7",
+      "claim": "MIDI templates can only be created/edited/backed-up in Novation Components, where you set each control's start and end value (anticlockwise/clockwise limits) and choose unipolar or bipolar polarity; polarity affects only the LED behaviour, not the transmitted MIDI data.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-8",
+      "claim": "Recorded MIDI-template CC automation is transmitted to both the MIDI Out DIN and the USB port, unlike parameter automation on other tracks which is sent to USB only.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-9",
+      "claim": "On a MIDI track the Macro knobs in Mixer/FX View control the two rear-panel analogue audio Inputs (level, pan, reverb/delay sends), not MIDI; the recommended setup is sending MIDI out to an external synth and routing that synth's audio back into Inputs 1 and 2.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-10",
+      "claim": "The internal tempo range is 40-240 BPM (default 120) and internal tempo is integer-only, adjusted with Macro 1 in Tempo View; when slaved to external clock CT follows any rate from 30-300 BPM including fractional tempos.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-11",
+      "claim": "Tap Tempo is done by holding Shift and tapping the Tempo/Swing button; it needs at least three taps and then averages the last five taps.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-12",
+      "claim": "Swing is adjusted with Macro 2 in Tempo View over a range of 20 to 80 (default 50), affecting the timing of even-numbered off-beat steps.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-13",
+      "claim": "When Clock Rx is OFF the unit uses internal clock only; when Clock Rx is ON it is in AUTO mode and locks to a valid external MIDI clock at MIDI In or USB, falling back to internal if none is present.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-14",
+      "claim": "When Clock Tx is ON, Circuit Tracks acts as clock master and transmits MIDI Clock out of both the USB and MIDI Out connectors.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-15",
+      "claim": "Rx and Tx can be toggled independently for four data categories via Setup View pads 25-32: Note (green), CC (orange), Program Change (purple) and Clock (pale blue); all default to ON.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-16",
+      "claim": "If Circuit Tracks is slaved and the external clock stops or goes out of range, it stops playing and displays SYN until Play is pressed.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-17",
+      "claim": "The rear-panel analogue Sync Out emits a 5 V pulse at a selectable rate of 1, 2, 4, 8 or 24 ppqn (default 2 ppqn), and Swing is not applied to this analogue clock output.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-18",
+      "claim": "Circuit Tracks does not support Ableton Link natively; synchronisation is via MIDI clock (as master or slave) or analogue sync only.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf",
+        "https://www.soundonsound.com/reviews/novation-circuit-tracks"
+      ],
+      "confidence": "medium",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-19",
+      "claim": "Program Change on Ch 16 with value 0-63 changes the whole Project instantly, while value 64-127 queues the Project change to a pattern boundary.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_programmer_s_reference_guide_v3.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-20",
+      "claim": "By default, selecting a new pattern while playing queues it so the current pattern finishes first (its pad flashes fast); holding Shift while selecting switches immediately but continues at the equivalent step for timing continuity.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-21",
+      "claim": "Circuit Tracks has 16 Scene pads on the Mixer page, each storing a snapshot of the currently-playing patterns/chains; a queued Scene flashes green and takes effect at the end of the currently-playing Drum 1 pattern without losing sync.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-22",
+      "claim": "Mute is performed in Mixer View (button 11) using Row-1 pads (one per track, dims when muted); there is no dedicated Solo function.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-23",
+      "claim": "When a track is muted, its sequencer step pads become inactive and can instead be used to play that track's notes/chords or drum hits live in real time over the unmuted tracks.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-24",
+      "claim": "The dedicated Master Filter knob is a DJ-style filter over the entire output including both external audio inputs, with a centre detent for no filtering; anticlockwise is low-pass and clockwise is high-pass.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-25",
+      "claim": "The FX View (button 12) provides 16 delay presets and 8 reverb presets with per-track send amounts set by the Macro knobs, and delay time is synced to the project BPM.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-26",
+      "claim": "Scale and root note (16 scales) are set in Scales View (button 9) and can both be changed during playback; changing the keynote transposes existing sequenced notes non-destructively, substituting out-of-scale notes by about a semitone.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-27",
+      "claim": "Pressing Play while the sequencer is running restarts the pattern from Step 1 by default; holding Shift while pressing Play instead continues from the step where it was stopped.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-28",
+      "claim": "The metronome/click is toggled with Shift + Clear (quarter-note tick on all outputs) and its level is set with Macro 5 in Tempo View.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-29",
+      "claim": "Main outputs are two 1/4-inch TS jacks (L/Mono, R) at a maximum line level of +5.3 dBu; with nothing plugged into the R socket, L/Mono carries a summed mono mix.",
+      "sources": [
+        "https://support.novationmusic.com/hc/en-gb/articles/4402993098002-What-are-the-specifications-Circuit-Tracks-and-Circuit-Rhythm-s-audio-inputs",
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-30",
+      "claim": "The USB-C port carries MIDI, power and firmware only and does not carry audio, so audio to a PA or amp must come from the 1/4-inch jack outputs.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-31",
+      "claim": "The MIDI Thru port can be reconfigured in Advanced Setup View (hold Shift while powering on) via the Duplicate button to act as a second MIDI Out, allowing control of two external devices that lack their own thru ports.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-32",
+      "claim": "Master-filter frequency is controllable over MIDI as CC74 on Ch 16 (0-63 low-pass, 64 off, 65-127 high-pass) and its resonance as CC71 on Ch 16.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_programmer_s_reference_guide_v3.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "midi-performance-33",
+      "claim": "Circuit Tracks has no focus/master-channel mode for external MIDI control, so each MIDI destination must be addressed on its own channel, which the Sound on Sound review notes as a workflow limitation.",
+      "sources": [
+        "https://www.soundonsound.com/reviews/novation-circuit-tracks"
+      ],
+      "confidence": "medium",
+      "tracksConfirmed": true
+    }
+  ],
+  "verification": [
+    {
+      "lens": "manual",
+      "verdicts": [
+        {
+          "id": "midi-performance-1",
+          "verdict": "confirmed",
+          "note": "User Guide 'The MIDI Tracks' section: 'The two MIDI tracks behave just like the Synth tracks and support all the same sequencer functions, but have a couple of key differences. They do not control an internal synth engine but are intended to control external equipment or software via MIDI.' Explicitly Circuit Tracks; two tracks named MIDI 1 and MIDI 2."
+        },
+        {
+          "id": "midi-performance-2",
+          "verdict": "confirmed",
+          "note": "User Guide 'MIDI Channels' factory-default table: Synth 1 = Ch 1, Synth 2 = Ch 2, MIDI 1 = Ch 3, MIDI 2 = Ch 4, Drums 1-4 = Ch 10. Setup View diagram confirms the same defaults."
+        },
+        {
+          "id": "midi-performance-3",
+          "verdict": "confirmed",
+          "note": "User Guide: 'Each track... can be set to any of MIDI channels 1-15. Channel 16 is reserved for the Project.' and 'Important: No two tracks can transmit on the same MIDI channel.' (Note: the four drum tracks are the documented exception that all share Ch 10, but they count as the single Drum grouping.)"
+        },
+        {
+          "id": "midi-performance-4",
+          "verdict": "confirmed",
+          "note": "User Guide 'Setup View': 'It is entered by holding down Shift and pressing Save, and exited by pressing Play.' Setup View covers MIDI channel assignment, MIDI I/O (Rx/Tx incl. Clock), external clock/analogue sync rate, master compressor and brightness."
+        },
+        {
+          "id": "midi-performance-5",
+          "verdict": "confirmed",
+          "note": "User Guide 'Selecting Templates': 'Select a MIDI track and press Preset to access Template View. Eight MIDI templates are stored within Circuit Tracks, represented by the top row of blue pads... Select a new template by pressing a pad; it lights white.'"
+        },
+        {
+          "id": "midi-performance-6",
+          "verdict": "confirmed",
+          "note": "User Guide 'Default Templates': the eight default templates are identical; Macro table maps Macro 1-8 to CC1, CC2, CC5, CC11, CC12, CC13, CC71, CC74. 'Each track can use a different template.' Confirmed."
+        },
+        {
+          "id": "midi-performance-7",
+          "verdict": "confirmed",
+          "note": "User Guide: templates 'edited and backed up in Components Editor'; 'you can define the start and end values of each control' (fully anticlockwise = start, clockwise = end); 'define each Macro control as either unipolar or bipolar. This only affects the response of the LED below the control and does not affect the transmitted messages.'"
+        },
+        {
+          "id": "midi-performance-8",
+          "verdict": "confirmed",
+          "note": "User Guide: 'automated MIDI template controls will send data to the MIDI Out DIN port as well as the USB port, unlike parameters on the other tracks, which are only sent to the USB port.' Exact match."
+        },
+        {
+          "id": "midi-performance-9",
+          "verdict": "confirmed",
+          "note": "User Guide: 'on the MIDI tracks, these [Macro volume/pan in Mixer, FX sends] act on the analogue audio signal applied at the two audio Inputs on the rear panel. The recommended workflow is to send MIDI data... to your external synth... while routing the audio outputs of that device back into Circuit Tracks' audio inputs.'"
+        },
+        {
+          "id": "midi-performance-10",
+          "verdict": "confirmed",
+          "note": "User Guide 'Tempo': range 40-240 BPM, default 120 for a new Project, adjusted with Macro 1 in Tempo View. 'the internal tempo clock only allows integer BPMs... Circuit Tracks will synchronise to any external clock rates - including fractional values - in the range 30 to 300 BPM.'"
+        },
+        {
+          "id": "midi-performance-11",
+          "verdict": "confirmed",
+          "note": "User Guide 'Tap Tempo': 'Hold down Shift and tap the Tempo/Swing button... You need at least three taps... and it will then calculate the BPM by averaging the last five taps.'"
+        },
+        {
+          "id": "midi-performance-12",
+          "verdict": "confirmed",
+          "note": "User Guide 'Swing': default 50, range 20 to 80, adjusted with Macro 2 in Tempo View; alters timing of even-numbered steps (the off-beats)."
+        },
+        {
+          "id": "midi-performance-13",
+          "verdict": "confirmed",
+          "note": "User Guide 'Clock settings': 'When Clock Rx is OFF, the clock is in internal mode... Any external clock will be ignored. When Clock Rx is ON, Circuit Tracks is in AUTO mode and the BPM will be set by an externally applied MIDI clock at either the MIDI In or the USB ports... if this is not the case, Circuit Tracks will automatically switch to its internal clock.'"
+        },
+        {
+          "id": "midi-performance-14",
+          "verdict": "confirmed",
+          "note": "User Guide: 'If Clock Tx is ON, Circuit Tracks is the clock master and its clock... will be available as MIDI Clock at the rear panel USB and MIDI Out connectors.'"
+        },
+        {
+          "id": "midi-performance-15",
+          "verdict": "confirmed",
+          "note": "User Guide 'MIDI I/O': pads 25/26 Note (Green), 27/28 CC (Orange), 29/30 Program Change (Purple), 31/32 Clock (Pale Blue), each pair Rx/Tx. 'By default, both MIDI Rx and MIDI Tx are ON (buttons brightly lit) for all data categories.'"
+        },
+        {
+          "id": "midi-performance-16",
+          "verdict": "confirmed",
+          "note": "User Guide 'External clock': 'If an external clock is removed (or goes out of range), Circuit Tracks will stop playing. SYN remains displayed until Play is pressed.'"
+        },
+        {
+          "id": "midi-performance-17",
+          "verdict": "confirmed",
+          "note": "User Guide 'Analogue clock rates': Sync Out amplitude 5 V; selectable 1, 2, 4, 8 or 24 ppqn (pads 17-21), default 2 ppqn; 'Note that Swing (if set to something other than 50%) is not applied to the analogue clock output.' Rear-panel spec confirms 3.5mm TRS 5V."
+        },
+        {
+          "id": "midi-performance-18",
+          "verdict": "confirmed",
+          "note": "No mention of Ableton Link anywhere in the official User Guide; sync methods documented are MIDI clock (master via Clock Tx / slave via Clock Rx over MIDI In or USB) and analogue Sync Out. Sound on Sound review likewise discusses only MIDI/analogue sync, no Link. CT is a standalone hardware unit with no network sync, so no native Link."
+        },
+        {
+          "id": "midi-performance-19",
+          "verdict": "confirmed",
+          "note": "Programmer's Reference 'Patch and Project Select': MIDI Channel 16, PGM value 0-63 = 'select project (instant)', 64-127 = 'select project (queued)'. The queued change occurs at the current pattern boundary, consistent with CT's Play-Mode project-switch behaviour."
+        },
+        {
+          "id": "midi-performance-20",
+          "verdict": "confirmed",
+          "note": "User Guide: 'The default is for the current Pattern to play to its end before the new Pattern starts... the pad for the next Pattern will flash quickly while it is being queued... if you hold down Shift while selecting the next Pattern memory, it will start playing immediately from the corresponding Pattern step' (example: Step 11 -> new pattern starts at Step 12)."
+        },
+        {
+          "id": "midi-performance-21",
+          "verdict": "confirmed",
+          "note": "User Guide 'Scenes': 'The two lower rows of pads in Mixer View represent the 16 Scenes.' Scenes store patterns/pattern chains. 'The pad for a queued Scene flashes green and at the end of the Drum 1 Pattern currently playing, the new Scene will begin playing from the start without losing sync.'"
+        },
+        {
+          "id": "midi-performance-22",
+          "verdict": "confirmed",
+          "note": "User Guide 'Mixer' (button 11): 'The illuminated pads on Row 1 are Mute buttons for each track... The pad's illumination dims to indicate a Mute state.' No solo function is documented anywhere in the guide (mute-others is the only workflow)."
+        },
+        {
+          "id": "midi-performance-23",
+          "verdict": "confirmed",
+          "note": "User Guide 'Performing with Muted Tracks': 'When a track is muted, its sequencer step pads become inactive. However, they then become available to play synth notes or chords, or drum hits, in real time' over the unmuted tracks."
+        },
+        {
+          "id": "midi-performance-24",
+          "verdict": "confirmed",
+          "note": "User Guide 'The Filter Knob': 'The entire audio output... the sum of the sounds from all six internal tracks plus the two external audio inputs' feeds a DJ-style filter; 'low-pass filter when you turn it anticlockwise from the centre... high-pass filter when you turn it clockwise... a detent in the centre - in this position, no filtering takes place.'"
+        },
+        {
+          "id": "midi-performance-25",
+          "verdict": "confirmed",
+          "note": "User Guide 'FX Section' (button 12): 'Sixteen delay and eight reverb presets are provided... The send levels from each track... are individually adjustable for each track using the Macro controls.' 'delay time is related to the BPM.'"
+        },
+        {
+          "id": "midi-performance-26",
+          "verdict": "confirmed",
+          "note": "User Guide 'Scales' (button 9): up to 16 scales; scale and root note both set in Scales View and 'can both be altered during playback'; altering scale after creating a pattern shifts out-of-scale notes 'up or down a semitone' non-destructively (not saved until you Save). Note: scale/root apply to both Synth AND both MIDI tracks."
+        },
+        {
+          "id": "midi-performance-27",
+          "verdict": "refuted",
+          "note": "The trigger condition is wrong: pressing Play WHILE the sequencer is running STOPS it ('Press the Play button to stop'). The default-Step-1-vs-Shift-continue mechanism the claim describes actually applies when you press Play to START from a stopped state: 'Every time you press Play, the Pattern restarts from Step 1 (or the chosen Start point)... If you want to continue... press Shift and Play together.' The mechanism is right but it is not 'while the sequencer is running.'"
+        },
+        {
+          "id": "midi-performance-28",
+          "verdict": "confirmed",
+          "note": "User Guide 'Click track': 'The Click (or metronome) can be activated or deactivated by holding Shift and pressing Clear... a metronome tick at every quarter note on all audio outputs whenever the sequencer is playing.' 'To adjust the volume... press Tempo/Swing and use Macro 5.'"
+        },
+        {
+          "id": "midi-performance-29",
+          "verdict": "confirmed",
+          "note": "User Guide rear-panel spec: 'main audio outputs on two 1/4\" TS jack sockets. Max. output level is +5.3 dBu (+/-1.5 dBu). With no plug in the R socket, the L/Mono socket carries a mono mix of L and R channels.' Matches the support article too."
+        },
+        {
+          "id": "midi-performance-30",
+          "verdict": "confirmed",
+          "note": "User Guide rear-panel spec, USB-C port: 'the DC power input... connect to other devices supporting MIDI via USB to transmit and receive MIDI data. Also used for firmware updates. NOTE - Circuit Tracks' USB port does not carry audio.'"
+        },
+        {
+          "id": "midi-performance-31",
+          "verdict": "confirmed",
+          "note": "User Guide 'Advanced Setup View' ('entered by holding down Shift while powering the unit on'): 'MIDI Thru configuration... options are... a regular MIDI Thru port... or to duplicate the output of the MIDI Out port. This is useful if you have two pieces of hardware... that don't have MIDI thru ports themselves. Use the Duplicate button to set the behaviour.'"
+        },
+        {
+          "id": "midi-performance-32",
+          "verdict": "confirmed",
+          "note": "Programmer's Reference 'Project Control (Send messages on MIDI Channel 16)', Master Filter: frequency = CC 74, range 0-127, '0-63=Low Pass, 64=OFF, 65-127=High Pass'; resonance = CC 71 (range 0-127, default 30). Exact match."
+        },
+        {
+          "id": "midi-performance-33",
+          "verdict": "confirmed",
+          "note": "Sound on Sound review states verbatim: 'Unfortunately there's no focus mode or master channel to save you from fiddling with channels, but as the Launchpad Pro has this I'm hopeful it will be added later.' Confirms the workflow limitation for external MIDI control."
+        }
+      ],
+      "overallNotes": "All 33 claims were checked against the official Novation Circuit Tracks User Guide v3 and Programmer's Reference Guide v3 (both downloaded from the cited fael-downloads-prod.focusrite.com URLs and extracted with pdftotext), plus the Sound on Sound Circuit Tracks review. Every source is explicitly about Circuit Tracks (not the original Circuit or Circuit Rhythm) - the User Guide names 'Circuit Tracks' throughout and describes the two MIDI tracks, which neither of the other devices has.\n\n32 of 33 claims are CONFIRMED verbatim. Only midi-performance-27 is REFUTED, and only on its trigger condition: pressing Play while the sequencer is RUNNING stops it, it does not restart from Step 1. The default-vs-Shift+Play mechanism it describes is real but applies when starting from a stopped state.\n\nNotable facts for the 'midi-performance' angle that the claims MISSED:\n1. Scale and root note apply to BOTH synth tracks AND BOTH MIDI tracks simultaneously (User Guide: 'The selected scale and root note apply to both Synth tracks, and also both MIDI tracks'). This is significant for MIDI performance because your out-board synths get transposed/scale-constrained along with the internal synths.\n2. Per-track Pattern Sync Rate: each track (including MIDI tracks) can independently run at 1/4, 1/4T, 1/8, 1/8T, 1/16 (default), 1/16T, 1/32, 1/32T relative to the master BPM - a big polyrhythm/performance tool. Rate changes take effect at the end of the current cycle.\n3. Pattern Chaining (up to 8 patterns per track, chained by holding first pad + pressing last) and Scene Chaining (arranging scenes into a 'Sequence') are the arrangement/performance backbone; Drum 1's pattern/chain length governs scene-change timing.\n4. Mutate (Shift + Duplicate) randomly re-shuffles the current pattern's notes/hits to different steps live, per-track, and cannot be undone.\n5. The device's own Macros can be driven by an EXTERNAL MIDI CC controller (CC Rx on by default) and those movements can be recorded as automation - relevant to performing/automating from a MIDI controller.\n6. External MIDI notes into MIDI In can play the synths, and external Program Change on the synth's channel (0-63) selects patches (External Patch Select) - a performance route not covered by the claims.\n7. Sticky Shift (enabled in Setup View by pressing Shift) latches the Shift modifier - a performance ergonomics feature.\n8. Save Lock (hold Shift+Save at power-on) disables Save to protect a prepared live set - important for gigging.\n9. Master Compressor is applied to all outputs by default and can be toggled in Advanced Setup View (FX button); it is a global output-stage feature affecting the whole performance mix.\n10. Full Project Control CC/NRPN map on Channel 16 (Programmer's Reference) exposes reverb/delay send levels (CC 88-116), delay time-sync (NRPN 1:7), reverb type (NRPN 1:18), sidechain, and per-track mixer levels for remote/DAW automation during performance - a rich MIDI-performance surface beyond just the master filter.\n11. Delay left-right ratio, ping-pong and swung-timing presets exist and delay time locks to BPM - useful performance detail for the FX claim (25).\n12. Headphone output is a separate rear jack (+5 dBu into 150 ohm) and main outs stay active when headphones are inserted - relevant for cueing in a live/DJ context."
+    },
+    {
+      "lens": "device",
+      "verdicts": [
+        {
+          "id": "midi-performance-1",
+          "verdict": "confirmed",
+          "note": "User guide: 'The two MIDI tracks behave just like the Synth tracks and support all the same sequencer functions, but have a couple of key differences. They do not control an internal synth engine but are intended to control external equipment or software via MIDI.' Tracks named MIDI 1 and MIDI 2. Correct and Circuit Tracks-specific (the original 2015 Circuit had no MIDI tracks)."
+        },
+        {
+          "id": "midi-performance-2",
+          "verdict": "confirmed",
+          "note": "User guide 'MIDI Channels' table: Synth 1=1, Synth 2=2, MIDI 1=3, MIDI 2=4, Drums 1-4=10. Text: 'Note that all four drum tracks use the same MIDI channel.' Exact match."
+        },
+        {
+          "id": "midi-performance-3",
+          "verdict": "confirmed",
+          "note": "User guide: 'Each track... can be set to any of MIDI channels 1-15. Channel 16 is reserved for the Project.' and 'Important: No two tracks can transmit on the same MIDI channel.' The Programmer's Reference confirms Ch16 carries project-level control (Project Control section: 'Send messages on MIDI Channel 16' for reverb/delay/master-filter/mixer CCs) and project Program Change (select project instant/queued). Fully confirmed."
+        },
+        {
+          "id": "midi-performance-4",
+          "verdict": "confirmed",
+          "note": "User guide Setup View: 'It is entered by holding down Shift and pressing Save, and exited by [pressing Play].' MIDI channel assignment, MIDI I/O Rx/Tx incl. Clock Rx/Tx, and Analogue clock rates are all documented within the Setup View appendix (pp.103-105). Confirmed."
+        },
+        {
+          "id": "midi-performance-5",
+          "verdict": "confirmed",
+          "note": "User guide: 'Select a MIDI track and press Preset [14] to access Template View. Eight MIDI templates are stored within Circuit Tracks, represented by the top row of blue pads... Select a new template by pressing a pad; it lights white.' Exact match."
+        },
+        {
+          "id": "midi-performance-6",
+          "verdict": "confirmed",
+          "note": "User guide: 'Each track can use a different template.' and 'The eight default MIDI templates are identical.' and 'each MIDI template defaults to eight CC indexes with values 1, 2, 5, 11, 12, 13, 71 and 74 respectively.' Exact match to CC1/2/5/11/12/13/71/74."
+        },
+        {
+          "id": "midi-performance-7",
+          "verdict": "confirmed",
+          "note": "User guide 'Setting Up Templates in Components': start value = fully anti-clockwise output, end value = fully clockwise output. 'MIDI Template Control Polarity: Components Editor also lets you define each Macro control as either unipolar or bipolar. This only affects the response of the LED below the control and does not affect the transmitted messages.' Templates edited/backed up in Components Editor. Confirmed."
+        },
+        {
+          "id": "midi-performance-8",
+          "verdict": "confirmed",
+          "note": "User guide: 'automated MIDI template controls will send data to the MIDI Out DIN port as well as the USB port, unlike parameters on the other tracks, which are only sent to the USB port.' Exact match."
+        },
+        {
+          "id": "midi-performance-9",
+          "verdict": "confirmed",
+          "note": "User guide: on MIDI tracks the Macros in Mixer/FX View 'act on the analogue audio signal applied at the two audio Inputs [5] on the rear panel.' Recommended workflow: 'send MIDI data from Circuit Tracks to your external synth or drum machine, while routing the audio outputs of that device back into Circuit Tracks' audio inputs.' Macro 3/4 in Mixer View control Input 1/2 level. Confirmed."
+        },
+        {
+          "id": "midi-performance-10",
+          "verdict": "confirmed",
+          "note": "User guide: 'range 40 to 240 BPM; the default tempo for a new Project is 120 BPM.' 'Macro control 1 is used to adjust the tempo.' 'the internal tempo clock only allows integer BPMs... Circuit Tracks will synchronise to any external clock rates - including fractional values - in the range 30 to 300 BPM.' Exact match."
+        },
+        {
+          "id": "midi-performance-11",
+          "verdict": "confirmed",
+          "note": "User guide Tap Tempo: 'Hold down Shift and tap the Tempo/Swing button... You need at least three taps... and it will then calculate the BPM by averaging the last five taps.' Exact match."
+        },
+        {
+          "id": "midi-performance-12",
+          "verdict": "confirmed",
+          "note": "User guide: 'Altering the Swing parameter from its default value of 50 (the range is 20 to 80) alters the timing of even-numbered steps (the off-beats)' and 'Swing is adjusted with Macro 2, while in Tempo View.' Exact match."
+        },
+        {
+          "id": "midi-performance-13",
+          "verdict": "confirmed",
+          "note": "User guide Clock settings: 'When Clock Rx is OFF, the clock is in internal mode... Any external clock will be ignored. When Clock Rx is ON, Circuit Tracks is in AUTO mode and the BPM will be set by an externally applied MIDI clock at either the MIDI In or the USB ports if a valid one is applied; if this is not the case, Circuit Tracks will automatically switch to its internal clock.' Exact match."
+        },
+        {
+          "id": "midi-performance-14",
+          "verdict": "confirmed",
+          "note": "User guide: 'If Clock Tx is ON, Circuit Tracks is the clock master and its clock... will be available as MIDI Clock at the rear panel USB and MIDI Out connectors.' Exact match."
+        },
+        {
+          "id": "midi-performance-15",
+          "verdict": "confirmed",
+          "note": "User guide MIDI I/O: pads 25-32 as four Rx/Tx pairs - 25/26 Note (Green), 27/28 CC (Orange), 29/30 Program Change (Purple), 31/32 Clock (Pale Blue). 'By default, both MIDI Rx and MIDI Tx are ON... for all data categories.' Exact match."
+        },
+        {
+          "id": "midi-performance-16",
+          "verdict": "confirmed",
+          "note": "User guide: 'If an external clock is removed (or goes out of range), Circuit Tracks will stop playing. \"SYN\" remains displayed until Play is pressed.' Exact match."
+        },
+        {
+          "id": "midi-performance-17",
+          "verdict": "confirmed",
+          "note": "User guide Analogue clock rates: 'outputs a continuous analogue clock from the rear panel Sync Out connector [2] at an amplitude of 5 V... You can select the rate to be 1, 2, 4, 8 or 24 ppqn... The default value is 2 ppqn.' and 'Note that Swing (if set to something other than 50%) is not applied to the analogue clock output.' Exact match."
+        },
+        {
+          "id": "midi-performance-18",
+          "verdict": "confirmed",
+          "note": "Circuit Tracks has no network connectivity and neither the user guide nor the Sound on Sound review mentions Ableton Link; sync is MIDI clock (Rx/Tx as slave/master via MIDI In/Out or USB) or the rear-panel variable-rate analogue Sync Out. SoS: 'There's also a variable-rate analogue Sync output that worked great with my 303 clone.' Confirmed (no Link support; MIDI-clock and analogue sync only)."
+        },
+        {
+          "id": "midi-performance-19",
+          "verdict": "confirmed",
+          "note": "Programmer's Reference 'Patch and Project Select' table: Ch16 PGM 0-63 = 'select project (instant)'; Ch16 PGM 64-127 = 'select project (queued)'. The user guide's Switching Projects section explains a queued project change lets the current Pattern play through to its last step before switching, i.e. at the pattern boundary. Confirmed."
+        },
+        {
+          "id": "midi-performance-20",
+          "verdict": "confirmed",
+          "note": "User guide: 'The default is for the current Pattern to play to its end before the new Pattern starts playing... the pad for the next Pattern will flash quickly while it is being \"queued\"... if you hold down Shift while selecting the next Pattern memory, it will start playing immediately from the corresponding Pattern step, thereby ensuring that the overall timing maintains continuity.' Exact match."
+        },
+        {
+          "id": "midi-performance-21",
+          "verdict": "confirmed",
+          "note": "User guide: 'The two lower rows of pads in Mixer View represent the 16 Scenes.' Each Scene stores the pattern chains for all tracks. Queuing Scenes: 'The pad for a queued Scene flashes green and at the end of the Drum 1 Pattern currently playing, the new Scene will begin playing from the start without losing sync.' Exact match."
+        },
+        {
+          "id": "midi-performance-22",
+          "verdict": "confirmed",
+          "note": "Mixer is button 11. User guide: 'The illuminated pads on Row 1 are Mute buttons for each track... The pad's illumination dims to indicate a Mute state.' No Solo function exists anywhere in the guide (grep for 'solo' returns nothing). Confirmed."
+        },
+        {
+          "id": "midi-performance-23",
+          "verdict": "confirmed",
+          "note": "User guide 'Performing with Muted Tracks': 'When a track is muted, its sequencer step pads become inactive. However, they then become available to play synth notes or chords, or drum hits, in real time.' Confirmed."
+        },
+        {
+          "id": "midi-performance-24",
+          "verdict": "confirmed",
+          "note": "User guide 'The Filter Knob': 'The entire audio output of Circuit Tracks - the sum of the sounds from all six internal tracks plus the two external audio inputs - is fed through a traditional DJ-style filter section... controls a low-pass filter when you turn it anticlockwise from the centre position and a high-pass filter when you turn it clockwise... the control has a detent in the centre - in this position, no filtering takes place.' Exact match."
+        },
+        {
+          "id": "midi-performance-25",
+          "verdict": "confirmed",
+          "note": "User guide FX Section: 'Sixteen delay and eight reverb presets are provided.' Press FX [12] to open FX View. Per-track send levels set by Macro controls. 'In all cases, delay time is related to the BPM.' Exact match."
+        },
+        {
+          "id": "midi-performance-26",
+          "verdict": "confirmed",
+          "note": "User guide: Scales View 'accessed by pressing the Scales button [9]'; '16 available musical scales.' Root note settable. 'you can change the keynote to transpose the notes, even while the Project is playing... Circuit Tracks makes an intelligent decision as to which note to play instead, which will normally be either one semitone above or below the original note. Changing scale in this way is not destructive.' Exact match."
+        },
+        {
+          "id": "midi-performance-27",
+          "verdict": "confirmed",
+          "note": "User guide: 'Every time you press Play, the Pattern restarts from Step 1 (or the chosen Start point)... If you want to continue the Pattern from the point at which the sequencer was last stopped, press Shift and Play together.' Exact match."
+        },
+        {
+          "id": "midi-performance-28",
+          "verdict": "confirmed",
+          "note": "User guide Click track: 'The Click (or metronome) can be activated or deactivated by holding Shift and pressing Clear [17]... you will hear a metronome tick at every quarter note on all audio outputs.' Level: 'press Tempo/Swing and use Macro 5.' Tempo/Swing button opens Tempo View. Confirmed."
+        },
+        {
+          "id": "midi-performance-29",
+          "verdict": "confirmed",
+          "note": "User guide rear view: 'Outputs - L/Mono and R - Circuit Tracks' main audio outputs on two 1/4\" TS jack sockets. Max. output level is +5.3 dBu (+/-1.5 dBu). With no plug in the R socket, the L/Mono socket carries a mono mix of L and R channels.' Exact match."
+        },
+        {
+          "id": "midi-performance-30",
+          "verdict": "confirmed",
+          "note": "User guide: 'NOTE - Circuit Tracks' USB port does not carry audio.' The USB-C port is MIDI class compliant and used for MIDI, power/charging, and firmware updates. Confirmed."
+        },
+        {
+          "id": "midi-performance-31",
+          "verdict": "confirmed",
+          "note": "User guide Advanced Setup View (entered 'by holding down Shift while powering the unit on'): 'You can determine the behaviour of the MIDI Thru port... to duplicate the output of the MIDI Out port. This is useful if you have two pieces of hardware that you wish to control with the MIDI tracks that don't have MIDI thru ports... Use the Duplicate button [18]... the MIDI Thru port will act as a second MIDI Out.' Exact match."
+        },
+        {
+          "id": "midi-performance-32",
+          "verdict": "confirmed",
+          "note": "Programmer's Reference 'Project Control' (Send messages on MIDI Channel 16), Master Filter section: frequency = CC 74, range 0-127 (-64-63), '0-63=Low Pass, 64=OFF, 65-127=High Pass'; resonance = CC 71. Exact match."
+        },
+        {
+          "id": "midi-performance-33",
+          "verdict": "confirmed",
+          "note": "Sound on Sound review: 'Unfortunately there's no focus mode or master channel to save you from fiddling with channels, but as the Launchpad Pro has this I'm hopeful it will be added later.' Confirms the workflow limitation - each external MIDI destination must be on its own channel. Confirmed."
+        }
+      ],
+      "overallNotes": "All 33 claims for the midi-performance angle are CONFIRMED against Circuit Tracks-specific sources (user guide v3, Programmer's Reference Guide v3, Sound on Sound Circuit Tracks review). No cross-device contamination found - every fact was verified against material explicitly about Circuit Tracks, not the original 2015 Circuit or Circuit Rhythm. The two dedicated MIDI tracks are a Tracks-only feature (the original Circuit had no MIDI tracks), so all MIDI-track claims are inherently device-correct.\n\nMETHOD NOTE: WebFetch cannot read these PDFs directly (returns 'corrupted binary' errors), but it saves the raw PDF locally. I extracted clean text with pdftotext -layout and grepped/read the actual pages. Files: user guide at /Users/brennan/.claude/projects/-Users-brennan/56bada3a-f88a-4d86-bafd-8f424f2d9084/tool-results/ct_guide.txt and programmer's reference at .../prg_ref.txt.\n\nMinor caveats (do not change verdicts): (1) Claim 19's phrase 'queues to a pattern boundary' is a reasonable paraphrase - the Programmer's Reference literally says PGM 64-127 = 'select project (queued)', and the user guide's Switching Projects section confirms a queued project change waits for the current Pattern to finish. (2) Claim 18 is confirmed partly by absence (Link is nowhere mentioned; the hardware has no network interface) plus positive confirmation of MIDI-clock and analogue sync as the only methods.\n\nIMPORTANT FACTS THIS ANGLE MISSED (all Circuit Tracks-specific, worth adding to the guide's MIDI/performance coverage):\n- DRUM MIDI NOTE OUTPUT: All four drum tracks transmit on their shared channel (default 10) as fixed note numbers - Drum 1 = Note 60 (C3), Drum 2 = Note 62 (D3), Drum 3 = Note 64 (E3), Drum 4 = Note 65 (F3) (Programmer's Reference, Drum Control). This is how you'd trigger the drums or map them externally.\n- EXTERNAL PATCH SELECT for synths: send a Program Change 0-63 on the synth's own channel (Ch1/Ch2 default) to pick one of the 128 patches; the guide describes a two-step bank+PGM method for the full patch range.\n- PROJECT-LEVEL CC MAP on Ch16 is extensive beyond the master filter: reverb sends (CC 88/89/90/106/109/110), delay sends (CC 111-116), synth levels (CC 12/14), synth pans (CC 117/118), plus many NRPN parameters (reverb/delay type, sidechain, FX bypass). Useful for DAW automation of the whole project mix.\n- MACRO CC AUTOMATION on MIDI tracks is preserved across template changes: 'When a new template is selected, any existing automation data is not erased and will be applied to the new MIDI message now assigned to the Macro control.'\n- SYSEX responses are USB-only: Circuit Tracks receives SysEx via MIDI DIN but 'any response will be sent via USB only.'\n- STICKY SHIFT: in Setup View you can press Shift to latch it, easing two-handed performance shortcuts.\n- Pre-made MIDI templates for popular synths are downloadable from Novation Components (not just editable) - relevant to fast external-gear setup.\n- VIEW LOCK lets you keep the step display of one pattern while others continue - relevant to live pattern editing."
+    }
+  ]
+}

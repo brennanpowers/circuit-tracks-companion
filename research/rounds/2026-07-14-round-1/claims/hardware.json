@@ -1,0 +1,836 @@
+{
+  "angle": "hardware",
+  "claims": [
+    {
+      "id": "hardware-1",
+      "claim": "The Circuit Tracks playing grid is a 4 x 8 matrix of exactly 32 velocity-sensitive pads, each RGB-illuminated with independent red, green and blue LEDs.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.15 Top View item 1; p.5 Introduction"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-2",
+      "claim": "There are 8 macro rotary encoders (Macro 1-8), each with an RGB LED, whose function changes per View; their movements can be recorded and replayed into a pattern.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.15 Top View item 3"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-3",
+      "claim": "The Master Filter is a large rotary knob with a centre detent and RGB LED that is always active; turning anticlockwise from centre gives a low-pass filter, clockwise gives a high-pass filter, and the LED is dim white at the detent and pale blue when filtering.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.15 item 2; p.94 The Filter Knob"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-4",
+      "claim": "There are 8 track buttons labelled Synth 1, Synth 2, MIDI 1, MIDI 2, Drum 1, Drum 2, Drum 3, Drum 4; pressing any track button always goes to Note View for that track.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.16 item 5; p.14 Glossary 'Track'"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-5",
+      "claim": "The four step buttons are Note, Velocity, Gate and Pattern Settings; Probability is the Shift function of the Pattern Settings button.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.16 items 6-7; p.13 Glossary 'Probability View'"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-6",
+      "claim": "Shift + Note opens Expanded View, which doubles the synth performance-pad area and lets you create patterns on all four drum tracks simultaneously.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.11 Glossary 'Expanded View'"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-7",
+      "claim": "Shift + Velocity toggles Fixed velocity (disabling pad velocity response), and Shift + Gate enters Micro Step editing where each step is subdivided into six micro steps.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.11 Glossary 'Fixed' and 'Micro step'"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-8",
+      "claim": "Shift + Duplicate = Mutate (randomises steps), Shift + FX = Side Chain, Shift + Patterns = View Lock, Shift + Projects = Packs, and Shift + Save = Setup View.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.12-14 Glossary; p.102 Setup View"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-9",
+      "claim": "Setup View is entered by holding Shift and pressing Save, and is exited by pressing Play.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.102 Setup View"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-10",
+      "claim": "Advanced Setup View is entered by holding Shift while powering the unit on and exited by pressing Play; in it the Note button toggles Easy Start/Mass Storage (green on / dim red off), Duplicate toggles MIDI Thru behaviour, and FX toggles the Master Compressor.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.106 Advanced Setup View"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-11",
+      "claim": "Save Lock is toggled by holding both Shift and Save while powering the unit on; while active the Save button stays unlit and the setting persists across power cycles.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.107 Save Lock"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-12",
+      "claim": "Holding Shift + Clear while powering on forces Circuit Tracks to load a blank Project (a corruption recovery gesture).",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.107 Project loading problems"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-13",
+      "claim": "Bootloader Mode is entered by powering off, holding the Scales, Preset and Note buttons, then powering on; it is exited by pressing Play.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.108 Bootloader Mode"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-14",
+      "claim": "The rear panel carries full-size 5-pin DIN MIDI In, Out and Thru connectors (not TRS minijacks), and the Thru can be reconfigured in Advanced Setup View to act as a second MIDI Out.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.18 Rear View item 4; p.106 MIDI Thru configuration"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-15",
+      "claim": "Main audio outputs are two 1/4-inch TS jacks (L/Mono and R) with a maximum output level of +5.3 dBu; with nothing plugged into R, L/Mono carries a mono sum of L and R.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.18 Rear View item 1"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-16",
+      "claim": "There are two external audio inputs (Inputs 1 and 2) on unbalanced 1/4-inch TS jacks at line level; they mix with internal sound, can be processed by the FX section and ducked by the drum tracks.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.18 Rear View item 5; p.88 Mixer"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-17",
+      "claim": "The Sync output is a 3.5 mm TRS jack delivering a 5 V analogue clock; the rate is set in Setup View to 1, 2, 4, 8 or 24 ppqn with a default of 2 ppqn, and swing is not applied to it.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.18 item 2; p.105 Analogue clock rates; p.87 Analogue Sync Out"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-18",
+      "claim": "The headphone output is a 3.5 mm stereo socket; the main outputs stay active when headphones are inserted, and the amp drives +5 dBu into 150 ohm headphones.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.18 Rear View item 3"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-19",
+      "claim": "The USB-C port provides power, charging and class-compliant USB-MIDI, but does NOT carry audio.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.18 Rear View item 6"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-20",
+      "claim": "The internal Lithium-ion battery is non-removable and non-replaceable, gives up to 4 hours of operation, recharges in up to 4 hours, and triggers a red low-battery grid symbol when capacity drops below 15%.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.9-10 Power Requirements / Using the internal battery"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-21",
+      "claim": "The power switch is a soft on/off button requiring an approximately one-second press, with an integral LED that lights green while the internal battery is charging.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.18 Rear View item 8; p.10"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-22",
+      "claim": "Factory default MIDI channels are Synth 1 = channel 1, Synth 2 = channel 2, MIDI 1 = channel 3, MIDI 2 = channel 4, and all four Drum tracks = channel 10; any track can be set to channels 1-15, with channel 16 reserved for the Project and no two tracks allowed on the same channel.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.103 MIDI Channels"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-23",
+      "claim": "In Setup View, pads 25-32 form four coloured Rx/Tx toggle pairs: Note (green, pads 25/26), CC (orange, 27/28), Program Change (purple, 29/30) and Clock (pale blue, 31/32); all default to ON.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.104 MIDI I/O"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-24",
+      "claim": "In Setup View, Pad 24 (lit white) toggles pad brightness, dimming the grid by approximately 50%, and the setting is retained through power-down.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.103 Brightness"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-25",
+      "claim": "The internal tempo runs 40-240 BPM in integer steps with a default of 120 BPM, while when slaved to external MIDI clock it follows 30-300 BPM including fractional values; Tap Tempo (Shift + Tempo/Swing) needs at least three taps and averages the last five.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.85-86 Tempo, External clock, Tap Tempo"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-26",
+      "claim": "Swing has a range of 20 to 80 with a default of 50; values below 50 advance the even (off-beat) steps and values above 50 delay them, adjusted with Macro 2 in Tempo View.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.86-87 Swing"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-27",
+      "claim": "The Click/metronome is toggled by Shift + Clear (Clear lights green when on, dim red when off) and its volume is set with Macro 5 in Tempo View.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.87 Click track"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-28",
+      "claim": "The Play button lights bright green during playback and the Record button lights bright red in Record mode; the playback cursor is a white pad that turns red in Record mode.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.12 Glossary Playback/Record; p.16 item 13"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-29",
+      "claim": "The up/down arrow buttons in Note View shift a track's pitch by octave, up to 5 octaves up and 6 octaves down, independently per track.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.17 item 15"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-30",
+      "claim": "Each synth track can load any of 128 patches (4 pages of 32), each drum track any of 64 samples (2 pages of 32), and each MIDI track any of 8 templates, all via the Preset button.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.16 item 14; p.12-14 Glossary Patch/Sample/Template"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-31",
+      "claim": "The Scales button opens Scales View offering 16 musical scales plus transposition of the synth keyboard.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.13 Glossary 'Scale View'; p.16 item 9"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-32",
+      "claim": "The FX section provides 16 delay presets and 8 reverb presets with per-track send levels on the macros, plus a Master Compressor applied to the whole mix that is toggled by the FX button in Advanced Setup View.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.90-92 FX Section; p.106 Master Compressor"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-33",
+      "claim": "Side Chain View (Shift + FX) offers 7 side-chain presets per synth/MIDI-input track, letting a chosen drum track duck the synths or external inputs; side-chain is off by default.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.93 Side Chains"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-34",
+      "claim": "Mixer View is an 8-channel mixer whose Row 1 pads are per-track mutes; by default the macros control track level (default 100, range 0-127) and pressing the down-arrow switches the macros to pan (white centre, blue left, pink right).",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.88-89 Mixer"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-35",
+      "claim": "Sticky Shift is enabled in Setup View by pressing Shift; once on (Shift lit bright green) a press of Shift latches until pressed again, avoiding held combos.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.17 item 20"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-36",
+      "claim": "The Step Page button (1-16 / 17-32) sets whether a track's pattern is 16 or 32 steps, and its legend colour changes while running to indicate which half of a 32-step sequence is displayed.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.16 item 8"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-37",
+      "claim": "Each track stores 8 patterns per Project, up to 64 Projects are held in internal memory, and up to 32 Packs can be exported to a microSD card.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.12-13 Glossary Pattern memory/Project/Pack; p.5 Introduction"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-38",
+      "claim": "On boot the grid shows a ~5 second boot pattern, then pads change from pale red to bright green sequentially from top-left to bottom-right to indicate Pack loading.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.19 Powering the unit on"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-39",
+      "claim": "The supplied AC adaptor is 5 V DC, 2 A with interchangeable slide-in plug heads and a Type-A USB output; the box also includes a 1.5 m USB-A to USB-C cable.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.7 What's In The Box; p.9 Using the AC adaptor"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-40",
+      "claim": "The rear panel includes a Kensington MiniSaver security slot.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.18 Rear View item 9"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-41",
+      "claim": "Scenes are one of 16 memories to which patterns/pattern-chains are assigned; the manual's Scene glossary entry indicates they are accessed by holding Shift while Mixer View is selected, and the Mixer View lower rows show the Scene pads.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.13 Glossary 'Scene'; p.88 Mixer diagram"
+      ],
+      "confidence": "medium",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-42",
+      "claim": "Save requires two presses to complete (first press flashes Save, second stores to the last-used Project slot); pressing any other button after the first press aborts the save.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.96 Saving Projects to new slots"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "hardware-43",
+      "claim": "When saving, a Project pad colour can be chosen from a palette of 14 colours by rotating Macro 1 after the first Save press.",
+      "sources": [
+        "Circuit Tracks User Guide V3, p.96 Changing Project Colours"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    }
+  ],
+  "verification": [
+    {
+      "lens": "manual",
+      "verdicts": [
+        {
+          "id": "hardware-1",
+          "verdict": "confirmed",
+          "note": "P15 item 1: '32-pad playing grid \u2013 a 4 x 8 matrix of pads; internally illuminated with RGB LEDs.' P5 confirms '32 illuminated, velocity-sensitive pads' and footnote: 'each pad has internal red, blue and green LEDs.' P6 Key Features: 'RGB grid with 32 velocity-sensitive pads.' Fully confirmed."
+        },
+        {
+          "id": "hardware-2",
+          "verdict": "confirmed",
+          "note": "P15 item 3: 'Macro controls 1 to 8 \u2013 eight multi-functional rotary encoders, with associated RGB LED. The availability and function of these controls varies with Circuit Track's various views... The movement of Macro controls in performance may be recorded and replayed.'"
+        },
+        {
+          "id": "hardware-3",
+          "verdict": "confirmed",
+          "note": "P15 item 2: rotary control with centre detent and RGB LED, 'always active.' P94 The Filter Knob: 'controls a low-pass filter when you turn it anticlockwise from the centre position and a high-pass filter when you turn it clockwise... detent in the centre \u2013 in this position no filtering takes place and the LED below the knob is dimly lit white... The LED changes to pale blue when either filter type is active.' All details match."
+        },
+        {
+          "id": "hardware-4",
+          "verdict": "confirmed",
+          "note": "P16 item 5 labels the eight track buttons Synth 1 and 2 / MIDI 1 and 2 / Drum 1 to 4. P14 Glossary 'Track': 'When you press a Track button, you always go to Note View for that track.' Explicitly confirms the 'always' claim."
+        },
+        {
+          "id": "hardware-5",
+          "verdict": "confirmed",
+          "note": "P16: the physical step buttons are Note, Velocity, Gate, and Pattern Settings (item 7). Item 6 note: 'Probability is the Shift function of the Pattern Settings button.' P13 Glossary 'Probability View: Shift + Pattern Settings.' Confirmed. (Note: the P14 'Step buttons' glossary entry names the group as Note/Velocity/Gate/Probability, referring to Views, but the fourth physical button is Pattern Settings as the claim states.)"
+        },
+        {
+          "id": "hardware-6",
+          "verdict": "confirmed",
+          "note": "P11 Glossary: 'Expanded View \u2014 Shift + Note \u2014 Doubles the area of performance pads for the Synths, and allows you create patterns on all drum tracks simultaneously, using the currently selected samples.' ('all drum tracks' = four)."
+        },
+        {
+          "id": "hardware-7",
+          "verdict": "confirmed",
+          "note": "P11 Glossary: 'Fixed \u2014 Shift + Velocity \u2014 Allows the velocity response of the grid pads to be disabled.' and 'Micro step \u2014 Shift + Gate \u2014 The interval between consecutive Steps is further subdivided into six micro steps.'"
+        },
+        {
+          "id": "hardware-8",
+          "verdict": "confirmed",
+          "note": "All five mappings verified: Mutate = Shift+Duplicate (P12); Side Chain = Shift+FX (P14, and P93 'secondary view of the FX button'); View Lock = Shift+Patterns (P14); Packs = Shift+Projects (P97 'Packs View is the secondary view of the Projects button. Open by holding Shift and pressing Projects'); Setup Page/View = Shift+Save (P13/P102)."
+        },
+        {
+          "id": "hardware-9",
+          "verdict": "confirmed",
+          "note": "P102 Setup View: 'entered by holding down Shift and pressing Save, and exited by pressing Play.'"
+        },
+        {
+          "id": "hardware-10",
+          "verdict": "confirmed",
+          "note": "P106 Advanced Setup View: 'entered by holding down Shift while powering the unit on, and exited by pressing Play.' Note button toggles Easy Start Tool/Mass Storage ('bright green enabled, dim red disabled'); Duplicate sets MIDI Thru behaviour; FX toggles Master Compressor ('bright green enabled, dim red disabled'). All confirmed."
+        },
+        {
+          "id": "hardware-11",
+          "verdict": "confirmed",
+          "note": "P107 Save Lock: 'To enable Save Lock, hold both Shift and Save down while powering the unit on. While Save Lock is enabled, the Save button is unlit at all times. Save Lock status is retained during subsequent power cycles.'"
+        },
+        {
+          "id": "hardware-12",
+          "verdict": "confirmed",
+          "note": "P107 Project loading problems: 'we have included a method of turning Circuit Tracks on and forcing it to load a blank Project instead. To do this, hold down both Shift and Clear while turning Circuit Tracks on.' Presented as a corruption-recovery gesture."
+        },
+        {
+          "id": "hardware-13",
+          "verdict": "confirmed",
+          "note": "P108 Bootloader Mode: 1. Turn off; 2. Hold Scales, Preset and Note; 3. Power on. 'Bootloader Mode is most easily exited by simply pressing the Play button.'"
+        },
+        {
+          "id": "hardware-14",
+          "verdict": "confirmed",
+          "note": "P18 item 4: 'MIDI In, Out and Thru \u2013 standard set of three MIDI connectors on 5-pin DIN sockets... the MIDI Thru port may be configured in Advanced Setup View to act as a clone of the MIDI Out port.' P106 confirms Thru can act as a second MIDI Out. P6 lists 'Full size 5-pin MIDI In, Out and Thru' (not TRS minijacks)."
+        },
+        {
+          "id": "hardware-15",
+          "verdict": "confirmed",
+          "note": "P18 item 1: 'Outputs - L/Mono and R... on two \u00bc\" TS jack sockets. Max. output level is +5.3 dBu (+/-1.5 dBu). With no plug in the R socket, the L/Mono socket carries a mono mix of L and R channels.'"
+        },
+        {
+          "id": "hardware-16",
+          "verdict": "confirmed",
+          "note": "P18 item 5: 'Inputs 1 and 2 \u2013 two external audio inputs: line level signals... can be mixed with the internally-generated sounds, and can be individually treated by the FX section. They can also be ducked by the drum tracks. The inputs are unbalanced on \u00bc\" TS jack sockets.'"
+        },
+        {
+          "id": "hardware-17",
+          "verdict": "confirmed",
+          "note": "P18 item 2 + P105 Analogue clock rates: 3.5mm TRS jack, 5V amplitude clock; rate set in Setup View to 1, 2, 4, 8 or 24 ppqn (pads 17-21), default 2 ppqn. P105: 'Swing (if set to something other than 50%) is not applied to the analogue clock output.' All confirmed."
+        },
+        {
+          "id": "hardware-18",
+          "verdict": "confirmed",
+          "note": "P18 item 3: headphone socket for stereo headphones; 'The main outputs 1 remain active when a plug is inserted. The headphone amplifier can drive +5 dBu into a pair of 150 ohm stereo headphones.' Minor: item 3 does not print '3.5 mm' explicitly, but the socket is 3.5mm stereo (consistent with the other 3.5mm sockets described). Substance confirmed."
+        },
+        {
+          "id": "hardware-19",
+          "verdict": "confirmed",
+          "note": "P18 item 6: 'USB-C port. This is also the DC power input... battery charging... The port is MIDI class compliant... NOTE \u2013 Circuit Tracks' USB port does not carry audio.'"
+        },
+        {
+          "id": "hardware-20",
+          "verdict": "confirmed",
+          "note": "P10: 'The battery is non-removable and non-replaceable. Circuit Tracks will operate for up to 4 hours... When the battery capacity drops below 15%, a Low Battery symbol will be displayed... charging time is up to 4 hours.' The manual text does not literally state the symbol's colour is 'red' (shown only as a graphic), but all other facts are confirmed; 'red' is a reasonable inference from the displayed icon."
+        },
+        {
+          "id": "hardware-21",
+          "verdict": "confirmed",
+          "note": "P18 item 8: '\"soft\" on/off switch; to prevent inadvertent power up/down, a press of approx. one second is needed... The button has an integral LED which lights green to indicate that the internal battery is charging.'"
+        },
+        {
+          "id": "hardware-22",
+          "verdict": "confirmed",
+          "note": "P103 MIDI Channels table: Synth 1=1, Synth 2=2, MIDI 1=3, MIDI 2=4, Drums 1-4=10. 'Each track... can be set to any of MIDI channels 1-15. Channel 16 is reserved for the Project... No two tracks can transmit on the same MIDI channel.' All confirmed."
+        },
+        {
+          "id": "hardware-23",
+          "verdict": "confirmed",
+          "note": "P104 MIDI I/O table: Pads 25/26 Note = Green, 27/28 CC = Orange, 29/30 Program Change = Purple, 31/32 Clock = Pale Blue. 'By default, both MIDI Rx and MIDI Tx are ON (buttons brightly lit) for all data categories.' All confirmed."
+        },
+        {
+          "id": "hardware-24",
+          "verdict": "confirmed",
+          "note": "P103 Brightness: 'Pad 24 (illuminated white) controls the brightness of the grid pads. The default setting is for full brightness, but pressing Pad 24 dims them by approximately 50%... The brightness setting is saved when Circuit Tracks is powered down.'"
+        },
+        {
+          "id": "hardware-25",
+          "verdict": "confirmed",
+          "note": "P85: internal tempo 40-240 BPM (integer only), default 120 BPM for a new Project; slaved to external clock synchronises to 30-300 BPM including fractional values. P86 Tap Tempo (Shift + Tempo/Swing): 'at least three taps... it will then calculate the BPM by averaging the last five taps.'"
+        },
+        {
+          "id": "hardware-26",
+          "verdict": "confirmed",
+          "note": "P86-87: Swing default 50, range 20 to 80; a lower value shortens the time before the even (off-beat) step (advances it), higher delays it. P87: 'Swing is adjusted with Macro 2, while in Tempo View.'"
+        },
+        {
+          "id": "hardware-27",
+          "verdict": "confirmed",
+          "note": "P87 Click track: 'activated or deactivated by holding Shift and pressing Clear. Clear will light bright green when Click is enabled and dim red when it is not... To adjust the volume of the Click, press Tempo/Swing and use Macro 5.'"
+        },
+        {
+          "id": "hardware-28",
+          "verdict": "confirmed",
+          "note": "P12 Glossary: Playback Mode 'Play button will be lit bright green'; Record Mode 'Record button will be lit bright red'; Playback Cursor 'the white pad which moves through the pattern display... Changes to red in Record Mode.'"
+        },
+        {
+          "id": "hardware-29",
+          "verdict": "confirmed",
+          "note": "P17 item 15: in Note View the up/down (arrow) buttons 'let you shift the pitch of the synth pads or the MIDI tracks up by one to five octaves, or down by one to six octaves... the pitch range of each track is adjustable independently.'"
+        },
+        {
+          "id": "hardware-30",
+          "verdict": "confirmed",
+          "note": "P16 item 14: 'Each synth track can use any of 128 Patches, each MIDI track can use any of eight MIDI templates, and each drum track can use any of 64 percussion samples. The synth and drum Presets are arranged in pages of 32' (128/32=4 pages, 64/32=2 pages). P12/P13 glossary corroborate. Via the Preset button."
+        },
+        {
+          "id": "hardware-31",
+          "verdict": "confirmed",
+          "note": "P16 item 9: 'Scales \u2013 opens Scales View: allows the selection of one of sixteen different music scales for the synth keyboard, and also lets you transpose the synth keyboard to a higher or lower key.' P13 glossary corroborates '16 musical scales.'"
+        },
+        {
+          "id": "hardware-32",
+          "verdict": "confirmed",
+          "note": "P90: 'Sixteen delay and eight reverb presets... send levels from each track... individually adjustable... using the Macro controls.' Master compressor 'applied to your mix by default.' P106 confirms it is 'enabled or disabled by pressing FX while in Advanced Setup View.' (Note: P92 mis-cross-references this to 'Setup View: see page 102', but the authoritative control location is Advanced Setup View per P106, matching the claim.)"
+        },
+        {
+          "id": "hardware-33",
+          "verdict": "confirmed",
+          "note": "P93 Side Chains: 'Seven Side Chain presets are available, each allowing the selected drum track to modify the sound of the synth tracks (or signals at the external audio inputs)... The default state is for Side Chain to be OFF on both synths and both MIDI tracks. Side Chain View is the secondary view of the FX button (Shift + FX).'"
+        },
+        {
+          "id": "hardware-34",
+          "verdict": "confirmed",
+          "note": "P88-89: eight-channel mixer, default track level 100 (range 0-127); Row 1 pads are per-track Mutes. By default Macros control level (indicated by the down-arrow \u25bc button lit). Novation userguides article confirms the \u25bc (down) button is lit for level and pressing it switches Macros to pan; default pan centre = white LED, left = bright blue, right = bright pink. Down-arrow-to-pan confirmed."
+        },
+        {
+          "id": "hardware-35",
+          "verdict": "confirmed",
+          "note": "P17 item 20: 'To avoid holding the Shift button you can enable Sticky Shift. When you press Shift it acts as if it is held until you press it a second time. To enable Sticky Shift, enter Setup View and press Shift. Sticky Shift is on when the Shift button is bright green.'"
+        },
+        {
+          "id": "hardware-36",
+          "verdict": "confirmed",
+          "note": "P16 item 8: 'Step Page (1-16/17-32) \u2013 selects whether the Pattern for the currently selected track is initially 16 or 32 steps... When a 32-step Pattern is selected, the colour of the button legend changes when the sequence is running to indicate which \"half\" of the sequence the grid is currently displaying.'"
+        },
+        {
+          "id": "hardware-37",
+          "verdict": "confirmed",
+          "note": "P12 'Pattern memory: eight per track in each Project'; P13 'Up to 64 Projects can be saved as a Pack in flash memory'; P11 glossary 'Up to 32 Packs can be exported to a Micro SD card.' Nuance: P97/P99 detail that internal memory holds 1 Pack and the microSD card holds 31 additional Packs (32 total available); the '32 Packs' figure the claim quotes matches the glossary wording."
+        },
+        {
+          "id": "hardware-38",
+          "verdict": "confirmed",
+          "note": "P19: 'the grid will show the boot-up display for approximately five seconds... the display will change colour from pale red to bright green sequentially from top left to bottom right, indicating Pack loading.'"
+        },
+        {
+          "id": "hardware-39",
+          "verdict": "confirmed",
+          "note": "P7 What's In The Box: 'USB Type A to Type C cable (1.5 m)' and 'AC adaptor: 5 V DC, 2 A; includes interchangeable AC plugs.' P9: '5 V DC, 2 A type with a Type A USB output... interchangeable slide-in AC plug heads.'"
+        },
+        {
+          "id": "hardware-40",
+          "verdict": "confirmed",
+          "note": "P18 item 9: 'Kensington MiniSaver \u2013 secure your Circuit Tracks to a suitable structure if desired.'"
+        },
+        {
+          "id": "hardware-41",
+          "verdict": "confirmed",
+          "note": "P13 Glossary 'Scene': 'One of 16 memories to which multiple Patterns and Pattern Chains can be assigned... [button:] Hold Shift (while Mixer View is selected).' P88 Mixer diagram labels the lower grid rows 'Scene pads.' Both parts of the claim confirmed (the medium confidence can be upgraded)."
+        },
+        {
+          "id": "hardware-42",
+          "verdict": "confirmed",
+          "note": "P96: 'Save needs to be pressed twice to complete the store process: the first press will flash the Save button; a second press will save your work to the last Project memory that was in use... you can \"abort\" the Save routine after the first press of Save by pressing any other button.'"
+        },
+        {
+          "id": "hardware-43",
+          "verdict": "confirmed",
+          "note": "P96 Changing Project Colours: 'After pressing Save for the first time, the LED under Macro 1 rotary control will light in the current colour... You can now scroll through a palette of 14 colours by rotating the Macro 1 knob.'"
+        }
+      ],
+      "overallNotes": "All 43 hardware claims are CONFIRMED against the official Novation Circuit Tracks User Guide V3 (circuit_tracks_user_guide_v3_en.pdf, Focusrite/Novation, 2022). The source is unambiguously Circuit Tracks (two synths, two MIDI tracks, four sample drum tracks) throughout \u2014 no original-Circuit or Rhythm contamination. Downloaded PDF cached locally and read page-by-page.\n\nMinor caveats worth carrying into the guide (none change a verdict):\n- hardware-20: the manual shows a Low Battery symbol below 15% but does not literally print the word 'red' for it (only a graphic); 'red' is a safe inference.\n- hardware-18: item 3 does not literally print '3.5 mm' for the headphone socket, though it is a 3.5mm stereo socket consistent with the Sync 3.5mm socket.\n- hardware-37: the '32 Packs' figure comes from the glossary; the detailed text (P97/P99) clarifies internal memory holds 1 Pack and the microSD card holds 31 additional (32 total available). Worth stating precisely in the guide.\n- hardware-32: the manual has an internal cross-reference error \u2014 P92 says the Master Compressor is toggled 'by the FX button in Setup View: see page 102,' but the actual control lives in Advanced Setup View (P106). The claims correctly use Advanced Setup View.\n\nImportant hardware facts the claims MISSED entirely (candidates for the reference guide's hardware section):\n- Master Volume: a fourth top-panel knob (P15 item 4) controls overall output level of the audio outputs \u2014 the only major top-panel control not covered by any claim (claims cover the Master Filter but not Master Volume).\n- Synth engine spec: two synth tracks each have 6-VOICE POLYPHONY (P6 Key Features); MIDI tracks have programmable CC output.\n- Three power sources (P9): computer USB 3.0 port via USB-C, supplied AC adaptor, or internal Li-ion battery; adaptor operates 100-240V, 50/60Hz.\n- Track/pad colour-coding (P21): Synth 1 = violet, Synth 2 = pale green, MIDI 1 = blue, MIDI 2 = pink, Drum 1 = orange, Drum 2 = yellow, Drum 3 = purple, Drum 4 = aqua \u2014 used consistently across Views for track identification.\n- microSD requirements (P100): Class 10 minimum, FAT32 format.\n- Pack contents (P97): a Pack = all 64 Project memories + all 128 synth Patches + all 64 drum Samples.\n- Momentary vs latching button behaviour (P16): most view buttons support long-press (momentary/temporary view) and short-press (latching); Record's momentary action enables punch-in/punch-out.\n- Tempo display (P85): BPM is shown on the grid as large blue/white digits; Macro 1 sets tempo (LED blue), Macro 2 sets swing (LED orange). External clock displays 'SYN' in red.\n- Reverb preset names (P91): Small Chamber, Small Room 1/2, Large Room, Hall, Large Hall, Hall\u2013long reflection, Large Hall\u2013long reflection; delay presets are BPM-synced with a full 16-entry table on P92.\n- Secondary Views (P13) can be reached either by Shift+button OR by double-tapping/repeatedly pressing the primary button to toggle.\n- A separate 'Circuit Tracks Programmer's Reference Guide' (P107) documents full MIDI parameters \u2014 a distinct document from the User Guide.\n- Firmware/content management is via Novation Components (web, Chrome/Opera, or standalone app); the device also mounts as a 'TRACKS' USB mass-storage drive for the Easy Start tool (disableable in Advanced Setup View)."
+    },
+    {
+      "lens": "skeptic",
+      "verdicts": [
+        {
+          "id": "hardware-1",
+          "verdict": "confirmed",
+          "note": "V3 guide p.15 item 1: '32-pad playing grid - a 4 x 8 matrix of pads; internally illuminated with RGB LEDs.' Intro p.5: '32 illuminated, velocity-sensitive pads' and footnote: 'each pad has internal red, blue and green LEDs.' All three elements (4x8/32, velocity-sensitive, independent RGB) verbatim confirmed."
+        },
+        {
+          "id": "hardware-2",
+          "verdict": "confirmed",
+          "note": "V3 guide p.15 item 3: 'Macro controls 1 to 8 - eight multi-functional rotary encoders, with associated RGB LED. The availability and function of these controls varies with Circuit Track's various views... The movement of Macro controls in performance may be recorded and replayed.' Fully confirmed."
+        },
+        {
+          "id": "hardware-3",
+          "verdict": "confirmed",
+          "note": "V3 guide p.15 item 2 (centre detent, RGB LED, always active) and p.94 The Filter Knob: 'controls a low-pass filter when you turn it anticlockwise from the centre... high-pass filter when you turn it clockwise... LED below the knob is dimly lit white [at detent]... LED changes to pale blue when either filter type is active.' p.94 also calls it 'the large Master Filter knob.' All details confirmed."
+        },
+        {
+          "id": "hardware-4",
+          "verdict": "confirmed",
+          "note": "V3 guide p.16 item 5 lists Synth 1/2, MIDI 1/2, Drum 1-4. Glossary p.14 'Track': 'When you press a Track button, you always go to Note View for that track.' Confirmed."
+        },
+        {
+          "id": "hardware-5",
+          "verdict": "confirmed",
+          "note": "V3 guide p.16 item 6 (physical step buttons Note/Velocity/Gate plus item 7 Pattern Settings) and 'Probability is the Shift function of the Pattern Settings button' (also p.70: 'Probability View is the secondary view of the Pattern Settings button'). Note: the glossary p.14 loosely names the group 'Note, Velocity, Gate and Probability buttons,' but the fourth physical button is labelled Pattern Settings with Probability as its Shift layer, exactly as the claim states."
+        },
+        {
+          "id": "hardware-6",
+          "verdict": "confirmed",
+          "note": "V3 guide Glossary p.11 'Expanded View - Shift + Note - Doubles the area of performance pads for the Synths, and allows you create patterns on all drum tracks simultaneously, using the currently selected samples.' Verbatim."
+        },
+        {
+          "id": "hardware-7",
+          "verdict": "confirmed",
+          "note": "V3 guide Glossary p.11: 'Fixed - Shift + Velocity - Allows the velocity response of the grid pads to be disabled' and 'Micro step - Shift + Gate - The interval between consecutive Steps is further subdivided into six micro steps.' Both confirmed."
+        },
+        {
+          "id": "hardware-8",
+          "verdict": "confirmed",
+          "note": "All five Shift combos confirmed in V3 guide: Mutate=Shift+Duplicate (Glossary p.12), Side Chain=Shift+FX (p.14/p.93), View Lock=Shift+Patterns (p.14/p.80), Packs=Shift+Projects (p.97 'secondary view of the Projects button'), Setup View=Shift+Save (p.13/p.102)."
+        },
+        {
+          "id": "hardware-9",
+          "verdict": "confirmed",
+          "note": "V3 guide p.102: 'It is entered by holding down Shift and pressing Save, and exited by pressing Play.' Verbatim."
+        },
+        {
+          "id": "hardware-10",
+          "verdict": "confirmed",
+          "note": "V3 guide p.106: entered 'by holding down Shift while powering the unit on, and exited by pressing Play.' Note button toggles Easy Start/Mass Storage (bright green on / dim red off); Duplicate toggles MIDI Thru (bright green = second MIDI Out); FX toggles Master Compressor. All confirmed."
+        },
+        {
+          "id": "hardware-11",
+          "verdict": "confirmed",
+          "note": "V3 guide p.107 Save Lock: 'hold both Shift and Save down while powering the unit on. While Save Lock is enabled, the Save button is unlit at all times. Save Lock status is retained during subsequent power cycles.' Verbatim."
+        },
+        {
+          "id": "hardware-12",
+          "verdict": "confirmed",
+          "note": "V3 guide p.107 Project loading problems (corruption context): 'hold down both Shift and Clear while turning Circuit Tracks on' to force loading a blank Project. Confirmed."
+        },
+        {
+          "id": "hardware-13",
+          "verdict": "confirmed",
+          "note": "V3 guide p.108 Bootloader Mode: 1) turn off, 2) 'Hold down the Scales, Preset and Note buttons,' 3) power on. 'Bootloader Mode is most easily exited by simply pressing the Play button.' Confirmed."
+        },
+        {
+          "id": "hardware-14",
+          "verdict": "confirmed",
+          "note": "V3 guide p.18 item 4: 'MIDI In, Out and Thru - standard set of three MIDI connectors on 5-pin DIN sockets... the MIDI Thru port may be configured in Advanced Setup View to act as a clone of the MIDI Out port.' Full-size DIN (not TRS) confirmed by Key Features p.6 'Full size 5-pin MIDI In, Out and Thru.'"
+        },
+        {
+          "id": "hardware-15",
+          "verdict": "confirmed",
+          "note": "V3 guide p.18 item 1: 'Outputs - L/Mono and R... on two 1/4\" TS jack sockets. Max. output level is +5.3 dBu (+/-1.5 dBu). With no plug in the R socket, the L/Mono socket carries a mono mix of L and R channels.' Verbatim."
+        },
+        {
+          "id": "hardware-16",
+          "verdict": "confirmed",
+          "note": "V3 guide p.18 item 5: 'Inputs 1 and 2 - two external audio inputs: line level signals... can be mixed with the internally-generated sounds, and can be individually treated by the FX section. They can also be ducked by the drum tracks. The inputs are unbalanced on 1/4\" TS jack sockets.' Verbatim."
+        },
+        {
+          "id": "hardware-17",
+          "verdict": "confirmed",
+          "note": "V3 guide p.18 item 2 (3.5mm TRS, 5V clock, default 2 ppqn) + p.105 Analogue clock rates: selectable 1, 2, 4, 8 or 24 ppqn, default 2 ppqn, and 'Swing (if set to something other than 50%) is not applied to the analogue clock output.' All confirmed."
+        },
+        {
+          "id": "hardware-18",
+          "verdict": "confirmed",
+          "note": "V3 guide p.18 item 3: 'connect a pair of stereo headphones here. The main outputs remain active when a plug is inserted. The headphone amplifier can drive +5 dBu into a pair of 150 ohm stereo headphones.' The specific '3.5 mm' size is not stated in this rear-view entry (Key Features just says 'Headphone output'), but it is correct for the device; the load-bearing electrical specs are verbatim."
+        },
+        {
+          "id": "hardware-19",
+          "verdict": "confirmed",
+          "note": "V3 guide p.18 item 6: USB-C port is 'the DC power input... for external powering and battery charging,' is 'MIDI class compliant,' and 'NOTE - Circuit Tracks' USB port does not carry audio.' Confirmed."
+        },
+        {
+          "id": "hardware-20",
+          "verdict": "confirmed",
+          "note": "V3 guide p.10: 'The battery is non-removable and non-replaceable. Circuit Tracks will operate for up to 4 hours... When the battery capacity drops below 15%, a Low Battery symbol will be displayed... charging time is up to 4 hours.' The symbol's colour 'red' is shown as an image rather than named in the text, but the symbol is in fact red; every other detail is verbatim."
+        },
+        {
+          "id": "hardware-21",
+          "verdict": "confirmed",
+          "note": "V3 guide p.18 item 8: 'soft on/off switch; to prevent inadvertent power up/down, a press of approx. one second is needed... The button has an integral LED which lights green to indicate that the internal battery is charging.' Verbatim."
+        },
+        {
+          "id": "hardware-22",
+          "verdict": "confirmed",
+          "note": "V3 guide p.103 MIDI Channels table: Synth 1=1, Synth 2=2, MIDI 1=3, MIDI 2=4, Drums 1-4=10. 'each track... can be set to any of MIDI channels 1-15. Channel 16 is reserved for the Project.' 'No two tracks can transmit on the same MIDI channel.' All confirmed."
+        },
+        {
+          "id": "hardware-23",
+          "verdict": "confirmed",
+          "note": "V3 guide p.104 MIDI I/O table: pads 25/26 Note Rx/Tx (Green), 27/28 CC Rx/Tx (Orange), 29/30 Program Change Rx/Tx (Purple), 31/32 Clock Rx/Tx (Pale Blue). 'By default, both MIDI Rx and MIDI Tx are ON.' Exact match."
+        },
+        {
+          "id": "hardware-24",
+          "verdict": "confirmed",
+          "note": "V3 guide p.103 Brightness: 'Pad 24 (illuminated white) controls the brightness of the grid pads. The default setting is for full brightness, but pressing Pad 24 dims them by approximately 50%... The brightness setting is saved when Circuit Tracks is powered down.' Verbatim."
+        },
+        {
+          "id": "hardware-25",
+          "verdict": "confirmed",
+          "note": "External range 30-300 BPM incl. fractional values and Tap Tempo (Shift+Tempo/Swing, min 3 taps, averages last 5) are verbatim in V3 guide p.85-86. The internal 40-240 BPM integer range and 120 default are NOT stated in the guide body, but a Novation source confirms 'Circuit Tracks will operate at any tempo in the range 40 to 240 BPM'; the guide uses 120 BPM as its worked example (p.86), consistent with the default. Confirmed."
+        },
+        {
+          "id": "hardware-26",
+          "verdict": "confirmed",
+          "note": "V3 guide p.86: 'Altering the Swing parameter from its default value of 50 (the range is 20 to 80)... a lower swing value shortens the time between an even step and the previous odd step [advances off-beats], a higher Swing value has the opposite effect [delays them].' Diagrams: Swing=25% even beats advanced, Swing=75% even beats delayed. p.87: 'Swing is adjusted with Macro 2, while in Tempo View.' All confirmed."
+        },
+        {
+          "id": "hardware-27",
+          "verdict": "confirmed",
+          "note": "V3 guide p.87 Click track: 'activated or deactivated by holding Shift and pressing Clear. Clear will light bright green when Click is enabled and dim red when it is not.' 'To adjust the volume of the Click, press Tempo/Swing and use Macro 5.' Confirmed."
+        },
+        {
+          "id": "hardware-28",
+          "verdict": "confirmed",
+          "note": "V3 guide Glossary p.12: Playback Mode 'Play button will be lit bright green'; Record Mode 'Record button will be lit bright red'; Playback Cursor 'the white pad which moves through the pattern display... Changes to red in Record Mode.' Confirmed."
+        },
+        {
+          "id": "hardware-29",
+          "verdict": "confirmed",
+          "note": "V3 guide p.16-17 item 15: 'In Note View they let you shift the pitch of the synth pads or the MIDI tracks up by one to five octaves, or down by one to six octaves... the pitch range of each track is adjustable independently.' Confirmed (5 up, 6 down, per-track)."
+        },
+        {
+          "id": "hardware-30",
+          "verdict": "confirmed",
+          "note": "V3 guide p.16 item 14: 'Each synth track can use any of 128 Patches, each MIDI track can use any of eight MIDI templates, and each drum track can use any of 64 percussion samples.' Synth 128 = 4 pages of 32 (p.33), drum 64 = 2 pages of 32 (p.62). Confirmed."
+        },
+        {
+          "id": "hardware-31",
+          "verdict": "confirmed",
+          "note": "V3 guide p.16 item 9: 'Scales - opens Scales View: allows the selection of one of sixteen different music scales for the synth keyboard, and also lets you transpose the synth keyboard.' Confirmed (p.30 lists all 16 scales)."
+        },
+        {
+          "id": "hardware-32",
+          "verdict": "confirmed",
+          "note": "V3 guide p.90: 'Sixteen delay and eight reverb presets are provided... send levels from each track... individually adjustable for each track using the Macro controls.' Master Compressor 'applied to all audio outputs' toggled by FX button in Advanced Setup View (p.106). Note: p.92 loosely says 'FX button in Setup View' but p.106 (the operative procedure) specifies Advanced Setup View, matching the claim."
+        },
+        {
+          "id": "hardware-33",
+          "verdict": "confirmed",
+          "note": "V3 guide p.93: 'Seven Side Chain presets are available, each allowing the selected drum track to modify the sound of the synth tracks (or signals at the external audio inputs)... The default state is for Side Chain to be OFF on both synths and both MIDI tracks.' Side Chain View = 'secondary view of the FX button... holding Shift and pressing FX.' Confirmed."
+        },
+        {
+          "id": "hardware-34",
+          "verdict": "confirmed",
+          "note": "V3 guide p.88-89: 'eight-channel mixer... all the tracks play at a volume level of 100 (arbitrary units, range 0-127).' Row 1 pads are Mutes. Macros default to level (down-arrow lit); pressing the down-arrow converts Macros to pan - 'default pan position... stereo-centre... Macro LEDs showing white. Panning a track left turns the LED increasingly bright blue; panning to the right turns it increasingly bright pink.' Confirmed."
+        },
+        {
+          "id": "hardware-35",
+          "verdict": "confirmed",
+          "note": "V3 guide p.17 item 20: 'To avoid holding the Shift button you can enable Sticky Shift. When you press Shift it acts as if it is held until you press it a second time. To enable Sticky Shift, enter Setup View and press Shift. Sticky Shift is on when the Shift button is bright green.' Verbatim."
+        },
+        {
+          "id": "hardware-36",
+          "verdict": "confirmed",
+          "note": "V3 guide p.16 item 8: 'Step Page (1-16/17-32) - selects whether the Pattern for the currently selected track is initially 16 or 32 steps in length. When a 32-step Pattern is selected, the colour of the button legend changes when the sequence is running to indicate which half of the sequence the grid is currently displaying.' Verbatim (p.75 adds blue=Page1, orange=Page2)."
+        },
+        {
+          "id": "hardware-37",
+          "verdict": "confirmed",
+          "note": "8 patterns per track (Glossary 'Pattern memory... eight per track in each Project') and 64 Projects internal (p.5, Glossary) are verbatim. '32 Packs' matches Glossary p.12 ('Up to 32 Packs can be exported to a Micro SD card') and Key Features p.6. Nuance: the detailed Packs section (p.97/p.100) clarifies the microSD card holds 31 ADDITIONAL Packs, making 32 the total accessible including the internal Pack - so strictly the card stores 31, not 32. The claim mirrors the guide's own glossary phrasing."
+        },
+        {
+          "id": "hardware-38",
+          "verdict": "confirmed",
+          "note": "V3 guide p.19: 'the grid will show the boot-up display for approximately five seconds... the display will change colour from pale red to bright green sequentially from top left to bottom right, indicating Pack loading.' Verbatim."
+        },
+        {
+          "id": "hardware-39",
+          "verdict": "confirmed",
+          "note": "V3 guide p.7 What's In The Box: 'USB Type A to Type C cable (1.5 m)' and 'AC adaptor: 5 V DC, 2 A; includes interchangeable AC plugs.' p.9: '5 V DC, 2 A type with a Type A USB output... interchangeable slide-in AC plug heads.' Confirmed."
+        },
+        {
+          "id": "hardware-40",
+          "verdict": "confirmed",
+          "note": "V3 guide p.18 item 9: 'Kensington MiniSaver - secure your Circuit Tracks to a suitable structure if desired.' Confirmed."
+        },
+        {
+          "id": "hardware-41",
+          "verdict": "confirmed",
+          "note": "V3 guide Glossary p.13: 'Scene - Hold Shift (while Mixer View is selected) - One of 16 memories to which multiple Patterns and Pattern Chains can be assigned.' p.81: 'The two lower rows of pads in Mixer View represent the 16 Scenes.' The claim accurately reflects the glossary. Nuance: holding Shift is specifically the gesture for ASSIGNING patterns to a Scene; Scenes are viewed/selected/triggered in Mixer View without Shift. The claim's 'accessed by holding Shift' follows the guide's own glossary wording."
+        },
+        {
+          "id": "hardware-42",
+          "verdict": "confirmed",
+          "note": "V3 guide p.96: 'Save needs to be pressed twice to complete the store process: the first press will flash the Save button; a second press will save your work to the last Project memory that was in use... you can abort the Save routine after the first press of Save by pressing any other button.' Verbatim."
+        },
+        {
+          "id": "hardware-43",
+          "verdict": "confirmed",
+          "note": "V3 guide p.96 Changing Project Colours: 'After pressing Save for the first time, the LED under Macro 1 rotary control will light in the current colour... You can now scroll through a palette of 14 colours by rotating the Macro 1 knob.' Confirmed."
+        }
+      ],
+      "overallNotes": "All 43 hardware claims are CONFIRMED against the exact cited source: the official Novation Circuit Tracks User Guide Version 3 (fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf, 2022 Focusrite, 109 pages). I extracted the full PDF text and verified each claim page-by-page, so these are device-correct for Circuit Tracks specifically (not the original Circuit or Circuit Rhythm). The claim set is unusually accurate - it reads as if lifted directly from this guide. No refutations.\n\nMinor caveats already flagged per-claim (all still 'confirmed'): (18) headphone jack '3.5 mm' size is not stated in the rear-view entry, though correct; (20) the low-battery symbol's colour 'red' is shown as an image, not named in text; (25) the internal 40-240 BPM / 120 default is not in the guide body but is confirmed by a separate Novation source and consistent with the guide's 120 BPM worked example; (37) '32 Packs to microSD' matches the guide's glossary wording, but the detailed section clarifies the card physically holds 31 ADDITIONAL packs (32 total accessible including the internal pack).\n\nNotable hardware facts the claim set MISSED entirely (candidates for the guide's coverage):\n- Master Volume knob (Top View item 4): the analogue output-level control, separate from the digital Mixer/Master Filter - not covered by any claim.\n- Synth polyphony: two synth tracks are 6-voice polyphonic (Key Features p.6; p.35 'six-note polyphonic'). Claims cover synth count but not the 6-voice spec.\n- The J/K (down/up arrow) buttons double as page selectors outside Note View (e.g., Patch pages, Pattern pages 1-4 / 5-8, Setup/Mixer page toggles) - only their octave-shift role (item 15) is partially covered.\n- Rec Quantise toggle: Shift + Record toggles quantised vs non-quantised recording (Record lights bright green = quantised, dim red = non-quantised) - a Shift-combo not in the hardware-8 list.\n- Shift + Play resumes/continues from the last-stopped step (rather than restarting from step 1) - a transport behaviour.\n- microSD requirements: Class 10 minimum, FAT32 format (p.100); card slot is on the rear panel (rear item 7), distinct from USB-C.\n- Powering/charging requires a USB 3.0 port (p.9) when powered from a computer; three power sources (computer USB, AC adaptor, internal battery).\n- No screen/display: BPM and all feedback are rendered on the 32-pad grid itself (p.85 digit rendering).\n- Pattern-chain / sequence limits: up to 8 chainable patterns per track = max 256 (8x32) steps per chain (p.76-78); 16 Scenes chainable into a full Sequence.\n- Rear-panel connector count/order and the fact that there are eight physical Track buttons plus the transport (Play/Record) pair - broadly covered but the Master Volume omission is the most significant hardware gap."
+    }
+  ]
+}

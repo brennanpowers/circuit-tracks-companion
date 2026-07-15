@@ -1,0 +1,370 @@
+{
+  "angle": "official",
+  "claims": [
+    {
+      "id": "official-1",
+      "claim": "Circuit Tracks has 8 tracks: 2 synth tracks (6-voice polyphonic), 2 MIDI tracks (no internal sound, sequence external gear), and 4 sample-based drum tracks, always in that left-to-right order on the Track buttons.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-2",
+      "claim": "The grid is 32 velocity-sensitive RGB pads (4x8). In synth/MIDI Note View the top two rows (pads 1-16) show the 16-step pattern and the bottom two rows (17-32) are the keyboard; pad 32 duplicates pad 17.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-3",
+      "claim": "Expanded Note View is entered with Shift+Note (Note button turns gold), giving a 4-octave synth keyboard; pressing Note again toggles it. For drum tracks, Shift+Note gives Expanded Drum View where pads 29-32 play all four drum tracks live.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-4",
+      "claim": "Scales View (Scales button) offers exactly 16 scales on pads 17-32 in this order: Natural Minor, Major, Dorian, Phrygian, Mixolydian, Melodic Minor, Harmonic Minor, Bebop Dorian, Blues, Minor Pentatonic, Hungarian Minor, Ukrainian Dorian, Marva, Todi, Whole Tone, Chromatic.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-5",
+      "claim": "The selected scale and root note apply to both synth tracks AND both MIDI tracks simultaneously; default root is C. Changing scale on an existing pattern is non-destructive (out-of-scale notes snap to nearest and revert on scale change back).",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-6",
+      "claim": "Chromatic is the only scale with 12 notes; selecting it collapses the Note View keyboard to one octave (two octaves in Expanded Note View).",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-7",
+      "claim": "Each synth track can use any of 128 factory patches (4 pages of 32). Synth 1 defaults to Patch 1; Synth 2 defaults to Patch 33. Preset View opens at page 1 for Synth 1 and page 3 for Synth 2.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-8",
+      "claim": "Each drum track can use any of 64 samples (4 pages of 16 in Note View, or 2 pages of 32 in Preset View). Default assignments: Drum1=Kick1 (slot1), Drum2=Snare1 (slot3), Drum3=Closed hat1 (slot5), Drum4=Perc1 (slot9).",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-9",
+      "claim": "There are 8 macro encoders. On drum tracks only the even macros are active: Macro 2=Pitch, Macro 4=Decay envelope time, Macro 6=Distortion, Macro 8=EQ. On synth tracks each patch maps up to 4 parameters per macro.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-10",
+      "claim": "Each track has 8 pattern memories (2 pages of 4 in Patterns View). Default pattern length is 16 steps; the Step Page (1-16/17-32) button extends it to 32 steps. Clear+Step Page reverts to 16 without erasing steps 17-32; Duplicate+Step Page copies steps 1-16 to 17-32.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-11",
+      "claim": "Pattern chains must be contiguous (hold lowest pattern pad, press highest). Scenes (16, on the lower two rows of Mixer View) can chain non-contiguous patterns, working around this. Scenes are assigned by holding Shift in Mixer View and pressing a Scene pad.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-12",
+      "claim": "Duplicate can copy patterns synth-to-synth, synth-to-MIDI, and drum-to-drum, but cannot copy between synth/MIDI tracks and drum tracks in either direction.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-13",
+      "claim": "Internal tempo range is 40-240 BPM (integer only), default 120, adjusted with Macro 1 in Tempo View. External MIDI clock (USB or MIDI In) auto-slaves and accepts fractional 30-300 BPM, displaying 'SYN'.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-14",
+      "claim": "Swing range is 20-80, default 50, adjusted with Macro 2 in Tempo View; swing shifts even-numbered (off-beat) steps. Tap Tempo is Shift+tap on Tempo/Swing (needs at least 3 taps, averages the last 5).",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-15",
+      "claim": "The click/metronome is toggled with Shift+Clear (Clear lights green when on); its volume is set with Macro 5 in Tempo View. The click is a global setting, ticks every quarter note, and its on/off state is not retained across power cycles (volume level is).",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-16",
+      "claim": "FX View (FX button) offers 8 reverb presets and 16 tempo-synced delay presets; only one reverb and one delay preset apply globally, but send levels are per-track via the 8 macros. All delay times are locked to BPM.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-17",
+      "claim": "Sidechain View is Shift+FX; there are 7 sidechain presets per synth/MIDI track, and you select which of Drum 1-4 triggers the ducking. Muting the trigger drum in Mixer View disables sidechain triggering, but reducing its level to zero does not.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-18",
+      "claim": "The large Master Filter knob has a centre detent (no filtering); turning anticlockwise engages a low-pass filter, clockwise a high-pass filter, applied to the entire mix including the two external audio inputs, and is always active.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-19",
+      "claim": "MIDI tracks default templates map the 8 macros to CC 1, 2, 5, 11, 12, 13, 71, 74. All 8 default templates are identical. MIDI-track macro automation is sent to both the MIDI Out DIN and USB, unlike other tracks (USB only).",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-20",
+      "claim": "In Mixer and FX views the MIDI tracks' macros control the two rear-panel external audio inputs (mono 1/4-inch TS), enabling the workflow of sending MIDI to an external synth and returning its audio into Circuit Tracks for mixing, FX and sidechain.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-21",
+      "claim": "Rear connectivity includes full-size 5-pin MIDI In/Out/Thru (Thru can mirror Out via Advanced Setup), USB-C (MIDI class-compliant, DC power/charging, carries no audio), a microSD slot, a 3.5mm TRS analogue Sync Out (5V), two 1/4-inch TS audio inputs, stereo 1/4-inch outputs, and a headphone output.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-22",
+      "claim": "Circuit Tracks has a built-in rechargeable battery rated at 4 hours; the power button requires an approximately 1-second long-press to turn on or off.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-23",
+      "claim": "A Pack contains all 64 project memories, 128 synth patches and 64 drum samples. Internal memory holds one Pack; a microSD card can hold 31 more, for 32 Packs total. Packs View is Shift+Projects and is only accessible with a card inserted.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-24",
+      "claim": "microSD cards for Circuit Tracks must be Class 10 minimum and FAT32 formatted. Packs can only be deleted via Novation Components, not from the device directly.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-25",
+      "claim": "Saving requires pressing Save twice; the first press pulses the last-used project slot in Projects View, and you can redirect the save to a new slot before the second press. Projects can be colour-coded from a 14-colour palette scrolled with Macro 1 after the first Save press.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-26",
+      "claim": "Novation Components for Circuit Tracks can: download content, create/edit synth patches (full synth-engine editor), load user samples, edit MIDI templates, back up projects, load packs, and update firmware. It needs a Web-MIDI browser (Chrome or Opera recommended); a standalone app is available after registration.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf",
+        "https://components.novationmusic.com/"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-27",
+      "claim": "Default MIDI channels: Synth 1 = ch1, Synth 2 = ch2, MIDI 1 = ch3, MIDI 2 = ch4, all four drums = ch10. Channel 16 is reserved for the Project. Tracks are reassignable to channels 1-15 and no two tracks may share a channel.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-28",
+      "claim": "Setup View is entered with Shift+Save and exited with Play; it sets MIDI channels, independent Rx/Tx toggles for Note/CC/Program-Change/Clock (pads 25-32, all ON by default), analogue sync rate (1/2/4/8/24 ppqn, default 2), and grid brightness (pad 24 dims about 50%).",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-29",
+      "claim": "Bootloader Mode (to check firmware version or recover) is entered by powering off, holding Scales + Preset + Note, then powering on; Synth 1/2 pads then display firmware versions as binary pad patterns. Exit by pressing Play.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-30",
+      "claim": "Power-on combos: Shift+power = Advanced Setup View; Shift+Save+power = toggle Save Lock (persists across power cycles); Shift+Clear+power = force-load a blank project for recovery.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-31",
+      "claim": "Non-quantised recording is toggled with Shift+Record (Rec Quantise); it enables 6 micro-steps between adjacent pattern steps. Pressing Shift shows the state: Record lit green = quantised, red = non-quantised.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-32",
+      "claim": "Synth engines are 6-note polyphonic (up to six notes per step). Manual note entry requires no Record mode: hold a step pad and press a keyboard pad to add, or press step pad then keyboard pad to delete. Shift+Play continues playback from the stopped step instead of restarting at step 1.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-33",
+      "claim": "Firmware 1.1.5 (April 2021) tripled Circuit Tracks sample memory from 60 seconds to 196.6 seconds per pack (max single sample 98.3s), reduced synth voice-stealing, and added a sticky-Shift toggle in Setup View.",
+      "sources": [
+        "https://synthanatomy.com/2021/04/novation-circuit-tracks-firmware-1-1-5-upgrades-sample-time-to-1966-seconds-per-pack.html",
+        "https://www.synthtopia.com/content/2021/04/23/free-firmware-update-gives-novation-circuit-tracks-triple-the-sample-time/"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-34",
+      "claim": "Firmware 1.2 (released 15 December 2022) added the ability to save mute states to Scenes, letting muted track states be stored with a Scene so arrangements no longer need empty patterns. It is the newest officially documented Circuit Tracks firmware.",
+      "sources": [
+        "https://novationmusic.com/articles/circuit-tracks-12-firmware-update/",
+        "https://www.matrixsynth.com/2022/12/novation-circuit-tracks-12-circuit.html"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-35",
+      "claim": "Firmware is updated through Novation Components, which detects the connected device and prompts an update if it is out of date.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf",
+        "https://support.novationmusic.com/hc/en-gb/articles/360019538120-Updating-Circuit-Tracks-Firmware"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-36",
+      "claim": "Drum steps support Sample Flip: hold a sample pad (turns red) and press step pads to place a different sample on specific steps; flipped steps show pink versus bright blue for the active sample, overcoming the one-sample-per-track limit.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-37",
+      "claim": "Each step carries Velocity, Gate and Probability data. Step buttons are Note/Velocity/Gate/Probability, with Probability accessed as Shift+Pattern Settings and Micro Step as Shift+Gate. Gate value sets how many steps a note sustains.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-38",
+      "claim": "The synth keyboard spans 10 octaves total, navigated with the up/down (octave) buttons; each track's octave is set independently, and Shift+octave transposes an already-recorded pattern.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-39",
+      "claim": "A separate Circuit Tracks Programmer's Reference Guide (downloadable from Novation) documents full MIDI implementation, including recalling synth patches via Program Change and drum samples via CC on MIDI channel 10.",
+      "sources": [
+        "https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "official-40",
+      "claim": "A build referred to as '1.2.1' appears only in a third-party firmware reverse-engineering gist and is not documented in official Novation firmware release notes, so it should be treated as unconfirmed rather than an official release.",
+      "sources": [
+        "https://gist.github.com/userx14/664f5e74cc7ced8c29d4a0434ab7be98"
+      ],
+      "confidence": "low",
+      "tracksConfirmed": true
+    }
+  ],
+  "verification": []
+}

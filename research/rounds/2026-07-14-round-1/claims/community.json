@@ -1,0 +1,384 @@
+{
+  "angle": "community",
+  "claims": [
+    {
+      "id": "community-1",
+      "claim": "loopop's video 'Circuit TRACKS vs Circuit OG' (Ziv Eliraz) is the most-cited full tutorial/review for Circuit Tracks and is chapter-marked covering sequencing, sample flip, scales, micro steps, probability, mutate, ratchets, automation, MIDI, sidechain, view lock and scenes.",
+      "sources": [
+        "https://loopopmusic.com/circuit-tracks-vs-circuit-og-review-and-full-tutorial-for-novations-new-groovebox",
+        "https://www.youtube.com/watch?v=s3oJv6KAM0k"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-2",
+      "claim": "Novation's official 'Circuit Tracks - Introduction' video (YouTube 0To9D9RhlXs) plus their YouTube series are the vendor-baseline tutorials for Tracks.",
+      "sources": [
+        "https://www.youtube.com/watch?v=0To9D9RhlXs"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-3",
+      "claim": "Saving requires pressing Save twice: the first press flashes Save and pulses the last-used Project pad white; the second press commits, overwriting the Project you loaded from.",
+      "sources": [
+        "https://userguides.novationmusic.com/hc/en-gb/articles/26207162875922-Managing-your-data-on-the-Circuit-Tracks",
+        "https://www.manualslib.com/manual/2152517/Novation-Circuit-Tracks.html?page=23"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-4",
+      "claim": "To save to a new slot instead of overwriting, after the first Save press you press a different Project pad in Projects view; other pads darken and the chosen pad flashes green for a couple of seconds.",
+      "sources": [
+        "https://www.manualslib.com/manual/2152517/Novation-Circuit-Tracks.html?page=97",
+        "https://userguides.novationmusic.com/hc/en-gb/articles/26207162875922-Managing-your-data-on-the-Circuit-Tracks"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-5",
+      "claim": "A Save can be aborted after the first Save press by pressing any other button.",
+      "sources": [
+        "https://userguides.novationmusic.com/hc/en-gb/articles/26207162875922-Managing-your-data-on-the-Circuit-Tracks"
+      ],
+      "confidence": "medium",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-6",
+      "claim": "Circuit Tracks has no undo function; the community workaround is to Save before risky edits and Duplicate a pattern to an empty slot before running Mutate.",
+      "sources": [
+        "https://www.soundonsound.com/reviews/novation-circuit-tracks",
+        "https://deavid.wordpress.com/2022/01/29/review-and-criticism-of-novation-circuit-tracks/"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-7",
+      "claim": "Macro-knob movements are not retained on reload unless recorded into automation or saved with the project.",
+      "sources": [
+        "https://www.soundonsound.com/reviews/novation-circuit-tracks"
+      ],
+      "confidence": "medium",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-8",
+      "claim": "Novation warns not to remove the microSD card during a Save or Load operation, as it can lose/corrupt saved work.",
+      "sources": [
+        "https://userguides.novationmusic.com/hc/en-gb/articles/26207162875922-Managing-your-data-on-the-Circuit-Tracks"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-9",
+      "claim": "Each of the 8 tracks has 8 pattern slots (paged 1-4 then 5-8); patterns default to 16 steps and expand to 32 steps.",
+      "sources": [
+        "https://www.soundonsound.com/reviews/novation-circuit-tracks",
+        "https://djtechtools.com/2021/05/27/review-novations-circuit-tracks-is-an-even-better-circuit-groovebox/"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-10",
+      "claim": "Pattern chains are made by holding the start pattern and pressing the end pattern; the maximum chain is 8 patterns x 32 steps = 256 steps.",
+      "sources": [
+        "https://www.musicradar.com/news/live-primer-using-novation-circuit-tracks-onstage",
+        "https://www.soundonsound.com/reviews/novation-circuit-tracks"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-11",
+      "claim": "Circuit Tracks has a dedicated Scene system: 16 scene pads inside the Mixer view store snapshots of the currently-playing patterns/chains and can be chained into song sections.",
+      "sources": [
+        "https://www.soundonsound.com/reviews/novation-circuit-tracks"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-12",
+      "claim": "There are 64 Project slots per pack (double the original Circuit's 32).",
+      "sources": [
+        "https://www.soundonsound.com/reviews/novation-circuit-tracks"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-13",
+      "claim": "Clear works by holding Clear (lights bright red) then tapping a step pad to delete all notes on that step for the selected track; Clear also removes macro automation, patterns and projects.",
+      "sources": [
+        "https://www.manualslib.com/manual/2152517/Novation-Circuit-Tracks.html?page=41"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-14",
+      "claim": "Duplicate works as copy/paste: hold Duplicate (bright green), tap the source step (turns green, its notes turn red), then tap destination step(s).",
+      "sources": [
+        "https://www.manualslib.com/manual/2152517/Novation-Circuit-Tracks.html?page=41"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-15",
+      "claim": "View Lock is engaged by holding Shift and pressing the Patterns/View Lock button, freezing the top 16 step pads so one pattern can be edited while another plays.",
+      "sources": [
+        "https://www.manualslib.com/manual/2152517/Novation-Circuit-Tracks.html?page=81"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-16",
+      "claim": "Note, Velocity, Gate and Probability views have dedicated grid modes for per-step editing; Probability is the Shift function of the Pattern Settings button.",
+      "sources": [
+        "https://www.soundonsound.com/reviews/novation-circuit-tracks"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-17",
+      "claim": "Each sequencer step subdivides into 6 micro-steps for ratchets, strums and triplet/straight feel; with Record Quantise disabled, live-recorded notes land on micro-steps.",
+      "sources": [
+        "https://www.soundonsound.com/reviews/novation-circuit-tracks"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-18",
+      "claim": "Mutate destructively alters the currently selected pattern in subtle ways; the recommended practice is to Duplicate the pattern first to preserve the original.",
+      "sources": [
+        "https://www.soundonsound.com/reviews/novation-circuit-tracks"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-19",
+      "claim": "Sample flipping (a different drum sample triggered on each step via automation) is the main community workaround for having only 4 drum voices.",
+      "sources": [
+        "https://www.soundonsound.com/reviews/novation-circuit-tracks"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-20",
+      "claim": "A hidden global compressor (simple on/off, no adjustable parameters) is enabled via the Advanced Setup menu, reached by holding Shift while powering the unit on.",
+      "sources": [
+        "https://www.soundonsound.com/reviews/novation-circuit-tracks",
+        "https://www.musicradar.com/news/live-primer-using-novation-circuit-tracks-onstage"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-21",
+      "claim": "Samples are loaded via Novation Components; all imported audio is converted to 48kHz mono 16-bit on the device.",
+      "sources": [
+        "https://userguides.novationmusic.com/hc/en-gb/articles/26207162875922-Managing-your-data-on-the-Circuit-Tracks",
+        "https://support.novationmusic.com/hc/en-gb/articles/360020976619-Circuit-Tracks-Components-guide"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-22",
+      "claim": "After firmware 1.1.5, no single sample can exceed 98.3 seconds and total sample time per pack is 196.6 seconds.",
+      "sources": [
+        "https://synthanatomy.com/2021/04/novation-circuit-tracks-firmware-1-1-5-upgrades-sample-time-to-1966-seconds-per-pack.html",
+        "https://www.soundonsound.com/reviews/novation-circuit-tracks"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-23",
+      "claim": "Each pack contains 64 samples, 64 projects and 128 synth patches; internal memory holds one pack, and a microSD card holds 31 more for 32 total.",
+      "sources": [
+        "https://userguides.novationmusic.com/hc/en-gb/articles/26207162875922-Managing-your-data-on-the-Circuit-Tracks",
+        "https://www.soundonsound.com/reviews/novation-circuit-tracks"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-24",
+      "claim": "The Components editor has no iOS support (Android/Chrome/desktop only), a noted limitation for tablet users.",
+      "sources": [
+        "https://www.soundonsound.com/reviews/novation-circuit-tracks"
+      ],
+      "confidence": "medium",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-25",
+      "claim": "Isotonik Studios runs a Circuit Tracks patch/sample store including a free 'Big City Dream' 12-preset pack; other free/paid sources include Novation Components, SoundGhost and Nu-Trix.",
+      "sources": [
+        "https://isotonikstudios.com/product-category/synth-patch-store/circuit-tracks-patch-store/",
+        "https://isotonikstudios.com/product/big-city-dream-free-pack/",
+        "https://soundghost.net/product-tag/circuit-tracks/"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-26",
+      "claim": "Scales apply globally per project (not per pattern or per track), limiting key changes within a song - a repeated owner criticism.",
+      "sources": [
+        "https://deavid.wordpress.com/2022/01/29/review-and-criticism-of-novation-circuit-tracks/"
+      ],
+      "confidence": "medium",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-27",
+      "claim": "MIDI channel configuration is global rather than per-project, an owner-reported limitation.",
+      "sources": [
+        "https://deavid.wordpress.com/2022/01/29/review-and-criticism-of-novation-circuit-tracks/"
+      ],
+      "confidence": "medium",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-28",
+      "claim": "Drum-track pitch is a continuous knob with no note quantization, making reliable melodic/pitched sample playback impractical.",
+      "sources": [
+        "https://www.soundonsound.com/reviews/novation-circuit-tracks",
+        "https://deavid.wordpress.com/2022/01/29/review-and-criticism-of-novation-circuit-tracks/"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-29",
+      "claim": "There is no multitrack or USB audio export; to capture stems you must solo-cue and record each track through the analog line out into an interface.",
+      "sources": [
+        "https://djtechtools.com/2021/05/27/review-novations-circuit-tracks-is-an-even-better-circuit-groovebox/",
+        "https://deavid.wordpress.com/2022/01/29/review-and-criticism-of-novation-circuit-tracks/"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-30",
+      "claim": "FX are menu-selected (16 delay types, 8 reverb types) with per-track send-only control and no direct real-time control of time/feedback/depth.",
+      "sources": [
+        "https://djtechtools.com/2021/05/27/review-novations-circuit-tracks-is-an-even-better-circuit-groovebox/"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-31",
+      "claim": "Sidechain ducking is available with the trigger source selectable from a drum track, and a DJ-style master Filter knob is on the master output.",
+      "sources": [
+        "https://djtechtools.com/2021/05/27/review-novations-circuit-tracks-is-an-even-better-circuit-groovebox/",
+        "https://www.musicradar.com/news/live-primer-using-novation-circuit-tracks-onstage"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-32",
+      "claim": "Circuit Tracks runs on an internal rechargeable battery for up to about 4 hours and can be powered from a USB battery bank during performance.",
+      "sources": [
+        "https://djtechtools.com/2021/05/27/review-novations-circuit-tracks-is-an-even-better-circuit-groovebox/",
+        "https://www.musicradar.com/news/live-primer-using-novation-circuit-tracks-onstage"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-33",
+      "claim": "For live sync, Circuit Tracks can receive MIDI clock via MIDI In or USB, its MIDI Thru port can act as a second MIDI Out, and it has an analog sync/pulse out to drive Volcas and modular gear.",
+      "sources": [
+        "https://www.musicradar.com/news/live-primer-using-novation-circuit-tracks-onstage"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-34",
+      "claim": "Audio I/O is two 1/4-inch balanced mono inputs (routable through the internal reverb/delay and mixer), a stereo 1/4-inch balanced main output, and a minijack headphone output for cueing.",
+      "sources": [
+        "https://djtechtools.com/2021/05/27/review-novations-circuit-tracks-is-an-even-better-circuit-groovebox/",
+        "https://www.musicradar.com/news/live-primer-using-novation-circuit-tracks-onstage"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-35",
+      "claim": "The Mixer view is the live-performance cockpit, combining the 16 scene launchers, per-track mutes, levels and pan.",
+      "sources": [
+        "https://www.soundonsound.com/reviews/novation-circuit-tracks"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-36",
+      "claim": "Track color coding on the device is purple = Synth 1, green = Synth 2, teal = MIDI 1, orange = MIDI 2.",
+      "sources": [
+        "https://djtechtools.com/2021/05/27/review-novations-circuit-tracks-is-an-even-better-circuit-groovebox/"
+      ],
+      "confidence": "medium",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-37",
+      "claim": "Circuit Tracks has exactly 8 tracks: 2 polyphonic Nova-engine synths, 4 sample-based drum tracks, and 2 dedicated external-MIDI sequencer tracks - a fixed allocation that cannot be reassigned.",
+      "sources": [
+        "https://www.soundonsound.com/reviews/novation-circuit-tracks"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-38",
+      "claim": "With only 8 patterns per track and 16 scenes, owners report self-contained songs practically top out around 3-4 minutes and feel repetitive.",
+      "sources": [
+        "https://deavid.wordpress.com/2022/01/29/review-and-criticism-of-novation-circuit-tracks/"
+      ],
+      "confidence": "medium",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-39",
+      "claim": "r/novationcircuit and the Elektronauts 'Novation Circuit Rhythm and Circuit Tracks' thread are the main community forums for tips and troubleshooting.",
+      "sources": [
+        "https://www.elektronauts.com/t/novation-circuit-rhythm-and-circuit-tracks/145048"
+      ],
+      "confidence": "medium",
+      "tracksConfirmed": true
+    },
+    {
+      "id": "community-40",
+      "claim": "The lack of any screen is the most-cited beginner adjustment: scale names, patch names and knob values are invisible, making settings a memory exercise.",
+      "sources": [
+        "https://www.soundonsound.com/reviews/novation-circuit-tracks",
+        "https://deavid.wordpress.com/2022/01/29/review-and-criticism-of-novation-circuit-tracks/"
+      ],
+      "confidence": "high",
+      "tracksConfirmed": true
+    }
+  ],
+  "verification": []
+}

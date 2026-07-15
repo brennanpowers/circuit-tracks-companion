@@ -1,0 +1,44 @@
+# Round 1 — key sources
+
+- https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf
+  - Official Circuit Tracks User Guide v3 (English PDF, Focusrite CDN) — the canonical, authoritative operational reference; source for nearly every hardware/workflow claim here. *(angles: hardware, midi-performance, official, sequencing, sound)*
+- https://downloads.novationmusic.com/novation/circuit/circuit-tracks
+  - Official Novation downloads page for Circuit Tracks — user guide, Programmer's Reference Guide, drivers. *(angles: official)*
+- https://components.novationmusic.com/
+  - Novation Components web app — patch/sample/template editing, project backup, pack loading, firmware updates (Web-MIDI browser required). *(angles: official)*
+- https://userguides.novationmusic.com/hc/en-gb/sections/25494476168082-Circuit-Tracks-User-Guide
+  - Official Novation User Guides knowledge base section for Circuit Tracks (HTML версion of the manual, split into articles). *(angles: official)*
+- https://support.novationmusic.com/hc/en-gb/articles/360019538120-Updating-Circuit-Tracks-Firmware
+  - Official support article on updating Circuit Tracks firmware via Components (returned HTTP 403 to automated fetch but is the canonical firmware-update KB URL). *(angles: official)*
+- https://novationmusic.com/articles/circuit-tracks-12-firmware-update/
+  - Official Novation announcement of firmware 1.2 (save mute states to scenes), 15 Dec 2022 — latest documented firmware. *(angles: official)*
+- https://synthanatomy.com/2021/04/novation-circuit-tracks-firmware-1-1-5-upgrades-sample-time-to-1966-seconds-per-pack.html
+  - Reviewer coverage of firmware 1.1.5: 60s->196.6s sample time per pack, 98.3s max single sample, sticky-Shift, reduced voice stealing (Tracks-specific). *(angles: community, official)*
+- https://userguides.novationmusic.com/hc/en-gb/articles/25494476280850-Circuit-Tracks-hardware-overview
+  - Novation official Circuit Tracks hardware overview web page (blocked from fetch with 403 but corroborates panel layout via search snippet) *(angles: hardware)*
+- https://userguides.novationmusic.com/hc/en-gb/articles/25494477003154-Circuit-Tracks-appendix
+  - Novation official Circuit Tracks appendix (Setup View / shortcuts; 403 on fetch, mirrored by the V3 PDF appendix) *(angles: hardware)*
+- https://www.soundonsound.com/reviews/novation-circuit-tracks
+  - Sound On Sound independent review confirming DIN MIDI In/Out/Thru, TRS audio I/O, USB-C, 4-hour battery *(angles: community, hardware, midi-performance, sequencing, sound)*
+- https://files.kraftmusic.com/media/ownersmanual/Novation_Circuit_Tracks_User_Guide.pdf
+  - Mirror of the Circuit Tracks user guide (cross-check copy of the same manual) *(angles: hardware)*
+- https://djtechtools.com/2021/05/27/review-novations-circuit-tracks-is-an-even-better-circuit-groovebox/
+  - DJTechTools review — corroborates 16 delay / 8 reverb preset counts, drum macro functions (Pitch/Decay/Drive/Tone), side-chain workflow, 128-preset packs, and jack complement (though it mislabels outputs 'balanced'). *(angles: community, sound)*
+- https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_programmer_s_reference_guide_v3.pdf
+  - Official Circuit Tracks Programmer's Reference Guide V3 - MIDI channel map, CC/NRPN implementation, Program Change project recall (instant vs queued), default template CCs, master filter/reverb/delay CCs *(angles: midi-performance)*
+- https://support.novationmusic.com/hc/en-gb/articles/4402993098002-What-are-the-specifications-Circuit-Tracks-and-Circuit-Rhythm-s-audio-inputs
+  - Novation support spec page - audio input/output levels (+5.3 dBu outputs, L/Mono summing, headphone out) *(angles: midi-performance)*
+- https://userguides.novationmusic.com/hc/en-gb/articles/26207162799506-Mixing-and-performing-on-your-Circuit-Tracks
+  - Novation online user guide - mixing and performing section (mute pads, real-time play over muted tracks) *(angles: midi-performance)*
+- https://loopopmusic.com/circuit-tracks-vs-circuit-og-review-and-full-tutorial-for-novations-new-groovebox
+  - loopop (Ziv Eliraz) definitive chapter-marked video tutorial/review, explicitly Tracks-vs-OG *(angles: community)*
+- https://userguides.novationmusic.com/hc/en-gb/articles/26207162875922-Managing-your-data-on-the-Circuit-Tracks
+  - Official Novation guide on saving, packs, projects, samples, microSD (403 to fetch but summarized in search) *(angles: community)*
+- https://www.manualslib.com/manual/2152517/Novation-Circuit-Tracks.html
+  - Full Circuit Tracks user manual (pages 23 save, 41 clear/duplicate, 81 view lock, 97 new-slot save) *(angles: community)*
+- https://www.musicradar.com/news/live-primer-using-novation-circuit-tracks-onstage
+  - MusicRadar live primer - onstage sync, MIDI thru as second out, pulse out, mixer/scenes for performance *(angles: community)*
+- https://deavid.wordpress.com/2022/01/29/review-and-criticism-of-novation-circuit-tracks/
+  - Owner criticism blog - global scales/MIDI, 8-pattern/16-scene song-length limits, no undo, export pain *(angles: community)*
+- https://isotonikstudios.com/product-category/synth-patch-store/circuit-tracks-patch-store/
+  - Primary third-party Circuit Tracks pack/patch store incl free Big City Dream pack *(angles: community)*
