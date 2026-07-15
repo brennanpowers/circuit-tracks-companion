@@ -1,0 +1,106 @@
+---
+import { REAR, REAR_GROUPS, REAR_VIEWBOX, resolveRearHighlights } from '../data/rear-geometry';
+
+interface Props {
+  highlight?: string[];
+  labels?: boolean;
+}
+const { highlight = [], labels = true } = Astro.props;
+const lit = resolveRearHighlights(highlight);
+const dimming = lit.size > 0;
+const cls = (id: string) =>
+  ['pnl-el', lit.has(id) ? 'pnl-lit' : '', dimming && !lit.has(id) ? 'pnl-dim' : '']
+    .filter(Boolean)
+    .join(' ');
+---
+
+<svg
+  viewBox={REAR_VIEWBOX}
+  role="img"
+  aria-label={dimming
+    ? `Circuit Tracks rear panel with ${[...lit].join(', ')} highlighted`
+    : 'Circuit Tracks rear panel'}
+  class="rear-svg w-full h-auto select-none"
+>
+  <rect x="2" y="18" width="656" height="112" rx="12" class="rear-body"></rect>
+
+  {
+    REAR.map((el) =>
+      el.kind === 'jack' ? (
+        <g class={cls(el.id)}>
+          <circle cx={el.cx} cy={el.cy} r={el.r} class="rear-jack" />
+          <circle cx={el.cx} cy={el.cy} r={Math.max(3, el.r * 0.35)} class="rear-hole" />
+          {labels && (
+            <text x={el.cx} y={el.cy + el.r + 13} class="rear-label" text-anchor="middle">
+              {el.label}
+            </text>
+          )}
+        </g>
+      ) : (
+        <g class={cls(el.id)}>
+          <rect x={el.x} y={el.y} width={el.w} height={el.h} rx="4" class="rear-jack" />
+          {labels && (
+            <text x={el.x + el.w / 2} y={el.y + el.h + 13} class="rear-label" text-anchor="middle">
+              {el.label}
+            </text>
+          )}
+        </g>
+      ),
+    )
+  }
+  {labels && REAR_GROUPS.map((g) => (
+    <text x={g.x} y={g.y} class="rear-group" text-anchor="middle">— {g.label} —</text>
+  ))}
+</svg>
+
+<style>
+  .rear-body {
+    fill: color-mix(in srgb, var(--surface-2) 60%, #000);
+    stroke: var(--border);
+  }
+  :global([data-theme='light']) .rear-body {
+    fill: #22262d;
+  }
+  .rear-jack {
+    fill: #14161a;
+    stroke: #4a5160;
+    stroke-width: 1.5;
+  }
+  .rear-hole {
+    fill: #05060a;
+    stroke: none;
+  }
+  .rear-label {
+    fill: #9aa2ae;
+    font-size: 9.5px;
+    font-family: var(--font-sans);
+  }
+  .rear-group {
+    fill: #88919c;
+    font-size: 8.5px;
+    letter-spacing: 0.08em;
+    font-family: var(--font-sans);
+  }
+  .pnl-dim {
+    opacity: 0.35;
+  }
+  .pnl-lit .rear-jack {
+    stroke: var(--accent);
+    stroke-width: 3;
+    fill: color-mix(in srgb, var(--accent) 28%, #14161a);
+  }
+  .pnl-lit .rear-label {
+    fill: var(--text);
+    font-weight: 700;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .pnl-lit .rear-jack {
+      animation: rear-pulse 1.6s ease-in-out infinite;
+    }
+    @keyframes rear-pulse {
+      50% {
+        stroke-opacity: 0.45;
+      }
+    }
+  }
+</style>

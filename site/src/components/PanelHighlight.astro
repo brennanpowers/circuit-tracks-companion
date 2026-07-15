@@ -1,22 +1,25 @@
 ---
 import PanelSVG from './PanelSVG.astro';
+import RearSVG from './RearSVG.astro';
 
 /**
- * Lesson asset: a 1-to-1 panel diagram with specific controls highlighted.
- * Usage in MDX:  <PanelHighlight controls="macro-5" caption="Macro 5 — filter frequency" />
+ * Lesson asset: a 1-to-1 device diagram with specific controls highlighted.
+ * Usage in MDX:  <PanelHighlight controls="macro-5" caption="…" />
  *                <PanelHighlight controls={['record', 'play']} />
- * Accepts element ids and aliases from panel-geometry (macros, drums, tracks,
- * arrows, step-buttons, transport, synths, grid, …).
+ *                <PanelHighlight view="rear" controls={['out-l-mono', 'phones']} />
+ * Top-view ids/aliases live in panel-geometry.ts; rear-view ids/aliases
+ * (midi, outputs, inputs, usb-c, sync-out, …) in rear-geometry.ts.
  */
 interface Props {
   controls: string | string[];
   caption?: string;
+  view?: 'top' | 'rear';
 }
-const { controls, caption } = Astro.props;
+const { controls, caption, view = 'top' } = Astro.props;
 const list = Array.isArray(controls) ? controls : [controls];
 ---
 
 <figure class="panel-highlight my-6 rounded-xl border border-border bg-surface p-3 sm:p-4 max-w-xl mx-auto">
-  <PanelSVG highlight={list} labels={true} />
+  {view === 'rear' ? <RearSVG highlight={list} labels={true} /> : <PanelSVG highlight={list} labels={true} />}
   {caption && <figcaption class="mt-2 text-center text-sm text-muted">{caption}</figcaption>}
 </figure>

@@ -1,5 +1,6 @@
 ---
 import Base from './Base.astro';
+import PanelHighlight from '../components/PanelHighlight.astro';
 import { withBase } from '../lib/url';
 import { REFERENCE_SECTIONS } from '../data/reference-sections';
 
@@ -37,6 +38,17 @@ const next = idx >= 0 && idx < REFERENCE_SECTIONS.length - 1 ? REFERENCE_SECTION
     </aside>
 
     <article class="prose min-w-0" data-pagefind-body>
+      {
+        idx >= 0 && REFERENCE_SECTIONS[idx].controls.length > 0 && (
+          <div class="no-print" data-pagefind-ignore>
+            <PanelHighlight
+              view={REFERENCE_SECTIONS[idx].view}
+              controls={[...REFERENCE_SECTIONS[idx].controls]}
+              caption={`This section's hardware: where it lives on the device.`}
+            />
+          </div>
+        )
+      }
       <slot />
       <nav class="flex justify-between gap-4 mt-12 pt-4 border-t border-border text-sm no-print" aria-label="Section pagination">
         {prev ? <a href={withBase(`reference/${prev.id}/`)}>← {prev.title}</a> : <span />}

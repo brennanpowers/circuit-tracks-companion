@@ -57,7 +57,13 @@ descriptions) against manual pages 15-17 — verdicts in that day's session note
 asset. In lesson MDX (no import needed):
 `<PanelHighlight controls={['macro-5','record']} caption="..." />` — accepts
 element ids and aliases (macros, drums, synths, tracks, arrows, step-buttons,
-transport, grid). Deliberately omitted: Novation logo (trade dress).
+transport, grid). REAR panel too: `src/data/rear-geometry.ts` (13 elements from
+manual p18; aliases midi/outputs/inputs) rendered by `RearSVG.astro` — use
+`<PanelHighlight view="rear" controls={['out-l-mono','phones']} />`. Every
+reference page also shows a section-relevant diagram automatically, driven by the
+`controls`/`view` fields in `src/data/reference-sections.ts`. Coverage: all 24
+lessons except the capstone carry at least one diagram (placement review
+2026-07-15). Deliberately omitted: Novation logo (trade dress).
 Dev check loop: `node scripts/render-panel-check.mjs` → /tmp/panel-check.svg →
 headless-Chrome screenshot → eyeball against manual p15.
 
