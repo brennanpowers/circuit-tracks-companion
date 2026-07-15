@@ -78,6 +78,14 @@ Section C is the full verified claim base. `guide/` is written from this file on
    **Pattern Settings** (Probability is its Shift function / second press). The guide
    should use the physical labels and mention the manual's naming.
 
+12. **Sync-rate pads: third row = absolute pads 17–24** *(corrects the pad numbers
+    in `sequencing-24`; manual p54–56 re-read 2026-07-15)*. The manual's Pattern
+    Settings View diagram labels the sync-rate row's pads "1–8" *within the row*,
+    and the claim transcribed those as absolute pad numbers. Physically the sync
+    rates sit on the grid's third row, absolute pads 17–24; the default 1/16 is the
+    row's 5th pad (absolute pad 21 — manual p56: "pad 5 in row 3"). Play order on
+    pads 29–32 was transcribed correctly.
+
 ## B. Verifier-sourced additions (manual-cited facts the claims missed)
 
 ### Hardware & interaction model

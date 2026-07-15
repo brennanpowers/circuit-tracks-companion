@@ -20,7 +20,8 @@ instantly**, jumping in at the equivalent step so nothing drifts.
   the end point out again.
 - **Play order:** Pattern Settings pads 29–32 = Forward (default) / Reverse /
   Ping-pong / Random.
-- **Sync rate:** Pattern Settings third row (pads 1–8) = 1/4, 1/4T, 1/8, 1/8T,
+- **Sync rate:** Pattern Settings View's third row — absolute pads 17–24 (the
+  manual's diagram numbers them 1–8 *within the row*) = 1/4, 1/4T, 1/8, 1/8T,
   **1/16 (default)**, 1/16T, 1/32, 1/32T — a per-track BPM multiplier/divider. Halve
   a pad track's rate for evolving slow lines over a busy beat; polyrhythms via
   mismatched rates.

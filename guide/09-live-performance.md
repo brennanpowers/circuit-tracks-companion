@@ -12,7 +12,7 @@ advice rather than device fact, it reads as advice.
 - **Sound:** outputs are unbalanced 1/4″ TS at up to +5.3 dBu — line level into a DI
   box, mixer channel, or amp's return. **Mono PA? Use L/Mono alone** — it auto-sums
   the mix when R is unplugged. Headphones (3.5 mm) stay live alongside the mains, but
-  note there's no separate cue bus — phones mirror the mix.
+  note there's no separate cue mix — phones mirror the mains.
 - Set your project's tempo and key at home; save versions to spare slots as
   checkpoints ("save as" = first Save press, then another project pad).
 

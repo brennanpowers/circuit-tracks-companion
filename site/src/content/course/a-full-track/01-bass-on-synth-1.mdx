@@ -15,10 +15,12 @@ stops being latent and starts being a superpower.
 1. Press `Synth 1` (violet). Note View again — but now the top two rows are the
    synth's 16 steps and the **bottom two rows are a keyboard**. Out of the box it's
    C Natural Minor: every pad is in-key, wrong notes are literally unreachable.
-2. The two rows overlap by one note: the top-left pad of the lower row (pad 32)
-   **is the same pitch** as the bottom-left pad of the upper row (pad 17). A
-   two-octave run goes: lower row left-to-right, then upper row from its *second*
-   pad onward.
+2. The two rows overlap by one note: the **last** pad of the lower keyboard row
+   (pad 32, bottom-right corner of the grid) is the **same pitch** as the **first**
+   pad of the row above it (pad 17, that row's left end). A two-octave run goes:
+   bottom row left-to-right, then the row above from its *second* pad onward.
+
+<PanelHighlight pads={['25:blue', '26:blue', '27:blue', '28:blue', '29:blue', '30:blue', '31:blue', {n: 32, color: 'white', label: '='}, {n: 17, color: 'white', label: '='}, '18:green', '19:green', '20:green', '21:green', '22:green', '23:green', '24:green']} numbered caption="The keyboard: bottom row = lower octave (blue), row above = upper octave (green). Pads 32 and 17 are the same note — the overlap." />
 3. `▼`/`▲` shift octaves (up to 5 up / 6 down, per track). Go down until it growls.
 
 ## Choose your key like a musician

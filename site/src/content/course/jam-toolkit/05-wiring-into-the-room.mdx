@@ -14,15 +14,18 @@ plus the confidence to plug into anything.
 
 <PanelHighlight view="rear" controls={['out-l-mono', 'out-r', 'phones', 'usb-c']} caption="Venue I/O: unbalanced L/Mono + R mains, the headphone mirror, and USB-C power." />
 
-- The main outs are **unbalanced 1/4″ TS** at up to +5.3 dBu — line level. Into a
-  PA/mixer: use a **DI box** (or the mixer's line inputs) — long unbalanced runs hum.
-  Into a guitar/bass amp: the FX return (power-amp in) beats the instrument input,
-  which expects a much quieter signal.
+- The main outs are **unbalanced 1/4″ TS** at up to +5.3 dBu — line level (a much
+  hotter signal than an instrument output). Into a PA/mixer: use a **DI box** (the
+  little converter you already know from bass duty — it balances the signal for long
+  runs) or the mixer's line inputs. Into a guitar/bass amp: the FX return /
+  power-amp-in jack beats the instrument input — it skips the amp's front-end gain
+  stage, which expects a much quieter signal.
 - **Mono PA?** Plug **L/Mono only** — with nothing in the R jack it automatically
   carries a mono sum. Check your ping-pong delays still make sense in mono (they
   become plain repeats).
-- Headphones (3.5 mm) always mirror the mains — *no separate cue mix*, so audition
-  changes quietly by pulling the Master Volume down, not by "checking in the phones".
+- Headphones (3.5 mm) always mirror the mains — no separate cue mix here either, so
+  audition
+  changes changes quietly by pulling the Master Volume down, not by "checking in the phones".
 - **Power:** ~4 h battery, or any USB battery bank — the elegant answer to "is there
   an outlet near the drummer?" (There never is.)
 
@@ -42,11 +45,15 @@ mutes at home state · 6. **Save Lock on** · 7. DI/cables/adapters packed ·
 Someone brings a Volca, a drum machine, a modular case? You're the clock now
 (full detail: [MIDI reference](05-midi-tracks.md)):
 
-- **You lead:** Clock Tx on (Setup View) sends MIDI clock out DIN + USB. The analog
-  **Sync Out** drives Volcas/modular — set the ppqn rate to match, and know that
-  **your swing does not reach the analog clock** (their straight vs your shuffle is
-  by design).
-- **You follow:** Clock Rx auto-locks to incoming clock, fractional BPM included. If
+- **You lead:** MIDI clock is a steady tempo pulse (not notes) sent down the cable
+  so other sequencers stay locked to your BPM. Turn Clock **Tx** (transmit) on in
+  Setup View and it flows out of both DIN and USB. The analog **Sync Out** does the
+  same job for Volcas/modular as simple voltage ticks — set its **ppqn**
+  (pulses-per-quarter-note: how many ticks fire per beat; default 2) to whatever
+  your gear expects, and know that **your swing does not reach the analog clock**
+  (their straight vs your shuffle is by design).
+- **You follow:** Clock **Rx** (receive) auto-locks to incoming clock, fractional
+  BPM included. If
   their clock dies, you stop and the display shows **SYN** — press `Play` and you're
   back on internal, at your saved tempo.
 - Sequencing their gear from your MIDI tracks is the full Project-4-adjacent rabbit

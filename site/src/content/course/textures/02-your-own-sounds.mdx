@@ -15,16 +15,32 @@ editable — just not from the hardware. Plug into **Components** and open the
 
 ## First patch: a slow pad, on purpose
 
-At the computer, device connected, an *empty-ish* patch slot chosen (don't overwrite
-Patch 1 — pick something deep in page 4 you'll never miss):
+One honesty note before we start: this lesson assumes **Components is open in front
+of you**. Novation updates the app's layout from time to time, so instead of "click
+here" directions you get the stable concepts — every version of the Synth Editor has
+the same building blocks: two oscillators, a filter, three envelopes, two LFOs, and
+the macro-mapping section. Find each panel as it comes up. Two definitions you'll
+need immediately: an **oscillator** is the raw tone generator (the "string" of the
+synth), and a **wavetable** is a scrollable set of wave shapes rather than one fixed
+wave — its **Index** control picks your position in the set, and moving it *morphs*
+the tone. And the **LFO**: a knob that turns itself, slowly, on a loop — it plays no
+notes, it just wiggles whatever you point it at.
+
+At the computer, device connected, pick an *empty-ish* patch slot in the editor's
+patch browser (don't overwrite Patch 1 — pick something deep in page 4 you'll never
+miss):
 
 1. **Oscillators:** Osc 1 to a warm virtual-analogue wave (saw or triangle); Osc 2 to
    a *wavetable*, detuned a few cents against Osc 1. Sweep the wavetable **Index**
    slowly and listen — that's the sound of the 2020s ambient palette.
-2. **Filter:** low-pass, 12 dB/oct for gentle, cutoff modest, a whisper of resonance.
+2. **Filter:** low-pass, 12 dB/oct for gentle, cutoff modest, a whisper of
+   resonance (the whistle-y emphasis right at the cutoff point — Macro 6's job, now
+   seen from the inside).
 3. **Amp envelope:** attack long (a slow bloom), sustain high, release long enough
    that chord changes cross-fade into each other.
 4. **Filter envelope:** slower still, modest depth — the pad brightens as it holds.
+   (The engine has a **third envelope**, freely assignable to any parameter — skip
+   it today; know it's there for later patches.)
 5. **LFO:** slow sine → gentle pitch (a few cents of drift) or wavetable index.
    Motion you feel more than hear.
 6. **Insert FX:** the per-patch chorus is the cheapest width money can buy for a pad.
@@ -55,8 +71,8 @@ Patch 1 — pick something deep in page 4 you'll never miss):
 
 <Checkpoint>
   A from-scratch pad patch saved on the device, with at least one custom multi-
-  parameter macro mapping you can demonstrate — and you can say what each of its
-  three envelopes does.
+  parameter macro mapping you can demonstrate — and you can say what the amp and
+  filter envelopes each do (and where the third one lives when you want it).
 </Checkpoint>
 
 Engine architecture details: [synth reference](03-synth-tracks.md) ·

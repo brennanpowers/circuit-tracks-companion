@@ -25,26 +25,32 @@ next project).
 
 ## The panel in five zones
 
-Work top to bottom, saying the names out loud (really — screenless devices are a
-memory game, and naming beats squinting):
+Work top to bottom — the real top to bottom, as the panel sits in front of you —
+saying the names out loud (really: screenless devices are a memory game, and naming
+beats squinting):
 
-1. **The grid** — 32 pads, 4 rows of 8. Everything happens here, and what the rows
+1. **The knobs** (very top) — **Master Volume** far left, the **8 macro knobs** in two
+   staggered rows (sound-shaping; what they control changes per view), and the big
+   **Master Filter** far right: centre-click = off, left = low-pass (darker), right =
+   high-pass (thinner). The filter always works, whatever view you're in.
+2. **The function row** (single row of small buttons) — left to right: `Scales`, the
+   `▼`/`▲` arrows, `Step Page` (1-16/17-32), `Tempo/Swing`, `Clear`, `Duplicate`,
+   `Save`, `Projects`, `Shift`.
+3. **The track row** — `Preset` on the far left, then the eight track buttons:
+   Synth 1, Synth 2, MIDI 1, MIDI 2, Drum 1–4. Each track keeps its colour
+   everywhere: violet, pale green, blue, pink, orange, yellow, purple, aqua. Pressing
+   a track button always shows that track's **Note View**. `Patterns` bookends the
+   row on the far right.
+4. **The grid** — 32 pads, 4 rows of 8. Everything happens here, and what the rows
    mean depends on the current *view*. Views are the device's "screens".
-2. **The 8 macro knobs** — sound-shaping. What they control also changes per view.
-3. **Master Filter** — the big knob. Centre-click = off; left = low-pass (darker),
-   right = high-pass (thinner). It always works, whatever view you're in.
-4. **Track buttons** — Synth 1, Synth 2, MIDI 1, MIDI 2, Drum 1–4. Each track has a
-   colour it keeps everywhere: violet, pale green, blue, pink, orange, yellow,
-   purple, aqua. Pressing a track button always shows that track's **Note View**.
-5. **Function buttons** — around the grid: `Note`, `Velocity`, `Gate`,
-   `Pattern Settings` on the left (step editing); `Scales`, `Preset`, `Patterns`,
-   `Mixer`, `FX` and friends (views); `Play`, `Record`, `Tempo/Swing` (transport);
-   `Shift`, `Clear`, `Duplicate`, `Save` (modifiers).
+5. **The grid's wings** — down the left, the step-editing buttons `Note`, `Velocity`,
+   `Gate`, `Pattern Settings`; down the right, `Mixer`, `FX`, and the round
+   `Record` (red) and `Play` (green) transport pair.
 
 One interaction rule to internalize now: **short press switches, long press peeks.**
 Try it — long-press `Tempo/Swing`, watch the grid show the BPM only while held.
 `Shift` changes what almost every button does; that's not complexity, it's the same
-20 buttons wearing two hats. The full map lives in the
+buttons wearing two hats. The full map lives in the
 [shortcuts reference](11-shortcuts.md) — don't memorize it, just know it exists.
 
 <TheoryBridge>
@@ -57,11 +63,13 @@ Try it — long-press `Tempo/Swing`, watch the grid show the BPM only while held
 
 ## Play a demo, break nothing
 
-<PanelHighlight controls={['projects', 'mixer', 'master-filter', 'play']} caption="Tonight's four controls: Projects, Mixer, the Master Filter, and Play." />
+<PanelHighlight controls={['projects', 'mixer', 'master-filter', 'macros', 'play']} caption="Tonight's toolkit: Projects, Mixer, the Master Filter, the macro knobs, and Play." />
 
 The device ships with 16 demo projects — your best teachers.
 
-1. Press `Projects` (the grid shows the project slots), tap a lit pad, press `Play`.
+1. Press `Projects` — the grid becomes 64 project slots, and **only slots with
+   something saved in them light up** (the 16 factory demos are already there; dark
+   pads are empty). Tap a lit pad, press `Play`.
 2. Press `Mixer`, then tap the pads on **row 1** — those are per-track **mutes**. Pull
    the drums out, bring them back.
 3. Sweep the **Master Filter** both directions. Return it to the centre click.

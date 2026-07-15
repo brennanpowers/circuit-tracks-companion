@@ -14,8 +14,9 @@ default.
 
 1. On `Drum 4`, program a simple two-hit percussion line. Now the trick:
    **press and hold a different sample pad** — it turns red.
-2. While holding it, **tap the step pads** that should play this sample instead.
-   Those steps turn **pink** (flipped) instead of bright blue (default sample).
+2. While holding it, **tap the step pads** that should play this sample instead —
+   they show red while you're holding, then settle **pink** (flipped) instead of
+   bright blue (default sample).
 3. Release. One track, several voices: a clave on the downbeats, a shaker on the
    upbeats, a tambourine on the turnaround — all on Drum 4.
 4. Flips are per-step and per-track, and they're part of what
@@ -42,9 +43,11 @@ melodies (there's no note quantisation; that's what synths are for).
 
 Knob moves can be **recorded into the pattern**:
 
-5. With the pattern playing, press `Record`. Now slowly sweep Macro 4 (decay) on your
-   hat track — open the hats over one bar, close them over the next. The knob LED
-   burns red while it writes.
+5. First, the drum-specific rule: even-macro moves on drum tracks are only captured
+   from **Velocity, Gate, or Probability view** — never from Note View. So: press
+   `Drum 3`, then `Velocity`. Now, with the pattern playing, press `Record` and
+   slowly sweep Macro 4 (decay) — open the hats over one bar, close them over the
+   next. The knob LED burns red while it writes.
 6. **Press `Record` off before the pattern loops back around** — if you stay in
    Record past the loop point, the pass overwrites itself with the knob's resting
    position. (Everyone makes this mistake exactly once.)
