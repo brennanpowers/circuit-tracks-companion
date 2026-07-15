@@ -1,0 +1,13 @@
+# Session summaries are local working notes, not project content
+.sessions/
+
+# Node / build output (Phase 3 website)
+node_modules/
+dist/
+.astro/
+
+# Local env and editor cruft
+.env
+.env.*
+!.env.example
+.DS_Store
