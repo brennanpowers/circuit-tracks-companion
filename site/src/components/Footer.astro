@@ -1,0 +1,17 @@
+---
+import { withBase } from '../lib/url';
+const MANUAL_URL =
+  'https://fael-downloads-prod.focusrite.com/customer/prod/downloads/circuit_tracks_user_guide_v3_en.pdf';
+---
+
+<footer class="border-t border-border text-sm text-muted no-print">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-6 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
+    <p>
+      Unofficial community guide — not affiliated with Novation or Focusrite. Every fact traces to
+      the <a class="underline hover:text-text" href={MANUAL_URL}>official User Guide v3</a>.
+    </p>
+    <p>
+      <a class="underline hover:text-text" href={withBase('resources/')}>How this was verified</a>
+    </p>
+  </div>
+</footer>
