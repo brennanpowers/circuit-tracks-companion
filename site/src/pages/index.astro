@@ -1,8 +1,57 @@
 ---
 import Base from '../layouts/Base.astro';
+import { withBase } from '../lib/url';
 ---
 
-<Base title="Circuit Tracks Companion">
-  <h1 class="text-3xl font-bold">Circuit Tracks Companion</h1>
-  <p class="mt-2 text-muted">Home page lands with plan Task 6.</p>
+<Base title="Circuit Tracks Companion — learn the groovebox by making music">
+  <section class="py-10 sm:py-16 max-w-3xl">
+    <p class="font-mono text-sm text-accent">Novation Circuit Tracks</p>
+    <h1 class="mt-2 text-4xl sm:text-5xl font-bold tracking-tight leading-tight">
+      Learn the groovebox by <span class="text-accent">building actual music</span>.
+    </h1>
+    <p class="mt-5 text-lg text-muted max-w-2xl">
+      No screen, no menus — and no idea where to start? This is a project-driven course for the
+      Circuit Tracks: five projects, each ending in a finished piece, plus a verified reference
+      for every button and a cheat sheet for jam night.
+    </p>
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a
+        href={withBase('course/start-here/01-meet-the-device/')}
+        class="rounded-lg bg-accent text-bg font-semibold px-5 py-2.5 hover:opacity-90"
+        >Start here</a
+      >
+      <a
+        href={withBase('reference/')}
+        class="rounded-lg border border-border px-5 py-2.5 font-medium hover:border-accent"
+        >Browse the reference</a
+      >
+    </div>
+  </section>
+
+  <section class="grid sm:grid-cols-3 gap-4 pb-10">
+    <a href={withBase('course/')} class="rounded-xl border border-border bg-surface p-5 hover:border-accent">
+      <h2 class="font-semibold">The Course</h2>
+      <p class="mt-1 text-sm text-muted">
+        Five projects from first beat to ambient soundscapes — drums first, whole device by the end.
+      </p>
+    </a>
+    <a href={withBase('reference/')} class="rounded-xl border border-border bg-surface p-5 hover:border-accent">
+      <h2 class="font-semibold">The Reference</h2>
+      <p class="mt-1 text-sm text-muted">
+        Twelve wiki sections covering every control and behavior, verified against the official manual.
+      </p>
+    </a>
+    <a href={withBase('cheat-sheet/')} class="rounded-xl border border-border bg-surface p-5 hover:border-accent">
+      <h2 class="font-semibold">The Cheat Sheet</h2>
+      <p class="mt-1 text-sm text-muted">
+        Every Shift-combo and power-on gesture on one printable page. Phone-friendly for the jam.
+      </p>
+    </a>
+  </section>
+
+  <p class="pb-10 text-sm text-muted max-w-2xl">
+    Accuracy note: every operational fact on this site was cross-checked against the official
+    Circuit Tracks User Guide v3 by a multi-pass verification process —
+    <a class="underline hover:text-text" href={withBase('resources/')}>here's how</a>.
+  </p>
 </Base>

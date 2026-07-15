@@ -1,0 +1,44 @@
+---
+interface Props {
+  /** lesson ids counted by this bar */
+  ids: string[];
+  /** CSS custom property for the fill colour, e.g. --track-orange */
+  color?: string;
+}
+const { ids, color = '--accent' } = Astro.props;
+---
+
+<div
+  class="progress-bar"
+  data-ids={JSON.stringify(ids)}
+  role="progressbar"
+  aria-valuemin="0"
+  aria-valuemax="100"
+  aria-valuenow="0"
+  aria-label="Lessons completed"
+>
+  <div class="h-1.5 rounded-full bg-surface-2 overflow-hidden">
+    <div class="fill h-full rounded-full" style={`width: 0%; background: var(${color})`}></div>
+  </div>
+  <span class="count text-xs text-muted mt-1 block"></span>
+</div>
+
+<script>
+  import { getDone, percent } from '../lib/progress';
+
+  const render = (el: HTMLElement) => {
+    const ids: string[] = JSON.parse(el.dataset.ids ?? '[]');
+    const pct = percent(ids);
+    const doneCount = ids.filter((id) => getDone().includes(id)).length;
+    el.setAttribute('aria-valuenow', String(pct));
+    (el.querySelector('.fill') as HTMLElement).style.width = `${pct}%`;
+    el.querySelector('.count')!.textContent = ids.length
+      ? `${doneCount} / ${ids.length} lessons`
+      : '';
+  };
+
+  document.querySelectorAll<HTMLElement>('.progress-bar').forEach(render);
+  document.addEventListener('ctc-progress-change', () =>
+    document.querySelectorAll<HTMLElement>('.progress-bar').forEach(render),
+  );
+</script>

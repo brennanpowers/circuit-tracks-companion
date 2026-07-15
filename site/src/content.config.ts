@@ -1,4 +1,5 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
+import { z } from 'astro/zod';
 import { glob } from 'astro/loaders';
 
 const course = defineCollection({
@@ -12,9 +13,9 @@ const course = defineCollection({
   }),
 });
 
+// Guide files carry no frontmatter; no schema needed — content is the payload.
 const reference = defineCollection({
   loader: glob({ pattern: ['*.md', '!README.md'], base: '../guide' }),
-  schema: z.object({}).passthrough(),
 });
 
 export const collections = { course, reference };

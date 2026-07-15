@@ -1,0 +1,39 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import CourseCard from '../../components/CourseCard.astro';
+import { withBase } from '../../lib/url';
+import { PROJECTS } from '../../data/projects';
+
+const lessons = await getCollection('course');
+const byProject = (id: string) =>
+  lessons.filter((l) => l.data.project === id).sort((a, b) => a.data.order - b.data.order);
+---
+
+<Base
+  title="The Course · Circuit Tracks Companion"
+  description="A project-driven Circuit Tracks course: five projects, each ending in a finished piece of music."
+>
+  <h1 class="text-3xl font-bold tracking-tight">The Course</h1>
+  <p class="mt-3 max-w-2xl text-muted">
+    Project-driven, easiest path first: each project introduces only the parts of the device it
+    needs and ends with something finished you can play for someone. Lessons link into the
+    <a class="text-accent underline" href={withBase('reference/')}>reference</a> when you want the
+    full picture. Progress lives in your browser — no account.
+  </p>
+
+  <div class="mt-8 grid sm:grid-cols-2 gap-4">
+    {
+      PROJECTS.map((p) => {
+        const ls = byProject(p.id);
+        return (
+          <CourseCard
+            project={p}
+            lessonIds={ls.map((l) => l.id)}
+            firstLessonHref={ls[0] ? withBase(`course/${ls[0].id}/`) : undefined}
+          />
+        );
+      })
+    }
+  </div>
+</Base>
