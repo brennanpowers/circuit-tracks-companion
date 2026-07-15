@@ -21,6 +21,12 @@ research round. Remove items as they're resolved; record resolutions in `dossier
 - [ ] `[device-check]` **Fixed Velocity value 96** — quick confirm: Shift+Velocity,
   enter a note, check its velocity in Velocity View (should read as fixed level).
 
+- [ ] `[device-check]` **Side Chain View exact pad layout.** The verified claims say
+  "pad 1 in each row = off, pads 2–8 = the seven presets" AND "top-row pads 5–8
+  select the key drum" — which overlap if both use absolute numbering. Open Side
+  Chain View (`Shift + FX`) and map the actual rows/pads for the synth presets and
+  the key-drum selector. (Blocks adding a pad diagram to the side-chain lesson.)
+
 ## Round-2 research candidates (defer until guide drafting exposes real gaps)
 
 - **Novation Components deep-dive**: step-by-step pack building, sample slot
