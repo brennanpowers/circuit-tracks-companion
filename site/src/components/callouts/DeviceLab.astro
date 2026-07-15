@@ -1,0 +1,17 @@
+---
+import Callout from './Callout.astro';
+
+interface Props {
+  /** open-questions item this lab settles, e.g. "master-compressor-location" */
+  issue: string;
+}
+const { issue } = Astro.props;
+---
+
+<Callout label="Device lab" color="--track-yellow" icon="flask">
+  <slot />
+  <p class="mt-2 text-sm text-muted" data-issue={issue}>
+    Whatever you find — tell the project. This experiment settles an open question in the
+    research behind this site.
+  </p>
+</Callout>

@@ -1,0 +1,49 @@
+---
+import { getCollection, render } from 'astro:content';
+import Lesson from '../../layouts/Lesson.astro';
+import { withBase } from '../../lib/url';
+import { PROJECTS } from '../../data/projects';
+import Goal from '../../components/callouts/Goal.astro';
+import TheoryBridge from '../../components/callouts/TheoryBridge.astro';
+import DeviceLab from '../../components/callouts/DeviceLab.astro';
+import Checkpoint from '../../components/callouts/Checkpoint.astro';
+import JamTip from '../../components/callouts/JamTip.astro';
+
+export async function getStaticPaths() {
+  const lessons = await getCollection('course');
+  const projectOrder = new Map(PROJECTS.map((p, i) => [p.id, i]));
+  const sorted = [...lessons].sort(
+    (a, b) =>
+      projectOrder.get(a.data.project)! - projectOrder.get(b.data.project)! ||
+      a.data.order - b.data.order,
+  );
+  return sorted.map((entry) => {
+    const within = sorted.filter((l) => l.data.project === entry.data.project);
+    const idx = within.findIndex((l) => l.id === entry.id);
+    const globalIdx = sorted.findIndex((l) => l.id === entry.id);
+    const next = within[idx + 1];
+    const nextGlobal = sorted[globalIdx + 1];
+    return {
+      params: { slug: entry.id },
+      props: {
+        entry,
+        prev: within[idx - 1],
+        next,
+        nextProjectEntryId: !next && nextGlobal ? nextGlobal.id : undefined,
+      },
+    };
+  });
+}
+
+const { entry, prev, next, nextProjectEntryId } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<Lesson
+  entry={entry}
+  prev={prev}
+  next={next}
+  nextProjectHref={nextProjectEntryId ? withBase(`course/${nextProjectEntryId}/`) : undefined}
+>
+  <Content components={{ Goal, TheoryBridge, DeviceLab, Checkpoint, JamTip }} />
+</Lesson>

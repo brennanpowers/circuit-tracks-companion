@@ -1,0 +1,39 @@
+---
+/** Shared callout shell used by Goal/TheoryBridge/DeviceLab/Checkpoint/JamTip. */
+interface Props {
+  label: string;
+  color: string; // CSS custom property, e.g. --track-green
+  icon: 'target' | 'bridge' | 'flask' | 'check' | 'bolt';
+}
+const { label, color, icon } = Astro.props;
+const paths: Record<Props['icon'], string> = {
+  target: 'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 4a1 1 0 1 0 0 2 1 1 0 0 0 0-2z',
+  bridge: 'M3 18v-6a9 9 0 0 1 18 0v6M3 18h18M7 18v-4m5 4v-6m5 6v-4',
+  flask: 'M9 3h6M10 3v6L4.5 19a1.5 1.5 0 0 0 1.4 2h12.2a1.5 1.5 0 0 0 1.4-2L14 9V3M7 15h10',
+  check: 'M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11',
+  bolt: 'M13 2 3 14h7l-1 8 10-12h-7l1-8z',
+};
+---
+
+<aside
+  class="callout my-6 rounded-lg border border-border bg-surface p-4"
+  style={`border-left: 3px solid var(${color})`}
+>
+  <p
+    class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider mb-2"
+    style={`color: var(${color})`}
+  >
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path d={paths[icon]}></path>
+    </svg>
+    {label}
+  </p>
+  <div class="callout-body text-[0.95rem]">
+    <slot />
+  </div>
+</aside>
+
+<style>
+  .callout-body :global(p:first-child) { margin-top: 0; }
+  .callout-body :global(p:last-child) { margin-bottom: 0; }
+</style>

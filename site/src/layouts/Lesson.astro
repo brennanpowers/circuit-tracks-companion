@@ -1,0 +1,61 @@
+---
+import Base from './Base.astro';
+import Goal from '../components/callouts/Goal.astro';
+import MarkComplete from '../components/MarkComplete.astro';
+import { withBase } from '../lib/url';
+import { PROJECTS } from '../data/projects';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  entry: CollectionEntry<'course'>;
+  prev?: CollectionEntry<'course'>;
+  next?: CollectionEntry<'course'>;
+  nextProjectHref?: string;
+}
+const { entry, prev, next, nextProjectHref } = Astro.props;
+const project = PROJECTS.find((p) => p.id === entry.data.project)!;
+---
+
+<Base title={`${entry.data.title} · ${project.title} · Circuit Tracks Companion`} description={entry.data.goal}>
+  <div class="max-w-3xl mx-auto">
+    <nav class="text-sm text-muted no-print" aria-label="Breadcrumb">
+      <a class="hover:text-text" href={withBase('course/')}>Course</a>
+      <span aria-hidden="true"> / </span>
+      <span style={`color: var(${project.color})`}>{project.number} · {project.title}</span>
+    </nav>
+
+    <h1 class="mt-2 text-3xl font-bold tracking-tight">{entry.data.title}</h1>
+    <p class="mt-2 text-sm text-muted flex items-center gap-3">
+      <span
+        class="inline-block px-2 py-0.5 rounded-full text-xs font-medium"
+        style={`background: color-mix(in srgb, var(${project.color}) 18%, transparent); color: var(${project.color})`}
+      >
+        Lesson {entry.data.order}
+      </span>
+      <span>~{entry.data.minutes} min at the device</span>
+    </p>
+
+    <Goal>{entry.data.goal}</Goal>
+
+    <article class="prose" data-pagefind-body>
+      <slot />
+    </article>
+
+    <div class="mt-10 flex flex-wrap items-center gap-4 no-print">
+      <MarkComplete lessonId={entry.id} />
+    </div>
+
+    <nav class="flex justify-between gap-4 mt-8 pt-4 border-t border-border text-sm no-print" aria-label="Lesson pagination">
+      {prev ? <a class="text-accent hover:underline" href={withBase(`course/${prev.id}/`)}>← {prev.data.title}</a> : <span />}
+      {
+        next ? (
+          <a class="text-accent hover:underline" href={withBase(`course/${next.id}/`)}>{next.data.title} →</a>
+        ) : nextProjectHref ? (
+          <a class="text-accent hover:underline" href={nextProjectHref}>Next project →</a>
+        ) : (
+          <a class="text-accent hover:underline" href={withBase('course/')}>Back to the course →</a>
+        )
+      }
+    </nav>
+  </div>
+</Base>
