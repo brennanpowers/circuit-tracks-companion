@@ -18,14 +18,14 @@ export function rewriteGuideHref(href: string, base: string): string | null {
 }
 
 /**
- * Remark plugin: applies rewriteGuideHref to every link in files that live in
- * the guide/ directory (the reference collection). Course MDX and site pages
- * are untouched.
+ * Remark plugin: applies rewriteGuideHref to every link in guide/ files (the
+ * reference collection) and course lessons — both may link to reference
+ * sections using plain `NN-slug.md` hrefs. Other site pages are untouched.
  */
 export function remarkGuideLinks() {
   return (tree: Root, file: { path?: string; history?: string[] }) => {
     const path = file.path ?? file.history?.[0] ?? '';
-    if (!/[/\\]guide[/\\]/.test(path)) return;
+    if (!/[/\\]guide[/\\]/.test(path) && !/[/\\]content[/\\]course[/\\]/.test(path)) return;
     const base = process.env.SITE_BASE ?? '/circuit-tracks-companion';
     visit(tree, 'link', (node: Link) => {
       const out = rewriteGuideHref(node.url, base);
