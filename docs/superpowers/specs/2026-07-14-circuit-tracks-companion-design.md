@@ -5,7 +5,7 @@
 
 ## Purpose
 
-Brennan owns a Novation Circuit Tracks and is a complete beginner with grooveboxes and
+The maintainer owns a Novation Circuit Tracks and is a complete beginner with grooveboxes and
 synths, but an experienced musician (bass/guitar, chord/scale/mode theory). Two goals:
 screen-free music creation at home, and bringing the device to jam sessions as an extra
 instrument. This project produces the learning material to get there, built on deeply
@@ -104,13 +104,13 @@ hands-on steps, a "check yourself" checkpoint, and links into Reference for dept
 Pagefind); accessible (keyboard nav, contrast, reduced-motion).
 
 **Deploy:** GitHub Actions workflow → GitHub Pages from the `main` branch. Repo will be
-pushed to Brennan's personal GitHub (`brennanpowers`).
+pushed to the maintainer's GitHub (`brennanpowers`).
 
 ## Data flow
 
 Research workflow → `research/` dossier → `guide/` (canonical, cited) → `site/` content
 (derives from guide; lessons may reorder/simplify but never contradict it). Corrections
-flow backwards: if the device behaves differently in Brennan's hands, fix `guide/` first,
+flow backwards: if the device behaves differently in the maintainer's hands, fix `guide/` first,
 then the site.
 
 ## Error handling / quality gates
@@ -120,7 +120,7 @@ then the site.
   "unverified — check on device" rather than silently included.
 - Site: CI runs `astro build` + `astro check` and a link checker on every push; deploy
   only on green.
-- Ultimate test: Brennan works through lessons on the physical device; discrepancies
+- Ultimate test: the maintainer works through lessons on the physical device; discrepancies
   are bugs, tracked and fixed guide-first.
 
 ## Out of scope

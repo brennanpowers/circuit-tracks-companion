@@ -11,7 +11,7 @@ const { issue } = Astro.props;
 <Callout label="Device lab" color="--track-yellow" icon="flask">
   <slot />
   <p class="mt-2 text-sm text-muted" data-issue={issue}>
-    Whatever you find — tell the project. This experiment settles an open question in the
-    research behind this site.
+    Whatever you find — <a class="underline" href={`https://github.com/brennanpowers/circuit-tracks-companion/issues/new?title=Device+Lab:+${issue}`}>tell the project</a>.
+    This experiment settles an open question in the research behind this site.
   </p>
 </Callout>

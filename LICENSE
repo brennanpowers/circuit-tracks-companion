@@ -1,0 +1,9 @@
+This project uses two licenses:
+
+- CODE (everything under site/, plus build/tooling scripts): MIT License — see LICENSE-CODE.
+- CONTENT (guide/, site/src/content/, research/, docs/): Creative Commons
+  Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) — see LICENSE-CONTENT.
+
+"Circuit Tracks" is a trademark of Focusrite Audio Engineering Ltd. This project is
+unofficial and unaffiliated; it links to official documentation rather than
+reproducing it.

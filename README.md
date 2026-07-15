@@ -41,7 +41,15 @@ npm test             # unit tests
 npm run test:links   # internal link check over dist/
 ```
 
+## License
+
+Code is MIT; content (guide, lessons, research) is CC BY-SA 4.0 — see `LICENSE`.
+
 ## Contributing
+
+Found something on your device that contradicts the site? That's the most valuable
+contribution there is — [open an issue](https://github.com/brennanpowers/circuit-tracks-companion/issues)
+with what you observed and your firmware version.
 
 Corrections are welcome — with sources. A claim about device behavior needs a User
 Guide page reference, an official Novation source, or a reproducible on-device test

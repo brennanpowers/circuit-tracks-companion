@@ -13,7 +13,7 @@ Medium creative impact (walls a grower hits eventually):
   a jam-toolkit extension or a new "studio" lesson.
 - **Packs / microSD + Components pack building & project RESTORE** — backup is
   exercised (start-here/02), restore and card packs never. Becomes real once
-  Brennan outgrows 64 projects.
+  the maintainer outgrows 64 projects.
 - **MIDI templates (editing in Components), MIDI channel reassignment** — only
   defaults are taught.
 
@@ -29,7 +29,7 @@ Low (niche/troubleshooting; fine as reference-only):
   guide 08.
 
 ## Structural ideas floated but not adopted (decide later)
-- A dedicated "MIDI & external gear" sixth project once Brennan owns/sequences
+- A dedicated "MIDI & external gear" sixth project once the maintainer owns/sequences
   external hardware (coverage review rated MIDI-track depth the largest
   structural gap for gear owners).
 - Round-2 research candidates remain listed in research/open-questions.md.
