@@ -1,0 +1,61 @@
+---
+title: Your own sounds
+project: textures
+order: 2
+minutes: 35
+goal: Build a synth patch from scratch in Components' Synth Editor — oscillators, filter, envelopes, LFO — and map your own macro knobs.
+---
+
+The 128 factory patches were someone else's taste. Under them sits a serious
+synthesizer — Novation's Nova-family engine (the MiniNova lineage): two oscillators
+with 30 waveforms each (virtual-analogue *and* wavetables), noise, ring mod,
+multimode filters, three envelopes, two LFOs, and per-patch insert FX. All of it is
+editable — just not from the hardware. Plug into **Components** and open the
+**Synth Editor**.
+
+## First patch: a slow pad, on purpose
+
+At the computer, device connected, an *empty-ish* patch slot chosen (don't overwrite
+Patch 1 — pick something deep in page 4 you'll never miss):
+
+1. **Oscillators:** Osc 1 to a warm virtual-analogue wave (saw or triangle); Osc 2 to
+   a *wavetable*, detuned a few cents against Osc 1. Sweep the wavetable **Index**
+   slowly and listen — that's the sound of the 2020s ambient palette.
+2. **Filter:** low-pass, 12 dB/oct for gentle, cutoff modest, a whisper of resonance.
+3. **Amp envelope:** attack long (a slow bloom), sustain high, release long enough
+   that chord changes cross-fade into each other.
+4. **Filter envelope:** slower still, modest depth — the pad brightens as it holds.
+5. **LFO:** slow sine → gentle pitch (a few cents of drift) or wavetable index.
+   Motion you feel more than hear.
+6. **Insert FX:** the per-patch chorus is the cheapest width money can buy for a pad.
+
+## The part that makes it *playable*
+
+7. **Macro mapping** — the editor's best feature: assign up to **4 parameters per
+   knob** with independent ranges/depths. Build performance into the patch: Macro 5 →
+   cutoff (of course), Macro 7 → LFO depth + wavetable index together (one knob =
+   "more alive"), Macro 3 → attack + release together (one knob = "tighter/washier").
+8. Save the patch to the device. Unplug. It's now a first-class citizen: playable in
+   your key, sequenceable, macro-controllable, sidechain-duckable.
+
+<TheoryBridge>
+  Patch design is orchestration. Attack time is bow speed; filter cutoff is how open
+  the player's tone is; the LFO is vibrato. You've spent years making these decisions
+  with your hands on strings — the editor just asks for them as numbers once, up
+  front.
+</TheoryBridge>
+
+<JamTip>
+  Name patches in Components while you're there — the hardware can't show names, but
+  *Components can*, and future-you (browsing patches before a session) will be
+  grateful.
+</JamTip>
+
+<Checkpoint>
+  A from-scratch pad patch saved on the device, with at least one custom multi-
+  parameter macro mapping you can demonstrate — and you can say what each of its
+  three envelopes does.
+</Checkpoint>
+
+Engine architecture details: [synth reference](03-synth-tracks.md) ·
+[Components reference](10-components.md).

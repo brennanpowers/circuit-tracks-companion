@@ -1,0 +1,55 @@
+---
+title: Your own samples
+project: textures
+order: 3
+minutes: 25
+goal: Replace factory drum samples with your own sounds — knowing the format rules, the memory budget, and what gets lost on import.
+---
+
+The drum tracks don't care that their samples are drums. Field recordings, vocal
+snippets, a plucked bass harmonic, vinyl crackle — anything under the memory budget
+becomes playable, flippable, pitchable material. This is where the *Textures* palette
+gets personal. (Remember: there's **no sampling on the device itself** — everything
+arrives through Components.)
+
+## The rules of the import
+
+1. In Components, open the sample area for your pack. Drag audio in — anything
+   reasonable (WAV/AIFF etc.); Components converts on import.
+2. Know what conversion means: everything becomes **48 kHz, 16-bit, MONO**. Stereo
+   files get down-mixed — your wide field recording will fold to the centre.
+   (Width can come back later via the reverb send or a ping-pong delay.)
+3. The budget: **196.6 seconds total per pack**, no single sample over 98.3 s.
+   Texture loops eat this fast — trim in an editor first; the device isn't where you
+   edit audio.
+4. Back up the factory pack before overwriting slots (you did this in Setup Day —
+   this is why).
+
+## Curate like a kit
+
+5. Slots have kit *meaning* on the device (kicks 1–2, snares 3–4, closed hats 5–6,
+   open hats 7–8, perc 9–12, melodic 13–16 per page) — the defaults for each drum
+   track point at slots 1/3/5/9. Put your "anchor" sounds there and textures in the
+   perc/melodic slots, and new projects will boot straight into your palette.
+6. Load a few immediately useful ones: a long airy texture (for Macro-2 pitch-down
+   drones), something metallic (for probability sprinkles), one vocal breath.
+
+## Play them wrong on purpose
+
+7. Back on the device: your texture on Drum 4, **Macro 2** pitched way down, decay
+   (Macro 4) long — a granular-adjacent bed from one mono file.
+8. Sample-flip several textures across one track's steps; give them 25–50%
+   probability each. That's a self-shuffling collage — the heart of the final piece.
+
+<JamTip>
+  A 96-second ambient bed sample is legal (under the 98.3 s cap) — one pad press =
+  an entire atmosphere under the whole jam. Deep sample-time budgeting exists so you
+  can make exactly this trade.
+</JamTip>
+
+<Checkpoint>
+  Import a stereo file and say what happened to it; state the per-pack budget from
+  memory; build one drum track that plays only sounds you brought.
+</Checkpoint>
+
+Format details and pack management: [Components reference](10-components.md).

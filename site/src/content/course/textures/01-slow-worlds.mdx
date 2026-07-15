@@ -1,0 +1,55 @@
+---
+title: Slow worlds
+project: textures
+order: 1
+minutes: 25
+goal: Escape the 16-step bar — per-track sync rates, drones with tie-forward, odd pattern lengths, and non-forward play orders.
+---
+
+Everything until now assumed a bar of 16ths at dance tempo. Ambient music breaks
+that assumption four different ways, and all four tools live in **Pattern Settings**
+and **Gate** — views you already know.
+
+## Sync rates: tracks at different speeds
+
+1. New project, slow-ish tempo (70–90). Put a simple chord drone idea on Synth 2 and
+   a sparse melodic figure on Synth 1.
+2. Select Synth 2, press `Pattern Settings`: the third row (pads 1–8) is the
+   **sync rate** — how fast this track's steps tick relative to the BPM: 1/4, 1/4T,
+   1/8, 1/8T, **1/16 (default)**, 1/16T, 1/32, 1/32T.
+3. Set Synth 2 to **1/4**: its 16 steps now span *four bars* — a slow harmonic tide
+   under Synth 1's normal-speed sparkle. Rate changes during playback politely wait
+   for the end of the current cycle.
+
+## Drones: notes that never re-trigger
+
+4. On your pad track, enter a chord on step 1 and set gate to 16 — it sustains the
+   whole pattern but *re-attacks* every pass.
+5. The true drone: in Gate View select the step, hop to Micro Step View
+   (`Shift + Gate` or press `Gate` again), and toggle **pad 24** — tie-forward. The
+   note now holds *through* the loop boundary without re-triggering, indefinitely.
+   (Adding a new note to a tied step later? It won't inherit the tie — toggle
+   tie-forward off and on to re-capture the whole stack.)
+
+## Odd lengths and directions
+
+6. In Pattern Settings, tap a step pad to move the pattern's **end point**: a
+   13-step melody over a 16-step drone drifts out of phase and realigns every 13
+   bars — instant evolving music, zero extra notes. (`Shift` + pad moves the start
+   point; trimmed steps keep their data, glowing dim red.)
+7. Pads 29–32: **play order** — Forward, Reverse, **Ping-pong**, Random. Ping-pong
+   turns an arpeggio into a pendulum; Random turns a five-note cell into wind
+   chimes. Combine with probability for melodies that never repeat.
+
+<TheoryBridge>
+  A 13-against-16 phase pattern is a *tala* trick — additive rhythm, not divisive.
+  You know this feeling from riffs in 7 that resolve against a 4/4 drummer. Here the
+  device holds both meters perfectly forever, which no human rhythm section will do
+  for you at 2am.
+</TheoryBridge>
+
+<Checkpoint>
+  Run one track at 1/4 rate under a 1/16 track; build a tie-forward drone that never
+  re-attacks; set a 13-step pattern to ping-pong and let it phase for a minute
+  without touching anything.
+</Checkpoint>
