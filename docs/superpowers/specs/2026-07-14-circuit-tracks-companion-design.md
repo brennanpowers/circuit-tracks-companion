@@ -32,8 +32,11 @@ independent lenses: official-manual cross-check, device-confusion audit (Tracks 
 original Circuit vs Rhythm), and a skeptical refuter. Fable (main session) reviews the
 verified output, adjudicates conflicts, and fills gaps.
 
-**Output:** `research/` — the verified dossier: claims with sources and verdicts, plus
-a curated source list (official manual, firmware notes, best tutorials).
+**Output:** `research/` — raw findings preserved per round plus a cumulative
+adjudicated dossier (layout and immutability rules in `research/README.md`). Research
+is explicitly multi-round: each round's verification output includes what the claims
+*missed*, which seeds `open-questions.md` and the next round's angles. The guide is
+written only from `dossier.md`, never directly from a single round's raw output.
 
 ### Phase 2 — Reference guide
 
