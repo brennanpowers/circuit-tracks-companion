@@ -117,17 +117,57 @@ export const PANEL: PanelElement[] = [
   { kind: 'button', id: 'play', x: 637, y: 550, w: 48, h: 55, label: '▶', plain: "Start/stop. From stopped it restarts at step 1 — hold Shift to continue where you left off.", control: 'play' },
 ];
 
-/** Decorative pad positions inside the grid zone (4 rows × 8 cols). */
+/** Pad positions inside the grid zone (4 rows × 8 cols), row-major from
+ *  top-left — index i = pad number i+1, matching the manual's numbering:
+ *  pads 1–16 = top two rows (step display), 17–32 = bottom two rows. */
 export const PADS = Array.from({ length: 32 }, (_, i) => {
   const col = i % 8;
   const row = Math.floor(i / 8);
   return {
+    n: i + 1,
     x: GRID_X + 6 + col * 62.5,
     y: GRID_Y + 6 + row * 61.5,
     w: 55,
     h: 54,
   };
 });
+
+/** Device pad-LED colours for lesson diagrams (literal — LED colours don't theme). */
+export const PAD_COLORS = {
+  blue: '#4aa8ff',    // step with a note (bright blue on device)
+  pink: '#f087c6',    // sample-flipped step
+  gold: '#e8c34d',    // scene pads / assignments
+  green: '#58c471',   // queued / on-states
+  red: '#e05555',     // record & delete contexts
+  orange: '#f2a341',  // page-2 / drum contexts
+  white: '#e8eaed',   // playback cursor, selections
+  violet: '#8b7cf7',  // generic accent
+  dim: '#3a4150',     // unlit pad
+} as const;
+
+export type PadColor = keyof typeof PAD_COLORS;
+
+export type PadSpec =
+  | number
+  | `${number}:${PadColor}`
+  | { n: number; color?: PadColor; label?: string };
+
+export interface NormalizedPad {
+  n: number;
+  color: PadColor;
+  label?: string;
+}
+
+export function normalizePads(pads: PadSpec[]): NormalizedPad[] {
+  return pads.map((p) => {
+    if (typeof p === 'number') return { n: p, color: 'violet' as const };
+    if (typeof p === 'string') {
+      const [n, color] = p.split(':');
+      return { n: Number(n), color: (color ?? 'violet') as PadColor };
+    }
+    return { n: p.n, color: p.color ?? ('violet' as const), label: p.label };
+  });
+}
 
 /** ids usable in <PanelHighlight> — every element id plus these aliases. */
 export const ALIASES: Record<string, string[]> = {

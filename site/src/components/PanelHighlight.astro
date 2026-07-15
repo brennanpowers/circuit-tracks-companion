@@ -1,25 +1,38 @@
 ---
 import PanelSVG from './PanelSVG.astro';
 import RearSVG from './RearSVG.astro';
+import type { PadSpec } from '../data/panel-geometry';
 
 /**
  * Lesson asset: a 1-to-1 device diagram with specific controls highlighted.
  * Usage in MDX:  <PanelHighlight controls="macro-5" caption="…" />
  *                <PanelHighlight controls={['record', 'play']} />
  *                <PanelHighlight view="rear" controls={['out-l-mono', 'phones']} />
+ * Pad-level lighting (grid steps, meters, scene pads — device LED colours):
+ *   <PanelHighlight pads={['1:blue', '5:blue', '9:blue', '13:blue']} numbered
+ *                   caption="Kick on steps 1, 5, 9, 13" />
+ *   colours: blue pink gold green red orange white violet · pad = 1-32
  * Top-view ids/aliases live in panel-geometry.ts; rear-view ids/aliases
  * (midi, outputs, inputs, usb-c, sync-out, …) in rear-geometry.ts.
  */
 interface Props {
-  controls: string | string[];
+  controls?: string | string[];
+  pads?: PadSpec[];
+  numbered?: boolean;
   caption?: string;
   view?: 'top' | 'rear';
 }
-const { controls, caption, view = 'top' } = Astro.props;
+const { controls = [], pads = [], numbered = false, caption, view = 'top' } = Astro.props;
 const list = Array.isArray(controls) ? controls : [controls];
 ---
 
 <figure class="panel-highlight my-6 rounded-xl border border-border bg-surface p-3 sm:p-4 max-w-xl mx-auto">
-  {view === 'rear' ? <RearSVG highlight={list} labels={true} /> : <PanelSVG highlight={list} labels={true} />}
+  {
+    view === 'rear' ? (
+      <RearSVG highlight={list} labels={true} />
+    ) : (
+      <PanelSVG highlight={list} pads={pads} numbered={numbered} labels={true} />
+    )
+  }
   {caption && <figcaption class="mt-2 text-center text-sm text-muted">{caption}</figcaption>}
 </figure>

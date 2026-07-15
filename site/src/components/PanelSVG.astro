@@ -1,17 +1,37 @@
 ---
-import { PANEL, PADS, VIEWBOX, resolveHighlights } from '../data/panel-geometry';
+import {
+  PANEL,
+  PADS,
+  PAD_COLORS,
+  VIEWBOX,
+  normalizePads,
+  resolveHighlights,
+  type PadSpec,
+} from '../data/panel-geometry';
 
 interface Props {
   /** element ids or aliases to highlight (e.g. "macro-5", "record", "drums") */
   highlight?: string[];
+  /** individual grid pads to light, with device LED colours:
+   *  [1, '5:blue', { n: 9, color: 'pink', label: 'K' }] */
+  pads?: PadSpec[];
+  /** print faint 1-32 indexes in the pad corners (helps count steps) */
+  numbered?: boolean;
   /** hotspots + focus handling for the interactive reference map */
   interactive?: boolean;
   /** render text labels on elements (off for small inline uses) */
   labels?: boolean;
 }
-const { highlight = [], interactive = false, labels = true } = Astro.props;
+const {
+  highlight = [],
+  pads = [],
+  numbered = false,
+  interactive = false,
+  labels = true,
+} = Astro.props;
 const lit = resolveHighlights(highlight);
 const dimming = lit.size > 0;
+const litPads = new Map(normalizePads(pads).map((p) => [p.n, p]));
 
 const btnClass = (id: string) =>
   ['pnl-el', lit.has(id) ? 'pnl-lit' : '', dimming && !lit.has(id) ? 'pnl-dim' : '']
@@ -46,8 +66,31 @@ const hotspotAttrs = (el: { id: string; label: string; control: string }) =>
   <!-- record/play shared surround (as on the device) -->
   <rect x="632" y="479" width="58" height="132" rx="8" fill="none" stroke="#3a4150"></rect>
 
-  <!-- decorative pads -->
-  {PADS.map((p) => <rect x={p.x} y={p.y} width={p.w} height={p.h} rx="6" class="pnl-pad" />)}
+  <!-- the 32 pads (lit per lesson diagram when `pads` is set) -->
+  {
+    PADS.map((p) => {
+      const spec = litPads.get(p.n);
+      return (
+        <g>
+          <rect
+            x={p.x} y={p.y} width={p.w} height={p.h} rx="6"
+            class:list={['pnl-pad', { 'pnl-pad-lit': !!spec }]}
+            style={spec ? `fill: ${PAD_COLORS[spec.color]}` : undefined}
+          />
+          {spec?.label && (
+            <text x={p.x + p.w / 2} y={p.y + p.h / 2 + 3.5} class="pnl-pad-label" text-anchor="middle">
+              {spec.label}
+            </text>
+          )}
+          {numbered && (
+            <text x={p.x + 5} y={p.y + 12} class="pnl-pad-index">
+              {p.n}
+            </text>
+          )}
+        </g>
+      );
+    })
+  }
 
   {
     PANEL.map((el) => {
@@ -134,6 +177,24 @@ const hotspotAttrs = (el: { id: string; label: string; control: string }) =>
     fill: #3a4150;
     opacity: 0.9;
   }
+  .pnl-pad-lit {
+    opacity: 1;
+    stroke: rgba(255, 255, 255, 0.35);
+    stroke-width: 1;
+  }
+  .pnl-pad-label {
+    fill: #0e1013;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: var(--font-sans);
+    pointer-events: none;
+  }
+  .pnl-pad-index {
+    fill: #6b7280;
+    font-size: 8px;
+    font-family: var(--font-mono);
+    pointer-events: none;
+  }
   .pnl-knob {
     fill: #14161a;
     stroke: #4a5160;
@@ -186,11 +247,16 @@ const hotspotAttrs = (el: { id: string; label: string; control: string }) =>
     opacity: 0.35;
   }
   .pnl-lit .pnl-btn,
-  .pnl-lit .pnl-knob,
-  .pnl-lit .pnl-zone {
+  .pnl-lit .pnl-knob {
     stroke: var(--accent);
     stroke-width: 3;
     fill: color-mix(in srgb, var(--accent) 28%, #14161a);
+  }
+  /* the grid zone sits over the pads — a lit zone must stay translucent */
+  .pnl-lit .pnl-zone {
+    stroke: var(--accent);
+    stroke-width: 3;
+    fill: color-mix(in srgb, var(--accent) 10%, transparent);
   }
   .pnl-lit .pnl-btn-label,
   .pnl-lit .pnl-label {
